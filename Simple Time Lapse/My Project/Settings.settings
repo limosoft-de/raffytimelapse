@@ -1,0 +1,39 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="LanguageCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">en_US</Value>
+    </Setting>
+    <Setting Name="DefaultLanguageCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">en_US</Value>
+    </Setting>
+    <Setting Name="Version" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1.0.0</Value>
+    </Setting>
+    <Setting Name="AutoUpdate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="UpdateURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://simpletimelapse.sourceforge.net/update/</Value>
+    </Setting>
+    <Setting Name="Support_Mail" Type="System.String" Scope="User">
+      <Value Profile="(Default)">limosoft@users.sourceforge.net</Value>
+    </Setting>
+    <Setting Name="Support_Bugs" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://sourceforge.net/p/simpletimelapse/bugs/</Value>
+    </Setting>
+    <Setting Name="Support_Features" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://sourceforge.net/p/simpletimelapse/feature-requests/</Value>
+    </Setting>
+    <Setting Name="Support_General" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://sourceforge.net/p/simpletimelapse/general-requests/</Value>
+    </Setting>
+    <Setting Name="TranslationURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://simpletimelapse.sourceforge.net/translate.html</Value>
+    </Setting>
+    <Setting Name="FFmpegURL" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://simpletimelapse.sourceforge.net/ffmpeg.html</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
