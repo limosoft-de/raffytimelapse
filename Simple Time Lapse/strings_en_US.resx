@@ -420,4 +420,8 @@
   <data name="Main_msg_ffmpeg" xml:space="preserve">
     <value>Simple Time Lapse couldn't find the 'FFmpeg.exe' on your computer, which is needed to use this program. Would you like to download the missing file?</value>
   </data>
+  <data name="Main_ImportFiles_msg_DifferentPath" xml:space="preserve">
+    <value>All images must be in the same directory as the first imported one. Please make sure that all imported images are in the same folder.</value>
+    <comment>v1.0.1</comment>
+  </data>
 </root>

@@ -2,19 +2,19 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
   <Profiles />
   <Settings>
-    <Setting Name="LanguageCode" Type="System.String" Scope="User">
+    <Setting Name="set_LanguageCode" Type="System.String" Scope="User">
       <Value Profile="(Default)">en_US</Value>
     </Setting>
-    <Setting Name="DefaultLanguageCode" Type="System.String" Scope="User">
+    <Setting Name="app_DefaultLanguageCode" Type="System.String" Scope="User">
       <Value Profile="(Default)">en_US</Value>
     </Setting>
-    <Setting Name="Version" Type="System.String" Scope="User">
-      <Value Profile="(Default)">1.0.0</Value>
+    <Setting Name="app_Version" Type="System.String" Scope="User">
+      <Value Profile="(Default)">1.0.1</Value>
     </Setting>
-    <Setting Name="AutoUpdate" Type="System.Boolean" Scope="User">
+    <Setting Name="set_AutoUpdate" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
-    <Setting Name="UpdateURL" Type="System.String" Scope="User">
+    <Setting Name="url_update" Type="System.String" Scope="User">
       <Value Profile="(Default)">http://simpletimelapse.sourceforge.net/update/</Value>
     </Setting>
     <Setting Name="Support_Mail" Type="System.String" Scope="User">
@@ -29,11 +29,14 @@
     <Setting Name="Support_General" Type="System.String" Scope="User">
       <Value Profile="(Default)">https://sourceforge.net/p/simpletimelapse/general-requests/</Value>
     </Setting>
-    <Setting Name="TranslationURL" Type="System.String" Scope="User">
+    <Setting Name="url_translation" Type="System.String" Scope="User">
       <Value Profile="(Default)">http://simpletimelapse.sourceforge.net/translate.html</Value>
     </Setting>
-    <Setting Name="FFmpegURL" Type="System.String" Scope="User">
+    <Setting Name="url_FFmpeg" Type="System.String" Scope="User">
       <Value Profile="(Default)">http://simpletimelapse.sourceforge.net/ffmpeg.html</Value>
+    </Setting>
+    <Setting Name="app_portable" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
 </SettingsFile>

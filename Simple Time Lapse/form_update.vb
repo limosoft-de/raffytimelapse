@@ -1,7 +1,7 @@
 ﻿Public Class form_update
     Private Sub form_update_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         btn_update.Enabled = False
-        lbl_LocalVersionNr.Text = My.Settings.Version
+        lbl_LocalVersionNr.Text = My.Settings.app_Version
 
         TranslateForm()
         CheckForUpdate()
@@ -21,7 +21,7 @@
 
     Private Sub CheckForUpdate()
 
-        Dim LocalVersion As String() = My.Settings.Version.Split(".")
+        Dim LocalVersion As String() = My.Settings.app_Version.Split(".")
 
         If testconnection() = True Then
 
@@ -64,6 +64,6 @@
     End Sub
 
     Private Sub btn_update_Click(sender As Object, e As EventArgs) Handles btn_update.Click
-        Process.Start(My.Settings.UpdateURL)
+        Process.Start(My.Settings.url_update)
     End Sub
 End Class

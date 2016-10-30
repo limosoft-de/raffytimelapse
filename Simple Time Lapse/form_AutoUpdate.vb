@@ -41,6 +41,6 @@
     End Sub
 
     Private Sub btn_update_Click(sender As Object, e As EventArgs) Handles btn_update.Click
-        Process.Start(My.Settings.UpdateURL)
+        Process.Start(My.Settings.url_update)
     End Sub
 End Class

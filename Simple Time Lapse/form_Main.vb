@@ -47,44 +47,8 @@ Public Class form_main
         Else
             FFmpegExists = False
             If MessageBox.Show(TransString("Main_msg_ffmpeg"), TransString("_General_error"), MessageBoxButtons.YesNo, MessageBoxIcon.Error) = DialogResult.Yes Then
-                Process.Start(My.Settings.FFmpegURL)
+                Process.Start(My.Settings.url_FFmpeg)
             End If
-        End If
-    End Sub
-
-    Private Sub AutoUpdate()
-        If My.Settings.AutoUpdate = True Then
-
-            For i = 0 To 10
-                Application.DoEvents()
-                Threading.Thread.Sleep(100)
-            Next
-
-            Dim LocalVersion As String() = My.Settings.Version.Split(".")
-
-            If testconnection() = True Then
-
-                Dim VersionBrowser As New WebBrowser
-                VersionBrowser.Navigate("http://simpletimelapse.sourceforge.net/update/version.txt")
-                Do Until VersionBrowser.ReadyState = WebBrowserReadyState.Complete
-                    Application.DoEvents()
-                Loop
-                VersionBrowser.Refresh(WebBrowserRefreshOption.Completely)
-                Dim NewestVersionNr As String = VersionBrowser.Document.Body.InnerText
-                Dim NewestVersion As String() = VersionBrowser.Document.Body.InnerText.Split(".")
-
-                If CInt(NewestVersion(0)) > CInt(LocalVersion(0)) Then
-                    form_AutoUpdate.NewestVersionNr = NewestVersionNr
-                    form_AutoUpdate.ShowDialog()
-                ElseIf CInt(NewestVersion(1)) > CInt(LocalVersion(1)) Then
-                    form_AutoUpdate.NewestVersionNr = NewestVersionNr
-                    form_AutoUpdate.ShowDialog()
-                ElseIf CInt(NewestVersion(2)) > CInt(LocalVersion(2)) Then
-                    form_AutoUpdate.NewestVersionNr = NewestVersionNr
-                    form_AutoUpdate.ShowDialog()
-                End If
-            End If
-
         End If
     End Sub
 
@@ -101,6 +65,16 @@ Public Class form_main
         Else
             pb_preview.Width = PlannedWidth
             pb_preview.Height = PlannedHeight
+        End If
+
+    End Sub
+
+    Private Sub form_main_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+
+        If lb_pictures.Items.Count > 0 Then
+            If MessageBox.Show(TransString("Main_msg_closing"), TransString("_General_warning"), MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.No Then
+                e.Cancel = True
+            End If
         End If
 
     End Sub
@@ -333,6 +307,7 @@ Public Class form_main
         If lb_pictures.Items.Count = 0 Then
             Panel2.Visible = True
             btn_start.Enabled = False
+            PicPath = ""
         Else
             Panel2.Visible = False
 
@@ -380,7 +355,7 @@ Public Class form_main
     End Sub
 
     Private Sub ms_about_update_Click(sender As Object, e As EventArgs) Handles ms_about_update.Click
-        form_update.ShowDialog()
+        UpdateApp()
     End Sub
 
     Private Sub ms_about_settings_Click(sender As Object, e As EventArgs) Handles ms_about_settings.Click
@@ -499,18 +474,22 @@ Public Class form_main
             Case "png"
             Case "bmp"
             Case Else
-                If MessageBox.Show(TransString("Main_ImportFiles_msg_UnsupportedFiletype") & " (" & path & ")", TransString("_General_error"), MessageBoxButtons.OKCancel, MessageBoxIcon.Error) = DialogResult.OK Then
-                    Return True
-                    Exit Function
-                ElseIf DialogResult.Cancel Then
-                    Return False
-                    Exit Function
-                End If
+                MessageBox.Show(TransString("Main_ImportFiles_msg_UnsupportedFiletype") & " (" & path & ")", TransString("_General_error"), MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Return False
+                Exit Function
         End Select
 
         PicFileType = FileType(1).ToLower
 
-        '!!ToDo: Überprüfen ob Verzeichnis identisch, anderenfalls Error ausgeben
+        '//Verzeichnis identisch    '!!ToDo: Remove this check and copy all pictures to temp instead, combine with bw-import Update
+        If Not PicPath = "" Then
+            Dim PathArray As String() = path.Split("\")
+            If Not PicPath = path.Replace(PathArray(PathArray.Count - 1), "") Then
+                MessageBox.Show(TransString("Main_ImportFiles_msg_DifferentPath") & vbCrLf & "(" & path & ")", TransString("_General_error"), MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Return False
+                Exit Function
+            End If
+        End If
 
         '//Bildpfad erstellen (Ordner)
         If lb_pictures.Items.Count = 0 Then
@@ -602,7 +581,7 @@ Public Class form_main
     '    form_ImportProgressInfo.pb.Value = e.ProgressPercentage
     'End Sub
 
-#End Region '!Not Included, work in progress
+#End Region '!!ToDo: Not Included, work in progress
 
 #Region "Backgroundworker: Render/Konvertierung"
 
@@ -731,6 +710,7 @@ Public Class form_main
                 Me.Enabled = True
                 Status = TransString("Main_bw_Rendering_Progress_100")
                 Finished = True
+                DeleteTemp
         End Select
 
     End Sub
@@ -755,13 +735,10 @@ Public Class form_main
         End If
     End Sub
 
-    Private Sub form_main_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
-        If lb_pictures.Items.Count > 0 Then
-            If MessageBox.Show(TransString("Main_msg_closing"), TransString("_General_warning"), MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.No Then
-                e.Cancel = True
-            End If
+    Public Sub DeleteTemp()
+        If My.Computer.FileSystem.DirectoryExists(Application.UserAppDataPath & "\temp\") Then
+            My.Computer.FileSystem.DeleteDirectory(Application.UserAppDataPath & "\temp\", FileIO.DeleteDirectoryOption.DeleteAllContents)
         End If
-
     End Sub
 
 #End Region

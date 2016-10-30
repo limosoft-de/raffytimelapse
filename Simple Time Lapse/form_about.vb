@@ -3,7 +3,15 @@
     Private Sub form_about_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         TranslateForm()
 
-        lbl_VersionNr.Text = My.Settings.Version
+        Dim portable As String
+
+        If My.Settings.app_portable = True Then
+            portable = " (portable)"
+        Else
+            portable = ""
+        End If
+
+        lbl_VersionNr.Text = My.Settings.app_Version & portable
 
     End Sub
 

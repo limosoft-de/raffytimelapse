@@ -1,6 +1,7 @@
 ﻿Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
+Imports nUpdate.Core
 
 ' Allgemeine Informationen über eine Assembly werden über die folgenden 
 ' Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
@@ -11,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyTitle("Simple Time Lapse")>
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyCompany("Limosoft")>
-<Assembly: AssemblyProduct("Simple_Time_Lapse")>
+<Assembly: AssemblyProduct("Simple Time Lapse")>
 <Assembly: AssemblyCopyright("Copyright ©  2016")>
 <Assembly: AssemblyTrademark("")>
 
@@ -31,5 +32,6 @@ Imports System.Runtime.InteropServices
 ' übernehmen, indem Sie "*" eingeben:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")>
-<Assembly: AssemblyFileVersion("1.0.0.0")>
+<Assembly: AssemblyVersion("1.0.1.0")>
+<Assembly: AssemblyFileVersion("1.0.1.0")>
+<Assembly: nUpdateVersion("1.0.1")>

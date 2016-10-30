@@ -469,6 +469,15 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Alle Bilder müssen aus dem gleichen Verzeichnis stammen wie das zuerst importierte. Bitte vergewissern Sie sich, dass alle zu importierenden Bilder in dem selben Ordner sind. ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Main_ImportFiles_msg_DifferentPath() As String
+        Get
+            Return ResourceManager.GetString("Main_ImportFiles_msg_DifferentPath", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die Alle Bilder müssen die gleiche Auflösung haben wie das zuerst importierte ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ImportFiles_msg_DifferentResolution() As String

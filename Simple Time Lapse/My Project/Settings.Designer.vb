@@ -57,60 +57,60 @@ Namespace My
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("en_US")>  _
-        Public Property LanguageCode() As String
+        Public Property set_LanguageCode() As String
             Get
-                Return CType(Me("LanguageCode"),String)
+                Return CType(Me("set_LanguageCode"),String)
             End Get
             Set
-                Me("LanguageCode") = value
+                Me("set_LanguageCode") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("en_US")>  _
-        Public Property DefaultLanguageCode() As String
+        Public Property app_DefaultLanguageCode() As String
             Get
-                Return CType(Me("DefaultLanguageCode"),String)
+                Return CType(Me("app_DefaultLanguageCode"),String)
             End Get
             Set
-                Me("DefaultLanguageCode") = value
+                Me("app_DefaultLanguageCode") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("1.0.0")>  _
-        Public Property Version() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("1.0.1")>  _
+        Public Property app_Version() As String
             Get
-                Return CType(Me("Version"),String)
+                Return CType(Me("app_Version"),String)
             End Get
             Set
-                Me("Version") = value
+                Me("app_Version") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
-        Public Property AutoUpdate() As Boolean
+        Public Property set_AutoUpdate() As Boolean
             Get
-                Return CType(Me("AutoUpdate"),Boolean)
+                Return CType(Me("set_AutoUpdate"),Boolean)
             End Get
             Set
-                Me("AutoUpdate") = value
+                Me("set_AutoUpdate") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("http://simpletimelapse.sourceforge.net/update/")>  _
-        Public Property UpdateURL() As String
+        Public Property url_update() As String
             Get
-                Return CType(Me("UpdateURL"),String)
+                Return CType(Me("url_update"),String)
             End Get
             Set
-                Me("UpdateURL") = value
+                Me("url_update") = value
             End Set
         End Property
         
@@ -165,24 +165,36 @@ Namespace My
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("http://simpletimelapse.sourceforge.net/translate.html")>  _
-        Public Property TranslationURL() As String
+        Public Property url_translation() As String
             Get
-                Return CType(Me("TranslationURL"),String)
+                Return CType(Me("url_translation"),String)
             End Get
             Set
-                Me("TranslationURL") = value
+                Me("url_translation") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("http://simpletimelapse.sourceforge.net/ffmpeg.html")>  _
-        Public Property FFmpegURL() As String
+        Public Property url_FFmpeg() As String
             Get
-                Return CType(Me("FFmpegURL"),String)
+                Return CType(Me("url_FFmpeg"),String)
             End Get
             Set
-                Me("FFmpegURL") = value
+                Me("url_FFmpeg") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("False")>  _
+        Public Property app_portable() As Boolean
+            Get
+                Return CType(Me("app_portable"),Boolean)
+            End Get
+            Set
+                Me("app_portable") = value
             End Set
         End Property
     End Class

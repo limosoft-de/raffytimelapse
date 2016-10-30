@@ -91,6 +91,9 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nUpdate">
+      <HintPath>..\..\..\..\Visual Studio Projekte\_nUpdate\nUpdate\Provide TAP\nUpdate.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -128,10 +131,10 @@
     <Compile Include="form_AutoUpdate.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form_Credits.Designer.vb">
-      <DependentUpon>form_Credits.vb</DependentUpon>
+    <Compile Include="form_credits.Designer.vb">
+      <DependentUpon>form_credits.vb</DependentUpon>
     </Compile>
-    <Compile Include="form_Credits.vb">
+    <Compile Include="form_credits.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="form_help.Designer.vb">
@@ -146,11 +149,11 @@
     <Compile Include="form_ImportProgressInfo.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form_Main.vb">
+    <Compile Include="form_main.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form_Main.Designer.vb">
-      <DependentUpon>form_Main.vb</DependentUpon>
+    <Compile Include="form_main.Designer.vb">
+      <DependentUpon>form_main.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="form_participation.Designer.vb">
@@ -218,8 +221,8 @@
     <EmbeddedResource Include="form_AutoUpdate.resx">
       <DependentUpon>form_AutoUpdate.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form_Credits.resx">
-      <DependentUpon>form_Credits.vb</DependentUpon>
+    <EmbeddedResource Include="form_credits.resx">
+      <DependentUpon>form_credits.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form_help.resx">
       <DependentUpon>form_help.vb</DependentUpon>
@@ -227,8 +230,8 @@
     <EmbeddedResource Include="form_ImportProgressInfo.resx">
       <DependentUpon>form_ImportProgressInfo.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form_Main.resx">
-      <DependentUpon>form_Main.vb</DependentUpon>
+    <EmbeddedResource Include="form_main.resx">
+      <DependentUpon>form_main.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form_participation.resx">
       <DependentUpon>form_participation.vb</DependentUpon>
@@ -272,7 +275,6 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
-    <None Include="Simple Time Lapse_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
@@ -287,9 +289,6 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\multi.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\multi_white.png" />
   </ItemGroup>
   <ItemGroup>
@@ -297,10 +296,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\loading.gif" />
-    <None Include="Resources\loading circle.gif" />
-    <None Include="Resources\ring.gif" />
     <None Include="Resources\done.png" />
-    <None Include="Resources\gears.gif" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />

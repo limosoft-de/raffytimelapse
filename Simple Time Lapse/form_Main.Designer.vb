@@ -28,20 +28,28 @@ Partial Class form_main
         Me.dl_ImportPictures = New System.Windows.Forms.OpenFileDialog()
         Me.bw_Rendering = New System.ComponentModel.BackgroundWorker()
         Me.gb_PictureEdit = New System.Windows.Forms.GroupBox()
-        Me.ms = New System.Windows.Forms.MenuStrip()
-        Me.ms_file = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ms_file_exit = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_about = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_about_about = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_about_update = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ms_help = New System.Windows.Forms.ToolStripMenuItem()
-        Me.bw_Importing = New System.ComponentModel.BackgroundWorker()
         Me.btn_MultiSelect = New System.Windows.Forms.Button()
         Me.btn_del = New System.Windows.Forms.Button()
         Me.btn_MoveDwn = New System.Windows.Forms.Button()
         Me.btn_MoveUp = New System.Windows.Forms.Button()
+        Me.ms = New System.Windows.Forms.MenuStrip()
+        Me.ms_file = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_file_new = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_file_new_project = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_file_new_window = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_file_import = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ms_file_exit = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_about = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_about_about = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_about_credits = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_about_update = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.ms_about_settings = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_help = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_help_help = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_help_SupportUs = New System.Windows.Forms.ToolStripMenuItem()
+        Me.bw_Importing = New System.ComponentModel.BackgroundWorker()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btn_drop = New System.Windows.Forms.Button()
@@ -49,14 +57,6 @@ Partial Class form_main
         Me.lb_pictures = New System.Windows.Forms.ListBox()
         Me.pb_preview = New System.Windows.Forms.PictureBox()
         Me.btn_start = New System.Windows.Forms.Button()
-        Me.ms_file_new = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_file_new_project = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_file_new_window = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_file_import = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_about_credits = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_about_settings = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_help_help = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_help_SupportUs = New System.Windows.Forms.ToolStripMenuItem()
         Me.gb_PictureEdit.SuspendLayout()
         Me.ms.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -114,6 +114,73 @@ Partial Class form_main
         Me.gb_PictureEdit.TabStop = False
         Me.gb_PictureEdit.Text = "Edit Picture"
         '
+        'btn_MultiSelect
+        '
+        Me.btn_MultiSelect.AutoEllipsis = True
+        Me.btn_MultiSelect.BackColor = System.Drawing.Color.Gray
+        Me.btn_MultiSelect.Enabled = False
+        Me.btn_MultiSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_MultiSelect.Image = CType(resources.GetObject("btn_MultiSelect.Image"), System.Drawing.Image)
+        Me.btn_MultiSelect.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_MultiSelect.Location = New System.Drawing.Point(354, 18)
+        Me.btn_MultiSelect.Name = "btn_MultiSelect"
+        Me.btn_MultiSelect.Size = New System.Drawing.Size(115, 33)
+        Me.btn_MultiSelect.TabIndex = 4
+        Me.btn_MultiSelect.Text = "Multiselect"
+        Me.btn_MultiSelect.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_MultiSelect.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_MultiSelect.UseVisualStyleBackColor = False
+        '
+        'btn_del
+        '
+        Me.btn_del.AutoEllipsis = True
+        Me.btn_del.BackColor = System.Drawing.Color.Gray
+        Me.btn_del.Enabled = False
+        Me.btn_del.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_del.Image = CType(resources.GetObject("btn_del.Image"), System.Drawing.Image)
+        Me.btn_del.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_del.Location = New System.Drawing.Point(238, 18)
+        Me.btn_del.Name = "btn_del"
+        Me.btn_del.Size = New System.Drawing.Size(110, 33)
+        Me.btn_del.TabIndex = 2
+        Me.btn_del.Text = "Delete"
+        Me.btn_del.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_del.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_del.UseVisualStyleBackColor = False
+        '
+        'btn_MoveDwn
+        '
+        Me.btn_MoveDwn.AutoEllipsis = True
+        Me.btn_MoveDwn.BackColor = System.Drawing.Color.Gray
+        Me.btn_MoveDwn.Enabled = False
+        Me.btn_MoveDwn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_MoveDwn.Image = CType(resources.GetObject("btn_MoveDwn.Image"), System.Drawing.Image)
+        Me.btn_MoveDwn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_MoveDwn.Location = New System.Drawing.Point(122, 18)
+        Me.btn_MoveDwn.Name = "btn_MoveDwn"
+        Me.btn_MoveDwn.Size = New System.Drawing.Size(110, 33)
+        Me.btn_MoveDwn.TabIndex = 1
+        Me.btn_MoveDwn.Text = "Move Down"
+        Me.btn_MoveDwn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_MoveDwn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_MoveDwn.UseVisualStyleBackColor = False
+        '
+        'btn_MoveUp
+        '
+        Me.btn_MoveUp.BackColor = System.Drawing.Color.Gray
+        Me.btn_MoveUp.Enabled = False
+        Me.btn_MoveUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_MoveUp.Image = CType(resources.GetObject("btn_MoveUp.Image"), System.Drawing.Image)
+        Me.btn_MoveUp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_MoveUp.Location = New System.Drawing.Point(6, 18)
+        Me.btn_MoveUp.Name = "btn_MoveUp"
+        Me.btn_MoveUp.Size = New System.Drawing.Size(110, 33)
+        Me.btn_MoveUp.TabIndex = 0
+        Me.btn_MoveUp.Text = "Move Up"
+        Me.btn_MoveUp.TextAlign = System.Drawing.ContentAlignment.MiddleRight
+        Me.btn_MoveUp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
+        Me.btn_MoveUp.UseVisualStyleBackColor = False
+        '
         'ms
         '
         Me.ms.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_file, Me.ms_about, Me.ms_help})
@@ -129,6 +196,35 @@ Partial Class form_main
         Me.ms_file.Name = "ms_file"
         Me.ms_file.Size = New System.Drawing.Size(37, 20)
         Me.ms_file.Text = "File"
+        '
+        'ms_file_new
+        '
+        Me.ms_file_new.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_file_new_project, Me.ms_file_new_window})
+        Me.ms_file_new.Image = CType(resources.GetObject("ms_file_new.Image"), System.Drawing.Image)
+        Me.ms_file_new.Name = "ms_file_new"
+        Me.ms_file_new.Size = New System.Drawing.Size(151, 22)
+        Me.ms_file_new.Text = "New"
+        '
+        'ms_file_new_project
+        '
+        Me.ms_file_new_project.Image = CType(resources.GetObject("ms_file_new_project.Image"), System.Drawing.Image)
+        Me.ms_file_new_project.Name = "ms_file_new_project"
+        Me.ms_file_new_project.Size = New System.Drawing.Size(127, 22)
+        Me.ms_file_new_project.Text = "Project..."
+        '
+        'ms_file_new_window
+        '
+        Me.ms_file_new_window.Image = CType(resources.GetObject("ms_file_new_window.Image"), System.Drawing.Image)
+        Me.ms_file_new_window.Name = "ms_file_new_window"
+        Me.ms_file_new_window.Size = New System.Drawing.Size(127, 22)
+        Me.ms_file_new_window.Text = "Window..."
+        '
+        'ms_file_import
+        '
+        Me.ms_file_import.Image = CType(resources.GetObject("ms_file_import.Image"), System.Drawing.Image)
+        Me.ms_file_import.Name = "ms_file_import"
+        Me.ms_file_import.Size = New System.Drawing.Size(151, 22)
+        Me.ms_file_import.Text = "Import Images"
         '
         'ToolStripSeparator2
         '
@@ -155,6 +251,13 @@ Partial Class form_main
         Me.ms_about_about.Size = New System.Drawing.Size(158, 22)
         Me.ms_about_about.Text = "About"
         '
+        'ms_about_credits
+        '
+        Me.ms_about_credits.Image = CType(resources.GetObject("ms_about_credits.Image"), System.Drawing.Image)
+        Me.ms_about_credits.Name = "ms_about_credits"
+        Me.ms_about_credits.Size = New System.Drawing.Size(158, 22)
+        Me.ms_about_credits.Text = "Credits"
+        '
         'ms_about_update
         '
         Me.ms_about_update.Name = "ms_about_update"
@@ -166,6 +269,14 @@ Partial Class form_main
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
         Me.ToolStripSeparator1.Size = New System.Drawing.Size(155, 6)
         '
+        'ms_about_settings
+        '
+        Me.ms_about_settings.Image = CType(resources.GetObject("ms_about_settings.Image"), System.Drawing.Image)
+        Me.ms_about_settings.Name = "ms_about_settings"
+        Me.ms_about_settings.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.ms_about_settings.Size = New System.Drawing.Size(158, 22)
+        Me.ms_about_settings.Text = "Settings"
+        '
         'ms_help
         '
         Me.ms_help.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_help_help, Me.ms_help_SupportUs})
@@ -173,78 +284,25 @@ Partial Class form_main
         Me.ms_help.Size = New System.Drawing.Size(44, 20)
         Me.ms_help.Text = "Help"
         '
+        'ms_help_help
+        '
+        Me.ms_help_help.Image = CType(resources.GetObject("ms_help_help.Image"), System.Drawing.Image)
+        Me.ms_help_help.Name = "ms_help_help"
+        Me.ms_help_help.ShortcutKeys = System.Windows.Forms.Keys.F1
+        Me.ms_help_help.Size = New System.Drawing.Size(132, 22)
+        Me.ms_help_help.Text = "Help"
+        '
+        'ms_help_SupportUs
+        '
+        Me.ms_help_SupportUs.Image = CType(resources.GetObject("ms_help_SupportUs.Image"), System.Drawing.Image)
+        Me.ms_help_SupportUs.Name = "ms_help_SupportUs"
+        Me.ms_help_SupportUs.Size = New System.Drawing.Size(132, 22)
+        Me.ms_help_SupportUs.Text = "Support Us"
+        '
         'bw_Importing
         '
         Me.bw_Importing.WorkerReportsProgress = True
         Me.bw_Importing.WorkerSupportsCancellation = True
-        '
-        'btn_MultiSelect
-        '
-        Me.btn_MultiSelect.AutoEllipsis = True
-        Me.btn_MultiSelect.BackColor = System.Drawing.Color.Gray
-        Me.btn_MultiSelect.Enabled = False
-        Me.btn_MultiSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_MultiSelect.Image = CType(resources.GetObject("btn_MultiSelect.Image"), System.Drawing.Image)
-        Me.btn_MultiSelect.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_MultiSelect.Location = New System.Drawing.Point(354, 18)
-        Me.btn_MultiSelect.Name = "btn_MultiSelect"
-        Me.btn_MultiSelect.Size = New System.Drawing.Size(115, 31)
-        Me.btn_MultiSelect.TabIndex = 4
-        Me.btn_MultiSelect.Text = "Multiselect"
-        Me.btn_MultiSelect.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_MultiSelect.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_MultiSelect.UseVisualStyleBackColor = False
-        '
-        'btn_del
-        '
-        Me.btn_del.AutoEllipsis = True
-        Me.btn_del.BackColor = System.Drawing.Color.Gray
-        Me.btn_del.Enabled = False
-        Me.btn_del.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_del.Image = CType(resources.GetObject("btn_del.Image"), System.Drawing.Image)
-        Me.btn_del.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_del.Location = New System.Drawing.Point(238, 18)
-        Me.btn_del.Name = "btn_del"
-        Me.btn_del.Size = New System.Drawing.Size(110, 31)
-        Me.btn_del.TabIndex = 2
-        Me.btn_del.Text = "Delete"
-        Me.btn_del.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_del.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_del.UseVisualStyleBackColor = False
-        '
-        'btn_MoveDwn
-        '
-        Me.btn_MoveDwn.AutoEllipsis = True
-        Me.btn_MoveDwn.BackColor = System.Drawing.Color.Gray
-        Me.btn_MoveDwn.Enabled = False
-        Me.btn_MoveDwn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_MoveDwn.Image = CType(resources.GetObject("btn_MoveDwn.Image"), System.Drawing.Image)
-        Me.btn_MoveDwn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_MoveDwn.Location = New System.Drawing.Point(122, 18)
-        Me.btn_MoveDwn.Name = "btn_MoveDwn"
-        Me.btn_MoveDwn.Size = New System.Drawing.Size(110, 31)
-        Me.btn_MoveDwn.TabIndex = 1
-        Me.btn_MoveDwn.Text = "Move Down"
-        Me.btn_MoveDwn.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_MoveDwn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_MoveDwn.UseVisualStyleBackColor = False
-        '
-        'btn_MoveUp
-        '
-        Me.btn_MoveUp.AutoEllipsis = True
-        Me.btn_MoveUp.BackColor = System.Drawing.Color.Gray
-        Me.btn_MoveUp.Enabled = False
-        Me.btn_MoveUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_MoveUp.Image = CType(resources.GetObject("btn_MoveUp.Image"), System.Drawing.Image)
-        Me.btn_MoveUp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_MoveUp.Location = New System.Drawing.Point(6, 18)
-        Me.btn_MoveUp.Name = "btn_MoveUp"
-        Me.btn_MoveUp.Size = New System.Drawing.Size(110, 31)
-        Me.btn_MoveUp.TabIndex = 0
-        Me.btn_MoveUp.Text = "Move Up"
-        Me.btn_MoveUp.TextAlign = System.Drawing.ContentAlignment.MiddleRight
-        Me.btn_MoveUp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
-        Me.btn_MoveUp.UseVisualStyleBackColor = False
         '
         'Panel1
         '
@@ -337,65 +395,6 @@ Partial Class form_main
         Me.btn_start.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         Me.btn_start.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         Me.btn_start.UseVisualStyleBackColor = True
-        '
-        'ms_file_new
-        '
-        Me.ms_file_new.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_file_new_project, Me.ms_file_new_window})
-        Me.ms_file_new.Image = CType(resources.GetObject("ms_file_new.Image"), System.Drawing.Image)
-        Me.ms_file_new.Name = "ms_file_new"
-        Me.ms_file_new.Size = New System.Drawing.Size(151, 22)
-        Me.ms_file_new.Text = "New"
-        '
-        'ms_file_new_project
-        '
-        Me.ms_file_new_project.Image = CType(resources.GetObject("ms_file_new_project.Image"), System.Drawing.Image)
-        Me.ms_file_new_project.Name = "ms_file_new_project"
-        Me.ms_file_new_project.Size = New System.Drawing.Size(127, 22)
-        Me.ms_file_new_project.Text = "Project..."
-        '
-        'ms_file_new_window
-        '
-        Me.ms_file_new_window.Image = CType(resources.GetObject("ms_file_new_window.Image"), System.Drawing.Image)
-        Me.ms_file_new_window.Name = "ms_file_new_window"
-        Me.ms_file_new_window.Size = New System.Drawing.Size(127, 22)
-        Me.ms_file_new_window.Text = "Window..."
-        '
-        'ms_file_import
-        '
-        Me.ms_file_import.Image = CType(resources.GetObject("ms_file_import.Image"), System.Drawing.Image)
-        Me.ms_file_import.Name = "ms_file_import"
-        Me.ms_file_import.Size = New System.Drawing.Size(151, 22)
-        Me.ms_file_import.Text = "Import Images"
-        '
-        'ms_about_credits
-        '
-        Me.ms_about_credits.Image = CType(resources.GetObject("ms_about_credits.Image"), System.Drawing.Image)
-        Me.ms_about_credits.Name = "ms_about_credits"
-        Me.ms_about_credits.Size = New System.Drawing.Size(158, 22)
-        Me.ms_about_credits.Text = "Credits"
-        '
-        'ms_about_settings
-        '
-        Me.ms_about_settings.Image = CType(resources.GetObject("ms_about_settings.Image"), System.Drawing.Image)
-        Me.ms_about_settings.Name = "ms_about_settings"
-        Me.ms_about_settings.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.ms_about_settings.Size = New System.Drawing.Size(158, 22)
-        Me.ms_about_settings.Text = "Settings"
-        '
-        'ms_help_help
-        '
-        Me.ms_help_help.Image = CType(resources.GetObject("ms_help_help.Image"), System.Drawing.Image)
-        Me.ms_help_help.Name = "ms_help_help"
-        Me.ms_help_help.ShortcutKeys = System.Windows.Forms.Keys.F1
-        Me.ms_help_help.Size = New System.Drawing.Size(132, 22)
-        Me.ms_help_help.Text = "Help"
-        '
-        'ms_help_SupportUs
-        '
-        Me.ms_help_SupportUs.Image = CType(resources.GetObject("ms_help_SupportUs.Image"), System.Drawing.Image)
-        Me.ms_help_SupportUs.Name = "ms_help_SupportUs"
-        Me.ms_help_SupportUs.Size = New System.Drawing.Size(132, 22)
-        Me.ms_help_SupportUs.Text = "Support Us"
         '
         'form_main
         '

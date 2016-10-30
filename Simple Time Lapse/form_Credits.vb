@@ -25,4 +25,9 @@
         End If
     End Sub
 
+    Private Sub Label1_Click_1(sender As Object, e As EventArgs) Handles lbl_nupdate_desc.Click
+        If MessageBox.Show(TransString("Credits_link"), TransString("_General_info"), MessageBoxButtons.YesNo, MessageBoxIcon.Information) = DialogResult.Yes Then
+            Process.Start("https://nupdate.net")
+        End If
+    End Sub
 End Class

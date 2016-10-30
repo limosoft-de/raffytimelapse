@@ -50,23 +50,23 @@
     Private Sub LoadSettings()
 
         'General
-        cb_AutoUpdate.Checked = My.Settings.AutoUpdate
+        cb_AutoUpdate.Checked = My.Settings.set_AutoUpdate
         'Interface
-        cb_language.Text = TransString("_General_language_" & My.Settings.LanguageCode)
+        cb_language.Text = TransString("_General_language_" & My.Settings.set_LanguageCode)
 
     End Sub
 
     Private Sub SaveSettings()
         'General
         ''Autoupdate
-        My.Settings.AutoUpdate = cb_AutoUpdate.Checked
+        My.Settings.set_AutoUpdate = cb_AutoUpdate.Checked
 
         'Interface
         ''Language
         If cb_language.Text = TransString("_General_language_en_US") Then
-            My.Settings.LanguageCode = "en_US"
+            My.Settings.set_LanguageCode = "en_US"
         ElseIf cb_language.Text = TransString("_General_language_de_DE") Then
-            My.Settings.LanguageCode = "de_DE"
+            My.Settings.set_LanguageCode = "de_DE"
         End If
     End Sub
 
