@@ -45,6 +45,7 @@ Partial Class form_ProgressInfo
         'btn_ok
         '
         Me.btn_ok.Enabled = False
+        Me.btn_ok.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_ok.Location = New System.Drawing.Point(243, 69)
         Me.btn_ok.Name = "btn_ok"
         Me.btn_ok.Size = New System.Drawing.Size(75, 23)
@@ -54,6 +55,7 @@ Partial Class form_ProgressInfo
         '
         'btn_cancel
         '
+        Me.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_cancel.Location = New System.Drawing.Point(162, 69)
         Me.btn_cancel.Name = "btn_cancel"
         Me.btn_cancel.Size = New System.Drawing.Size(75, 23)
@@ -68,11 +70,11 @@ Partial Class form_ProgressInfo
         'pb
         '
         Me.pb.BackColor = System.Drawing.SystemColors.Control
-        Me.pb.Image = Global.Simple_Time_Lapse.My.Resources.Resources.loading
-        Me.pb.InitialImage = Global.Simple_Time_Lapse.My.Resources.Resources.loading
+        Me.pb.Image = Global.Simplapse.My.Resources.Resources.loading
+        Me.pb.InitialImage = Global.Simplapse.My.Resources.Resources.loading
         Me.pb.Location = New System.Drawing.Point(12, 12)
         Me.pb.Name = "pb"
-        Me.pb.Size = New System.Drawing.Size(80, 80)
+        Me.pb.Size = New System.Drawing.Size(47, 54)
         Me.pb.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.pb.TabIndex = 0
         Me.pb.TabStop = False
@@ -91,7 +93,7 @@ Partial Class form_ProgressInfo
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "form_ProgressInfo"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Verarbeitung"
         CType(Me.pb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)

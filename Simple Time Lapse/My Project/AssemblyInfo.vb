@@ -9,11 +9,11 @@ Imports nUpdate.Core
 
 ' Werte der Assemblyattribute überprüfen
 
-<Assembly: AssemblyTitle("Simple Time Lapse")>
-<Assembly: AssemblyDescription("")>
+<Assembly: AssemblyTitle("Simplapse")>
+<Assembly: AssemblyDescription("The simple way to create timelapse footage")>
 <Assembly: AssemblyCompany("Limosoft")>
-<Assembly: AssemblyProduct("Simple Time Lapse")>
-<Assembly: AssemblyCopyright("Copyright ©  2016")>
+<Assembly: AssemblyProduct("Simplapse")>
+<Assembly: AssemblyCopyright("Copyright ©  2019")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -32,6 +32,6 @@ Imports nUpdate.Core
 ' übernehmen, indem Sie "*" eingeben:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.1.0")>
-<Assembly: AssemblyFileVersion("1.0.1.0")>
-<Assembly: nUpdateVersion("1.0.1")>
+<Assembly: AssemblyVersion("2.0.0.0")>
+<Assembly: AssemblyFileVersion("2.0.0.0")>
+<Assembly: nUpdateVersion("2.0.0")>

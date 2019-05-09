@@ -316,7 +316,7 @@
     <value>Update</value>
   </data>
   <data name="AutoUpdate_lbl_info" xml:space="preserve">
-    <value>Es steht eine aktuellere Version von 'Simple Shot List' zur Verfügung. Klicken Sie auf 'Update' um das Update jetzt herunterzuladen und zu installieren.</value>
+    <value>Es steht eine aktuellere Version von 'Simplapse' zur Verfügung. Klicken Sie auf 'Update' um das Update jetzt herunterzuladen und zu installieren.</value>
   </data>
   <data name="AutoUpdate_lbl_MoreInfo" xml:space="preserve">
     <value>Mehr Informationen</value>
@@ -355,7 +355,7 @@
     <value>Grundsätzliche Frage</value>
   </data>
   <data name="Help_lbl_online" xml:space="preserve">
-    <value>Die bevorzugte Supportvariante für 'Simple Time Lapse' bildet unser Ticketsystem auf 'sourceforge.net'. Wir haben Ticketsysteme für verschiedene Kategorien:</value>
+    <value>Die bevorzugte Supportvariante für 'Simplapse' bildet unser Ticketsystem auf 'sourceforge.net'. Wir haben Ticketsysteme für verschiedene Kategorien:</value>
   </data>
   <data name="Main_msg_closing" xml:space="preserve">
     <value>Möchten Sie das Programm wirklich schließen? Alle nicht gespeicherten Änderungen gehen dadurch verloren.</value>
@@ -397,7 +397,7 @@
     <value>Helfen Sie uns beim Übersetzen</value>
   </data>
   <data name="Participation_lbl_desc" xml:space="preserve">
-    <value>'Simple Time Lapse' ist ein kostenloses Programm und wird dies auch bleiben. Desweiteren möchten wir nicht nach Geld fragen. Stattdessen gibt es eine andere Möglichkeit uns zu unterstützen: das Programm für weltweite Nutzer in andere Sprachen übersetzen. Es geht ganz einfach!</value>
+    <value>'Simplapse' ist ein kostenloses Programm und wird dies auch bleiben. Desweiteren möchten wir nicht nach Geld fragen. Stattdessen gibt es eine andere Möglichkeit uns zu unterstützen: das Programm für weltweite Nutzer in andere Sprachen übersetzen. Es geht ganz einfach!</value>
   </data>
   <data name="Participation_lbl_head" xml:space="preserve">
     <value>Unterstützen Sie uns</value>
@@ -418,10 +418,34 @@
     <value>Bitte warten...</value>
   </data>
   <data name="Main_msg_ffmpeg" xml:space="preserve">
-    <value>Simple Time Lapse konnte die Datei 'FFmpeg.exe' nicht finden, welche für das Programm benötigt wird. Möchten Sie diese Datei nun downloaden?</value>
+    <value>Simplapse konnte die Datei 'FFmpeg.exe' nicht finden, welche für das Programm benötigt wird. Möchten Sie diese Datei nun downloaden?</value>
   </data>
   <data name="Main_ImportFiles_msg_DifferentPath" xml:space="preserve">
     <value>Alle Bilder müssen aus dem gleichen Verzeichnis stammen wie das zuerst importierte. Bitte vergewissern Sie sich, dass alle zu importierenden Bilder in dem selben Ordner sind.</value>
     <comment>v1.0.1</comment>
+  </data>
+  <data name="Main_msg_MultiDelete" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie die ausgewählten Bilder entfernen wollen?</value>
+  </data>
+  <data name="Main_msg_SingleDelete" xml:space="preserve">
+    <value>Sind Sie sicher, dass Sie das Bild [%1] entfernen wollen ?</value>
+  </data>
+  <data name="Settings_tc_general_gb_keys" xml:space="preserve">
+    <value>Tastenbelegung</value>
+  </data>
+  <data name="Settings_tc_general_gb_keys_cb_MoveImg" xml:space="preserve">
+    <value>2+8 (Numpad),W+S</value>
+  </data>
+  <data name="Settings_tc_general_gb_keys_lbl_MoveImg" xml:space="preserve">
+    <value>Bilder mit Tasten verschieben</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Importiere Bilder</value>
+  </data>
+  <data name="Import_lbl_progress1" xml:space="preserve">
+    <value>Importiere Bild</value>
+  </data>
+  <data name="Import_lbl_progress2" xml:space="preserve">
+    <value>von</value>
   </data>
 </root>

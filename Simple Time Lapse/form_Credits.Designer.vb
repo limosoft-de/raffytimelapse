@@ -37,9 +37,9 @@ Partial Class form_Credits
         'lbl_icons_head
         '
         Me.lbl_icons_head.AutoSize = True
-        Me.lbl_icons_head.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_icons_head.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_icons_head.ForeColor = System.Drawing.Color.White
-        Me.lbl_icons_head.Location = New System.Drawing.Point(9, 121)
+        Me.lbl_icons_head.Location = New System.Drawing.Point(9, 120)
         Me.lbl_icons_head.Name = "lbl_icons_head"
         Me.lbl_icons_head.Size = New System.Drawing.Size(65, 21)
         Me.lbl_icons_head.TabIndex = 0
@@ -62,12 +62,11 @@ Partial Class form_Credits
         Me.lbl_icons_desc.BackColor = System.Drawing.Color.Gray
         Me.lbl_icons_desc.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lbl_icons_desc.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_icons_desc.Location = New System.Drawing.Point(10, 154)
+        Me.lbl_icons_desc.Location = New System.Drawing.Point(10, 150)
         Me.lbl_icons_desc.Name = "lbl_icons_desc"
-        Me.lbl_icons_desc.Size = New System.Drawing.Size(289, 62)
+        Me.lbl_icons_desc.Size = New System.Drawing.Size(290, 60)
         Me.lbl_icons_desc.TabIndex = 3
-        Me.lbl_icons_desc.Text = "Lucy G." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Free Basic UI Elements" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "http://flaticon.com/packs/free-basic-ui-elements" &
-    ""
+        Me.lbl_icons_desc.Text = "Lucy G." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Free Basic UI Elements" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "www.flaticon.com/packs/free-basic-ui-elements"
         '
         'Panel1
         '
@@ -84,19 +83,19 @@ Partial Class form_Credits
         Me.lbl_ffmpeg_desc.BackColor = System.Drawing.Color.Gray
         Me.lbl_ffmpeg_desc.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lbl_ffmpeg_desc.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_ffmpeg_desc.Location = New System.Drawing.Point(10, 43)
+        Me.lbl_ffmpeg_desc.Location = New System.Drawing.Point(10, 40)
         Me.lbl_ffmpeg_desc.Name = "lbl_ffmpeg_desc"
-        Me.lbl_ffmpeg_desc.Size = New System.Drawing.Size(289, 62)
+        Me.lbl_ffmpeg_desc.Size = New System.Drawing.Size(290, 60)
         Me.lbl_ffmpeg_desc.TabIndex = 5
-        Me.lbl_ffmpeg_desc.Text = "This software uses libraries from the FFmpeg project under the LGPLv2.1" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "https://" &
-    "ffmpeg.org/"
+        Me.lbl_ffmpeg_desc.Text = "This software uses libraries from the FFmpeg project under the LGPLv2.1" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "www.ffmp" &
+    "eg.org/"
         '
         'lbl_ffmpeg_head
         '
         Me.lbl_ffmpeg_head.AutoSize = True
-        Me.lbl_ffmpeg_head.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_ffmpeg_head.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_ffmpeg_head.ForeColor = System.Drawing.Color.White
-        Me.lbl_ffmpeg_head.Location = New System.Drawing.Point(9, 9)
+        Me.lbl_ffmpeg_head.Location = New System.Drawing.Point(9, 10)
         Me.lbl_ffmpeg_head.Name = "lbl_ffmpeg_head"
         Me.lbl_ffmpeg_head.Size = New System.Drawing.Size(66, 21)
         Me.lbl_ffmpeg_head.TabIndex = 6
@@ -107,18 +106,18 @@ Partial Class form_Credits
         Me.lbl_nupdate_desc.BackColor = System.Drawing.Color.Gray
         Me.lbl_nupdate_desc.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lbl_nupdate_desc.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_nupdate_desc.Location = New System.Drawing.Point(10, 264)
+        Me.lbl_nupdate_desc.Location = New System.Drawing.Point(10, 260)
         Me.lbl_nupdate_desc.Name = "lbl_nupdate_desc"
-        Me.lbl_nupdate_desc.Size = New System.Drawing.Size(289, 62)
+        Me.lbl_nupdate_desc.Size = New System.Drawing.Size(290, 60)
         Me.lbl_nupdate_desc.TabIndex = 8
-        Me.lbl_nupdate_desc.Text = "Dominic Beger (Trade)" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "nUpdate" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "www.nupdate.net"
+        Me.lbl_nupdate_desc.Text = "Dominic Beger" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "nUpdate" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "www.nupdate.net"
         '
         'lbl_nupdate_head
         '
         Me.lbl_nupdate_head.AutoSize = True
-        Me.lbl_nupdate_head.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_nupdate_head.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_nupdate_head.ForeColor = System.Drawing.Color.White
-        Me.lbl_nupdate_head.Location = New System.Drawing.Point(9, 231)
+        Me.lbl_nupdate_head.Location = New System.Drawing.Point(9, 230)
         Me.lbl_nupdate_head.Name = "lbl_nupdate_head"
         Me.lbl_nupdate_head.Size = New System.Drawing.Size(69, 21)
         Me.lbl_nupdate_head.TabIndex = 7

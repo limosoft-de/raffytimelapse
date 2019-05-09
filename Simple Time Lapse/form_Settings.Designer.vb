@@ -25,6 +25,9 @@ Partial Class form_Settings
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(form_Settings))
         Me.tc = New System.Windows.Forms.TabControl()
         Me.tc_general = New System.Windows.Forms.TabPage()
+        Me.gb_keys = New System.Windows.Forms.GroupBox()
+        Me.cb_MoveImg = New System.Windows.Forms.ComboBox()
+        Me.lbl_MoveImg = New System.Windows.Forms.Label()
         Me.gb_updates = New System.Windows.Forms.GroupBox()
         Me.cb_AutoUpdate = New System.Windows.Forms.CheckBox()
         Me.tc_interface = New System.Windows.Forms.TabPage()
@@ -34,6 +37,7 @@ Partial Class form_Settings
         Me.btn_cancel = New System.Windows.Forms.Button()
         Me.tc.SuspendLayout()
         Me.tc_general.SuspendLayout()
+        Me.gb_keys.SuspendLayout()
         Me.gb_updates.SuspendLayout()
         Me.tc_interface.SuspendLayout()
         Me.SuspendLayout()
@@ -52,6 +56,7 @@ Partial Class form_Settings
         '
         'tc_general
         '
+        Me.tc_general.Controls.Add(Me.gb_keys)
         Me.tc_general.Controls.Add(Me.gb_updates)
         Me.tc_general.Location = New System.Drawing.Point(4, 26)
         Me.tc_general.Name = "tc_general"
@@ -60,6 +65,35 @@ Partial Class form_Settings
         Me.tc_general.TabIndex = 0
         Me.tc_general.Text = "General"
         Me.tc_general.UseVisualStyleBackColor = True
+        '
+        'gb_keys
+        '
+        Me.gb_keys.Controls.Add(Me.cb_MoveImg)
+        Me.gb_keys.Controls.Add(Me.lbl_MoveImg)
+        Me.gb_keys.Location = New System.Drawing.Point(6, 73)
+        Me.gb_keys.Name = "gb_keys"
+        Me.gb_keys.Size = New System.Drawing.Size(298, 92)
+        Me.gb_keys.TabIndex = 2
+        Me.gb_keys.TabStop = False
+        Me.gb_keys.Text = "Key Assignment"
+        '
+        'cb_MoveImg
+        '
+        Me.cb_MoveImg.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cb_MoveImg.FormattingEnabled = True
+        Me.cb_MoveImg.Location = New System.Drawing.Point(9, 50)
+        Me.cb_MoveImg.Name = "cb_MoveImg"
+        Me.cb_MoveImg.Size = New System.Drawing.Size(283, 25)
+        Me.cb_MoveImg.TabIndex = 1
+        '
+        'lbl_MoveImg
+        '
+        Me.lbl_MoveImg.AutoSize = True
+        Me.lbl_MoveImg.Location = New System.Drawing.Point(6, 30)
+        Me.lbl_MoveImg.Name = "lbl_MoveImg"
+        Me.lbl_MoveImg.Size = New System.Drawing.Size(168, 17)
+        Me.lbl_MoveImg.TabIndex = 0
+        Me.lbl_MoveImg.Text = "Move images up and down"
         '
         'gb_updates
         '
@@ -152,6 +186,8 @@ Partial Class form_Settings
         Me.Text = "form_Settings"
         Me.tc.ResumeLayout(False)
         Me.tc_general.ResumeLayout(False)
+        Me.gb_keys.ResumeLayout(False)
+        Me.gb_keys.PerformLayout()
         Me.gb_updates.ResumeLayout(False)
         Me.gb_updates.PerformLayout()
         Me.tc_interface.ResumeLayout(False)
@@ -169,4 +205,7 @@ Partial Class form_Settings
     Friend WithEvents btn_cancel As Button
     Friend WithEvents cb_AutoUpdate As CheckBox
     Friend WithEvents gb_updates As GroupBox
+    Friend WithEvents gb_keys As GroupBox
+    Friend WithEvents cb_MoveImg As ComboBox
+    Friend WithEvents lbl_MoveImg As Label
 End Class

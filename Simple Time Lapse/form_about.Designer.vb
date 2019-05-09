@@ -28,7 +28,7 @@ Partial Class form_about
         Me.lbl_version = New System.Windows.Forms.Label()
         Me.lbl_close = New System.Windows.Forms.LinkLabel()
         Me.lbl_VersionNr = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Lbl_Copyright = New System.Windows.Forms.Label()
         CType(Me.pb_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -48,11 +48,11 @@ Partial Class form_about
         Me.lbl_AppName.AutoSize = True
         Me.lbl_AppName.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_AppName.ForeColor = System.Drawing.Color.White
-        Me.lbl_AppName.Location = New System.Drawing.Point(145, 46)
+        Me.lbl_AppName.Location = New System.Drawing.Point(145, 52)
         Me.lbl_AppName.Name = "lbl_AppName"
-        Me.lbl_AppName.Size = New System.Drawing.Size(223, 29)
+        Me.lbl_AppName.Size = New System.Drawing.Size(128, 29)
         Me.lbl_AppName.TabIndex = 1
-        Me.lbl_AppName.Text = "Simple Time Lapse"
+        Me.lbl_AppName.Text = "Simplapse"
         '
         'lbl_version
         '
@@ -91,16 +91,16 @@ Partial Class form_about
         Me.lbl_VersionNr.TabIndex = 4
         Me.lbl_VersionNr.Text = "0.0.0"
         '
-        'Label1
+        'Lbl_Copyright
         '
-        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(147, 115)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(145, 13)
-        Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Copyright © 2016 Limosoft"
+        Me.Lbl_Copyright.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Lbl_Copyright.AutoSize = True
+        Me.Lbl_Copyright.ForeColor = System.Drawing.Color.White
+        Me.Lbl_Copyright.Location = New System.Drawing.Point(147, 115)
+        Me.Lbl_Copyright.Name = "Lbl_Copyright"
+        Me.Lbl_Copyright.Size = New System.Drawing.Size(145, 13)
+        Me.Lbl_Copyright.TabIndex = 5
+        Me.Lbl_Copyright.Text = "Copyright © 2017 Limosoft"
         '
         'form_about
         '
@@ -109,7 +109,7 @@ Partial Class form_about
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(375, 176)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Lbl_Copyright)
         Me.Controls.Add(Me.lbl_VersionNr)
         Me.Controls.Add(Me.lbl_close)
         Me.Controls.Add(Me.lbl_version)
@@ -134,5 +134,5 @@ Partial Class form_about
     Friend WithEvents lbl_version As Label
     Friend WithEvents lbl_close As LinkLabel
     Friend WithEvents lbl_VersionNr As Label
-    Friend WithEvents Label1 As Label
+    Friend WithEvents Lbl_Copyright As Label
 End Class

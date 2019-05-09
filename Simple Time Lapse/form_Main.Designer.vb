@@ -25,7 +25,6 @@ Partial Class form_main
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(form_main))
         Me.lbl_timeline = New System.Windows.Forms.Label()
         Me.lbl_preview = New System.Windows.Forms.Label()
-        Me.dl_ImportPictures = New System.Windows.Forms.OpenFileDialog()
         Me.bw_Rendering = New System.ComponentModel.BackgroundWorker()
         Me.gb_PictureEdit = New System.Windows.Forms.GroupBox()
         Me.btn_MultiSelect = New System.Windows.Forms.Button()
@@ -49,7 +48,6 @@ Partial Class form_main
         Me.ms_help = New System.Windows.Forms.ToolStripMenuItem()
         Me.ms_help_help = New System.Windows.Forms.ToolStripMenuItem()
         Me.ms_help_SupportUs = New System.Windows.Forms.ToolStripMenuItem()
-        Me.bw_Importing = New System.ComponentModel.BackgroundWorker()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btn_drop = New System.Windows.Forms.Button()
@@ -57,6 +55,7 @@ Partial Class form_main
         Me.lb_pictures = New System.Windows.Forms.ListBox()
         Me.pb_preview = New System.Windows.Forms.PictureBox()
         Me.btn_start = New System.Windows.Forms.Button()
+        Me.lbl_PreviewFile = New System.Windows.Forms.Label()
         Me.gb_PictureEdit.SuspendLayout()
         Me.ms.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -73,7 +72,7 @@ Partial Class form_main
         Me.lbl_timeline.Name = "lbl_timeline"
         Me.lbl_timeline.Size = New System.Drawing.Size(56, 17)
         Me.lbl_timeline.TabIndex = 5
-        Me.lbl_timeline.Text = "Timeline"
+        Me.lbl_timeline.Text = "Tiemline"
         '
         'lbl_preview
         '
@@ -85,12 +84,6 @@ Partial Class form_main
         Me.lbl_preview.Size = New System.Drawing.Size(52, 17)
         Me.lbl_preview.TabIndex = 6
         Me.lbl_preview.Text = "Preview"
-        '
-        'dl_ImportPictures
-        '
-        Me.dl_ImportPictures.FileName = "OpenFileDialog1"
-        Me.dl_ImportPictures.Multiselect = True
-        Me.dl_ImportPictures.Title = "Bilder auswählen..."
         '
         'bw_Rendering
         '
@@ -105,6 +98,7 @@ Partial Class form_main
         Me.gb_PictureEdit.Controls.Add(Me.btn_del)
         Me.gb_PictureEdit.Controls.Add(Me.btn_MoveDwn)
         Me.gb_PictureEdit.Controls.Add(Me.btn_MoveUp)
+        Me.gb_PictureEdit.Enabled = False
         Me.gb_PictureEdit.Font = New System.Drawing.Font("Segoe UI", 8.25!)
         Me.gb_PictureEdit.ForeColor = System.Drawing.Color.White
         Me.gb_PictureEdit.Location = New System.Drawing.Point(180, 504)
@@ -118,7 +112,6 @@ Partial Class form_main
         '
         Me.btn_MultiSelect.AutoEllipsis = True
         Me.btn_MultiSelect.BackColor = System.Drawing.Color.Gray
-        Me.btn_MultiSelect.Enabled = False
         Me.btn_MultiSelect.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_MultiSelect.Image = CType(resources.GetObject("btn_MultiSelect.Image"), System.Drawing.Image)
         Me.btn_MultiSelect.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -135,7 +128,6 @@ Partial Class form_main
         '
         Me.btn_del.AutoEllipsis = True
         Me.btn_del.BackColor = System.Drawing.Color.Gray
-        Me.btn_del.Enabled = False
         Me.btn_del.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_del.Image = CType(resources.GetObject("btn_del.Image"), System.Drawing.Image)
         Me.btn_del.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -152,7 +144,6 @@ Partial Class form_main
         '
         Me.btn_MoveDwn.AutoEllipsis = True
         Me.btn_MoveDwn.BackColor = System.Drawing.Color.Gray
-        Me.btn_MoveDwn.Enabled = False
         Me.btn_MoveDwn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_MoveDwn.Image = CType(resources.GetObject("btn_MoveDwn.Image"), System.Drawing.Image)
         Me.btn_MoveDwn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -168,7 +159,6 @@ Partial Class form_main
         'btn_MoveUp
         '
         Me.btn_MoveUp.BackColor = System.Drawing.Color.Gray
-        Me.btn_MoveUp.Enabled = False
         Me.btn_MoveUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_MoveUp.Image = CType(resources.GetObject("btn_MoveUp.Image"), System.Drawing.Image)
         Me.btn_MoveUp.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -299,11 +289,6 @@ Partial Class form_main
         Me.ms_help_SupportUs.Size = New System.Drawing.Size(132, 22)
         Me.ms_help_SupportUs.Text = "Support Us"
         '
-        'bw_Importing
-        '
-        Me.bw_Importing.WorkerReportsProgress = True
-        Me.bw_Importing.WorkerSupportsCancellation = True
-        '
         'Panel1
         '
         Me.Panel1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -361,6 +346,7 @@ Partial Class form_main
         Me.lb_pictures.Font = New System.Drawing.Font("Segoe UI", 9.75!)
         Me.lb_pictures.ForeColor = System.Drawing.Color.White
         Me.lb_pictures.FormattingEnabled = True
+        Me.lb_pictures.HorizontalScrollbar = True
         Me.lb_pictures.IntegralHeight = False
         Me.lb_pictures.ItemHeight = 17
         Me.lb_pictures.Location = New System.Drawing.Point(11, 10)
@@ -396,6 +382,18 @@ Partial Class form_main
         Me.btn_start.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
         Me.btn_start.UseVisualStyleBackColor = True
         '
+        'lbl_PreviewFile
+        '
+        Me.lbl_PreviewFile.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbl_PreviewFile.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.lbl_PreviewFile.ForeColor = System.Drawing.Color.White
+        Me.lbl_PreviewFile.Location = New System.Drawing.Point(254, 31)
+        Me.lbl_PreviewFile.Name = "lbl_PreviewFile"
+        Me.lbl_PreviewFile.Size = New System.Drawing.Size(642, 17)
+        Me.lbl_PreviewFile.TabIndex = 9
+        Me.lbl_PreviewFile.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
         'form_main
         '
         Me.AllowDrop = True
@@ -403,6 +401,7 @@ Partial Class form_main
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(984, 576)
+        Me.Controls.Add(Me.lbl_PreviewFile)
         Me.Controls.Add(Me.gb_PictureEdit)
         Me.Controls.Add(Me.lbl_preview)
         Me.Controls.Add(Me.lbl_timeline)
@@ -414,7 +413,7 @@ Partial Class form_main
         Me.MainMenuStrip = Me.ms
         Me.MinimumSize = New System.Drawing.Size(1000, 615)
         Me.Name = "form_main"
-        Me.Text = "Simple Time Lapse"
+        Me.Text = "Simplapse"
         Me.gb_PictureEdit.ResumeLayout(False)
         Me.ms.ResumeLayout(False)
         Me.ms.PerformLayout()
@@ -435,7 +434,6 @@ Partial Class form_main
     Friend WithEvents Panel2 As Panel
     Friend WithEvents lbl_timeline As Label
     Friend WithEvents lbl_preview As Label
-    Friend WithEvents dl_ImportPictures As OpenFileDialog
     Friend WithEvents bw_Rendering As System.ComponentModel.BackgroundWorker
     Friend WithEvents gb_PictureEdit As GroupBox
     Friend WithEvents btn_del As Button
@@ -447,7 +445,6 @@ Partial Class form_main
     Friend WithEvents btn_MultiSelect As Button
     Friend WithEvents ms_about_update As ToolStripMenuItem
     Friend WithEvents ms_about_credits As ToolStripMenuItem
-    Friend WithEvents bw_Importing As System.ComponentModel.BackgroundWorker
     Friend WithEvents ms_file As ToolStripMenuItem
     Friend WithEvents ms_help As ToolStripMenuItem
     Friend WithEvents ms_about_about As ToolStripMenuItem
@@ -460,4 +457,5 @@ Partial Class form_main
     Friend WithEvents ms_file_new_window As ToolStripMenuItem
     Friend WithEvents ms_help_help As ToolStripMenuItem
     Friend WithEvents ms_help_SupportUs As ToolStripMenuItem
+    Friend WithEvents lbl_PreviewFile As Label
 End Class

@@ -43,10 +43,10 @@ Partial Class form_participation
         '
         'lbl_head
         '
-        Me.lbl_head.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_head.Location = New System.Drawing.Point(12, 9)
+        Me.lbl_head.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_head.Location = New System.Drawing.Point(12, 7)
         Me.lbl_head.Name = "lbl_head"
-        Me.lbl_head.Size = New System.Drawing.Size(267, 23)
+        Me.lbl_head.Size = New System.Drawing.Size(267, 30)
         Me.lbl_head.TabIndex = 1
         Me.lbl_head.Text = "Translate the App"
         Me.lbl_head.TextAlign = System.Drawing.ContentAlignment.MiddleCenter

@@ -1,8 +1,11 @@
 ﻿Public Class form_Settings
 
+    Dim KeysMove As String()
+
     Private Sub form_Settings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         cb_language.Items.Clear()
+        cb_MoveImg.Items.Clear()
 
         tc.SelectedTab = tc_general
 
@@ -24,6 +27,12 @@
         'General
         gb_updates.Text = TransString("Settings_tc_general_gb_updates")
         cb_AutoUpdate.Text = TransString("Settings_tc_general_cb_AutoUpdate")
+
+        KeysMove = TransString("Settings_tc_general_gb_keys_cb_MoveImg").Split(",")
+        For i = 0 To KeysMove.Length - 1
+            cb_MoveImg.Items.Add(KeysMove(i))
+        Next
+
 
         'Interface
         lbl_language.Text = TransString("Settings_tc_interface_lbl_language")
@@ -51,6 +60,9 @@
 
         'General
         cb_AutoUpdate.Checked = My.Settings.set_AutoUpdate
+
+        cb_MoveImg.Text = KeysMove(My.Settings.set_ImgMove)
+
         'Interface
         cb_language.Text = TransString("_General_language_" & My.Settings.set_LanguageCode)
 
@@ -60,7 +72,8 @@
         'General
         ''Autoupdate
         My.Settings.set_AutoUpdate = cb_AutoUpdate.Checked
-
+        ''Keys Move
+        My.Settings.set_ImgMove = cb_MoveImg.SelectedIndex
         'Interface
         ''Language
         If cb_language.Text = TransString("_General_language_en_US") Then

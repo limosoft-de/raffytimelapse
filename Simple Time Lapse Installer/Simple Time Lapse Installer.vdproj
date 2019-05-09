@@ -64,12 +64,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_3FE0C417078B945F999FB9AA0B6E4035"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_618DCE4433D4433CA906757A341CEE90"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -89,6 +83,12 @@
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_A8F47E543AA5D2A2B486C923DA00CFA8"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_3FE0C417078B945F999FB9AA0B6E4035"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -116,6 +116,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
             }
         }
         "Release"
@@ -429,15 +437,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Simple Time Lapse"
-        "ProductCode" = "8:{D07A4321-C78A-4442-8DC2-F63F1A2D08E3}"
-        "PackageCode" = "8:{A6E1E69D-D04D-4781-AD04-BFC4CFB238A8}"
+        "ProductCode" = "8:{42B94B4B-F35D-4BB2-91C4-C8EC44C5BE93}"
+        "PackageCode" = "8:{8918D743-BCB7-4C4D-A28C-7D46C29F1968}"
         "UpgradeCode" = "8:{B6DCADE9-ED7F-4FE8-B7BE-A02582823772}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.1"
+        "ProductVersion" = "8:1.1.0"
         "Manufacturer" = "8:Limosoft"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://sourceforge.net/projects/simpletimelapse/support"

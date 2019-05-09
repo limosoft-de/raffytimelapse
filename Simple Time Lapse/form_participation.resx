@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="lbl_desc.Text" xml:space="preserve">
-    <value>'Simple Time Lapse' is a free program and will always stay this way. And we don't want to ask you for money. But if you want to support us, and speak a language that we don't speak, then please help us to translate this programm into other languages. It's free and very simple!</value>
+    <value>'Simplapse' is a free program and will always stay this way. And we don't want to ask you for money. But if you want to support us, and speak a language that we don't speak, then please help us to translate this programm into other languages. It's free and very simple!</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

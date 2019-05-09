@@ -1,13 +1,19 @@
-﻿Public Class form_ProgressInfo
+﻿Imports System.ComponentModel
+
+Public Class form_ProgressInfo
 
     Private Sub UserDialog_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+        form_main.Enabled = False
 
         Text = TransString("ProgressInfo")
         btn_cancel.Text = TransString("_General_cancel")
         btn_ok.Text = TransString("_General_ok")
 
         btn_ok.Enabled = False
+        AcceptButton = btn_cancel
         form_main.Finished = False
+
 
     End Sub
 
@@ -15,8 +21,10 @@
         lbl_status.Text = form_main.Status
 
         If form_main.Finished = True Then
-            pb.image = My.Resources.done
+            pb.Image = My.Resources.done
             btn_ok.Enabled = True
+            AcceptButton = btn_ok
+            btn_ok.Select()
         End If
     End Sub
 
@@ -43,4 +51,7 @@
         Close()
     End Sub
 
+    Private Sub form_ProgressInfo_Closing(sender As Object, e As CancelEventArgs) Handles Me.Closing
+        form_main.Enabled = True
+    End Sub
 End Class

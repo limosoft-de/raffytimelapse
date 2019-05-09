@@ -8,9 +8,6 @@
     <Setting Name="app_DefaultLanguageCode" Type="System.String" Scope="User">
       <Value Profile="(Default)">en_US</Value>
     </Setting>
-    <Setting Name="app_Version" Type="System.String" Scope="User">
-      <Value Profile="(Default)">1.0.1</Value>
-    </Setting>
     <Setting Name="set_AutoUpdate" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
@@ -36,7 +33,10 @@
       <Value Profile="(Default)">http://simpletimelapse.sourceforge.net/ffmpeg.html</Value>
     </Setting>
     <Setting Name="app_portable" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="set_ImgMove" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
     </Setting>
   </Settings>
 </SettingsFile>

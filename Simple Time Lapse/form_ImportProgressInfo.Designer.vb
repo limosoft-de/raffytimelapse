@@ -22,57 +22,71 @@ Partial Class form_ImportProgressInfo
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.pb = New System.Windows.Forms.ProgressBar()
         Me.lbl_progress = New System.Windows.Forms.Label()
         Me.btn_cancel = New System.Windows.Forms.Button()
+        Me.bw_Importing = New System.ComponentModel.BackgroundWorker()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'pb
-        '
-        Me.pb.Location = New System.Drawing.Point(12, 33)
-        Me.pb.Name = "pb"
-        Me.pb.Size = New System.Drawing.Size(334, 23)
-        Me.pb.TabIndex = 0
         '
         'lbl_progress
         '
         Me.lbl_progress.AutoSize = True
         Me.lbl_progress.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_progress.Location = New System.Drawing.Point(9, 13)
+        Me.lbl_progress.Location = New System.Drawing.Point(65, 28)
         Me.lbl_progress.Name = "lbl_progress"
-        Me.lbl_progress.Size = New System.Drawing.Size(82, 17)
+        Me.lbl_progress.Size = New System.Drawing.Size(145, 17)
         Me.lbl_progress.TabIndex = 1
-        Me.lbl_progress.Text = "Image 0 of 0"
+        Me.lbl_progress.Text = "Importing image 0 of ..."
         '
         'btn_cancel
         '
-        Me.btn_cancel.Location = New System.Drawing.Point(271, 71)
+        Me.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_cancel.Location = New System.Drawing.Point(271, 62)
         Me.btn_cancel.Name = "btn_cancel"
         Me.btn_cancel.Size = New System.Drawing.Size(75, 23)
         Me.btn_cancel.TabIndex = 2
         Me.btn_cancel.Text = "Cancel"
         Me.btn_cancel.UseVisualStyleBackColor = True
         '
+        'bw_Importing
+        '
+        Me.bw_Importing.WorkerReportsProgress = True
+        Me.bw_Importing.WorkerSupportsCancellation = True
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BackColor = System.Drawing.SystemColors.Control
+        Me.PictureBox1.Image = Global.Simplapse.My.Resources.Resources.loading
+        Me.PictureBox1.InitialImage = Global.Simplapse.My.Resources.Resources.loading
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 12)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(47, 54)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
         'form_ImportProgressInfo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(358, 106)
+        Me.ClientSize = New System.Drawing.Size(358, 100)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.lbl_progress)
-        Me.Controls.Add(Me.pb)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "form_ImportProgressInfo"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "Importing Images..."
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents pb As ProgressBar
     Friend WithEvents lbl_progress As Label
     Friend WithEvents btn_cancel As Button
+    Friend WithEvents bw_Importing As System.ComponentModel.BackgroundWorker
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

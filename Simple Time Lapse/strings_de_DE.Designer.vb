@@ -21,7 +21,7 @@ Imports System
 '''<summary>
 '''  Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
 '''</summary>
-<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0"),  _
+<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0"),  _
  Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
  Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>  _
 Friend Class strings_de_DE
@@ -42,7 +42,7 @@ Friend Class strings_de_DE
     Friend Shared ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
         Get
             If Object.ReferenceEquals(resourceMan, Nothing) Then
-                Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Simple_Time_Lapse.strings_de_DE", GetType(strings_de_DE).Assembly)
+                Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Simplapse.strings_de_DE", GetType(strings_de_DE).Assembly)
                 resourceMan = temp
             End If
             Return resourceMan
@@ -208,7 +208,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Es steht eine aktuellere Version von &apos;Simple Shot List&apos; zur Verfügung. Klicken Sie auf &apos;Update&apos; um das Update jetzt herunterzuladen und zu installieren. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Es steht eine aktuellere Version von &apos;Simplapse&apos; zur Verfügung. Klicken Sie auf &apos;Update&apos; um das Update jetzt herunterzuladen und zu installieren. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property AutoUpdate_lbl_info() As String
         Get
@@ -343,11 +343,38 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Die bevorzugte Supportvariante für &apos;Simple Time Lapse&apos; bildet unser Ticketsystem auf &apos;sourceforge.net&apos;. Wir haben Ticketsysteme für verschiedene Kategorien: ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Die bevorzugte Supportvariante für &apos;Simplapse&apos; bildet unser Ticketsystem auf &apos;sourceforge.net&apos;. Wir haben Ticketsysteme für verschiedene Kategorien: ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Help_lbl_online() As String
         Get
             Return ResourceManager.GetString("Help_lbl_online", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Importiere Bilder ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Import() As String
+        Get
+            Return ResourceManager.GetString("Import", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Importiere Bild ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Import_lbl_progress1() As String
+        Get
+            Return ResourceManager.GetString("Import_lbl_progress1", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die von ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Import_lbl_progress2() As String
+        Get
+            Return ResourceManager.GetString("Import_lbl_progress2", resourceCulture)
         End Get
     End Property
     
@@ -667,11 +694,20 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Simple Time Lapse konnte die Datei &apos;FFmpeg.exe&apos; nicht finden, welche für das Programm benötigt wird. Möchten Sie diese Datei nun downloaden? ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Simplapse konnte die Datei &apos;FFmpeg.exe&apos; nicht finden, welche für das Programm benötigt wird. Möchten Sie diese Datei nun downloaden? ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_msg_ffmpeg() As String
         Get
             Return ResourceManager.GetString("Main_msg_ffmpeg", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Sind Sie sicher, dass Sie die ausgewählten Bilder entfernen wollen? ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Main_msg_MultiDelete() As String
+        Get
+            Return ResourceManager.GetString("Main_msg_MultiDelete", resourceCulture)
         End Get
     End Property
     
@@ -685,6 +721,15 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Sind Sie sicher, dass Sie das Bild [%1] entfernen wollen ? ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Main_msg_SingleDelete() As String
+        Get
+            Return ResourceManager.GetString("Main_msg_SingleDelete", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die Helfen Sie uns beim Übersetzen ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Participation() As String
@@ -694,7 +739,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die &apos;Simple Time Lapse&apos; ist ein kostenloses Programm und wird dies auch bleiben. Desweiteren möchten wir nicht nach Geld fragen. Stattdessen gibt es eine andere Möglichkeit uns zu unterstützen: das Programm für weltweite Nutzer in andere Sprachen übersetzen. Es geht ganz einfach! ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die &apos;Simplapse&apos; ist ein kostenloses Programm und wird dies auch bleiben. Desweiteren möchten wir nicht nach Geld fragen. Stattdessen gibt es eine andere Möglichkeit uns zu unterstützen: das Programm für weltweite Nutzer in andere Sprachen übersetzen. Es geht ganz einfach! ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Participation_lbl_desc() As String
         Get
@@ -897,6 +942,33 @@ Friend Class strings_de_DE
     Friend Shared ReadOnly Property Settings_tc_general_cb_AutoUpdate() As String
         Get
             Return ResourceManager.GetString("Settings_tc_general_cb_AutoUpdate", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Tastenbelegung ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Settings_tc_general_gb_keys() As String
+        Get
+            Return ResourceManager.GetString("Settings_tc_general_gb_keys", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die 2+8 (Numpad),W+S ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Settings_tc_general_gb_keys_cb_MoveImg() As String
+        Get
+            Return ResourceManager.GetString("Settings_tc_general_gb_keys_cb_MoveImg", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Bilder mit Tasten verschieben ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Settings_tc_general_gb_keys_lbl_MoveImg() As String
+        Get
+            Return ResourceManager.GetString("Settings_tc_general_gb_keys_lbl_MoveImg", resourceCulture)
         End Get
     End Property
     

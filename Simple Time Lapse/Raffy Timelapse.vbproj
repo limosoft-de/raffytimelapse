@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3972A74C-6986-4709-B2DD-633BD9480044}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Simple_Time_Lapse.My.MyApplication</StartupObject>
-    <RootNamespace>Simple_Time_Lapse</RootNamespace>
-    <AssemblyName>Simple_Time_Lapse</AssemblyName>
+    <StartupObject>Simplapse.My.MyApplication</StartupObject>
+    <RootNamespace>Simplapse</RootNamespace>
+    <AssemblyName>Simplapse</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -44,7 +44,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Simple_Time_Lapse.xml</DocumentationFile>
+    <DocumentationFile>Simplapse.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -54,7 +54,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Simple_Time_Lapse.xml</DocumentationFile>
+    <DocumentationFile>Simplapse.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -88,7 +88,7 @@
     <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Icon.ico</ApplicationIcon>
+    <ApplicationIcon>Icon6.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="nUpdate">
@@ -125,10 +125,10 @@
     <Compile Include="form_about.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form_AutoUpdate.Designer.vb">
+    <Compile Include="old\form_AutoUpdate.Designer.vb">
       <DependentUpon>form_AutoUpdate.vb</DependentUpon>
     </Compile>
-    <Compile Include="form_AutoUpdate.vb">
+    <Compile Include="old\form_AutoUpdate.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="form_credits.Designer.vb">
@@ -180,10 +180,10 @@
     <Compile Include="form_Settings.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="form_update.Designer.vb">
+    <Compile Include="old\form_update.Designer.vb">
       <DependentUpon>form_update.vb</DependentUpon>
     </Compile>
-    <Compile Include="form_update.vb">
+    <Compile Include="old\form_update.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -218,7 +218,7 @@
     <EmbeddedResource Include="form_about.resx">
       <DependentUpon>form_about.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form_AutoUpdate.resx">
+    <EmbeddedResource Include="old\form_AutoUpdate.resx">
       <DependentUpon>form_AutoUpdate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="form_credits.resx">
@@ -245,7 +245,7 @@
     <EmbeddedResource Include="form_Settings.resx">
       <DependentUpon>form_Settings.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="form_update.resx">
+    <EmbeddedResource Include="old\form_update.resx">
       <DependentUpon>form_update.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
@@ -295,11 +295,12 @@
     <None Include="Resources\multi_black.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\loading.gif" />
     <None Include="Resources\done.png" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
+    <Content Include="Icon6.ico" />
+    <None Include="Resources\loading.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

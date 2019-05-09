@@ -11,7 +11,8 @@
             portable = ""
         End If
 
-        lbl_VersionNr.Text = My.Settings.app_Version & portable
+        lbl_VersionNr.Text = Application.ProductVersion & portable
+        Lbl_Copyright.Text = My.Application.Info.Copyright
 
     End Sub
 

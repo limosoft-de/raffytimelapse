@@ -3,6 +3,7 @@ Imports System.ComponentModel
 
 Public Class form_main
 
+
     Public MultiSelect As Boolean = False
     Public Finished As Boolean = False
     Public FFmpegExists As Boolean = False
@@ -11,7 +12,9 @@ Public Class form_main
     'If you add something to the projects variables, also add it in ResetProject Sub!
 
     '/||Projekt-Variablen
-    Dim PicPath As String = ""
+    'Dim PicPath As String = ""
+    Public ImportFileList As String()
+
     Dim PicFileType As String = ""
     Dim PicTempPath As String = ""
     Public PicWidth As Integer = 0
@@ -34,10 +37,14 @@ Public Class form_main
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Panel2.Top = (Me.ClientSize.Height - lbl_drop.Height) / 2 - 30
         TranslateForm()
+
+
+
+
     End Sub
 
     Private Sub form_main_Shown(sender As Object, e As EventArgs) Handles Me.Shown
-        CheckForFFmpeg
+        CheckForFFmpeg()
         AutoUpdate()
     End Sub
 
@@ -53,7 +60,7 @@ Public Class form_main
     End Sub
 
 
-    Private Sub Form1_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+    Private Sub form_main_Resize(sender As Object, e As EventArgs) Handles Me.Resize
         Panel2.Top = (Me.ClientSize.Height - lbl_drop.Height) / 2 - 30
 
         Dim PlannedWidth As Integer = Width - pb_preview.Location.X - 25 '25 = Abstand zwischen pb und rechter Formborder
@@ -127,7 +134,6 @@ Public Class form_main
             End If
         End If
 
-        PicPath = ""
         PicFileType = ""
         PicTempPath = ""
         PicWidth = 0
@@ -174,25 +180,11 @@ Public Class form_main
     End Sub
 
     Private Sub btn_MoveUp_Click(sender As Object, e As EventArgs) Handles btn_MoveUp.Click
-        Try
-            Dim i = lb_pictures.SelectedIndex - 1
-            lb_pictures.Items.Insert(i, lb_pictures.SelectedItem)
-            lb_pictures.Items.RemoveAt(lb_pictures.SelectedIndex)
-            lb_pictures.SelectedIndex = i
-        Catch 'Wenn nur ein Bild vorhanden
-        End Try
-
+        ImgMoveUp()
     End Sub
 
     Private Sub btn_MoveDwn_Click(sender As Object, e As EventArgs) Handles btn_MoveDwn.Click
-        Try
-            Dim i = lb_pictures.SelectedIndex + 2
-            lb_pictures.Items.Insert(i, lb_pictures.SelectedItem)
-            lb_pictures.Items.RemoveAt(lb_pictures.SelectedIndex)
-            lb_pictures.SelectedIndex = i - 1
-        Catch 'Wenn nur ein Bild vorhanden
-        End Try
-
+        ImgMoveDown()
     End Sub
 
     Private Sub btn_del_Click(sender As Object, e As EventArgs) Handles btn_del.Click
@@ -206,13 +198,29 @@ Public Class form_main
     End Sub
 
     Private Sub lb_pictures_KeyDown(sender As Object, e As KeyEventArgs) Handles lb_pictures.KeyDown
-        If e.KeyCode = Keys.Delete Then
+        If e.KeyCode = Keys.Delete Then 'delte image(s) in listbox
             If lb_pictures.SelectedItems.Count = 1 Then
                 SingleDelete()
             ElseIf lb_pictures.SelectedItems.Count > 1 Then
                 MultiDelete()
             End If
         End If
+
+        Select Case My.Settings.set_ImgMove 'move image up or down
+            Case 0
+                If e.KeyCode = Keys.NumPad2 Then
+                    ImgMoveDown()
+                ElseIf e.KeyCode = Keys.NumPad8 Then
+                    ImgMoveUp()
+                End If
+            Case 1
+                If e.KeyCode = Keys.S Then
+                    ImgMoveDown()
+                ElseIf e.KeyCode = Keys.W Then
+                    ImgMoveUp()
+                End If
+        End Select
+
     End Sub
 
     Private Sub btn_MultiSelect_Click_1(sender As Object, e As EventArgs) Handles btn_MultiSelect.Click
@@ -238,10 +246,28 @@ Public Class form_main
 
     End Sub
 
+    Private Sub ImgMoveUp()
+        Try
+            Dim i = lb_pictures.SelectedIndex - 1
+            lb_pictures.Items.Insert(i, lb_pictures.SelectedItem)
+            lb_pictures.Items.RemoveAt(lb_pictures.SelectedIndex)
+            lb_pictures.SelectedIndex = i
+        Catch 'only one image
+        End Try
+    End Sub
 
+    Private Sub ImgMoveDown()
+        Try
+            Dim i = lb_pictures.SelectedIndex + 2
+            lb_pictures.Items.Insert(i, lb_pictures.SelectedItem)
+            lb_pictures.Items.RemoveAt(lb_pictures.SelectedIndex)
+            lb_pictures.SelectedIndex = i - 1
+        Catch 'only one image
+        End Try
+    End Sub
 
     Private Sub SingleDelete()
-        Select Case MessageBox.Show("Sind Sie sicher, dass Sie das Bild '" & lb_pictures.SelectedItem.ToString & "' entfernen wollen ?", "Warnung", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+        Select Case MessageBox.Show(TransString("Main_msg_SingleDelete").Replace("[%1]", "'" & lb_pictures.SelectedItem.ToString & "'"), TransString("_General_warning"), MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
             Case DialogResult.Yes
                 Dim i As Integer = lb_pictures.SelectedIndex
                 lb_pictures.Items.Remove(lb_pictures.SelectedItem)
@@ -257,10 +283,21 @@ Public Class form_main
             Case DialogResult.No
                 Exit Sub
         End Select
+
+        If lb_pictures.Items.Count = 0 Then
+            gb_PictureEdit.Enabled = False
+            btn_start.Enabled = False
+        Else
+            gb_PictureEdit.Enabled = True
+            btn_start.Enabled = True
+        End If
+
     End Sub
 
     Private Sub MultiDelete()
-        Select Case MessageBox.Show("Sind Sie sicher, dass Sie die ausgewählten Bilder entfernen wollen?", "Warnung", MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+
+
+        Select Case MessageBox.Show(TransString("Main_msg_MultiDelete"), TransString("_General_warning"), MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
             Case DialogResult.Yes
                 Dim i As Integer = lb_pictures.SelectedIndex
 
@@ -283,31 +320,37 @@ Public Class form_main
 
         MultiSelect = False
         btn_MultiSelect.Image = My.Resources.multi_black
-        btn_MoveUp.Enabled = True
-        btn_MoveDwn.Enabled = True
-        btn_del.Enabled = True
-        btn_MultiSelect.Enabled = True
-        btn_start.Enabled = True
         lb_pictures.SelectionMode = SelectionMode.One
+
+        If lb_pictures.Items.Count = 0 Then
+            gb_PictureEdit.Enabled = False
+            btn_start.Enabled = False
+        Else
+            gb_PictureEdit.Enabled = True
+            btn_start.Enabled = True
+        End If
+
 
     End Sub
 
     Private Sub UpdateForm()
         If lb_pictures.SelectedIndex >= 0 Then
-            'something is selected
+            'Something is selected
             If Not MultiSelect = True Then
-                btn_MoveUp.Enabled = True : btn_MoveDwn.Enabled = True : btn_del.Enabled = True : btn_MultiSelect.Enabled = True
+                gb_PictureEdit.Enabled = True
+                Dim PreviewFile As String() = lb_pictures.SelectedItem.ToString.Split("\")
+                lbl_PreviewFile.Text = PreviewFile(PreviewFile.Length - 1)
             End If
         Else
-            'Nothing is
-            btn_MoveUp.Enabled = False : btn_MoveDwn.Enabled = False : btn_del.Enabled = False : btn_MultiSelect.Enabled = False
+            'Nothing is selected
+            gb_PictureEdit.Enabled = False
         End If
 
 
         If lb_pictures.Items.Count = 0 Then
             Panel2.Visible = True
             btn_start.Enabled = False
-            PicPath = ""
+            lbl_PreviewFile.Text = ""
         Else
             Panel2.Visible = False
 
@@ -319,7 +362,9 @@ Public Class form_main
                 btn_MultiSelect.Image = My.Resources.multi_black
             End If
 
+
         End If
+
     End Sub
 
 
@@ -374,6 +419,7 @@ Public Class form_main
 #End Region
 
 #Region "Drag and Drop"
+
     Private Sub lb_pictures_DragEnter(sender As Object, e As DragEventArgs) Handles lb_pictures.DragEnter
         If e.Data.GetDataPresent(DataFormats.FileDrop) Then
             e.Effect = DragDropEffects.Copy
@@ -382,29 +428,10 @@ Public Class form_main
 
     Private Sub lb_pictures_DragDrop(sender As Object, e As DragEventArgs) Handles lb_pictures.DragDrop
 
-        Dim files() As String = e.Data.GetData(DataFormats.FileDrop)
-
-        ''TEST{
-
-        'Dim Progress As Form = New form_ImportProgressInfo
-        'Progress.Owner = Me
-        'Progress.Show()
-
-        'PicFiles = files
-
-        'If Not bw_Importing.IsBusy = True Then
-        '    bw_Importing.RunWorkerAsync()
-        'End If
-
-        'form_ImportProgressInfo.Close()
-
-        ''}TEST
-
-        For Each path In files
-            If ImportFiles(path) = False Then
-                Exit For
-            End If
-        Next
+        Focus()
+        Activate()
+        ImportFileList = e.Data.GetData(DataFormats.FileDrop)
+        form_ImportProgressInfo.ShowDialog()
 
         ImportDone()
         lb_pictures.Select()
@@ -417,20 +444,20 @@ Public Class form_main
         End If
     End Sub
 
+
+
     Private Sub lbl_drop_DragDrop(sender As Object, e As DragEventArgs) Handles lbl_drop.DragDrop
 
-        Dim files() As String = e.Data.GetData(DataFormats.FileDrop)
-
-        For Each path In files
-            If ImportFiles(path) = False Then
-                Exit For
-            End If
-        Next
+        Focus()
+        Activate()
+        ImportFileList = e.Data.GetData(DataFormats.FileDrop)
+        form_ImportProgressInfo.ShowDialog()
 
         ImportDone()
         lb_pictures.Select()
 
     End Sub
+
 #End Region
 
 #Region "Durchsuchen"
@@ -439,30 +466,28 @@ Public Class form_main
     End Sub
 
     Private Sub BrowseImages()
-        dl_ImportPictures.Filter = TransString("_General_AllPicturefiles") & "|*.jpg;*.jpeg;*.png;*.bmp|JPG " & TransString("_General_files") & "| *.jpg;*.jpeg|PNG " & TransString("_General_files") & "|*.png|BMP " & TransString("_General_files") & "|*.bmp"
-        dl_ImportPictures.FileName = ""
-        dl_ImportPictures.ShowDialog()
-        lb_pictures.Select()
-    End Sub
 
-    Private Sub FileDialog_FileOk(sender As Object, e As CancelEventArgs) Handles dl_ImportPictures.FileOk
+        Dim ofd As New OpenFileDialog
+        ofd.Filter = TransString("_General_AllPicturefiles") & "|*.jpg;*.jpeg;*.png;*.bmp|JPG " & TransString("_General_files") & "| *.jpg;*.jpeg|PNG " & TransString("_General_files") & "|*.png|BMP " & TransString("_General_files") & "|*.bmp"
+        ofd.FileName = ""
+        ofd.Multiselect = True
+        If ofd.ShowDialog() = DialogResult.OK Then
 
-        Dim files As String() = dl_ImportPictures.FileNames
+            ImportFileList = ofd.FileNames
+            form_ImportProgressInfo.ShowDialog()
 
-        For Each path In files
-            If ImportFiles(path) = False Then
-                Exit For
-            End If
-        Next
+            ImportDone()
 
-        ImportDone()
+        End If
+
 
     End Sub
+
 #End Region
 
 #Region "Import"
 
-    Private Function ImportFiles(ByVal path As String) As Boolean
+    Public Function ImportFiles(ByVal path As String) As Boolean
 
         '//Auf Bilddateien überprüfen
         Dim FileType As String() = path.Split(".")
@@ -480,22 +505,6 @@ Public Class form_main
         End Select
 
         PicFileType = FileType(1).ToLower
-
-        '//Verzeichnis identisch    '!!ToDo: Remove this check and copy all pictures to temp instead, combine with bw-import Update
-        If Not PicPath = "" Then
-            Dim PathArray As String() = path.Split("\")
-            If Not PicPath = path.Replace(PathArray(PathArray.Count - 1), "") Then
-                MessageBox.Show(TransString("Main_ImportFiles_msg_DifferentPath") & vbCrLf & "(" & path & ")", TransString("_General_error"), MessageBoxButtons.OK, MessageBoxIcon.Error)
-                Return False
-                Exit Function
-            End If
-        End If
-
-        '//Bildpfad erstellen (Ordner)
-        If lb_pictures.Items.Count = 0 Then
-            Dim PathArray As String() = path.Split("\")
-            PicPath = path.Replace(PathArray(PathArray.Count - 1), "")
-        End If
 
         '//Größe der Bilder speichern/vergeleichen
         Dim Img As Image = Image.FromFile(path)
@@ -515,12 +524,7 @@ Public Class form_main
         Img.Dispose()
 
         '//Bild in Liste aufnehmen
-        Dim FileName As String() = path.Split("\")
-        lb_pictures.Items.Add(FileName(FileName.Length - 1))
-
-        'Me.Invoke(Sub() 'Executing in Main Thread
-        '              lb_pictures.Items.Add(FileName(FileName.Length - 1))
-        '          End Sub)
+        lb_pictures.Items.Add(path)
 
         Panel2.Visible = False
 
@@ -542,6 +546,7 @@ Public Class form_main
 #End Region
 
 #Region "Listbox"
+
     Private Sub lb_pictures_SelectedIndexChanged(sender As Object, e As EventArgs) Handles lb_pictures.SelectedIndexChanged
 
         Try
@@ -550,7 +555,8 @@ Public Class form_main
         End Try
 
         Try
-            pb_preview.BackgroundImage = Image.FromFile(PicPath & lb_pictures.SelectedItem.ToString)
+            pb_preview.BackgroundImage = Image.FromFile(lb_pictures.SelectedItem.ToString)
+
         Catch ex As Exception
             pb_preview.BackgroundImage = Nothing
         End Try
@@ -558,30 +564,8 @@ Public Class form_main
         UpdateForm()
 
     End Sub
+
 #End Region
-
-#Region "Backgroundworker: Import"
-
-    'Private Sub bw_Importing_DoWork(sender As Object, e As DoWorkEventArgs) Handles bw_Importing.DoWork
-
-    '    Dim progress As Integer = 0
-
-    '    For Each path In PicFiles
-    '        If ImportFiles(path) = False Then
-    '            Exit For
-    '        End If
-
-    '        progress = progress + 1
-    '        bw_Importing.ReportProgress(progress / PicFiles.Length * 100)
-    '    Next
-
-    'End Sub
-
-    'Private Sub bw_Importing_ProgressChanged(sender As Object, e As ProgressChangedEventArgs) Handles bw_Importing.ProgressChanged
-    '    form_ImportProgressInfo.pb.Value = e.ProgressPercentage
-    'End Sub
-
-#End Region '!!ToDo: Not Included, work in progress
 
 #Region "Backgroundworker: Render/Konvertierung"
 
@@ -605,7 +589,8 @@ Public Class form_main
                 e.Cancel = True
                 Exit For
             Else
-                FileSystem.FileCopy(PicPath & lb_pictures.Items.Item(i), Application.UserAppDataPath & "\temp\" & i.ToString & "." & PicFileType)
+                Dim FileType As String() = lb_pictures.Items.Item(i).ToString.Split(".")
+                FileSystem.FileCopy(lb_pictures.Items.Item(i), Application.UserAppDataPath & "\temp\" & i.ToString & "." & FileType(FileType.Length - 1))
             End If
         Next
 
@@ -707,10 +692,9 @@ Public Class form_main
             Case 75
                 Status = TransString("Main_bw_Rendering_Progress_75")
             Case 100
-                Me.Enabled = True
                 Status = TransString("Main_bw_Rendering_Progress_100")
                 Finished = True
-                DeleteTemp
+                DeleteTemp()
         End Select
 
     End Sub
@@ -727,8 +711,8 @@ Public Class form_main
         Progress.Owner = Me
         Progress.Show()
 
-        Me.Enabled = False
         Application.DoEvents()
+        Progress.Activate()
 
         If Not bw_Rendering.IsBusy = True Then
             bw_Rendering.RunWorkerAsync()
@@ -740,6 +724,7 @@ Public Class form_main
             My.Computer.FileSystem.DeleteDirectory(Application.UserAppDataPath & "\temp\", FileIO.DeleteDirectoryOption.DeleteAllContents)
         End If
     End Sub
+
 
 #End Region
 
