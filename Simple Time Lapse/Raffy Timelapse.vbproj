@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{3972A74C-6986-4709-B2DD-633BD9480044}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Simplapse.My.MyApplication</StartupObject>
-    <RootNamespace>Simplapse</RootNamespace>
-    <AssemblyName>Simplapse</AssemblyName>
+    <StartupObject>Raffy_Timelapse.My.MyApplication</StartupObject>
+    <RootNamespace>Raffy_Timelapse</RootNamespace>
+    <AssemblyName>Raffy Timelapse</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
@@ -44,7 +44,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Simplapse.xml</DocumentationFile>
+    <DocumentationFile>Raffy Timelapse.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -54,7 +54,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Simplapse.xml</DocumentationFile>
+    <DocumentationFile>Raffy Timelapse.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>

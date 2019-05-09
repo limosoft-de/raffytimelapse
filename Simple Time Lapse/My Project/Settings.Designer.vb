@@ -208,9 +208,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.Simplapse.My.MySettings
+        Friend ReadOnly Property Settings() As Global.Raffy_Timelapse.My.MySettings
             Get
-                Return Global.Simplapse.My.MySettings.Default
+                Return Global.Raffy_Timelapse.My.MySettings.Default
             End Get
         End Property
     End Module

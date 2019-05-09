@@ -413,7 +413,7 @@ Partial Class form_main
         Me.MainMenuStrip = Me.ms
         Me.MinimumSize = New System.Drawing.Size(1000, 615)
         Me.Name = "form_main"
-        Me.Text = "Simplapse"
+        Me.Text = "Raffy Timelapse"
         Me.gb_PictureEdit.ResumeLayout(False)
         Me.ms.ResumeLayout(False)
         Me.ms.PerformLayout()

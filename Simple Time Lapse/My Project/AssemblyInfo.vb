@@ -9,10 +9,10 @@ Imports nUpdate.Core
 
 ' Werte der Assemblyattribute überprüfen
 
-<Assembly: AssemblyTitle("Simplapse")>
+<Assembly: AssemblyTitle("Raffy Timelapse")>
 <Assembly: AssemblyDescription("The simple way to create timelapse footage")>
 <Assembly: AssemblyCompany("Limosoft")>
-<Assembly: AssemblyProduct("Simplapse")>
+<Assembly: AssemblyProduct("Raffy Timelapse")>
 <Assembly: AssemblyCopyright("Copyright ©  2019")>
 <Assembly: AssemblyTrademark("")>
 

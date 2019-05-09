@@ -42,7 +42,7 @@ Friend Class strings_de_DE
     Friend Shared ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
         Get
             If Object.ReferenceEquals(resourceMan, Nothing) Then
-                Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Simplapse.strings_de_DE", GetType(strings_de_DE).Assembly)
+                Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Raffy_Timelapse.strings_de_DE", GetType(strings_de_DE).Assembly)
                 resourceMan = temp
             End If
             Return resourceMan
