@@ -3,7 +3,9 @@
 Public Class form_UpdateSearch
 
     Private Sub Form_UpdateSearch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         TranslateForm()
+
     End Sub
 
     Private Sub TranslateForm()
@@ -101,5 +103,4 @@ Public Class form_UpdateSearch
         End Select
 
     End Sub
-
 End Class

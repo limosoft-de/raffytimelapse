@@ -9,7 +9,6 @@
 
         NewestVersion = VersionNumber
         NewestChangelog = Changelog
-        form_UpdateSearch.Close()
 
     End Sub
 

@@ -56,6 +56,7 @@ Partial Class form_main
         Me.lbl_drop = New System.Windows.Forms.Label()
         Me.lb_pictures = New System.Windows.Forms.ListBox()
         Me.pb_preview = New System.Windows.Forms.PictureBox()
+        Me.bw_AutoUpdate = New System.ComponentModel.BackgroundWorker()
         Me.gb_PictureEdit.SuspendLayout()
         Me.ms.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -192,28 +193,32 @@ Partial Class form_main
         Me.ms_file_new.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_file_new_project, Me.ms_file_new_window})
         Me.ms_file_new.Image = CType(resources.GetObject("ms_file_new.Image"), System.Drawing.Image)
         Me.ms_file_new.Name = "ms_file_new"
-        Me.ms_file_new.Size = New System.Drawing.Size(151, 22)
+        Me.ms_file_new.Size = New System.Drawing.Size(190, 22)
         Me.ms_file_new.Text = "New"
         '
         'ms_file_new_project
         '
         Me.ms_file_new_project.Image = CType(resources.GetObject("ms_file_new_project.Image"), System.Drawing.Image)
         Me.ms_file_new_project.Name = "ms_file_new_project"
-        Me.ms_file_new_project.Size = New System.Drawing.Size(127, 22)
+        Me.ms_file_new_project.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
+        Me.ms_file_new_project.Size = New System.Drawing.Size(255, 22)
         Me.ms_file_new_project.Text = "Project..."
         '
         'ms_file_new_window
         '
         Me.ms_file_new_window.Image = CType(resources.GetObject("ms_file_new_window.Image"), System.Drawing.Image)
         Me.ms_file_new_window.Name = "ms_file_new_window"
-        Me.ms_file_new_window.Size = New System.Drawing.Size(127, 22)
+        Me.ms_file_new_window.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
+            Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
+        Me.ms_file_new_window.Size = New System.Drawing.Size(255, 22)
         Me.ms_file_new_window.Text = "Window..."
         '
         'ms_file_import
         '
         Me.ms_file_import.Image = CType(resources.GetObject("ms_file_import.Image"), System.Drawing.Image)
         Me.ms_file_import.Name = "ms_file_import"
-        Me.ms_file_import.Size = New System.Drawing.Size(151, 22)
+        Me.ms_file_import.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.I), System.Windows.Forms.Keys)
+        Me.ms_file_import.Size = New System.Drawing.Size(190, 22)
         Me.ms_file_import.Text = "Import Images"
         '
         'ToolStripSeparator2
@@ -263,8 +268,9 @@ Partial Class form_main
         '
         Me.ms_about_settings.Image = CType(resources.GetObject("ms_about_settings.Image"), System.Drawing.Image)
         Me.ms_about_settings.Name = "ms_about_settings"
-        Me.ms_about_settings.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.ms_about_settings.Size = New System.Drawing.Size(158, 22)
+        Me.ms_about_settings.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Alt) _
+            Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.ms_about_settings.Size = New System.Drawing.Size(181, 22)
         Me.ms_about_settings.Text = "Settings"
         '
         'ms_help
@@ -398,6 +404,11 @@ Partial Class form_main
         Me.pb_preview.TabIndex = 2
         Me.pb_preview.TabStop = False
         '
+        'bw_AutoUpdate
+        '
+        Me.bw_AutoUpdate.WorkerReportsProgress = True
+        Me.bw_AutoUpdate.WorkerSupportsCancellation = True
+        '
         'form_main
         '
         Me.AllowDrop = True
@@ -462,4 +473,5 @@ Partial Class form_main
     Friend WithEvents ms_help_help As ToolStripMenuItem
     Friend WithEvents ms_help_SupportUs As ToolStripMenuItem
     Friend WithEvents lbl_PreviewFile As Label
+    Friend WithEvents bw_AutoUpdate As System.ComponentModel.BackgroundWorker
 End Class

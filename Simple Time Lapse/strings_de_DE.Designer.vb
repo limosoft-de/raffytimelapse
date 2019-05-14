@@ -190,51 +190,6 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Update verfügbar ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property AutoUpdate() As String
-        Get
-            Return ResourceManager.GetString("AutoUpdate", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Update ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property AutoUpdate_btn_update() As String
-        Get
-            Return ResourceManager.GetString("AutoUpdate_btn_update", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Es steht eine aktuellere Version von &apos;Raffy Timelapse&apos; zur Verfügung. Klicken Sie auf &apos;Update&apos; um das Update jetzt herunterzuladen und zu installieren. ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property AutoUpdate_lbl_info() As String
-        Get
-            Return ResourceManager.GetString("AutoUpdate_lbl_info", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Mehr Informationen ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property AutoUpdate_lbl_MoreInfo() As String
-        Get
-            Return ResourceManager.GetString("AutoUpdate_lbl_MoreInfo", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Neuste Version: ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property AutoUpdate_lbl_NewestVersion() As String
-        Get
-            Return ResourceManager.GetString("AutoUpdate_lbl_NewestVersion", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die Credits ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Credits() As String
@@ -244,7 +199,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Sie werden auf die Website des Urhebers weitergeleitet. Möchten Sie forfahren? ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Du wirst auf die Website des Urhebers weitergeleitet. Möchtest du forfahren? ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Credits_link() As String
         Get
@@ -280,7 +235,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Bitte kontaktieren Sie uns nur per E-Mail, wenn das Ticketsystem für Ihre Anfrage unpassend ist. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Bitte kontaktiere uns nur per E-Mail, wenn das Ticketsystem für deine Anfrage unpassend ist. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Help_lbl_contact() As String
         Get
@@ -289,7 +244,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Wenn Sie einen Fehler im Programm gefunden haben, erstellen Sie doch bitte ein Ticket. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Wenn du einen Fehler im Programm gefunden hast, erstelle doch bitte ein Ticket. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Help_lbl_desc_bugs() As String
         Get
@@ -298,7 +253,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Wenn Sie einen Funktionswunsch haben, bitte hier einsenden. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Wenn du einen Funktionswunsch hast, bitte hier einsenden. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Help_lbl_desc_feature() As String
         Get
@@ -496,7 +451,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Alle Bilder müssen aus dem gleichen Verzeichnis stammen wie das zuerst importierte. Bitte vergewissern Sie sich, dass alle zu importierenden Bilder in dem selben Ordner sind. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Alle Bilder müssen aus dem gleichen Verzeichnis stammen, wie das zuerst importierte. Bitte vergewissere dich, dass alle zu importierenden Bilder in dem selben Ordner sind. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ImportFiles_msg_DifferentPath() As String
         Get
@@ -505,7 +460,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Alle Bilder müssen die gleiche Auflösung haben wie das zuerst importierte ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Alle Bilder müssen die gleiche Auflösung haben, wie das zuerst importierte ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ImportFiles_msg_DifferentResolution() As String
         Get
@@ -685,7 +640,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Möchten Sie das Programm wirklich schließen? Alle nicht gespeicherten Änderungen gehen dadurch verloren. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Möchtest du das Programm wirklich schließen? Alle nicht gespeicherten Änderungen gehen dadurch verloren. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_msg_closing() As String
         Get
@@ -694,7 +649,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Raffy Timelapse konnte die Datei &apos;FFmpeg.exe&apos; nicht finden, welche für das Programm benötigt wird. Möchten Sie diese Datei nun downloaden? ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Raffy Timelapse konnte die Datei &apos;FFmpeg.exe&apos; nicht finden, welche für das Programm benötigt wird. Möchtest du diese Datei nun downloaden? ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_msg_ffmpeg() As String
         Get
@@ -703,7 +658,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Sind Sie sicher, dass Sie die ausgewählten Bilder entfernen wollen? ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Bist du sicher, dass du die ausgewählten Bilder entfernen möchtest? ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_msg_MultiDelete() As String
         Get
@@ -712,7 +667,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Möchten Sie wirklich ein neues Projekt erstellen? Alle nicht gespeicherten Änderungen gehen dadurch verloren. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Möchtest du wirklich ein neues Projekt erstellen? Alle nicht gespeicherten Änderungen gehen dadurch verloren. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_msg_NewProject() As String
         Get
@@ -721,7 +676,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Sind Sie sicher, dass Sie das Bild [%1] entfernen wollen ? ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Bist du sicher, dass du das Bild [%1] entfernen möchtest? ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_msg_SingleDelete() As String
         Get
@@ -730,7 +685,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Helfen Sie uns beim Übersetzen ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Hilf uns beim Übersetzen ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Participation() As String
         Get
@@ -748,7 +703,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Unterstützen Sie uns ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Unterstütze uns ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Participation_lbl_head() As String
         Get
@@ -775,7 +730,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Projekt Einstellungen ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Projekt-Einstellungen ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings() As String
         Get
@@ -865,7 +820,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Der angegebene Pfad existiert nicht, bitte überprüfen Sie ihre Angaben. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Der angegebene Pfad existiert nicht, bitte überprüfe deine Angaben. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_msg_InvalidPath() As String
         Get
@@ -874,7 +829,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Bitte wählen Sie die Bilder pro Sekunde (FPS) aus. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Bitte wähle die Bilder pro Sekunde (FPS) aus. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_msg_NoFps() As String
         Get
@@ -883,7 +838,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Bitte wählen Sie eine Auflösung aus. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Bitte wähle eine Auflösung aus. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_msg_NoResolution() As String
         Get
@@ -892,7 +847,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Sie exportieren den Film in Originalgröße. Dadurch kann der Film eventuell nicht von Videoplayern wie dem &apos;Windows Media Player&apos; abgespielt werden. Möchten Sie trotzdem fortfahren? ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Du exportierst den Film in Originalgröße. Dadurch kann der Film eventuell nicht von Videoplayern wie dem &apos;Windows Media Player&apos; abgespielt werden. Möchten du trotzdem fortfahren? ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_msg_OriginalResolution() As String
         Get
@@ -901,7 +856,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Bitte wählen Sie das Verhältnis zwischen Qualität und Geschwindigkeit aus. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Bitte wähle das Verhältnis zwischen Qualität und Geschwindigkeit aus. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_msg_quality() As String
         Get
@@ -910,7 +865,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Die ausgewählten Bilder sind zu klein für das ausgewählte Filmformat. Bitte wählen Sie eine kleinere Auflösung. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Die ausgewählten Bilder sind zu klein für das ausgewählte Filmformat. Bitte wähle eine kleinere Auflösung. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_msg_undersize() As String
         Get
@@ -1027,7 +982,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Ihre Version: ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Deine Version: ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Update_lbl_LocalVersion() As String
         Get
@@ -1063,7 +1018,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Sie nutzen bereits die neuste Version! ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Du benutzt bereits die neuste Version! ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property UpdateSearch_lbl_progress1() As String
         Get

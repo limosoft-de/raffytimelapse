@@ -42,7 +42,7 @@ Public Class form_main
     Private Sub form_main_Shown(sender As Object, e As EventArgs) Handles Me.Shown
         CheckForFFmpeg()
         If My.Settings.set_AutoUpdate = True Then
-            'Bw_UpdateSearch.RunWorkerAsync()
+            bw_AutoUpdate.RunWorkerAsync()
         End If
     End Sub
 
@@ -360,8 +360,6 @@ Public Class form_main
 
     End Sub
 
-
-
 #End Region
 
 #Region "Menu Strip"
@@ -393,7 +391,7 @@ Public Class form_main
     End Sub
 
     Private Sub ms_about_update_Click(sender As Object, e As EventArgs) Handles ms_about_update.Click
-        Dim UpdateSearch As New form_UpdateSearch
+        Dim UpdateSearch As New form_UpdateSearch()
         UpdateSearch.ShowDialog()
     End Sub
 
@@ -508,7 +506,7 @@ Public Class form_main
             PicHeight = Img.Height
         Else
             If Img.Width <> PicWidth Or Img.Height <> PicHeight Then
-                If MessageBox.Show(TransString("Main_ImportFiles_msg_DifferentResolution") & " (" & PicWidth & "x" & PicHeight & ")", TransString("_General_error"), MessageBoxButtons.OKCancel, MessageBoxIcon.Error) = DialogResult.OK Then
+                If MessageBox.Show(TransString("Main_ImportFiles_msg_DifferentResolution") & " (" & PicWidth & "x" & PicHeight & ")", TransString("_General_error"), MessageBoxButtons.OK, MessageBoxIcon.Error) = DialogResult.OK Then
                     Return False
                     Exit Function
                 End If
@@ -721,7 +719,45 @@ Public Class form_main
 
 #End Region
 
-#Region "Backgroundworker: Update on Startup"
+#Region "Backgroundworker: Autoupdate"
+
+    Private Sub Bw_AutoUpdate_DoWork(sender As Object, e As DoWorkEventArgs) Handles bw_AutoUpdate.DoWork
+
+        Dim NewVersionString As String
+
+        Application.DoEvents()
+        Threading.Thread.Sleep(300)
+
+        Invoke(Sub()
+
+                   'TEST CONNECTION
+                   Try
+                       My.Computer.Network.Ping("sourceforge.net")
+                   Catch ex As Exception
+                       Exit Sub
+                   End Try
+
+                   'GET NEWEST VERSION NUMBER
+                   Dim VersionBrowser As New WebBrowser
+                   VersionBrowser.Navigate("http://simpletimelapse.sourceforge.net/update/version.txt" & "?Refresh=" & Guid.NewGuid().ToString()) 'USING GUID PARAMETER TO AVOID IE STUPID CACHING
+                   Do Until VersionBrowser.ReadyState = WebBrowserReadyState.Complete
+                       Application.DoEvents()
+                   Loop
+                   NewVersionString = VersionBrowser.Document.Body.InnerText
+
+                   'COMPARE VERSIONS
+                   Dim LocalVersion As New Version(Application.ProductVersion)
+                   Dim NewVersion As New Version(NewVersionString)
+
+                   If LocalVersion = NewVersion Then
+                       Exit Sub
+                   Else
+                       Dim FullUpdateSearch As New form_UpdateSearch
+                       form_UpdateSearch.ShowDialog()
+                   End If
+
+               End Sub)
+    End Sub
 
 #End Region
 

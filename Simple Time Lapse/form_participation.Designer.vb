@@ -39,6 +39,7 @@ Partial Class form_participation
         Me.lbl_desc.Size = New System.Drawing.Size(263, 141)
         Me.lbl_desc.TabIndex = 0
         Me.lbl_desc.Text = resources.GetString("lbl_desc.Text")
+        Me.lbl_desc.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'lbl_head
         '

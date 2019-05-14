@@ -28,6 +28,7 @@ Partial Class form_about
         Me.lbl_version = New System.Windows.Forms.Label()
         Me.lbl_close = New System.Windows.Forms.LinkLabel()
         Me.lbl_VersionNr = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.pb_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -45,11 +46,11 @@ Partial Class form_about
         '
         Me.lbl_AppName.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_AppName.AutoSize = True
-        Me.lbl_AppName.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_AppName.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_AppName.ForeColor = System.Drawing.Color.White
-        Me.lbl_AppName.Location = New System.Drawing.Point(145, 52)
+        Me.lbl_AppName.Location = New System.Drawing.Point(144, 51)
         Me.lbl_AppName.Name = "lbl_AppName"
-        Me.lbl_AppName.Size = New System.Drawing.Size(187, 29)
+        Me.lbl_AppName.Size = New System.Drawing.Size(184, 32)
         Me.lbl_AppName.TabIndex = 1
         Me.lbl_AppName.Text = "Raffy Timelapse"
         '
@@ -57,10 +58,11 @@ Partial Class form_about
         '
         Me.lbl_version.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_version.AutoSize = True
+        Me.lbl_version.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_version.ForeColor = System.Drawing.Color.White
-        Me.lbl_version.Location = New System.Drawing.Point(147, 97)
+        Me.lbl_version.Location = New System.Drawing.Point(149, 94)
         Me.lbl_version.Name = "lbl_version"
-        Me.lbl_version.Size = New System.Drawing.Size(48, 13)
+        Me.lbl_version.Size = New System.Drawing.Size(48, 15)
         Me.lbl_version.TabIndex = 2
         Me.lbl_version.Text = "Version:"
         '
@@ -69,14 +71,16 @@ Partial Class form_about
         Me.lbl_close.ActiveLinkColor = System.Drawing.Color.White
         Me.lbl_close.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_close.AutoSize = True
+        Me.lbl_close.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_close.ForeColor = System.Drawing.Color.White
+        Me.lbl_close.LinkBehavior = System.Windows.Forms.LinkBehavior.HoverUnderline
         Me.lbl_close.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lbl_close.Location = New System.Drawing.Point(328, 9)
+        Me.lbl_close.Location = New System.Drawing.Point(340, 9)
         Me.lbl_close.Name = "lbl_close"
-        Me.lbl_close.Size = New System.Drawing.Size(35, 13)
+        Me.lbl_close.Size = New System.Drawing.Size(23, 25)
         Me.lbl_close.TabIndex = 3
         Me.lbl_close.TabStop = True
-        Me.lbl_close.Text = "Close"
+        Me.lbl_close.Text = "X"
         Me.lbl_close.TextAlign = System.Drawing.ContentAlignment.TopRight
         Me.lbl_close.VisitedLinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         '
@@ -84,12 +88,25 @@ Partial Class form_about
         '
         Me.lbl_VersionNr.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_VersionNr.AutoSize = True
+        Me.lbl_VersionNr.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_VersionNr.ForeColor = System.Drawing.Color.White
-        Me.lbl_VersionNr.Location = New System.Drawing.Point(202, 97)
+        Me.lbl_VersionNr.Location = New System.Drawing.Point(203, 94)
         Me.lbl_VersionNr.Name = "lbl_VersionNr"
-        Me.lbl_VersionNr.Size = New System.Drawing.Size(31, 13)
+        Me.lbl_VersionNr.Size = New System.Drawing.Size(40, 15)
         Me.lbl_VersionNr.TabIndex = 4
-        Me.lbl_VersionNr.Text = "0.0.0"
+        Me.lbl_VersionNr.Text = "0.0.0.0"
+        '
+        'Label1
+        '
+        Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(170, 131)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(131, 13)
+        Me.Label1.TabIndex = 5
+        Me.Label1.Text = "Made with ❤  by Limosoft"
         '
         'form_about
         '
@@ -99,6 +116,7 @@ Partial Class form_about
         Me.CancelButton = Me.lbl_close
         Me.ClientSize = New System.Drawing.Size(375, 176)
         Me.ControlBox = False
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lbl_VersionNr)
         Me.Controls.Add(Me.lbl_close)
         Me.Controls.Add(Me.lbl_version)
@@ -123,4 +141,5 @@ Partial Class form_about
     Friend WithEvents lbl_version As Label
     Friend WithEvents lbl_close As LinkLabel
     Friend WithEvents lbl_VersionNr As Label
+    Friend WithEvents Label1 As Label
 End Class

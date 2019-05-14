@@ -190,51 +190,6 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Update available ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property AutoUpdate() As String
-        Get
-            Return ResourceManager.GetString("AutoUpdate", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Update ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property AutoUpdate_btn_update() As String
-        Get
-            Return ResourceManager.GetString("AutoUpdate_btn_update", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die A more recent version of &apos;Raffy Timelapse&apos; is available now. Click &apos;Update&apos; to download and install the latest version. ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property AutoUpdate_lbl_info() As String
-        Get
-            Return ResourceManager.GetString("AutoUpdate_lbl_info", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die More Information ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property AutoUpdate_lbl_MoreInfo() As String
-        Get
-            Return ResourceManager.GetString("AutoUpdate_lbl_MoreInfo", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Newest version: ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property AutoUpdate_lbl_NewestVersion() As String
-        Get
-            Return ResourceManager.GetString("AutoUpdate_lbl_NewestVersion", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die Credits ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Credits() As String

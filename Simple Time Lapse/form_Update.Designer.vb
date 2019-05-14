@@ -66,7 +66,7 @@ Partial Class form_update
         Me.lbl_LocalVersionNr.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.lbl_LocalVersionNr.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_LocalVersionNr.ForeColor = System.Drawing.Color.White
-        Me.lbl_LocalVersionNr.Location = New System.Drawing.Point(119, 13)
+        Me.lbl_LocalVersionNr.Location = New System.Drawing.Point(119, 18)
         Me.lbl_LocalVersionNr.Name = "lbl_LocalVersionNr"
         Me.lbl_LocalVersionNr.Size = New System.Drawing.Size(153, 21)
         Me.lbl_LocalVersionNr.TabIndex = 2
@@ -96,6 +96,8 @@ Partial Class form_update
         '
         'rtb_changelog
         '
+        Me.rtb_changelog.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.rtb_changelog.BackColor = System.Drawing.Color.Gray
         Me.rtb_changelog.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.rtb_changelog.Cursor = System.Windows.Forms.Cursors.Default
@@ -121,7 +123,7 @@ Partial Class form_update
         '
         Me.lbl_LocalVersion.AutoSize = True
         Me.lbl_LocalVersion.ForeColor = System.Drawing.Color.White
-        Me.lbl_LocalVersion.Location = New System.Drawing.Point(6, 13)
+        Me.lbl_LocalVersion.Location = New System.Drawing.Point(6, 18)
         Me.lbl_LocalVersion.Name = "lbl_LocalVersion"
         Me.lbl_LocalVersion.Size = New System.Drawing.Size(83, 17)
         Me.lbl_LocalVersion.TabIndex = 0
@@ -129,6 +131,8 @@ Partial Class form_update
         '
         'GroupBox1
         '
+        Me.GroupBox1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.GroupBox1.Controls.Add(Me.lbl_NewestVersion)
         Me.GroupBox1.Controls.Add(Me.lbl_NewestVersionNr)
@@ -149,8 +153,8 @@ Partial Class form_update
         'form_update
         '
         Me.AcceptButton = Me.btn_update
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(363, 374)
         Me.Controls.Add(Me.GroupBox1)

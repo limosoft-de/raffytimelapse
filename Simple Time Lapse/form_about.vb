@@ -11,7 +11,6 @@
     Private Sub TranslateForm()
         Me.Text = TransString("About")
 
-        lbl_close.Text = TransString("_General_close")
         lbl_version.Text = TransString("About_version")
 
     End Sub
