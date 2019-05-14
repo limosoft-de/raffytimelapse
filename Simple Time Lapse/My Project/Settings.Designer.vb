@@ -15,7 +15,7 @@ Option Explicit On
 Namespace My
     
     <Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
-     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "15.9.0.0"),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.0.0.0"),  _
      Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
     Partial Friend NotInheritable Class MySettings
         Inherits Global.System.Configuration.ApplicationSettingsBase
@@ -164,25 +164,13 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("http://simpletimelapse.sourceforge.net/ffmpeg.html")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("http://simpletimelapse.sourceforge.net/ffmpeg-new.html")>  _
         Public Property url_FFmpeg() As String
             Get
                 Return CType(Me("url_FFmpeg"),String)
             End Get
             Set
                 Me("url_FFmpeg") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("True")>  _
-        Public Property app_portable() As Boolean
-            Get
-                Return CType(Me("app_portable"),Boolean)
-            End Get
-            Set
-                Me("app_portable") = value
             End Set
         End Property
         
@@ -208,9 +196,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.Simplapse.My.MySettings
+        Friend ReadOnly Property Settings() As Global.Raffy_Timelapse.My.MySettings
             Get
-                Return Global.Simplapse.My.MySettings.Default
+                Return Global.Raffy_Timelapse.My.MySettings.Default
             End Get
         End Property
     End Module

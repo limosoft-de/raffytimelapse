@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Simplapse.form_main
+            Me.MainForm = Global.Raffy_Timelapse.form_main
         End Sub
     End Class
 End Namespace

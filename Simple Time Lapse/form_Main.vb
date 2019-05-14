@@ -34,45 +34,21 @@ Public Class form_main
 
 #Region "Form-Ereignisse"
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Panel2.Top = (Me.ClientSize.Height - lbl_drop.Height) / 2 - 30
+    Private Sub form_main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Pnl_TimelineOverlay.Top = (ClientSize.Height - lbl_drop.Height) / 2 - 30
         TranslateForm()
-
-
-
-
     End Sub
 
     Private Sub form_main_Shown(sender As Object, e As EventArgs) Handles Me.Shown
         CheckForFFmpeg()
-        AutoUpdate()
-    End Sub
-
-    Private Sub CheckForFFmpeg()
-        If File.Exists(Application.StartupPath & "\ffmpeg.exe") Then
-            FFmpegExists = True
-        Else
-            FFmpegExists = False
-            If MessageBox.Show(TransString("Main_msg_ffmpeg"), TransString("_General_error"), MessageBoxButtons.YesNo, MessageBoxIcon.Error) = DialogResult.Yes Then
-                Process.Start(My.Settings.url_FFmpeg)
-            End If
+        If My.Settings.set_AutoUpdate = True Then
+            bw_AutoUpdate.RunWorkerAsync()
         End If
     End Sub
-
 
     Private Sub form_main_Resize(sender As Object, e As EventArgs) Handles Me.Resize
-        Panel2.Top = (Me.ClientSize.Height - lbl_drop.Height) / 2 - 30
 
-        Dim PlannedWidth As Integer = Width - pb_preview.Location.X - 25 '25 = Abstand zwischen pb und rechter Formborder
-        Dim PlannedHeight As Integer = PlannedWidth / (16 / 9)
-
-        If pb_preview.Location.Y + PlannedHeight >= gb_PictureEdit.Location.Y - 6 Then '6 = Abstand zwischen pb und gb
-            pb_preview.Height = gb_PictureEdit.Location.Y - pb_preview.Location.Y - 6
-            pb_preview.Width = (16 / 9) * pb_preview.Height
-        Else
-            pb_preview.Width = PlannedWidth
-            pb_preview.Height = PlannedHeight
-        End If
+        Pnl_TimelineOverlay.Top = (Me.ClientSize.Height - lbl_drop.Height) / 2 - 30
 
     End Sub
 
@@ -162,6 +138,23 @@ Public Class form_main
 
         UpdateForm()
 
+    End Sub
+
+#End Region
+
+#Region "FFmpeg Check"
+
+    Private Sub CheckForFFmpeg()
+        If File.Exists(Application.StartupPath & "\ffmpeg.exe") Then
+            FFmpegExists = True
+        Else
+            FFmpegExists = False
+            If MessageBox.Show(TransString("Main_msg_ffmpeg"), TransString("_General_error"), MessageBoxButtons.YesNo, MessageBoxIcon.Error) = DialogResult.Yes Then
+                Process.Start(My.Settings.url_FFmpeg)
+            Else
+                Close()
+            End If
+        End If
     End Sub
 
 #End Region
@@ -348,11 +341,11 @@ Public Class form_main
 
 
         If lb_pictures.Items.Count = 0 Then
-            Panel2.Visible = True
+            Pnl_TimelineOverlay.Visible = True
             btn_start.Enabled = False
             lbl_PreviewFile.Text = ""
         Else
-            Panel2.Visible = False
+            Pnl_TimelineOverlay.Visible = False
 
             If MultiSelect = True Then
                 btn_start.Enabled = False
@@ -366,8 +359,6 @@ Public Class form_main
         End If
 
     End Sub
-
-
 
 #End Region
 
@@ -400,7 +391,8 @@ Public Class form_main
     End Sub
 
     Private Sub ms_about_update_Click(sender As Object, e As EventArgs) Handles ms_about_update.Click
-        UpdateApp()
+        Dim UpdateSearch As New form_UpdateSearch()
+        UpdateSearch.ShowDialog()
     End Sub
 
     Private Sub ms_about_settings_Click(sender As Object, e As EventArgs) Handles ms_about_settings.Click
@@ -514,7 +506,7 @@ Public Class form_main
             PicHeight = Img.Height
         Else
             If Img.Width <> PicWidth Or Img.Height <> PicHeight Then
-                If MessageBox.Show(TransString("Main_ImportFiles_msg_DifferentResolution") & " (" & PicWidth & "x" & PicHeight & ")", TransString("_General_error"), MessageBoxButtons.OKCancel, MessageBoxIcon.Error) = DialogResult.OK Then
+                If MessageBox.Show(TransString("Main_ImportFiles_msg_DifferentResolution") & " (" & PicWidth & "x" & PicHeight & ")", TransString("_General_error"), MessageBoxButtons.OK, MessageBoxIcon.Error) = DialogResult.OK Then
                     Return False
                     Exit Function
                 End If
@@ -526,7 +518,7 @@ Public Class form_main
         '//Bild in Liste aufnehmen
         lb_pictures.Items.Add(path)
 
-        Panel2.Visible = False
+        Pnl_TimelineOverlay.Visible = False
 
         Return True
 
@@ -725,6 +717,47 @@ Public Class form_main
         End If
     End Sub
 
+#End Region
+
+#Region "Backgroundworker: Autoupdate"
+
+    Private Sub Bw_AutoUpdate_DoWork(sender As Object, e As DoWorkEventArgs) Handles bw_AutoUpdate.DoWork
+
+        Dim NewVersionString As String
+
+        Application.DoEvents()
+        Threading.Thread.Sleep(300)
+
+        Invoke(Sub()
+
+                   'TEST CONNECTION
+                   Try
+                       My.Computer.Network.Ping("sourceforge.net")
+                   Catch ex As Exception
+                       Exit Sub
+                   End Try
+
+                   'GET NEWEST VERSION NUMBER
+                   Dim VersionBrowser As New WebBrowser
+                   VersionBrowser.Navigate("http://simpletimelapse.sourceforge.net/update/version.txt" & "?Refresh=" & Guid.NewGuid().ToString()) 'USING GUID PARAMETER TO AVOID IE STUPID CACHING
+                   Do Until VersionBrowser.ReadyState = WebBrowserReadyState.Complete
+                       Application.DoEvents()
+                   Loop
+                   NewVersionString = VersionBrowser.Document.Body.InnerText
+
+                   'COMPARE VERSIONS
+                   Dim LocalVersion As New Version(Application.ProductVersion)
+                   Dim NewVersion As New Version(NewVersionString)
+
+                   If LocalVersion = NewVersion Then
+                       Exit Sub
+                   Else
+                       Dim FullUpdateSearch As New form_UpdateSearch
+                       form_UpdateSearch.ShowDialog()
+                   End If
+
+               End Sub)
+    End Sub
 
 #End Region
 

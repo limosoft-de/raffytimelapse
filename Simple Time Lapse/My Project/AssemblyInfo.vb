@@ -1,7 +1,6 @@
 ﻿Imports System
 Imports System.Reflection
 Imports System.Runtime.InteropServices
-Imports nUpdate.Core
 
 ' Allgemeine Informationen über eine Assembly werden über die folgenden 
 ' Attribute gesteuert. Ändern Sie diese Attributwerte, um die Informationen zu ändern,
@@ -9,10 +8,10 @@ Imports nUpdate.Core
 
 ' Werte der Assemblyattribute überprüfen
 
-<Assembly: AssemblyTitle("Simplapse")>
+<Assembly: AssemblyTitle("Raffy Timelapse")>
 <Assembly: AssemblyDescription("The simple way to create timelapse footage")>
 <Assembly: AssemblyCompany("Limosoft")>
-<Assembly: AssemblyProduct("Simplapse")>
+<Assembly: AssemblyProduct("Raffy Timelapse")>
 <Assembly: AssemblyCopyright("Copyright ©  2019")>
 <Assembly: AssemblyTrademark("")>
 
@@ -34,4 +33,3 @@ Imports nUpdate.Core
 
 <Assembly: AssemblyVersion("2.0.0.0")>
 <Assembly: AssemblyFileVersion("2.0.0.0")>
-<Assembly: nUpdateVersion("2.0.0")>

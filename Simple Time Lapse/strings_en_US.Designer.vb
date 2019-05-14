@@ -21,7 +21,7 @@ Imports System
 '''<summary>
 '''  Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
 '''</summary>
-<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0"),  _
+<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0"),  _
  Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
  Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>  _
 Friend Class strings_en_US
@@ -42,7 +42,7 @@ Friend Class strings_en_US
     Friend Shared ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
         Get
             If Object.ReferenceEquals(resourceMan, Nothing) Then
-                Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Simplapse.strings_en_US", GetType(strings_en_US).Assembly)
+                Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Raffy_Timelapse.strings_en_US", GetType(strings_en_US).Assembly)
                 resourceMan = temp
             End If
             Return resourceMan
@@ -190,51 +190,6 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Update available ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property AutoUpdate() As String
-        Get
-            Return ResourceManager.GetString("AutoUpdate", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Update ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property AutoUpdate_btn_update() As String
-        Get
-            Return ResourceManager.GetString("AutoUpdate_btn_update", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die A more recent version of &apos;Simplapse&apos; is available now. Click &apos;Update&apos; to download and install the latest version. ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property AutoUpdate_lbl_info() As String
-        Get
-            Return ResourceManager.GetString("AutoUpdate_lbl_info", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die More Information ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property AutoUpdate_lbl_MoreInfo() As String
-        Get
-            Return ResourceManager.GetString("AutoUpdate_lbl_MoreInfo", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Newest version: ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property AutoUpdate_lbl_NewestVersion() As String
-        Get
-            Return ResourceManager.GetString("AutoUpdate_lbl_NewestVersion", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die Credits ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Credits() As String
@@ -343,7 +298,7 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die The preferred way to get support for &apos;Simplapse&apos; is to create a ticket online on &apos;sourceforge.net&apos;. We have different ticket systems for different requirements: ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die The preferred way to get support for &apos;Raffy Timelapse&apos; is to create a ticket online on &apos;sourceforge.net&apos;. We have different ticket systems for different requirements: ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Help_lbl_online() As String
         Get
@@ -694,7 +649,7 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Simplapse couldn&apos;t find the &apos;FFmpeg.exe&apos; on your computer, which is needed to use this program. Would you like to download the missing file? ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Raffy Timelapse couldn&apos;t find the &apos;FFmpeg.exe&apos; on your computer, which is needed to use this program. Would you like to download the missing file? ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_msg_ffmpeg() As String
         Get
@@ -739,7 +694,7 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die &apos;Simplapse&apos; is a free program and will always stay this way. And we don&apos;t want to ask you for money. But if you want to support us, and speak a language that we don&apos;t speak, then please help us to translate this programm into other languages. It&apos;s free and very simple! ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die &apos;Raffy Timelapse&apos; is a free program and will always stay this way. And we don&apos;t want to ask you for money. But if you want to support us, and speak a language that we don&apos;t speak, then please help us to translate this programm into other languages. It&apos;s free and very simple! ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Participation_lbl_desc() As String
         Get
@@ -1027,7 +982,7 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Local version: ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Your version: ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Update_lbl_LocalVersion() As String
         Get
@@ -1045,11 +1000,38 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die No connection to the update servers. Couldn&apos;t check for new Updates. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die No connection to the update servers. ähnelt.
     '''</summary>
-    Friend Shared ReadOnly Property Update_msg_NoInternet() As String
+    Friend Shared ReadOnly Property UpdateSearch_lbl_progress_1() As String
         Get
-            Return ResourceManager.GetString("Update_msg_NoInternet", resourceCulture)
+            Return ResourceManager.GetString("UpdateSearch_lbl_progress-1", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Searching for updates... ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property UpdateSearch_lbl_progress0() As String
+        Get
+            Return ResourceManager.GetString("UpdateSearch_lbl_progress0", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die You are already using the newest version! ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property UpdateSearch_lbl_progress1() As String
+        Get
+            Return ResourceManager.GetString("UpdateSearch_lbl_progress1", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Loading details of new version... ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property UpdateSearch_lbl_progress2() As String
+        Get
+            Return ResourceManager.GetString("UpdateSearch_lbl_progress2", resourceCulture)
         End Get
     End Property
 End Class

@@ -132,13 +132,15 @@ Partial Class form_ProjectSettings
         '
         'btn_browse
         '
-        Me.btn_browse.Font = New System.Drawing.Font("Segoe UI Semibold", 6.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_browse.BackColor = System.Drawing.Color.FromArgb(CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(224, Byte), Integer))
+        Me.btn_browse.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_browse.Font = New System.Drawing.Font("Segoe UI", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_browse.Location = New System.Drawing.Point(350, 27)
         Me.btn_browse.Name = "btn_browse"
-        Me.btn_browse.Size = New System.Drawing.Size(75, 23)
+        Me.btn_browse.Size = New System.Drawing.Size(75, 22)
         Me.btn_browse.TabIndex = 8
-        Me.btn_browse.Text = "Browse"
-        Me.btn_browse.UseVisualStyleBackColor = True
+        Me.btn_browse.Text = "Durchsuchen"
+        Me.btn_browse.UseVisualStyleBackColor = False
         '
         'dl_SaveMovie
         '
@@ -170,8 +172,8 @@ Partial Class form_ProjectSettings
         'form_ProjectSettings
         '
         Me.AcceptButton = Me.btn_ok
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackColor = System.Drawing.Color.Gray
         Me.ClientSize = New System.Drawing.Size(434, 202)
         Me.Controls.Add(Me.cb_quality)

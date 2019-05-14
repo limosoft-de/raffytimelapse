@@ -21,11 +21,11 @@ Public Class form_ImportProgressInfo
 
         Dim ImportProgress As Integer = 0
 
-
         Invoke(Sub()
 
                    For Each path As String In form_main.ImportFileList
                        If form_main.ImportFiles(path) = False Then
+                           bw_Importing.ReportProgress(-1)
                            Exit For
                        End If
 
@@ -41,11 +41,14 @@ Public Class form_ImportProgressInfo
 
                End Sub)
 
-
     End Sub
 
     Private Sub bw_Importing_ProgressChanged(sender As Object, e As ProgressChangedEventArgs) Handles bw_Importing.ProgressChanged
 
+        'CLOSE ON ERROR
+        If e.ProgressPercentage = -1 Then
+            Close()
+        End If
 
         Dim ProgressPercentage = e.ProgressPercentage / form_main.ImportFileList.Length * 100
 

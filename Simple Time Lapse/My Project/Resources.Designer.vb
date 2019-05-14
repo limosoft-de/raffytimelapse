@@ -22,7 +22,7 @@ Namespace My.Resources
     '''<summary>
     '''  Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
     '''</summary>
-    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0"),  _
+    <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0"),  _
      Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
      Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
      Global.Microsoft.VisualBasic.HideModuleNameAttribute()>  _
@@ -39,7 +39,7 @@ Namespace My.Resources
         Friend ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
             Get
                 If Object.ReferenceEquals(resourceMan, Nothing) Then
-                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Simplapse.Resources", GetType(Resources).Assembly)
+                    Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Raffy_Timelapse.Resources", GetType(Resources).Assembly)
                     resourceMan = temp
                 End If
                 Return resourceMan
@@ -58,6 +58,16 @@ Namespace My.Resources
             Set
                 resourceCulture = value
             End Set
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Ressource vom Typ System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property cancel() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("cancel", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
         End Property
         
         '''<summary>

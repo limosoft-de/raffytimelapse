@@ -292,13 +292,13 @@
     <value>Changelog</value>
   </data>
   <data name="Update_lbl_LocalVersion" xml:space="preserve">
-    <value>Local version:</value>
+    <value>Your version:</value>
   </data>
   <data name="Update_lbl_NewestVersion" xml:space="preserve">
     <value>Newest version:</value>
   </data>
-  <data name="Update_msg_NoInternet" xml:space="preserve">
-    <value>No connection to the update servers. Couldn't check for new Updates.</value>
+  <data name="UpdateSearch_lbl_progress-1" xml:space="preserve">
+    <value>No connection to the update servers.</value>
   </data>
   <data name="_General_info" xml:space="preserve">
     <value>Information</value>
@@ -308,21 +308,6 @@
   </data>
   <data name="About_version" xml:space="preserve">
     <value>Version:</value>
-  </data>
-  <data name="AutoUpdate" xml:space="preserve">
-    <value>Update available</value>
-  </data>
-  <data name="AutoUpdate_btn_update" xml:space="preserve">
-    <value>Update</value>
-  </data>
-  <data name="AutoUpdate_lbl_info" xml:space="preserve">
-    <value>A more recent version of 'Simplapse' is available now. Click 'Update' to download and install the latest version.</value>
-  </data>
-  <data name="AutoUpdate_lbl_MoreInfo" xml:space="preserve">
-    <value>More Information</value>
-  </data>
-  <data name="AutoUpdate_lbl_NewestVersion" xml:space="preserve">
-    <value>Newest version:</value>
   </data>
   <data name="Help" xml:space="preserve">
     <value>Help</value>
@@ -355,7 +340,7 @@
     <value>General Requests</value>
   </data>
   <data name="Help_lbl_online" xml:space="preserve">
-    <value>The preferred way to get support for 'Simplapse' is to create a ticket online on 'sourceforge.net'. We have different ticket systems for different requirements:</value>
+    <value>The preferred way to get support for 'Raffy Timelapse' is to create a ticket online on 'sourceforge.net'. We have different ticket systems for different requirements:</value>
   </data>
   <data name="Main_msg_closing" xml:space="preserve">
     <value>Would you really like to close this window? All unsaved changes will be lost.</value>
@@ -397,7 +382,7 @@
     <value>Help us translating</value>
   </data>
   <data name="Participation_lbl_desc" xml:space="preserve">
-    <value>'Simplapse' is a free program and will always stay this way. And we don't want to ask you for money. But if you want to support us, and speak a language that we don't speak, then please help us to translate this programm into other languages. It's free and very simple!</value>
+    <value>'Raffy Timelapse' is a free program and will always stay this way. And we don't want to ask you for money. But if you want to support us, and speak a language that we don't speak, then please help us to translate this programm into other languages. It's free and very simple!</value>
   </data>
   <data name="Participation_lbl_head" xml:space="preserve">
     <value>Translate the App</value>
@@ -418,11 +403,10 @@
     <value>Please wait...</value>
   </data>
   <data name="Main_msg_ffmpeg" xml:space="preserve">
-    <value>Simplapse couldn't find the 'FFmpeg.exe' on your computer, which is needed to use this program. Would you like to download the missing file?</value>
+    <value>Raffy Timelapse couldn't find the 'FFmpeg.exe' on your computer, which is needed to use this program. Would you like to download the missing file?</value>
   </data>
   <data name="Main_ImportFiles_msg_DifferentPath" xml:space="preserve">
     <value>All images must be in the same directory as the first imported one. Please make sure that all imported images are in the same folder.</value>
-    <comment>v1.0.1</comment>
   </data>
   <data name="Main_msg_MultiDelete" xml:space="preserve">
     <value>Are you sure you want to delete all selected images?</value>
@@ -447,5 +431,14 @@
   </data>
   <data name="Import_lbl_progress2" xml:space="preserve">
     <value>of</value>
+  </data>
+  <data name="UpdateSearch_lbl_progress0" xml:space="preserve">
+    <value>Searching for updates...</value>
+  </data>
+  <data name="UpdateSearch_lbl_progress1" xml:space="preserve">
+    <value>You are already using the newest version!</value>
+  </data>
+  <data name="UpdateSearch_lbl_progress2" xml:space="preserve">
+    <value>Loading details of new version...</value>
   </data>
 </root>

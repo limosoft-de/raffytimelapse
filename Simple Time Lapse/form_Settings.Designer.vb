@@ -72,7 +72,7 @@ Partial Class form_Settings
         Me.gb_keys.Controls.Add(Me.lbl_MoveImg)
         Me.gb_keys.Location = New System.Drawing.Point(6, 73)
         Me.gb_keys.Name = "gb_keys"
-        Me.gb_keys.Size = New System.Drawing.Size(298, 92)
+        Me.gb_keys.Size = New System.Drawing.Size(298, 87)
         Me.gb_keys.TabIndex = 2
         Me.gb_keys.TabStop = False
         Me.gb_keys.Text = "Key Assignment"
@@ -81,7 +81,7 @@ Partial Class form_Settings
         '
         Me.cb_MoveImg.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cb_MoveImg.FormattingEnabled = True
-        Me.cb_MoveImg.Location = New System.Drawing.Point(9, 50)
+        Me.cb_MoveImg.Location = New System.Drawing.Point(9, 45)
         Me.cb_MoveImg.Name = "cb_MoveImg"
         Me.cb_MoveImg.Size = New System.Drawing.Size(283, 25)
         Me.cb_MoveImg.TabIndex = 1
@@ -89,7 +89,7 @@ Partial Class form_Settings
         'lbl_MoveImg
         '
         Me.lbl_MoveImg.AutoSize = True
-        Me.lbl_MoveImg.Location = New System.Drawing.Point(6, 30)
+        Me.lbl_MoveImg.Location = New System.Drawing.Point(6, 25)
         Me.lbl_MoveImg.Name = "lbl_MoveImg"
         Me.lbl_MoveImg.Size = New System.Drawing.Size(168, 17)
         Me.lbl_MoveImg.TabIndex = 0

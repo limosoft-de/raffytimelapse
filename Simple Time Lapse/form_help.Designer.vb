@@ -43,7 +43,7 @@ Partial Class form_help
         '
         'gb_contact
         '
-        Me.gb_contact.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left) _
+        Me.gb_contact.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.gb_contact.Controls.Add(Me.lbl_contact)
         Me.gb_contact.Controls.Add(Me.lbl_mail)
@@ -58,6 +58,8 @@ Partial Class form_help
         '
         'lbl_contact
         '
+        Me.lbl_contact.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_contact.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_contact.Location = New System.Drawing.Point(7, 19)
         Me.lbl_contact.Name = "lbl_contact"
@@ -69,6 +71,8 @@ Partial Class form_help
         'lbl_mail
         '
         Me.lbl_mail.ActiveLinkColor = System.Drawing.Color.White
+        Me.lbl_mail.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_mail.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_mail.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lbl_mail.Location = New System.Drawing.Point(7, 48)
@@ -101,6 +105,8 @@ Partial Class form_help
         '
         'lbl_online
         '
+        Me.lbl_online.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_online.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_online.Location = New System.Drawing.Point(6, 18)
         Me.lbl_online.Name = "lbl_online"
@@ -112,6 +118,8 @@ Partial Class form_help
         'lbl_head_general
         '
         Me.lbl_head_general.ActiveLinkColor = System.Drawing.Color.White
+        Me.lbl_head_general.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_head_general.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_head_general.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lbl_head_general.Location = New System.Drawing.Point(6, 202)
@@ -124,6 +132,8 @@ Partial Class form_help
         '
         'lbl_desc_general
         '
+        Me.lbl_desc_general.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_desc_general.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_desc_general.Location = New System.Drawing.Point(6, 234)
         Me.lbl_desc_general.Name = "lbl_desc_general"
@@ -136,6 +146,8 @@ Partial Class form_help
         'lbl_head_feature
         '
         Me.lbl_head_feature.ActiveLinkColor = System.Drawing.Color.White
+        Me.lbl_head_feature.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_head_feature.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_head_feature.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lbl_head_feature.Location = New System.Drawing.Point(6, 137)
@@ -148,6 +160,8 @@ Partial Class form_help
         '
         'lbl_desc_feature
         '
+        Me.lbl_desc_feature.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_desc_feature.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_desc_feature.Location = New System.Drawing.Point(6, 169)
         Me.lbl_desc_feature.Name = "lbl_desc_feature"
@@ -159,6 +173,8 @@ Partial Class form_help
         'lbl_head_bugs
         '
         Me.lbl_head_bugs.ActiveLinkColor = System.Drawing.Color.White
+        Me.lbl_head_bugs.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_head_bugs.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_head_bugs.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.lbl_head_bugs.Location = New System.Drawing.Point(6, 73)
@@ -171,6 +187,8 @@ Partial Class form_help
         '
         'lbl_desc_bugs
         '
+        Me.lbl_desc_bugs.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbl_desc_bugs.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_desc_bugs.Location = New System.Drawing.Point(6, 105)
         Me.lbl_desc_bugs.Name = "lbl_desc_bugs"
@@ -202,8 +220,8 @@ Partial Class form_help
         'form_help
         '
         Me.AcceptButton = Me.btn_ok
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(339, 429)
         Me.Controls.Add(Me.pnl)

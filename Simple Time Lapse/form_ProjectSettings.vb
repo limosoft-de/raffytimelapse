@@ -111,7 +111,7 @@
 
         form_main.MovPath = tb_destination.Text
 
-        '//Auflösung
+        '//Resolution
         If cb_res.Text = "" Then
             MessageBox.Show(TransString("ProjectSettings_msg_NoResolution"), TransString("_General_error"), MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
@@ -165,7 +165,7 @@
 
         form_main.MovFPS = cb_fps.Text
 
-        '//Qualität
+        '//Quality
         If cb_quality.Text = "" Then
             MessageBox.Show(TransString("ProjectSettings_msg_quality"), TransString("_General_error"), MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
@@ -173,7 +173,7 @@
 
         Select Case cb_quality.Text
             Case TransString("ProjectSettings_cb_quality_hq")
-                form_main.MovPreset = "-preset veryslow -qp 0"
+                form_main.MovPreset = "-preset veryslow -crf 0"
             Case TransString("ProjectSettings_cb_quality_mq")
                 form_main.MovPreset = "-preset medium -crf 23"
             Case TransString("ProjectSettings_cb_quality_lq")
