@@ -91,9 +91,6 @@
     <ApplicationIcon>Icon6.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="nUpdate">
-      <HintPath>..\..\..\..\Visual Studio Projekte\_nUpdate\nUpdate\Provide TAP\nUpdate.dll</HintPath>
-    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
