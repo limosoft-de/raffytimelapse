@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class form_about
     Inherits System.Windows.Forms.Form
 
     'Das Formular überschreibt den Löschvorgang, um die Komponentenliste zu bereinigen.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -28,7 +28,6 @@ Partial Class form_about
         Me.lbl_version = New System.Windows.Forms.Label()
         Me.lbl_close = New System.Windows.Forms.LinkLabel()
         Me.lbl_VersionNr = New System.Windows.Forms.Label()
-        Me.Lbl_Copyright = New System.Windows.Forms.Label()
         CType(Me.pb_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -50,9 +49,9 @@ Partial Class form_about
         Me.lbl_AppName.ForeColor = System.Drawing.Color.White
         Me.lbl_AppName.Location = New System.Drawing.Point(145, 52)
         Me.lbl_AppName.Name = "lbl_AppName"
-        Me.lbl_AppName.Size = New System.Drawing.Size(128, 29)
+        Me.lbl_AppName.Size = New System.Drawing.Size(187, 29)
         Me.lbl_AppName.TabIndex = 1
-        Me.lbl_AppName.Text = "Simplapse"
+        Me.lbl_AppName.Text = "Raffy Timelapse"
         '
         'lbl_version
         '
@@ -69,11 +68,12 @@ Partial Class form_about
         '
         Me.lbl_close.ActiveLinkColor = System.Drawing.Color.White
         Me.lbl_close.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbl_close.AutoSize = True
         Me.lbl_close.ForeColor = System.Drawing.Color.White
         Me.lbl_close.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.lbl_close.Location = New System.Drawing.Point(213, 9)
+        Me.lbl_close.Location = New System.Drawing.Point(328, 9)
         Me.lbl_close.Name = "lbl_close"
-        Me.lbl_close.Size = New System.Drawing.Size(150, 14)
+        Me.lbl_close.Size = New System.Drawing.Size(35, 13)
         Me.lbl_close.TabIndex = 3
         Me.lbl_close.TabStop = True
         Me.lbl_close.Text = "Close"
@@ -91,25 +91,14 @@ Partial Class form_about
         Me.lbl_VersionNr.TabIndex = 4
         Me.lbl_VersionNr.Text = "0.0.0"
         '
-        'Lbl_Copyright
-        '
-        Me.Lbl_Copyright.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Lbl_Copyright.AutoSize = True
-        Me.Lbl_Copyright.ForeColor = System.Drawing.Color.White
-        Me.Lbl_Copyright.Location = New System.Drawing.Point(147, 115)
-        Me.Lbl_Copyright.Name = "Lbl_Copyright"
-        Me.Lbl_Copyright.Size = New System.Drawing.Size(145, 13)
-        Me.Lbl_Copyright.TabIndex = 5
-        Me.Lbl_Copyright.Text = "Copyright © 2017 Limosoft"
-        '
         'form_about
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.CancelButton = Me.lbl_close
         Me.ClientSize = New System.Drawing.Size(375, 176)
         Me.ControlBox = False
-        Me.Controls.Add(Me.Lbl_Copyright)
         Me.Controls.Add(Me.lbl_VersionNr)
         Me.Controls.Add(Me.lbl_close)
         Me.Controls.Add(Me.lbl_version)
@@ -134,5 +123,4 @@ Partial Class form_about
     Friend WithEvents lbl_version As Label
     Friend WithEvents lbl_close As LinkLabel
     Friend WithEvents lbl_VersionNr As Label
-    Friend WithEvents Lbl_Copyright As Label
 End Class

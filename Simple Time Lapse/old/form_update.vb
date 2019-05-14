@@ -1,23 +1,22 @@
 ﻿Public Class form_update
-    'Private Sub form_update_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-    '    btn_update.Enabled = False
-    '    lbl_LocalVersionNr.Text = My.Settings.app_Version
+    Private Sub form_update_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        '    btn_update.Enabled = False
+        '    lbl_LocalVersionNr.Text = My.Settings.app_Version
 
-    '    TranslateForm()
-    '    CheckForUpdate()
-    'End Sub
+        '    TranslateForm()
+        '    CheckForUpdate()
+    End Sub
 
-    'Private Sub TranslateForm()
-    '    Me.Text = TransString("Update")
+    Private Sub TranslateForm()
+        Me.Text = TransString("Update")
 
-    '    btn_cancel.Text = TransString("_General_cancel")
-    '    btn_update.Text = TransString("Update_btn_update")
+        btn_cancel.Text = TransString("_General_cancel")
+        btn_update.Text = TransString("Update_btn_update")
 
-    '    lbl_LocalVersion.Text = TransString("Update_lbl_LocalVersion")
-    '    lbl_NewestVersion.Text = TransString("Update_lbl_NewestVersion")
-    '    lbl_changelog.Text = TransString("Update_lbl_changelog")
-
-    'End Sub
+        lbl_LocalVersion.Text = TransString("Update_lbl_LocalVersion")
+        lbl_NewestVersion.Text = TransString("Update_lbl_NewestVersion")
+        lbl_changelog.Text = TransString("Update_lbl_changelog")
+    End Sub
 
     'Private Sub CheckForUpdate()
 

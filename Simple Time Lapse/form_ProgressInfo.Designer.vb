@@ -70,8 +70,8 @@ Partial Class form_ProgressInfo
         'pb
         '
         Me.pb.BackColor = System.Drawing.SystemColors.Control
-        Me.pb.Image = Global.Simplapse.My.Resources.Resources.loading
-        Me.pb.InitialImage = Global.Simplapse.My.Resources.Resources.loading
+        Me.pb.Image = Global.Raffy_Timelapse.My.Resources.Resources.loading
+        Me.pb.InitialImage = Global.Raffy_Timelapse.My.Resources.Resources.loading
         Me.pb.Location = New System.Drawing.Point(12, 12)
         Me.pb.Name = "pb"
         Me.pb.Size = New System.Drawing.Size(47, 54)

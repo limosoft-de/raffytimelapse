@@ -29,9 +29,9 @@ Partial Class form_update
         Me.lbl_NewestVersionNr = New System.Windows.Forms.Label()
         Me.lbl_changelog = New System.Windows.Forms.Label()
         Me.rtb_changelog = New System.Windows.Forms.RichTextBox()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lbl_NewestVersion = New System.Windows.Forms.Label()
         Me.lbl_LocalVersion = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -40,6 +40,7 @@ Partial Class form_update
         Me.btn_update.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_update.Enabled = False
         Me.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_update.ForeColor = System.Drawing.Color.White
         Me.btn_update.Location = New System.Drawing.Point(195, 339)
         Me.btn_update.Name = "btn_update"
         Me.btn_update.Size = New System.Drawing.Size(75, 23)
@@ -51,6 +52,7 @@ Partial Class form_update
         '
         Me.btn_cancel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_cancel.ForeColor = System.Drawing.Color.White
         Me.btn_cancel.Location = New System.Drawing.Point(276, 339)
         Me.btn_cancel.Name = "btn_cancel"
         Me.btn_cancel.Size = New System.Drawing.Size(75, 23)
@@ -60,9 +62,9 @@ Partial Class form_update
         '
         'lbl_LocalVersionNr
         '
-        Me.lbl_LocalVersionNr.BackColor = System.Drawing.SystemColors.Control
+        Me.lbl_LocalVersionNr.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.lbl_LocalVersionNr.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_LocalVersionNr.ForeColor = System.Drawing.Color.Black
+        Me.lbl_LocalVersionNr.ForeColor = System.Drawing.Color.White
         Me.lbl_LocalVersionNr.Location = New System.Drawing.Point(119, 24)
         Me.lbl_LocalVersionNr.Name = "lbl_LocalVersionNr"
         Me.lbl_LocalVersionNr.Size = New System.Drawing.Size(153, 21)
@@ -71,9 +73,9 @@ Partial Class form_update
         '
         'lbl_NewestVersionNr
         '
-        Me.lbl_NewestVersionNr.BackColor = System.Drawing.SystemColors.Control
+        Me.lbl_NewestVersionNr.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.lbl_NewestVersionNr.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_NewestVersionNr.ForeColor = System.Drawing.Color.Black
+        Me.lbl_NewestVersionNr.ForeColor = System.Drawing.Color.White
         Me.lbl_NewestVersionNr.Location = New System.Drawing.Point(119, 49)
         Me.lbl_NewestVersionNr.Name = "lbl_NewestVersionNr"
         Me.lbl_NewestVersionNr.Size = New System.Drawing.Size(153, 21)
@@ -84,7 +86,7 @@ Partial Class form_update
         '
         Me.lbl_changelog.AutoSize = True
         Me.lbl_changelog.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_changelog.ForeColor = System.Drawing.Color.Black
+        Me.lbl_changelog.ForeColor = System.Drawing.Color.White
         Me.lbl_changelog.Location = New System.Drawing.Point(12, 99)
         Me.lbl_changelog.Name = "lbl_changelog"
         Me.lbl_changelog.Size = New System.Drawing.Size(88, 17)
@@ -93,7 +95,7 @@ Partial Class form_update
         '
         'rtb_changelog
         '
-        Me.rtb_changelog.BackColor = System.Drawing.Color.White
+        Me.rtb_changelog.BackColor = System.Drawing.Color.Gray
         Me.rtb_changelog.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.rtb_changelog.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.rtb_changelog.Location = New System.Drawing.Point(15, 119)
@@ -103,26 +105,10 @@ Partial Class form_update
         Me.rtb_changelog.TabIndex = 5
         Me.rtb_changelog.Text = ""
         '
-        'GroupBox1
-        '
-        Me.GroupBox1.BackColor = System.Drawing.SystemColors.Control
-        Me.GroupBox1.Controls.Add(Me.lbl_NewestVersion)
-        Me.GroupBox1.Controls.Add(Me.lbl_NewestVersionNr)
-        Me.GroupBox1.Controls.Add(Me.lbl_LocalVersion)
-        Me.GroupBox1.Controls.Add(Me.lbl_LocalVersionNr)
-        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
-        Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(339, 84)
-        Me.GroupBox1.TabIndex = 7
-        Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "Versions"
-        '
         'lbl_NewestVersion
         '
         Me.lbl_NewestVersion.AutoSize = True
-        Me.lbl_NewestVersion.ForeColor = System.Drawing.Color.Black
+        Me.lbl_NewestVersion.ForeColor = System.Drawing.Color.White
         Me.lbl_NewestVersion.Location = New System.Drawing.Point(6, 49)
         Me.lbl_NewestVersion.Name = "lbl_NewestVersion"
         Me.lbl_NewestVersion.Size = New System.Drawing.Size(101, 17)
@@ -132,19 +118,34 @@ Partial Class form_update
         'lbl_LocalVersion
         '
         Me.lbl_LocalVersion.AutoSize = True
-        Me.lbl_LocalVersion.ForeColor = System.Drawing.Color.Black
+        Me.lbl_LocalVersion.ForeColor = System.Drawing.Color.White
         Me.lbl_LocalVersion.Location = New System.Drawing.Point(6, 24)
         Me.lbl_LocalVersion.Name = "lbl_LocalVersion"
-        Me.lbl_LocalVersion.Size = New System.Drawing.Size(87, 17)
+        Me.lbl_LocalVersion.Size = New System.Drawing.Size(83, 17)
         Me.lbl_LocalVersion.TabIndex = 0
-        Me.lbl_LocalVersion.Text = "Local version:"
+        Me.lbl_LocalVersion.Text = "Your version:"
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.GroupBox1.Controls.Add(Me.lbl_NewestVersion)
+        Me.GroupBox1.Controls.Add(Me.lbl_NewestVersionNr)
+        Me.GroupBox1.Controls.Add(Me.lbl_LocalVersion)
+        Me.GroupBox1.Controls.Add(Me.lbl_LocalVersionNr)
+        Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.ForeColor = System.Drawing.Color.White
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 9)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(339, 84)
+        Me.GroupBox1.TabIndex = 7
+        Me.GroupBox1.TabStop = False
         '
         'form_update
         '
         Me.AcceptButton = Me.btn_update
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.Control
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(363, 374)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.rtb_changelog)
@@ -172,7 +173,7 @@ Partial Class form_update
     Friend WithEvents lbl_NewestVersionNr As Label
     Friend WithEvents lbl_changelog As Label
     Friend WithEvents rtb_changelog As RichTextBox
-    Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents lbl_LocalVersion As Label
     Friend WithEvents lbl_NewestVersion As Label
+    Friend WithEvents GroupBox1 As GroupBox
 End Class

@@ -28,6 +28,9 @@
         gb_updates.Text = TransString("Settings_tc_general_gb_updates")
         cb_AutoUpdate.Text = TransString("Settings_tc_general_cb_AutoUpdate")
 
+        gb_keys.Text = TransString("Settings_tc_general_gb_keys")
+        lbl_MoveImg.Text = TransString("Settings_tc_general_gb_keys_lbl_MoveImg")
+
         KeysMove = TransString("Settings_tc_general_gb_keys_cb_MoveImg").Split(",")
         For i = 0 To KeysMove.Length - 1
             cb_MoveImg.Items.Add(KeysMove(i))

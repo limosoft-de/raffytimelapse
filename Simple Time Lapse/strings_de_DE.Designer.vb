@@ -21,7 +21,7 @@ Imports System
 '''<summary>
 '''  Eine stark typisierte Ressourcenklasse zum Suchen von lokalisierten Zeichenfolgen usw.
 '''</summary>
-<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0"),  _
+<Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0"),  _
  Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
  Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>  _
 Friend Class strings_de_DE
@@ -208,7 +208,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Es steht eine aktuellere Version von &apos;Simplapse&apos; zur Verfügung. Klicken Sie auf &apos;Update&apos; um das Update jetzt herunterzuladen und zu installieren. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Es steht eine aktuellere Version von &apos;Raffy Timelapse&apos; zur Verfügung. Klicken Sie auf &apos;Update&apos; um das Update jetzt herunterzuladen und zu installieren. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property AutoUpdate_lbl_info() As String
         Get
@@ -343,7 +343,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Die bevorzugte Supportvariante für &apos;Simplapse&apos; bildet unser Ticketsystem auf &apos;sourceforge.net&apos;. Wir haben Ticketsysteme für verschiedene Kategorien: ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Die bevorzugte Supportvariante für &apos;Raffy Timelapse&apos; bildet unser Ticketsystem auf &apos;sourceforge.net&apos;. Wir haben Ticketsysteme für verschiedene Kategorien: ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Help_lbl_online() As String
         Get
@@ -694,7 +694,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Simplapse konnte die Datei &apos;FFmpeg.exe&apos; nicht finden, welche für das Programm benötigt wird. Möchten Sie diese Datei nun downloaden? ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Raffy Timelapse konnte die Datei &apos;FFmpeg.exe&apos; nicht finden, welche für das Programm benötigt wird. Möchten Sie diese Datei nun downloaden? ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_msg_ffmpeg() As String
         Get
@@ -739,7 +739,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die &apos;Simplapse&apos; ist ein kostenloses Programm und wird dies auch bleiben. Desweiteren möchten wir nicht nach Geld fragen. Stattdessen gibt es eine andere Möglichkeit uns zu unterstützen: das Programm für weltweite Nutzer in andere Sprachen übersetzen. Es geht ganz einfach! ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die &apos;Raffy Timelapse&apos; ist ein kostenloses Programm und wird dies auch bleiben. Desweiteren möchten wir nicht nach Geld fragen. Stattdessen gibt es eine andere Möglichkeit uns zu unterstützen: das Programm für weltweite Nutzer in andere Sprachen übersetzen. Es geht ganz einfach! ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Participation_lbl_desc() As String
         Get
@@ -1027,7 +1027,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Lokale Version: ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Ihre Version: ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Update_lbl_LocalVersion() As String
         Get

@@ -27,35 +27,36 @@ Partial Class form_main
         Me.lbl_preview = New System.Windows.Forms.Label()
         Me.bw_Rendering = New System.ComponentModel.BackgroundWorker()
         Me.gb_PictureEdit = New System.Windows.Forms.GroupBox()
-        Me.btn_MultiSelect = New System.Windows.Forms.Button()
-        Me.btn_del = New System.Windows.Forms.Button()
-        Me.btn_MoveDwn = New System.Windows.Forms.Button()
-        Me.btn_MoveUp = New System.Windows.Forms.Button()
         Me.ms = New System.Windows.Forms.MenuStrip()
         Me.ms_file = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_file_new = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_file_new_project = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_file_new_window = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_file_import = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.ms_file_exit = New System.Windows.Forms.ToolStripMenuItem()
         Me.ms_about = New System.Windows.Forms.ToolStripMenuItem()
         Me.ms_about_about = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_about_credits = New System.Windows.Forms.ToolStripMenuItem()
         Me.ms_about_update = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
-        Me.ms_about_settings = New System.Windows.Forms.ToolStripMenuItem()
         Me.ms_help = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_help_help = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ms_help_SupportUs = New System.Windows.Forms.ToolStripMenuItem()
+        Me.lbl_PreviewFile = New System.Windows.Forms.Label()
+        Me.Bw_UpdateSearch = New System.ComponentModel.BackgroundWorker()
+        Me.btn_MultiSelect = New System.Windows.Forms.Button()
+        Me.btn_del = New System.Windows.Forms.Button()
+        Me.btn_MoveDwn = New System.Windows.Forms.Button()
+        Me.btn_MoveUp = New System.Windows.Forms.Button()
+        Me.btn_start = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.btn_drop = New System.Windows.Forms.Button()
         Me.lbl_drop = New System.Windows.Forms.Label()
         Me.lb_pictures = New System.Windows.Forms.ListBox()
         Me.pb_preview = New System.Windows.Forms.PictureBox()
-        Me.btn_start = New System.Windows.Forms.Button()
-        Me.lbl_PreviewFile = New System.Windows.Forms.Label()
+        Me.ms_file_new = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_file_new_project = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_file_new_window = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_file_import = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_about_credits = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_about_settings = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_help_help = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ms_help_SupportUs = New System.Windows.Forms.ToolStripMenuItem()
         Me.gb_PictureEdit.SuspendLayout()
         Me.ms.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -72,7 +73,7 @@ Partial Class form_main
         Me.lbl_timeline.Name = "lbl_timeline"
         Me.lbl_timeline.Size = New System.Drawing.Size(56, 17)
         Me.lbl_timeline.TabIndex = 5
-        Me.lbl_timeline.Text = "Tiemline"
+        Me.lbl_timeline.Text = "Timeline"
         '
         'lbl_preview
         '
@@ -107,6 +108,81 @@ Partial Class form_main
         Me.gb_PictureEdit.TabIndex = 7
         Me.gb_PictureEdit.TabStop = False
         Me.gb_PictureEdit.Text = "Edit Picture"
+        '
+        'ms
+        '
+        Me.ms.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_file, Me.ms_about, Me.ms_help})
+        Me.ms.Location = New System.Drawing.Point(0, 0)
+        Me.ms.Name = "ms"
+        Me.ms.Size = New System.Drawing.Size(984, 24)
+        Me.ms.TabIndex = 8
+        Me.ms.Text = "MenuStrip1"
+        '
+        'ms_file
+        '
+        Me.ms_file.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_file_new, Me.ms_file_import, Me.ToolStripSeparator2, Me.ms_file_exit})
+        Me.ms_file.Name = "ms_file"
+        Me.ms_file.Size = New System.Drawing.Size(37, 20)
+        Me.ms_file.Text = "File"
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(148, 6)
+        '
+        'ms_file_exit
+        '
+        Me.ms_file_exit.Name = "ms_file_exit"
+        Me.ms_file_exit.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
+        Me.ms_file_exit.Size = New System.Drawing.Size(151, 22)
+        Me.ms_file_exit.Text = "Exit"
+        '
+        'ms_about
+        '
+        Me.ms_about.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_about_about, Me.ms_about_credits, Me.ms_about_update, Me.ToolStripSeparator1, Me.ms_about_settings})
+        Me.ms_about.Name = "ms_about"
+        Me.ms_about.Size = New System.Drawing.Size(52, 20)
+        Me.ms_about.Text = "About"
+        '
+        'ms_about_about
+        '
+        Me.ms_about_about.Name = "ms_about_about"
+        Me.ms_about_about.Size = New System.Drawing.Size(158, 22)
+        Me.ms_about_about.Text = "About"
+        '
+        'ms_about_update
+        '
+        Me.ms_about_update.Name = "ms_about_update"
+        Me.ms_about_update.Size = New System.Drawing.Size(158, 22)
+        Me.ms_about_update.Text = "Update"
+        '
+        'ToolStripSeparator1
+        '
+        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(155, 6)
+        '
+        'ms_help
+        '
+        Me.ms_help.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_help_help, Me.ms_help_SupportUs})
+        Me.ms_help.Name = "ms_help"
+        Me.ms_help.Size = New System.Drawing.Size(44, 20)
+        Me.ms_help.Text = "Help"
+        '
+        'lbl_PreviewFile
+        '
+        Me.lbl_PreviewFile.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbl_PreviewFile.Font = New System.Drawing.Font("Segoe UI", 9.75!)
+        Me.lbl_PreviewFile.ForeColor = System.Drawing.Color.White
+        Me.lbl_PreviewFile.Location = New System.Drawing.Point(254, 31)
+        Me.lbl_PreviewFile.Name = "lbl_PreviewFile"
+        Me.lbl_PreviewFile.Size = New System.Drawing.Size(642, 17)
+        Me.lbl_PreviewFile.TabIndex = 9
+        Me.lbl_PreviewFile.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        '
+        'Bw_UpdateSearch
+        '
+        Me.Bw_UpdateSearch.WorkerReportsProgress = True
         '
         'btn_MultiSelect
         '
@@ -171,123 +247,23 @@ Partial Class form_main
         Me.btn_MoveUp.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText
         Me.btn_MoveUp.UseVisualStyleBackColor = False
         '
-        'ms
+        'btn_start
         '
-        Me.ms.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_file, Me.ms_about, Me.ms_help})
-        Me.ms.Location = New System.Drawing.Point(0, 0)
-        Me.ms.Name = "ms"
-        Me.ms.Size = New System.Drawing.Size(984, 24)
-        Me.ms.TabIndex = 8
-        Me.ms.Text = "MenuStrip1"
-        '
-        'ms_file
-        '
-        Me.ms_file.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_file_new, Me.ms_file_import, Me.ToolStripSeparator2, Me.ms_file_exit})
-        Me.ms_file.Name = "ms_file"
-        Me.ms_file.Size = New System.Drawing.Size(37, 20)
-        Me.ms_file.Text = "File"
-        '
-        'ms_file_new
-        '
-        Me.ms_file_new.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_file_new_project, Me.ms_file_new_window})
-        Me.ms_file_new.Image = CType(resources.GetObject("ms_file_new.Image"), System.Drawing.Image)
-        Me.ms_file_new.Name = "ms_file_new"
-        Me.ms_file_new.Size = New System.Drawing.Size(151, 22)
-        Me.ms_file_new.Text = "New"
-        '
-        'ms_file_new_project
-        '
-        Me.ms_file_new_project.Image = CType(resources.GetObject("ms_file_new_project.Image"), System.Drawing.Image)
-        Me.ms_file_new_project.Name = "ms_file_new_project"
-        Me.ms_file_new_project.Size = New System.Drawing.Size(127, 22)
-        Me.ms_file_new_project.Text = "Project..."
-        '
-        'ms_file_new_window
-        '
-        Me.ms_file_new_window.Image = CType(resources.GetObject("ms_file_new_window.Image"), System.Drawing.Image)
-        Me.ms_file_new_window.Name = "ms_file_new_window"
-        Me.ms_file_new_window.Size = New System.Drawing.Size(127, 22)
-        Me.ms_file_new_window.Text = "Window..."
-        '
-        'ms_file_import
-        '
-        Me.ms_file_import.Image = CType(resources.GetObject("ms_file_import.Image"), System.Drawing.Image)
-        Me.ms_file_import.Name = "ms_file_import"
-        Me.ms_file_import.Size = New System.Drawing.Size(151, 22)
-        Me.ms_file_import.Text = "Import Images"
-        '
-        'ToolStripSeparator2
-        '
-        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(148, 6)
-        '
-        'ms_file_exit
-        '
-        Me.ms_file_exit.Name = "ms_file_exit"
-        Me.ms_file_exit.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
-        Me.ms_file_exit.Size = New System.Drawing.Size(151, 22)
-        Me.ms_file_exit.Text = "Exit"
-        '
-        'ms_about
-        '
-        Me.ms_about.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_about_about, Me.ms_about_credits, Me.ms_about_update, Me.ToolStripSeparator1, Me.ms_about_settings})
-        Me.ms_about.Name = "ms_about"
-        Me.ms_about.Size = New System.Drawing.Size(52, 20)
-        Me.ms_about.Text = "About"
-        '
-        'ms_about_about
-        '
-        Me.ms_about_about.Name = "ms_about_about"
-        Me.ms_about_about.Size = New System.Drawing.Size(158, 22)
-        Me.ms_about_about.Text = "About"
-        '
-        'ms_about_credits
-        '
-        Me.ms_about_credits.Image = CType(resources.GetObject("ms_about_credits.Image"), System.Drawing.Image)
-        Me.ms_about_credits.Name = "ms_about_credits"
-        Me.ms_about_credits.Size = New System.Drawing.Size(158, 22)
-        Me.ms_about_credits.Text = "Credits"
-        '
-        'ms_about_update
-        '
-        Me.ms_about_update.Name = "ms_about_update"
-        Me.ms_about_update.Size = New System.Drawing.Size(158, 22)
-        Me.ms_about_update.Text = "Update"
-        '
-        'ToolStripSeparator1
-        '
-        Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(155, 6)
-        '
-        'ms_about_settings
-        '
-        Me.ms_about_settings.Image = CType(resources.GetObject("ms_about_settings.Image"), System.Drawing.Image)
-        Me.ms_about_settings.Name = "ms_about_settings"
-        Me.ms_about_settings.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.ms_about_settings.Size = New System.Drawing.Size(158, 22)
-        Me.ms_about_settings.Text = "Settings"
-        '
-        'ms_help
-        '
-        Me.ms_help.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_help_help, Me.ms_help_SupportUs})
-        Me.ms_help.Name = "ms_help"
-        Me.ms_help.Size = New System.Drawing.Size(44, 20)
-        Me.ms_help.Text = "Help"
-        '
-        'ms_help_help
-        '
-        Me.ms_help_help.Image = CType(resources.GetObject("ms_help_help.Image"), System.Drawing.Image)
-        Me.ms_help_help.Name = "ms_help_help"
-        Me.ms_help_help.ShortcutKeys = System.Windows.Forms.Keys.F1
-        Me.ms_help_help.Size = New System.Drawing.Size(132, 22)
-        Me.ms_help_help.Text = "Help"
-        '
-        'ms_help_SupportUs
-        '
-        Me.ms_help_SupportUs.Image = CType(resources.GetObject("ms_help_SupportUs.Image"), System.Drawing.Image)
-        Me.ms_help_SupportUs.Name = "ms_help_SupportUs"
-        Me.ms_help_SupportUs.Size = New System.Drawing.Size(132, 22)
-        Me.ms_help_SupportUs.Text = "Support Us"
+        Me.btn_start.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btn_start.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btn_start.Enabled = False
+        Me.btn_start.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_start.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_start.ForeColor = System.Drawing.Color.White
+        Me.btn_start.Image = CType(resources.GetObject("btn_start.Image"), System.Drawing.Image)
+        Me.btn_start.Location = New System.Drawing.Point(854, 511)
+        Me.btn_start.Name = "btn_start"
+        Me.btn_start.Size = New System.Drawing.Size(121, 52)
+        Me.btn_start.TabIndex = 0
+        Me.btn_start.Text = "Start"
+        Me.btn_start.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.btn_start.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
+        Me.btn_start.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -356,6 +332,9 @@ Partial Class form_main
         '
         'pb_preview
         '
+        Me.pb_preview.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.pb_preview.BackColor = System.Drawing.Color.Gray
         Me.pb_preview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.pb_preview.Location = New System.Drawing.Point(180, 51)
@@ -365,49 +344,79 @@ Partial Class form_main
         Me.pb_preview.TabIndex = 2
         Me.pb_preview.TabStop = False
         '
-        'btn_start
+        'ms_file_new
         '
-        Me.btn_start.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btn_start.Enabled = False
-        Me.btn_start.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_start.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_start.ForeColor = System.Drawing.Color.White
-        Me.btn_start.Image = CType(resources.GetObject("btn_start.Image"), System.Drawing.Image)
-        Me.btn_start.Location = New System.Drawing.Point(854, 511)
-        Me.btn_start.Name = "btn_start"
-        Me.btn_start.Size = New System.Drawing.Size(121, 52)
-        Me.btn_start.TabIndex = 0
-        Me.btn_start.Text = "Start"
-        Me.btn_start.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        Me.btn_start.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage
-        Me.btn_start.UseVisualStyleBackColor = True
+        Me.ms_file_new.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_file_new_project, Me.ms_file_new_window})
+        Me.ms_file_new.Image = CType(resources.GetObject("ms_file_new.Image"), System.Drawing.Image)
+        Me.ms_file_new.Name = "ms_file_new"
+        Me.ms_file_new.Size = New System.Drawing.Size(151, 22)
+        Me.ms_file_new.Text = "New"
         '
-        'lbl_PreviewFile
+        'ms_file_new_project
         '
-        Me.lbl_PreviewFile.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lbl_PreviewFile.Font = New System.Drawing.Font("Segoe UI", 9.75!)
-        Me.lbl_PreviewFile.ForeColor = System.Drawing.Color.White
-        Me.lbl_PreviewFile.Location = New System.Drawing.Point(254, 31)
-        Me.lbl_PreviewFile.Name = "lbl_PreviewFile"
-        Me.lbl_PreviewFile.Size = New System.Drawing.Size(642, 17)
-        Me.lbl_PreviewFile.TabIndex = 9
-        Me.lbl_PreviewFile.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.ms_file_new_project.Image = CType(resources.GetObject("ms_file_new_project.Image"), System.Drawing.Image)
+        Me.ms_file_new_project.Name = "ms_file_new_project"
+        Me.ms_file_new_project.Size = New System.Drawing.Size(127, 22)
+        Me.ms_file_new_project.Text = "Project..."
+        '
+        'ms_file_new_window
+        '
+        Me.ms_file_new_window.Image = CType(resources.GetObject("ms_file_new_window.Image"), System.Drawing.Image)
+        Me.ms_file_new_window.Name = "ms_file_new_window"
+        Me.ms_file_new_window.Size = New System.Drawing.Size(127, 22)
+        Me.ms_file_new_window.Text = "Window..."
+        '
+        'ms_file_import
+        '
+        Me.ms_file_import.Image = CType(resources.GetObject("ms_file_import.Image"), System.Drawing.Image)
+        Me.ms_file_import.Name = "ms_file_import"
+        Me.ms_file_import.Size = New System.Drawing.Size(151, 22)
+        Me.ms_file_import.Text = "Import Images"
+        '
+        'ms_about_credits
+        '
+        Me.ms_about_credits.Image = CType(resources.GetObject("ms_about_credits.Image"), System.Drawing.Image)
+        Me.ms_about_credits.Name = "ms_about_credits"
+        Me.ms_about_credits.Size = New System.Drawing.Size(158, 22)
+        Me.ms_about_credits.Text = "Credits"
+        '
+        'ms_about_settings
+        '
+        Me.ms_about_settings.Image = CType(resources.GetObject("ms_about_settings.Image"), System.Drawing.Image)
+        Me.ms_about_settings.Name = "ms_about_settings"
+        Me.ms_about_settings.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.ms_about_settings.Size = New System.Drawing.Size(158, 22)
+        Me.ms_about_settings.Text = "Settings"
+        '
+        'ms_help_help
+        '
+        Me.ms_help_help.Image = CType(resources.GetObject("ms_help_help.Image"), System.Drawing.Image)
+        Me.ms_help_help.Name = "ms_help_help"
+        Me.ms_help_help.ShortcutKeys = System.Windows.Forms.Keys.F1
+        Me.ms_help_help.Size = New System.Drawing.Size(132, 22)
+        Me.ms_help_help.Text = "Help"
+        '
+        'ms_help_SupportUs
+        '
+        Me.ms_help_SupportUs.Image = CType(resources.GetObject("ms_help_SupportUs.Image"), System.Drawing.Image)
+        Me.ms_help_SupportUs.Name = "ms_help_SupportUs"
+        Me.ms_help_SupportUs.Size = New System.Drawing.Size(132, 22)
+        Me.ms_help_SupportUs.Text = "Support Us"
         '
         'form_main
         '
         Me.AllowDrop = True
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(984, 576)
-        Me.Controls.Add(Me.lbl_PreviewFile)
         Me.Controls.Add(Me.gb_PictureEdit)
+        Me.Controls.Add(Me.btn_start)
+        Me.Controls.Add(Me.lbl_PreviewFile)
         Me.Controls.Add(Me.lbl_preview)
         Me.Controls.Add(Me.lbl_timeline)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.pb_preview)
-        Me.Controls.Add(Me.btn_start)
         Me.Controls.Add(Me.ms)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.ms
@@ -458,4 +467,5 @@ Partial Class form_main
     Friend WithEvents ms_help_help As ToolStripMenuItem
     Friend WithEvents ms_help_SupportUs As ToolStripMenuItem
     Friend WithEvents lbl_PreviewFile As Label
+    Friend WithEvents Bw_UpdateSearch As System.ComponentModel.BackgroundWorker
 End Class

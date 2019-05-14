@@ -38,8 +38,7 @@ Public Class form_main
         Panel2.Top = (Me.ClientSize.Height - lbl_drop.Height) / 2 - 30
         TranslateForm()
 
-
-
+        lb_pictures.DrawMode = DrawMode.OwnerDrawFixed
 
     End Sub
 
@@ -61,18 +60,8 @@ Public Class form_main
 
 
     Private Sub form_main_Resize(sender As Object, e As EventArgs) Handles Me.Resize
+
         Panel2.Top = (Me.ClientSize.Height - lbl_drop.Height) / 2 - 30
-
-        Dim PlannedWidth As Integer = Width - pb_preview.Location.X - 25 '25 = Abstand zwischen pb und rechter Formborder
-        Dim PlannedHeight As Integer = PlannedWidth / (16 / 9)
-
-        If pb_preview.Location.Y + PlannedHeight >= gb_PictureEdit.Location.Y - 6 Then '6 = Abstand zwischen pb und gb
-            pb_preview.Height = gb_PictureEdit.Location.Y - pb_preview.Location.Y - 6
-            pb_preview.Width = (16 / 9) * pb_preview.Height
-        Else
-            pb_preview.Width = PlannedWidth
-            pb_preview.Height = PlannedHeight
-        End If
 
     End Sub
 
@@ -724,7 +713,6 @@ Public Class form_main
             My.Computer.FileSystem.DeleteDirectory(Application.UserAppDataPath & "\temp\", FileIO.DeleteDirectoryOption.DeleteAllContents)
         End If
     End Sub
-
 
 #End Region
 

@@ -4,6 +4,20 @@ Imports nUpdate.Updating
 
 Module Update
 
+    Function testconnection() As Boolean
+
+        Try
+            My.Computer.Network.Ping("sourceforge.net")
+        Catch ex As Exception
+            Return False
+            Exit Function
+        End Try
+
+        Return True
+
+    End Function
+
+
 #Region "nUpdate Translation"
     Public Function GetCulture() As String
 
