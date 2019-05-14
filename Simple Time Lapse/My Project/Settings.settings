@@ -32,9 +32,6 @@
     <Setting Name="url_FFmpeg" Type="System.String" Scope="User">
       <Value Profile="(Default)">http://simpletimelapse.sourceforge.net/ffmpeg.html</Value>
     </Setting>
-    <Setting Name="app_portable" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
-    </Setting>
     <Setting Name="set_ImgMove" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>

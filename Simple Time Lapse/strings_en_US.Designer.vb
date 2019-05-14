@@ -1045,11 +1045,38 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die No connection to the update servers. Couldn&apos;t check for new Updates. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die No connection to the update servers. ähnelt.
     '''</summary>
-    Friend Shared ReadOnly Property Update_msg_NoInternet() As String
+    Friend Shared ReadOnly Property UpdateSearch_lbl_progress_1() As String
         Get
-            Return ResourceManager.GetString("Update_msg_NoInternet", resourceCulture)
+            Return ResourceManager.GetString("UpdateSearch_lbl_progress-1", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Searching for updates... ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property UpdateSearch_lbl_progress0() As String
+        Get
+            Return ResourceManager.GetString("UpdateSearch_lbl_progress0", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die You are already using the newest version! ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property UpdateSearch_lbl_progress1() As String
+        Get
+            Return ResourceManager.GetString("UpdateSearch_lbl_progress1", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Loading details of new version... ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property UpdateSearch_lbl_progress2() As String
+        Get
+            Return ResourceManager.GetString("UpdateSearch_lbl_progress2", resourceCulture)
         End Get
     End Property
 End Class

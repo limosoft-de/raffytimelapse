@@ -297,8 +297,8 @@
   <data name="Update_lbl_NewestVersion" xml:space="preserve">
     <value>Newest version:</value>
   </data>
-  <data name="Update_msg_NoInternet" xml:space="preserve">
-    <value>No connection to the update servers. Couldn't check for new Updates.</value>
+  <data name="UpdateSearch_lbl_progress-1" xml:space="preserve">
+    <value>No connection to the update servers.</value>
   </data>
   <data name="_General_info" xml:space="preserve">
     <value>Information</value>
@@ -447,5 +447,14 @@
   </data>
   <data name="Import_lbl_progress2" xml:space="preserve">
     <value>of</value>
+  </data>
+  <data name="UpdateSearch_lbl_progress0" xml:space="preserve">
+    <value>Searching for updates...</value>
+  </data>
+  <data name="UpdateSearch_lbl_progress1" xml:space="preserve">
+    <value>You are already using the newest version!</value>
+  </data>
+  <data name="UpdateSearch_lbl_progress2" xml:space="preserve">
+    <value>Loading details of new version...</value>
   </data>
 </root>

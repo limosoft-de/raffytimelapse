@@ -32,13 +32,14 @@ Partial Class form_update
         Me.lbl_NewestVersion = New System.Windows.Forms.Label()
         Me.lbl_LocalVersion = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.bw_UpdateDetails = New System.ComponentModel.BackgroundWorker()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'btn_update
         '
         Me.btn_update.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btn_update.Enabled = False
         Me.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btn_update.ForeColor = System.Drawing.Color.White
         Me.btn_update.Location = New System.Drawing.Point(195, 339)
@@ -65,7 +66,7 @@ Partial Class form_update
         Me.lbl_LocalVersionNr.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.lbl_LocalVersionNr.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_LocalVersionNr.ForeColor = System.Drawing.Color.White
-        Me.lbl_LocalVersionNr.Location = New System.Drawing.Point(119, 24)
+        Me.lbl_LocalVersionNr.Location = New System.Drawing.Point(119, 13)
         Me.lbl_LocalVersionNr.Name = "lbl_LocalVersionNr"
         Me.lbl_LocalVersionNr.Size = New System.Drawing.Size(153, 21)
         Me.lbl_LocalVersionNr.TabIndex = 2
@@ -76,7 +77,7 @@ Partial Class form_update
         Me.lbl_NewestVersionNr.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.lbl_NewestVersionNr.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_NewestVersionNr.ForeColor = System.Drawing.Color.White
-        Me.lbl_NewestVersionNr.Location = New System.Drawing.Point(119, 49)
+        Me.lbl_NewestVersionNr.Location = New System.Drawing.Point(119, 38)
         Me.lbl_NewestVersionNr.Name = "lbl_NewestVersionNr"
         Me.lbl_NewestVersionNr.Size = New System.Drawing.Size(153, 21)
         Me.lbl_NewestVersionNr.TabIndex = 3
@@ -87,7 +88,7 @@ Partial Class form_update
         Me.lbl_changelog.AutoSize = True
         Me.lbl_changelog.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_changelog.ForeColor = System.Drawing.Color.White
-        Me.lbl_changelog.Location = New System.Drawing.Point(12, 99)
+        Me.lbl_changelog.Location = New System.Drawing.Point(12, 89)
         Me.lbl_changelog.Name = "lbl_changelog"
         Me.lbl_changelog.Size = New System.Drawing.Size(88, 17)
         Me.lbl_changelog.TabIndex = 4
@@ -97,11 +98,12 @@ Partial Class form_update
         '
         Me.rtb_changelog.BackColor = System.Drawing.Color.Gray
         Me.rtb_changelog.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.rtb_changelog.Cursor = System.Windows.Forms.Cursors.Default
         Me.rtb_changelog.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.rtb_changelog.Location = New System.Drawing.Point(15, 119)
+        Me.rtb_changelog.Location = New System.Drawing.Point(15, 109)
         Me.rtb_changelog.Name = "rtb_changelog"
         Me.rtb_changelog.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical
-        Me.rtb_changelog.Size = New System.Drawing.Size(336, 203)
+        Me.rtb_changelog.Size = New System.Drawing.Size(336, 213)
         Me.rtb_changelog.TabIndex = 5
         Me.rtb_changelog.Text = ""
         '
@@ -109,7 +111,7 @@ Partial Class form_update
         '
         Me.lbl_NewestVersion.AutoSize = True
         Me.lbl_NewestVersion.ForeColor = System.Drawing.Color.White
-        Me.lbl_NewestVersion.Location = New System.Drawing.Point(6, 49)
+        Me.lbl_NewestVersion.Location = New System.Drawing.Point(6, 38)
         Me.lbl_NewestVersion.Name = "lbl_NewestVersion"
         Me.lbl_NewestVersion.Size = New System.Drawing.Size(101, 17)
         Me.lbl_NewestVersion.TabIndex = 1
@@ -119,7 +121,7 @@ Partial Class form_update
         '
         Me.lbl_LocalVersion.AutoSize = True
         Me.lbl_LocalVersion.ForeColor = System.Drawing.Color.White
-        Me.lbl_LocalVersion.Location = New System.Drawing.Point(6, 24)
+        Me.lbl_LocalVersion.Location = New System.Drawing.Point(6, 13)
         Me.lbl_LocalVersion.Name = "lbl_LocalVersion"
         Me.lbl_LocalVersion.Size = New System.Drawing.Size(83, 17)
         Me.lbl_LocalVersion.TabIndex = 0
@@ -134,11 +136,15 @@ Partial Class form_update
         Me.GroupBox1.Controls.Add(Me.lbl_LocalVersionNr)
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.White
-        Me.GroupBox1.Location = New System.Drawing.Point(12, 9)
+        Me.GroupBox1.Location = New System.Drawing.Point(15, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(339, 84)
+        Me.GroupBox1.Size = New System.Drawing.Size(336, 65)
         Me.GroupBox1.TabIndex = 7
         Me.GroupBox1.TabStop = False
+        '
+        'bw_UpdateDetails
+        '
+        Me.bw_UpdateDetails.WorkerReportsProgress = True
         '
         'form_update
         '
@@ -176,4 +182,6 @@ Partial Class form_update
     Friend WithEvents lbl_LocalVersion As Label
     Friend WithEvents lbl_NewestVersion As Label
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents bw_UpdateDetails As System.ComponentModel.BackgroundWorker
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
 End Class

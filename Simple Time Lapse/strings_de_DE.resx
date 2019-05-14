@@ -297,8 +297,8 @@
   <data name="Update_lbl_NewestVersion" xml:space="preserve">
     <value>Aktuellste Version:</value>
   </data>
-  <data name="Update_msg_NoInternet" xml:space="preserve">
-    <value>Keine Verbindung zu den Update Servern möglich. Es konnte nicht nach einer neueren Version gesucht werden.</value>
+  <data name="UpdateSearch_lbl_progress-1" xml:space="preserve">
+    <value>Keine Verbindung zu den Update-Servern möglich.</value>
   </data>
   <data name="_General_info" xml:space="preserve">
     <value>Information</value>
@@ -447,5 +447,14 @@
   </data>
   <data name="Import_lbl_progress2" xml:space="preserve">
     <value>von</value>
+  </data>
+  <data name="UpdateSearch_lbl_progress0" xml:space="preserve">
+    <value>Suche nach Updates...</value>
+  </data>
+  <data name="UpdateSearch_lbl_progress1" xml:space="preserve">
+    <value>Sie nutzen bereits die neuste Version!</value>
+  </data>
+  <data name="UpdateSearch_lbl_progress2" xml:space="preserve">
+    <value>Lade Details der neuen Version...</value>
   </data>
 </root>

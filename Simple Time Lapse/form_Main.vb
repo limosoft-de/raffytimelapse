@@ -34,34 +34,21 @@ Public Class form_main
 
 #Region "Form-Ereignisse"
 
-    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Panel2.Top = (Me.ClientSize.Height - lbl_drop.Height) / 2 - 30
+    Private Sub form_main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Pnl_TimelineOverlay.Top = (ClientSize.Height - lbl_drop.Height) / 2 - 30
         TranslateForm()
-
-        lb_pictures.DrawMode = DrawMode.OwnerDrawFixed
-
     End Sub
 
     Private Sub form_main_Shown(sender As Object, e As EventArgs) Handles Me.Shown
         CheckForFFmpeg()
-        AutoUpdate()
-    End Sub
-
-    Private Sub CheckForFFmpeg()
-        If File.Exists(Application.StartupPath & "\ffmpeg.exe") Then
-            FFmpegExists = True
-        Else
-            FFmpegExists = False
-            If MessageBox.Show(TransString("Main_msg_ffmpeg"), TransString("_General_error"), MessageBoxButtons.YesNo, MessageBoxIcon.Error) = DialogResult.Yes Then
-                Process.Start(My.Settings.url_FFmpeg)
-            End If
+        If My.Settings.set_AutoUpdate = True Then
+            'Bw_UpdateSearch.RunWorkerAsync()
         End If
     End Sub
 
-
     Private Sub form_main_Resize(sender As Object, e As EventArgs) Handles Me.Resize
 
-        Panel2.Top = (Me.ClientSize.Height - lbl_drop.Height) / 2 - 30
+        Pnl_TimelineOverlay.Top = (Me.ClientSize.Height - lbl_drop.Height) / 2 - 30
 
     End Sub
 
@@ -151,6 +138,23 @@ Public Class form_main
 
         UpdateForm()
 
+    End Sub
+
+#End Region
+
+#Region "FFmpeg Check"
+
+    Private Sub CheckForFFmpeg()
+        If File.Exists(Application.StartupPath & "\ffmpeg.exe") Then
+            FFmpegExists = True
+        Else
+            FFmpegExists = False
+            If MessageBox.Show(TransString("Main_msg_ffmpeg"), TransString("_General_error"), MessageBoxButtons.YesNo, MessageBoxIcon.Error) = DialogResult.Yes Then
+                Process.Start(My.Settings.url_FFmpeg)
+            Else
+                Close()
+            End If
+        End If
     End Sub
 
 #End Region
@@ -337,11 +341,11 @@ Public Class form_main
 
 
         If lb_pictures.Items.Count = 0 Then
-            Panel2.Visible = True
+            Pnl_TimelineOverlay.Visible = True
             btn_start.Enabled = False
             lbl_PreviewFile.Text = ""
         Else
-            Panel2.Visible = False
+            Pnl_TimelineOverlay.Visible = False
 
             If MultiSelect = True Then
                 btn_start.Enabled = False
@@ -389,7 +393,8 @@ Public Class form_main
     End Sub
 
     Private Sub ms_about_update_Click(sender As Object, e As EventArgs) Handles ms_about_update.Click
-        UpdateApp()
+        Dim UpdateSearch As New form_UpdateSearch
+        UpdateSearch.ShowDialog()
     End Sub
 
     Private Sub ms_about_settings_Click(sender As Object, e As EventArgs) Handles ms_about_settings.Click
@@ -515,7 +520,7 @@ Public Class form_main
         '//Bild in Liste aufnehmen
         lb_pictures.Items.Add(path)
 
-        Panel2.Visible = False
+        Pnl_TimelineOverlay.Visible = False
 
         Return True
 
@@ -713,6 +718,10 @@ Public Class form_main
             My.Computer.FileSystem.DeleteDirectory(Application.UserAppDataPath & "\temp\", FileIO.DeleteDirectoryOption.DeleteAllContents)
         End If
     End Sub
+
+#End Region
+
+#Region "Backgroundworker: Update on Startup"
 
 #End Region
 
