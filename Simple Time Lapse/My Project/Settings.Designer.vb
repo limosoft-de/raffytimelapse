@@ -164,7 +164,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("http://simpletimelapse.sourceforge.net/ffmpeg.html")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("http://simpletimelapse.sourceforge.net/ffmpeg-new.html")>  _
         Public Property url_FFmpeg() As String
             Get
                 Return CType(Me("url_FFmpeg"),String)
