@@ -68,6 +68,7 @@ Partial Class form_participation
         'btn_ok
         '
         Me.btn_ok.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btn_ok.ForeColor = System.Drawing.Color.Black
         Me.btn_ok.Location = New System.Drawing.Point(204, 7)
         Me.btn_ok.Name = "btn_ok"
         Me.btn_ok.Size = New System.Drawing.Size(75, 23)

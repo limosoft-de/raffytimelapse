@@ -47,7 +47,7 @@ Partial Class form_Credits
         '
         Me.btn_ok.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_ok.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_ok.ForeColor = System.Drawing.Color.White
+        Me.btn_ok.ForeColor = System.Drawing.Color.Black
         Me.btn_ok.Location = New System.Drawing.Point(226, 7)
         Me.btn_ok.Name = "btn_ok"
         Me.btn_ok.Size = New System.Drawing.Size(75, 23)

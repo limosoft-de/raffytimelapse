@@ -34,15 +34,17 @@ Partial Class form_update
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.bw_UpdateDetails = New System.ComponentModel.BackgroundWorker()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
+        Me.pnl = New System.Windows.Forms.Panel()
         Me.GroupBox1.SuspendLayout()
+        Me.pnl.SuspendLayout()
         Me.SuspendLayout()
         '
         'btn_update
         '
         Me.btn_update.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_update.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_update.ForeColor = System.Drawing.Color.White
-        Me.btn_update.Location = New System.Drawing.Point(195, 339)
+        Me.btn_update.ForeColor = System.Drawing.Color.Black
+        Me.btn_update.Location = New System.Drawing.Point(195, 7)
         Me.btn_update.Name = "btn_update"
         Me.btn_update.Size = New System.Drawing.Size(75, 23)
         Me.btn_update.TabIndex = 0
@@ -53,8 +55,8 @@ Partial Class form_update
         '
         Me.btn_cancel.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_cancel.ForeColor = System.Drawing.Color.White
-        Me.btn_cancel.Location = New System.Drawing.Point(276, 339)
+        Me.btn_cancel.ForeColor = System.Drawing.Color.Black
+        Me.btn_cancel.Location = New System.Drawing.Point(276, 7)
         Me.btn_cancel.Name = "btn_cancel"
         Me.btn_cancel.Size = New System.Drawing.Size(75, 23)
         Me.btn_cancel.TabIndex = 1
@@ -105,7 +107,7 @@ Partial Class form_update
         Me.rtb_changelog.Location = New System.Drawing.Point(15, 109)
         Me.rtb_changelog.Name = "rtb_changelog"
         Me.rtb_changelog.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.ForcedVertical
-        Me.rtb_changelog.Size = New System.Drawing.Size(336, 213)
+        Me.rtb_changelog.Size = New System.Drawing.Size(336, 248)
         Me.rtb_changelog.TabIndex = 5
         Me.rtb_changelog.Text = ""
         '
@@ -150,18 +152,28 @@ Partial Class form_update
         '
         Me.bw_UpdateDetails.WorkerReportsProgress = True
         '
+        'pnl
+        '
+        Me.pnl.BackColor = System.Drawing.Color.Gray
+        Me.pnl.Controls.Add(Me.btn_cancel)
+        Me.pnl.Controls.Add(Me.btn_update)
+        Me.pnl.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.pnl.Location = New System.Drawing.Point(0, 363)
+        Me.pnl.Name = "pnl"
+        Me.pnl.Size = New System.Drawing.Size(363, 37)
+        Me.pnl.TabIndex = 8
+        '
         'form_update
         '
         Me.AcceptButton = Me.btn_update
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(363, 374)
+        Me.ClientSize = New System.Drawing.Size(363, 400)
+        Me.Controls.Add(Me.pnl)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.rtb_changelog)
         Me.Controls.Add(Me.lbl_changelog)
-        Me.Controls.Add(Me.btn_cancel)
-        Me.Controls.Add(Me.btn_update)
         Me.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
@@ -172,6 +184,7 @@ Partial Class form_update
         Me.Text = "form_update"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
+        Me.pnl.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -188,4 +201,5 @@ Partial Class form_update
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents bw_UpdateDetails As System.ComponentModel.BackgroundWorker
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents pnl As Panel
 End Class
