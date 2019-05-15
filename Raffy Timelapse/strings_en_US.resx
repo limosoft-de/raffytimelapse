@@ -436,7 +436,7 @@
     <value>Searching for updates...</value>
   </data>
   <data name="UpdateSearch_lbl_progress1" xml:space="preserve">
-    <value>You are already using the newest version!</value>
+    <value>You are already using the latest version!</value>
   </data>
   <data name="UpdateSearch_lbl_progress2" xml:space="preserve">
     <value>Loading details of new version...</value>

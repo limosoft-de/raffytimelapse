@@ -1018,7 +1018,7 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die You are already using the newest version! ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die You are already using the latest version! ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property UpdateSearch_lbl_progress1() As String
         Get
