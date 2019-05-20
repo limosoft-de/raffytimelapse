@@ -224,13 +224,13 @@ Partial Class form_main
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(148, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(187, 6)
         '
         'ms_file_exit
         '
         Me.ms_file_exit.Name = "ms_file_exit"
         Me.ms_file_exit.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
-        Me.ms_file_exit.Size = New System.Drawing.Size(151, 22)
+        Me.ms_file_exit.Size = New System.Drawing.Size(190, 22)
         Me.ms_file_exit.Text = "Exit"
         '
         'ms_about
@@ -243,26 +243,26 @@ Partial Class form_main
         'ms_about_about
         '
         Me.ms_about_about.Name = "ms_about_about"
-        Me.ms_about_about.Size = New System.Drawing.Size(158, 22)
+        Me.ms_about_about.Size = New System.Drawing.Size(181, 22)
         Me.ms_about_about.Text = "About"
         '
         'ms_about_credits
         '
         Me.ms_about_credits.Image = CType(resources.GetObject("ms_about_credits.Image"), System.Drawing.Image)
         Me.ms_about_credits.Name = "ms_about_credits"
-        Me.ms_about_credits.Size = New System.Drawing.Size(158, 22)
+        Me.ms_about_credits.Size = New System.Drawing.Size(181, 22)
         Me.ms_about_credits.Text = "Credits"
         '
         'ms_about_update
         '
         Me.ms_about_update.Name = "ms_about_update"
-        Me.ms_about_update.Size = New System.Drawing.Size(158, 22)
+        Me.ms_about_update.Size = New System.Drawing.Size(181, 22)
         Me.ms_about_update.Text = "Update"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(155, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(178, 6)
         '
         'ms_about_settings
         '
@@ -428,6 +428,7 @@ Partial Class form_main
         Me.MainMenuStrip = Me.ms
         Me.MinimumSize = New System.Drawing.Size(1000, 615)
         Me.Name = "form_main"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Raffy Timelapse"
         Me.gb_PictureEdit.ResumeLayout(False)
         Me.ms.ResumeLayout(False)
