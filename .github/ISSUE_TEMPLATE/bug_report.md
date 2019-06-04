@@ -23,9 +23,9 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Desktop (please complete the following information):**
+**Symstem Information**
  - OS: [e.g. Windows 10]
- - Raffy Timelapse Version [e.g. 2.2.0, can be found under "About" -> "About the software"]
+ - Raffy Timelapse Version: [e.g. 2.2.0, can be found under "About" -> "About the software"]
 
 **Additional context**
 Add any other context about the problem here.
