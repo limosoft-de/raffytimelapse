@@ -1,0 +1,36 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="set_LanguageCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">en_US</Value>
+    </Setting>
+    <Setting Name="app_DefaultLanguageCode" Type="System.String" Scope="User">
+      <Value Profile="(Default)">en_US</Value>
+    </Setting>
+    <Setting Name="set_AutoUpdate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="url_update" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://simpletimelapse.sourceforge.net/update/</Value>
+    </Setting>
+    <Setting Name="url_mail" Type="System.String" Scope="User">
+      <Value Profile="(Default)">limosoft@gmx.de</Value>
+    </Setting>
+    <Setting Name="url_support" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://github.com/limosoft-de/raffytimelapse/issues/</Value>
+    </Setting>
+    <Setting Name="url_translation" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://simpletimelapse.sourceforge.net/translate.html</Value>
+    </Setting>
+    <Setting Name="url_FFmpeg" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://simpletimelapse.sourceforge.net/ffmpeg-new.html</Value>
+    </Setting>
+    <Setting Name="set_ImgMove" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="url_wiki" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://github.com/limosoft-de/raffytimelapse/wiki</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
