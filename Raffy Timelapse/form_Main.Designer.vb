@@ -428,7 +428,6 @@ Partial Class form_main
         Me.MainMenuStrip = Me.ms
         Me.MinimumSize = New System.Drawing.Size(1000, 615)
         Me.Name = "form_main"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Raffy Timelapse"
         Me.gb_PictureEdit.ResumeLayout(False)
         Me.ms.ResumeLayout(False)

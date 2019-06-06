@@ -168,7 +168,7 @@
 
         Select Case cb_quality.Text
             Case TransString("ProjectSettings_cb_quality_hq")
-                form_main.MovPreset = "-crf 1 -preset veryslow -tune film"
+                form_main.MovPreset = "-preset veryslow -crf 0"
             Case TransString("ProjectSettings_cb_quality_mq")
                 form_main.MovPreset = "-crf 23 -preset medium"
             Case TransString("ProjectSettings_cb_quality_lq")

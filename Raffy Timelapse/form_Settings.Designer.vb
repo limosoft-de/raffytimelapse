@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class form_Settings
     Inherits System.Windows.Forms.Form
 
     'Das Formular überschreibt den Löschvorgang, um die Komponentenliste zu bereinigen.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class form_Settings
     'Hinweis: Die folgende Prozedur ist für den Windows Form-Designer erforderlich.
     'Das Bearbeiten ist mit dem Windows Form-Designer möglich.  
     'Das Bearbeiten mit dem Code-Editor ist nicht möglich.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(form_Settings))
         Me.gb_keys = New System.Windows.Forms.GroupBox()
@@ -46,7 +46,7 @@ Partial Class form_Settings
         Me.gb_keys.ForeColor = System.Drawing.Color.White
         Me.gb_keys.Location = New System.Drawing.Point(12, 150)
         Me.gb_keys.Name = "gb_keys"
-        Me.gb_keys.Size = New System.Drawing.Size(294, 87)
+        Me.gb_keys.Size = New System.Drawing.Size(298, 87)
         Me.gb_keys.TabIndex = 2
         Me.gb_keys.TabStop = False
         Me.gb_keys.Text = "Key Assignment"
@@ -58,7 +58,7 @@ Partial Class form_Settings
         Me.cb_MoveImg.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.cb_MoveImg.ForeColor = System.Drawing.Color.White
         Me.cb_MoveImg.FormattingEnabled = True
-        Me.cb_MoveImg.Location = New System.Drawing.Point(19, 45)
+        Me.cb_MoveImg.Location = New System.Drawing.Point(9, 45)
         Me.cb_MoveImg.Name = "cb_MoveImg"
         Me.cb_MoveImg.Size = New System.Drawing.Size(148, 23)
         Me.cb_MoveImg.TabIndex = 1
@@ -66,9 +66,7 @@ Partial Class form_Settings
         'lbl_MoveImg
         '
         Me.lbl_MoveImg.AutoSize = True
-        Me.lbl_MoveImg.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_MoveImg.ForeColor = System.Drawing.Color.White
-        Me.lbl_MoveImg.Location = New System.Drawing.Point(6, 26)
+        Me.lbl_MoveImg.Location = New System.Drawing.Point(6, 25)
         Me.lbl_MoveImg.Name = "lbl_MoveImg"
         Me.lbl_MoveImg.Size = New System.Drawing.Size(151, 15)
         Me.lbl_MoveImg.TabIndex = 0
