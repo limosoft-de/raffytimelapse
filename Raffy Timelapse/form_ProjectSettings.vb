@@ -77,7 +77,7 @@
     End Sub
 
 
-    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles btn_browse.Click
+    Private Sub btn_browse_Click(sender As Object, e As EventArgs) Handles btn_browse.Click
 
         Dim FileTrans As String = TransString("_General_file")
 
@@ -89,11 +89,11 @@
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
+    Private Sub btn_cancel_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
         Close()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btn_ok.Click
+    Private Sub btn_ok_Click(sender As Object, e As EventArgs) Handles btn_ok.Click
 
         '//Speicherort
         If tb_destination.Text = "" Or Not tb_destination.Text.Contains("\") Then
