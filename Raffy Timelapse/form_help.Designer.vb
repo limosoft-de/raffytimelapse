@@ -112,8 +112,9 @@ Partial Class form_help
         Me.lbl_online.Name = "lbl_online"
         Me.lbl_online.Size = New System.Drawing.Size(303, 58)
         Me.lbl_online.TabIndex = 0
-        Me.lbl_online.Text = "The preferred way to get support for 'Simplapse' is to create a ticket online on " &
-    "sourceforge.net. We have different ticket systems for different requirements:"
+        Me.lbl_online.Text = "The preferred way to get support for 'Raffy Timelapse' is to create a ticket onli" &
+    "ne on sourceforge.net. We have different ticket systems for different requiremen" &
+    "ts."
         '
         'lbl_head_general
         '

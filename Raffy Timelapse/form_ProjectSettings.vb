@@ -28,7 +28,7 @@
         With cb_res.Items
             .Add("3.840 x 2.160 (4K)")
             .Add("2.560 x 1.440 (WQHD)")
-            .Add("1920x1080 (Full-HD)")
+            .Add("1920 x 1080 (Full-HD)")
             .Add("1280 x 720 (HD)")
             .Add("854 x 480")
             .Add("640 x 360")
@@ -47,7 +47,7 @@
     Private Sub LoadValues()
         'Default Values
         cb_fps.Text = "25"
-        cb_res.Text = "1920x1080 (Full-HD)"
+        cb_res.Text = TransString("ProjectSettings_cb_resolution_OriginalResolution")
         cb_quality.Text = TransString("ProjectSettings_cb_quality_mq")
 
         'Previous used Values (overwrite)
@@ -124,7 +124,7 @@
             Case "2.560 x 1.440 (WQHD)"
                 form_main.MovWidth = 2560 : form_main.MovHeight = 1440
                 form_main.MovRes = cb_res.Text
-            Case "1920x1080 (Full-HD)"
+            Case "1920 x 1080 (Full-HD)"
                 form_main.MovWidth = 1920 : form_main.MovHeight = 1080
                 form_main.MovRes = cb_res.Text
             Case "1280 x 720 (HD)"
@@ -140,13 +140,8 @@
                 form_main.MovWidth = 426 : form_main.MovHeight = 240
                 form_main.MovRes = cb_res.Text
             Case TransString("ProjectSettings_cb_resolution_OriginalResolution")
-                Select Case MessageBox.Show(TransString("ProjectSettings_msg_OriginalResolution"), TransString("_General_warning"), MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
-                    Case DialogResult.No
-                        Exit Sub
-                    Case DialogResult.Yes
-                        form_main.MovWidth = form_main.PicWidth : form_main.MovHeight = form_main.PicHeight
-                        form_main.MovRes = "{original}"
-                End Select
+                form_main.MovWidth = form_main.PicWidth : form_main.MovHeight = form_main.PicHeight
+                form_main.MovRes = "{original}"
         End Select
 
         If form_main.MovWidth > form_main.PicWidth Then

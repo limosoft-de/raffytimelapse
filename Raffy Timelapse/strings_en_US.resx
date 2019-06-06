@@ -228,9 +228,6 @@
   <data name="ProjectSettings_msg_NoResolution" xml:space="preserve">
     <value>Please select a resolution.</value>
   </data>
-  <data name="ProjectSettings_msg_OriginalResolution" xml:space="preserve">
-    <value>You are exporting your film at the same resolution as the imported images. You might not be able to play the exported video in programs like 'Windows Media Player'. Would you still like to continue?</value>
-  </data>
   <data name="ProjectSettings_msg_quality" xml:space="preserve">
     <value>Please select a proportion between Quality and processing speed.</value>
   </data>

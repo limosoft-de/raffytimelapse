@@ -228,9 +228,6 @@
   <data name="ProjectSettings_msg_NoResolution" xml:space="preserve">
     <value>Bitte wähle eine Auflösung aus.</value>
   </data>
-  <data name="ProjectSettings_msg_OriginalResolution" xml:space="preserve">
-    <value>Du exportierst den Film in Originalgröße. Dadurch kann der Film eventuell nicht von Videoplayern wie dem 'Windows Media Player' abgespielt werden. Möchten du trotzdem fortfahren?</value>
-  </data>
   <data name="ProjectSettings_msg_quality" xml:space="preserve">
     <value>Bitte wähle das Verhältnis zwischen Qualität und Geschwindigkeit aus.</value>
   </data>

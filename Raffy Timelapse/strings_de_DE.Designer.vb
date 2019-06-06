@@ -847,15 +847,6 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Du exportierst den Film in Originalgröße. Dadurch kann der Film eventuell nicht von Videoplayern wie dem &apos;Windows Media Player&apos; abgespielt werden. Möchten du trotzdem fortfahren? ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property ProjectSettings_msg_OriginalResolution() As String
-        Get
-            Return ResourceManager.GetString("ProjectSettings_msg_OriginalResolution", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die Bitte wähle das Verhältnis zwischen Qualität und Geschwindigkeit aus. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_msg_quality() As String

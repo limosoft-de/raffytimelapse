@@ -694,7 +694,7 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die &apos;Raffy Timelapse&apos; is a free program and will always stay this way. And we don&apos;t want to ask you for money. But if you want to support us, and speak a language that we don&apos;t speak, then please help us to translate this programm into other languages. It&apos;s free and very simple! ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die &apos;Raffy Timelapse&apos; is a free program and will always stay this way. We don&apos;t want to ask you for money either. But if you want to support us, and speak a language that we don&apos;t speak, then please help us to translate this programm into other languages. It&apos;s free and very simple! ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Participation_lbl_desc() As String
         Get
@@ -843,15 +843,6 @@ Friend Class strings_en_US
     Friend Shared ReadOnly Property ProjectSettings_msg_NoResolution() As String
         Get
             Return ResourceManager.GetString("ProjectSettings_msg_NoResolution", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die You are exporting your film at the same resolution as the imported images. You might not be able to play the exported video in programs like &apos;Windows Media Player&apos;. Would you still like to continue? ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property ProjectSettings_msg_OriginalResolution() As String
-        Get
-            Return ResourceManager.GetString("ProjectSettings_msg_OriginalResolution", resourceCulture)
         End Get
     End Property
     
