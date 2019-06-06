@@ -44,7 +44,7 @@ Partial Class form_Settings
         Me.gb_keys.Controls.Add(Me.lbl_MoveImg)
         Me.gb_keys.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.gb_keys.ForeColor = System.Drawing.Color.White
-        Me.gb_keys.Location = New System.Drawing.Point(12, 145)
+        Me.gb_keys.Location = New System.Drawing.Point(12, 150)
         Me.gb_keys.Name = "gb_keys"
         Me.gb_keys.Size = New System.Drawing.Size(294, 87)
         Me.gb_keys.TabIndex = 2
@@ -116,7 +116,7 @@ Partial Class form_Settings
         Me.cb_language.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cb_language.ForeColor = System.Drawing.Color.White
         Me.cb_language.FormattingEnabled = True
-        Me.cb_language.Location = New System.Drawing.Point(19, 42)
+        Me.cb_language.Location = New System.Drawing.Point(19, 43)
         Me.cb_language.Name = "cb_language"
         Me.cb_language.Size = New System.Drawing.Size(148, 23)
         Me.cb_language.TabIndex = 4
@@ -142,7 +142,7 @@ Partial Class form_Settings
         Me.gb_general.ForeColor = System.Drawing.Color.White
         Me.gb_general.Location = New System.Drawing.Point(12, 12)
         Me.gb_general.Name = "gb_general"
-        Me.gb_general.Size = New System.Drawing.Size(294, 127)
+        Me.gb_general.Size = New System.Drawing.Size(294, 132)
         Me.gb_general.TabIndex = 5
         Me.gb_general.TabStop = False
         Me.gb_general.Text = "General"
@@ -170,8 +170,8 @@ Partial Class form_Settings
         'form_Settings
         '
         Me.AcceptButton = Me.btn_ok
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(318, 297)
         Me.Controls.Add(Me.gb_general)
