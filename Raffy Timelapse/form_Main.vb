@@ -364,7 +364,7 @@ Public Class form_main
 
 #Region "Menu Strip"
 
-    'File
+    'FILE
     Private Sub ms_file_new_project_Click(sender As Object, e As EventArgs) Handles ms_file_new_project.Click
         ResetProject()
     End Sub
@@ -381,13 +381,15 @@ Public Class form_main
         Close()
     End Sub
 
-    'About
+    'ABOUT
     Private Sub ms_about_about_Click(sender As Object, e As EventArgs) Handles ms_about_about.Click
-        form_about.ShowDialog()
+        Dim RaffyAbout As New form_about
+        RaffyAbout.ShowDialog()
     End Sub
 
     Private Sub ms_about_credits_Click(sender As Object, e As EventArgs) Handles ms_about_credits.Click
-        form_Credits.ShowDialog()
+        Dim RaffyCredits As New form_Credits
+        RaffyCredits.ShowDialog()
     End Sub
 
     Private Sub ms_about_update_Click(sender As Object, e As EventArgs) Handles ms_about_update.Click
@@ -400,13 +402,15 @@ Public Class form_main
         RaffySettings.ShowDialog()
     End Sub
 
-    'Help
+    'HELP
     Private Sub ms_help_help_Click(sender As Object, e As EventArgs) Handles ms_help_help.Click
-        form_help.ShowDialog()
+        Dim RaffyHelp As New form_help
+        RaffyHelp.ShowDialog()
     End Sub
 
     Private Sub ms_help_SupportUs_Click(sender As Object, e As EventArgs) Handles ms_help_SupportUs.Click
-        form_participation.ShowDialog()
+        Dim RaffyParticipation As New form_participation
+        RaffyParticipation.ShowDialog()
     End Sub
 
 #End Region
