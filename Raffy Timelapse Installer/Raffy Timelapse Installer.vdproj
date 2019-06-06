@@ -27,12 +27,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_62DA3B2213EF4794B7EAA23365A03592"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_6A15A23CC996445083FFBCD2E035D3BD"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -52,13 +46,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_5112AC54AA5247FF9E986FBD45A25767"
+        "OwnerKey" = "8:_39F2909FA7346A5B8F0E088AD8F07FF5"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_39F2909FA7346A5B8F0E088AD8F07FF5"
+        "OwnerKey" = "8:_5112AC54AA5247FF9E986FBD45A25767"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -79,6 +73,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -95,6 +97,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -170,26 +180,6 @@
                 }
             "SourcePath" = "8:..\\Raffy Timelapse\\bin\\Release\\RaffyTimelapse.exe"
             "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_05539ECD4E1F46DB81928B56D13EE4D2"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_62DA3B2213EF4794B7EAA23365A03592"
-            {
-            "SourcePath" = "8:..\\Raffy Timelapse\\bin\\Release\\ffmpeg.exe"
-            "TargetName" = "8:ffmpeg.exe"
             "Tag" = "8:"
             "Folder" = "8:_05539ECD4E1F46DB81928B56D13EE4D2"
             "Condition" = "8:"
