@@ -1,0 +1,24 @@
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\Raffy Timelapse.vbprojAssemblyReference.cache
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\bin\Release\RaffyTimelapse.exe.config
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\bin\Release\RaffyTimelapse.exe
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\bin\Release\RaffyTimelapse.pdb
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\bin\Release\RaffyTimelapse.xml
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\Raffy_Timelapse.form_about.resources
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\Raffy_Timelapse.form_Credits.resources
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\Raffy_Timelapse.form_help.resources
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\Raffy_Timelapse.form_ImportProgressInfo.resources
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\Raffy_Timelapse.form_main.resources
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\Raffy_Timelapse.form_participation.resources
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\Raffy_Timelapse.form_ProgressInfo.resources
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\Raffy_Timelapse.form_ProjectSettings.resources
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\Raffy_Timelapse.form_Settings.resources
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\Raffy_Timelapse.form_update.resources
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\Raffy_Timelapse.Resources.resources
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\Raffy_Timelapse.form_UpdateSearch.resources
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\Raffy_Timelapse.strings_en_US.resources
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\Raffy_Timelapse.strings_de_DE.resources
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\Raffy Timelapse.vbproj.GenerateResource.cache
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\Raffy Timelapse.vbproj.CoreCompileInputs.cache
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\RaffyTimelapse.exe
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\RaffyTimelapse.xml
+C:\Users\Linus\OneDrive\Dokumente\Visual Studio Projekte\Raffy Timelapse\Raffy Timelapse\obj\Release\RaffyTimelapse.pdb
