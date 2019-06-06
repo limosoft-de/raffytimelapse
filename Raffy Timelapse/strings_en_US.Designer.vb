@@ -678,7 +678,7 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die &apos;Raffy Timelapse&apos; is a free program and will always stay this way. We don&apos;t want to ask you for money either. But if you want to support us, and speak a language that we don&apos;t speak, then please help us to translate this programm into other languages. It&apos;s free and very simple! ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Raffy Timelapse is a free program and will always stay this way. We don&apos;t want to ask you for money either. But if you want to support us, and speak a language that we don&apos;t speak, then please help us to translate this programm into other languages. It&apos;s free and very simple! ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Participation_lbl_desc() As String
         Get
@@ -860,72 +860,54 @@ Friend Class strings_en_US
     '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die General ähnelt.
     '''</summary>
-    Friend Shared ReadOnly Property Settings_tc_general() As String
+    Friend Shared ReadOnly Property Settings_gb_general() As String
         Get
-            Return ResourceManager.GetString("Settings_tc_general", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Check for Updates on start-up ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property Settings_tc_general_cb_AutoUpdate() As String
-        Get
-            Return ResourceManager.GetString("Settings_tc_general_cb_AutoUpdate", resourceCulture)
+            Return ResourceManager.GetString("Settings_gb_general", resourceCulture)
         End Get
     End Property
     
     '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die Key Assignment ähnelt.
     '''</summary>
-    Friend Shared ReadOnly Property Settings_tc_general_gb_keys() As String
+    Friend Shared ReadOnly Property Settings_gb_keys() As String
         Get
-            Return ResourceManager.GetString("Settings_tc_general_gb_keys", resourceCulture)
+            Return ResourceManager.GetString("Settings_gb_keys", resourceCulture)
         End Get
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die 2+8 (Numpad),W+S ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Check for Updates on start-up ähnelt.
     '''</summary>
-    Friend Shared ReadOnly Property Settings_tc_general_gb_keys_cb_MoveImg() As String
+    Friend Shared ReadOnly Property Settings_general_cb_AutoUpdate() As String
         Get
-            Return ResourceManager.GetString("Settings_tc_general_gb_keys_cb_MoveImg", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Move images up and down ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property Settings_tc_general_gb_keys_lbl_MoveImg() As String
-        Get
-            Return ResourceManager.GetString("Settings_tc_general_gb_keys_lbl_MoveImg", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Updates ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property Settings_tc_general_gb_updates() As String
-        Get
-            Return ResourceManager.GetString("Settings_tc_general_gb_updates", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Interface ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property Settings_tc_interface() As String
-        Get
-            Return ResourceManager.GetString("Settings_tc_interface", resourceCulture)
+            Return ResourceManager.GetString("Settings_general_cb_AutoUpdate", resourceCulture)
         End Get
     End Property
     
     '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die Language ähnelt.
     '''</summary>
-    Friend Shared ReadOnly Property Settings_tc_interface_lbl_language() As String
+    Friend Shared ReadOnly Property Settings_general_lbl_language() As String
         Get
-            Return ResourceManager.GetString("Settings_tc_interface_lbl_language", resourceCulture)
+            Return ResourceManager.GetString("Settings_general_lbl_language", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die 2+8 (Numpad),W+S ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Settings_keys_cb_MoveImg() As String
+        Get
+            Return ResourceManager.GetString("Settings_keys_cb_MoveImg", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Move images up and down ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Settings_keys_lbl_MoveImg() As String
+        Get
+            Return ResourceManager.GetString("Settings_keys_lbl_MoveImg", resourceCulture)
         End Get
     End Property
     

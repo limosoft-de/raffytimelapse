@@ -258,13 +258,10 @@
   <data name="Settings" xml:space="preserve">
     <value>Settings</value>
   </data>
-  <data name="Settings_tc_general" xml:space="preserve">
+  <data name="Settings_gb_general" xml:space="preserve">
     <value>General</value>
   </data>
-  <data name="Settings_tc_interface" xml:space="preserve">
-    <value>Interface</value>
-  </data>
-  <data name="Settings_tc_interface_lbl_language" xml:space="preserve">
+  <data name="Settings_general_lbl_language" xml:space="preserve">
     <value>Language</value>
   </data>
   <data name="_General_language_de_DE" xml:space="preserve">
@@ -366,7 +363,7 @@ Please create a ticket if you found a bug, have a feature request or have any ot
     <value>Help us translating</value>
   </data>
   <data name="Participation_lbl_desc" xml:space="preserve">
-    <value>'Raffy Timelapse' is a free program and will always stay this way. We don't want to ask you for money either. But if you want to support us, and speak a language that we don't speak, then please help us to translate this programm into other languages. It's free and very simple!</value>
+    <value>Raffy Timelapse is a free program and will always stay this way. We don't want to ask you for money either. But if you want to support us, and speak a language that we don't speak, then please help us to translate this programm into other languages. It's free and very simple!</value>
   </data>
   <data name="Participation_lbl_head" xml:space="preserve">
     <value>Translate the App</value>
@@ -374,11 +371,8 @@ Please create a ticket if you found a bug, have a feature request or have any ot
   <data name="Participation_lbl_link" xml:space="preserve">
     <value>Translate Now!</value>
   </data>
-  <data name="Settings_tc_general_cb_AutoUpdate" xml:space="preserve">
+  <data name="Settings_general_cb_AutoUpdate" xml:space="preserve">
     <value>Check for Updates on start-up</value>
-  </data>
-  <data name="Settings_tc_general_gb_updates" xml:space="preserve">
-    <value>Updates</value>
   </data>
   <data name="_General_close" xml:space="preserve">
     <value>Close</value>
@@ -398,13 +392,13 @@ Please create a ticket if you found a bug, have a feature request or have any ot
   <data name="Main_msg_SingleDelete" xml:space="preserve">
     <value>Are you sure you want to delete the image [%1]?</value>
   </data>
-  <data name="Settings_tc_general_gb_keys" xml:space="preserve">
+  <data name="Settings_gb_keys" xml:space="preserve">
     <value>Key Assignment</value>
   </data>
-  <data name="Settings_tc_general_gb_keys_cb_MoveImg" xml:space="preserve">
+  <data name="Settings_keys_cb_MoveImg" xml:space="preserve">
     <value>2+8 (Numpad),W+S</value>
   </data>
-  <data name="Settings_tc_general_gb_keys_lbl_MoveImg" xml:space="preserve">
+  <data name="Settings_keys_lbl_MoveImg" xml:space="preserve">
     <value>Move images up and down</value>
   </data>
   <data name="Import" xml:space="preserve">

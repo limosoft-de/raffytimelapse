@@ -258,13 +258,10 @@
   <data name="Settings" xml:space="preserve">
     <value>Einstellungen</value>
   </data>
-  <data name="Settings_tc_general" xml:space="preserve">
+  <data name="Settings_gb_general" xml:space="preserve">
     <value>Allgemein</value>
   </data>
-  <data name="Settings_tc_interface" xml:space="preserve">
-    <value>Oberfläche</value>
-  </data>
-  <data name="Settings_tc_interface_lbl_language" xml:space="preserve">
+  <data name="Settings_general_lbl_language" xml:space="preserve">
     <value>Sprache</value>
   </data>
   <data name="_General_language_de_DE" xml:space="preserve">
@@ -366,7 +363,7 @@ Bitte erstelle ein Ticket, wenn du einen Fehler gefunden hast, einen Funktionswu
     <value>Hilf uns beim Übersetzen</value>
   </data>
   <data name="Participation_lbl_desc" xml:space="preserve">
-    <value>'Raffy Timelapse' ist ein kostenloses Programm und wird dies auch bleiben. Desweiteren möchten wir nicht nach Geld fragen. Stattdessen gibt es eine andere Möglichkeit uns zu unterstützen: das Programm für weltweite Nutzer in andere Sprachen übersetzen. Es geht ganz einfach!</value>
+    <value>Raffy Timelapse ist ein kostenloses Programm und wird dies auch bleiben. Desweiteren möchten wir nicht nach Geld fragen. Stattdessen gibt es eine andere Möglichkeit uns zu unterstützen: das Programm für weltweite Nutzer in andere Sprachen übersetzen. Es geht ganz einfach!</value>
   </data>
   <data name="Participation_lbl_head" xml:space="preserve">
     <value>Unterstütze uns</value>
@@ -374,11 +371,8 @@ Bitte erstelle ein Ticket, wenn du einen Fehler gefunden hast, einen Funktionswu
   <data name="Participation_lbl_link" xml:space="preserve">
     <value>Jetzt übersetzen!</value>
   </data>
-  <data name="Settings_tc_general_cb_AutoUpdate" xml:space="preserve">
+  <data name="Settings_general_cb_AutoUpdate" xml:space="preserve">
     <value>Beim Programmstart nach Updates suchen</value>
-  </data>
-  <data name="Settings_tc_general_gb_updates" xml:space="preserve">
-    <value>Updates</value>
   </data>
   <data name="_General_close" xml:space="preserve">
     <value>Schließen</value>
@@ -398,13 +392,13 @@ Bitte erstelle ein Ticket, wenn du einen Fehler gefunden hast, einen Funktionswu
   <data name="Main_msg_SingleDelete" xml:space="preserve">
     <value>Bist du sicher, dass du das Bild [%1] entfernen möchtest?</value>
   </data>
-  <data name="Settings_tc_general_gb_keys" xml:space="preserve">
+  <data name="Settings_gb_keys" xml:space="preserve">
     <value>Tastenbelegung</value>
   </data>
-  <data name="Settings_tc_general_gb_keys_cb_MoveImg" xml:space="preserve">
+  <data name="Settings_keys_cb_MoveImg" xml:space="preserve">
     <value>2+8 (Numpad),W+S</value>
   </data>
-  <data name="Settings_tc_general_gb_keys_lbl_MoveImg" xml:space="preserve">
+  <data name="Settings_keys_lbl_MoveImg" xml:space="preserve">
     <value>Bilder mit Tasten verschieben</value>
   </data>
   <data name="Import" xml:space="preserve">

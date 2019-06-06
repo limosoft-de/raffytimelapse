@@ -7,8 +7,6 @@
         cb_language.Items.Clear()
         cb_MoveImg.Items.Clear()
 
-        tc.SelectedTab = tc_general
-
         TranslateForm()
         LoadSettings()
 
@@ -18,32 +16,26 @@
 
         Me.Text = TransString("Settings")
 
-        tc_general.Text = TransString("Settings_tc_general")
-        tc_interface.Text = TransString("Settings_tc_interface")
-
         btn_cancel.Text = TransString("_General_cancel")
         btn_ok.Text = TransString("_General_ok")
 
-        'General
-        gb_updates.Text = TransString("Settings_tc_general_gb_updates")
-        cb_AutoUpdate.Text = TransString("Settings_tc_general_cb_AutoUpdate")
-
-        gb_keys.Text = TransString("Settings_tc_general_gb_keys")
-        lbl_MoveImg.Text = TransString("Settings_tc_general_gb_keys_lbl_MoveImg")
-
-        KeysMove = TransString("Settings_tc_general_gb_keys_cb_MoveImg").Split(",")
-        For i = 0 To KeysMove.Length - 1
-            cb_MoveImg.Items.Add(KeysMove(i))
-        Next
-
-
-        'Interface
-        lbl_language.Text = TransString("Settings_tc_interface_lbl_language")
-
+        'GENERAL
+        gb_general.Text = TransString("Settings_gb_general")
+        lbl_language.Text = TransString("Settings_general_lbl_language")
         With cb_language.Items
             .Add(TransString("_General_language_en_US"))
             .Add(TransString("_General_language_de_DE"))
         End With
+        cb_AutoUpdate.Text = TransString("Settings_general_cb_AutoUpdate")
+
+        'KEYS
+        gb_keys.Text = TransString("Settings_gb_keys")
+        lbl_MoveImg.Text = TransString("Settings_keys_lbl_MoveImg")
+        KeysMove = TransString("Settings_keys_cb_MoveImg").Split(",")
+        For i = 0 To KeysMove.Length - 1
+            cb_MoveImg.Items.Add(KeysMove(i))
+        Next
+
 
     End Sub
 
