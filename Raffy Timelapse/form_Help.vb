@@ -29,6 +29,10 @@
         Close()
     End Sub
 
+    Private Sub Llbl_wiki_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llbl_wiki.LinkClicked
+        Process.Start(My.Settings.url_wiki)
+    End Sub
+
     Private Sub llbl_support_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llbl_support.LinkClicked
         Process.Start(My.Settings.url_support)
     End Sub

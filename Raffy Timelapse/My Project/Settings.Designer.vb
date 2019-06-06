@@ -161,6 +161,18 @@ Namespace My
                 Me("set_ImgMove") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("https://github.com/limosoft-de/raffytimelapse/wiki")>  _
+        Public Property url_wiki() As String
+            Get
+                Return CType(Me("url_wiki"),String)
+            End Get
+            Set
+                Me("url_wiki") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

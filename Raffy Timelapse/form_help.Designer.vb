@@ -74,7 +74,7 @@ Partial Class form_help
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.llbl_mail.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llbl_mail.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.llbl_mail.Location = New System.Drawing.Point(7, 48)
+        Me.llbl_mail.Location = New System.Drawing.Point(7, 53)
         Me.llbl_mail.Name = "llbl_mail"
         Me.llbl_mail.Size = New System.Drawing.Size(303, 32)
         Me.llbl_mail.TabIndex = 10
@@ -115,7 +115,7 @@ Partial Class form_help
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.llbl_support.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llbl_support.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.llbl_support.Location = New System.Drawing.Point(6, 111)
+        Me.llbl_support.Location = New System.Drawing.Point(6, 120)
         Me.llbl_support.Name = "llbl_support"
         Me.llbl_support.Size = New System.Drawing.Size(303, 32)
         Me.llbl_support.TabIndex = 9
@@ -165,7 +165,7 @@ Partial Class form_help
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.llbl_wiki.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.llbl_wiki.LinkColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.llbl_wiki.Location = New System.Drawing.Point(7, 46)
+        Me.llbl_wiki.Location = New System.Drawing.Point(7, 50)
         Me.llbl_wiki.Name = "llbl_wiki"
         Me.llbl_wiki.Size = New System.Drawing.Size(303, 32)
         Me.llbl_wiki.TabIndex = 9
