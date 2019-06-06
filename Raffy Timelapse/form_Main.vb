@@ -396,7 +396,8 @@ Public Class form_main
     End Sub
 
     Private Sub ms_about_settings_Click(sender As Object, e As EventArgs) Handles ms_about_settings.Click
-        form_Settings.ShowDialog()
+        Dim RaffySettings As New form_Settings
+        RaffySettings.ShowDialog()
     End Sub
 
     'Help

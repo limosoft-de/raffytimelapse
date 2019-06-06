@@ -34,6 +34,8 @@
     End Sub
 
     Private Sub llbl_mail_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles llbl_mail.LinkClicked
-        Process.Start("mailto:" & My.Settings.url_mail)
+        Process.Start("mailto:" & My.Settings.url_mail & "?body=%0D%0A-------SYSTEM%20INFORMATION-------%0D%0A" &
+                                                         "Raffy%20Timelapse%20Version:%20" & Application.ProductVersion &
+                                                         "%0D%0AOS%20Version:%20" & My.Computer.Info.OSFullName.ToString)
     End Sub
 End Class
