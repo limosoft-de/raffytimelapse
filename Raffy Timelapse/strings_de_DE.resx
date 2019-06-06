@@ -312,32 +312,19 @@
   <data name="Help_gb_contact" xml:space="preserve">
     <value>Direkter Kontakt</value>
   </data>
-  <data name="Help_gb_online" xml:space="preserve">
+  <data name="Help_gb_support" xml:space="preserve">
     <value>Online Support</value>
   </data>
   <data name="Help_lbl_contact" xml:space="preserve">
     <value>Bitte kontaktiere uns nur per E-Mail, wenn das Ticketsystem für deine Anfrage unpassend ist.</value>
   </data>
-  <data name="Help_lbl_desc_bugs" xml:space="preserve">
-    <value>Wenn du einen Fehler im Programm gefunden hast, erstelle doch bitte ein Ticket.</value>
+  <data name="Help_llbl_support" xml:space="preserve">
+    <value>Erstelle ein Ticket</value>
   </data>
-  <data name="Help_lbl_desc_feature" xml:space="preserve">
-    <value>Wenn du einen Funktionswunsch hast, bitte hier einsenden.</value>
-  </data>
-  <data name="Help_lbl_desc_general" xml:space="preserve">
-    <value>Für grundsätzliche Fragen, bitte dieses Ticketsystem benutzen.</value>
-  </data>
-  <data name="Help_lbl_head_bugs" xml:space="preserve">
-    <value>Bugs/Fehler</value>
-  </data>
-  <data name="Help_lbl_head_feature" xml:space="preserve">
-    <value>Funktionswunsch</value>
-  </data>
-  <data name="Help_lbl_head_general" xml:space="preserve">
-    <value>Grundsätzliche Frage</value>
-  </data>
-  <data name="Help_lbl_online" xml:space="preserve">
-    <value>Die bevorzugte Supportvariante für 'Raffy Timelapse' bildet unser Ticketsystem auf 'sourceforge.net'. Wir haben Ticketsysteme für verschiedene Kategorien:</value>
+  <data name="Help_lbl_support" xml:space="preserve">
+    <value>Die bevorzugte Supportvariante für Raffy Timelapse bildet unser Ticketsystem auf GitHub. Wir haben Ticketsysteme für verschiedene Kategorien.
+
+Bitte erstelle ein Ticket, wenn du einen Fehler gefunden hast, einen Funktionswunsch mit uns teilen möchtest oder sonstige Fragen hast.</value>
   </data>
   <data name="Main_msg_closing" xml:space="preserve">
     <value>Möchtest du das Programm wirklich schließen? Alle nicht gespeicherten Änderungen gehen dadurch verloren.</value>
@@ -437,5 +424,14 @@
   </data>
   <data name="UpdateSearch_lbl_progress2" xml:space="preserve">
     <value>Lade Details der neuen Version...</value>
+  </data>
+  <data name="Help_gb_wiki" xml:space="preserve">
+    <value>Wiki</value>
+  </data>
+  <data name="Help_lbl_wiki" xml:space="preserve">
+    <value>Erlerne den Umgang mit Raffy Timelapse anhand unseres Online Wikis.</value>
+  </data>
+  <data name="Help_llbl_wiki" xml:space="preserve">
+    <value>Raffy Timelapse Wiki</value>
   </data>
 </root>

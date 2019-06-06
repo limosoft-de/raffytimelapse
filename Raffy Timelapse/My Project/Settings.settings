@@ -14,17 +14,11 @@
     <Setting Name="url_update" Type="System.String" Scope="User">
       <Value Profile="(Default)">http://simpletimelapse.sourceforge.net/update/</Value>
     </Setting>
-    <Setting Name="Support_Mail" Type="System.String" Scope="User">
-      <Value Profile="(Default)">limosoft@users.sourceforge.net</Value>
+    <Setting Name="url_mail" Type="System.String" Scope="User">
+      <Value Profile="(Default)">limosoft@gmx.de</Value>
     </Setting>
-    <Setting Name="Support_Bugs" Type="System.String" Scope="User">
-      <Value Profile="(Default)">https://sourceforge.net/p/simpletimelapse/bugs/</Value>
-    </Setting>
-    <Setting Name="Support_Features" Type="System.String" Scope="User">
-      <Value Profile="(Default)">https://sourceforge.net/p/simpletimelapse/feature-requests/</Value>
-    </Setting>
-    <Setting Name="Support_General" Type="System.String" Scope="User">
-      <Value Profile="(Default)">https://sourceforge.net/p/simpletimelapse/general-requests/</Value>
+    <Setting Name="url_support" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://github.com/limosoft-de/raffytimelapse/issues/</Value>
     </Setting>
     <Setting Name="url_translation" Type="System.String" Scope="User">
       <Value Profile="(Default)">http://simpletimelapse.sourceforge.net/translate.html</Value>

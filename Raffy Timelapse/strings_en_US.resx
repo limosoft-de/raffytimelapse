@@ -292,7 +292,7 @@
     <value>Your version:</value>
   </data>
   <data name="Update_lbl_NewestVersion" xml:space="preserve">
-    <value>Newest version:</value>
+    <value>Latest version:</value>
   </data>
   <data name="UpdateSearch_lbl_progress-1" xml:space="preserve">
     <value>No connection to the update servers.</value>
@@ -312,32 +312,19 @@
   <data name="Help_gb_contact" xml:space="preserve">
     <value>Direct Contact</value>
   </data>
-  <data name="Help_gb_online" xml:space="preserve">
+  <data name="Help_gb_support" xml:space="preserve">
     <value>Online Support</value>
   </data>
   <data name="Help_lbl_contact" xml:space="preserve">
     <value>Please only contact us via e-mail if the ticket system doesn't meet your request requirements.</value>
   </data>
-  <data name="Help_lbl_desc_bugs" xml:space="preserve">
-    <value>If you found a bug in the software, please submit a ticket.</value>
+  <data name="Help_llbl_support" xml:space="preserve">
+    <value>Create a ticket</value>
   </data>
-  <data name="Help_lbl_desc_feature" xml:space="preserve">
-    <value>If you have a feature request, please submit it right here.</value>
-  </data>
-  <data name="Help_lbl_desc_general" xml:space="preserve">
-    <value>If you have a request that doesn't fit in the other categories, create a ticket in this area.</value>
-  </data>
-  <data name="Help_lbl_head_bugs" xml:space="preserve">
-    <value>Bugs</value>
-  </data>
-  <data name="Help_lbl_head_feature" xml:space="preserve">
-    <value>Feature Requests</value>
-  </data>
-  <data name="Help_lbl_head_general" xml:space="preserve">
-    <value>General Requests</value>
-  </data>
-  <data name="Help_lbl_online" xml:space="preserve">
-    <value>The preferred way to get support for 'Raffy Timelapse' is to create a ticket online on 'sourceforge.net'. We have different ticket systems for different requirements:</value>
+  <data name="Help_lbl_support" xml:space="preserve">
+    <value>The preferred way to get support for Raffy Timelapse is to create a ticket online on GitHub. We have different ticket systems for different requirements.
+
+Please create a ticket if you found a bug, have a feature request or have any other question concerning Raffy Timelapse!</value>
   </data>
   <data name="Main_msg_closing" xml:space="preserve">
     <value>Would you really like to close this window? All unsaved changes will be lost.</value>
@@ -437,5 +424,14 @@
   </data>
   <data name="UpdateSearch_lbl_progress2" xml:space="preserve">
     <value>Loading details of new version...</value>
+  </data>
+  <data name="Help_gb_wiki" xml:space="preserve">
+    <value>Wiki</value>
+  </data>
+  <data name="Help_lbl_wiki" xml:space="preserve">
+    <value>Learn how to get started with Raffy Timelapse in our online Wiki.</value>
+  </data>
+  <data name="Help_llbl_wiki" xml:space="preserve">
+    <value>Raffy Timelapse Wiki</value>
   </data>
 </root>

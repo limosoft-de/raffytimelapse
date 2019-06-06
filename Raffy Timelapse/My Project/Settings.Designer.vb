@@ -104,49 +104,25 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("limosoft@users.sourceforge.net")>  _
-        Public Property Support_Mail() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("limosoft@gmx.de")>  _
+        Public Property url_mail() As String
             Get
-                Return CType(Me("Support_Mail"),String)
+                Return CType(Me("url_mail"),String)
             End Get
             Set
-                Me("Support_Mail") = value
+                Me("url_mail") = value
             End Set
         End Property
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("https://sourceforge.net/p/simpletimelapse/bugs/")>  _
-        Public Property Support_Bugs() As String
+         Global.System.Configuration.DefaultSettingValueAttribute("https://github.com/limosoft-de/raffytimelapse/issues/")>  _
+        Public Property url_support() As String
             Get
-                Return CType(Me("Support_Bugs"),String)
+                Return CType(Me("url_support"),String)
             End Get
             Set
-                Me("Support_Bugs") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("https://sourceforge.net/p/simpletimelapse/feature-requests/")>  _
-        Public Property Support_Features() As String
-            Get
-                Return CType(Me("Support_Features"),String)
-            End Get
-            Set
-                Me("Support_Features") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("https://sourceforge.net/p/simpletimelapse/general-requests/")>  _
-        Public Property Support_General() As String
-            Get
-                Return CType(Me("Support_General"),String)
-            End Get
-            Set
-                Me("Support_General") = value
+                Me("url_support") = value
             End Set
         End Property
         

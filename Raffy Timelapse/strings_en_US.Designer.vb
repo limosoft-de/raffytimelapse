@@ -228,9 +228,18 @@ Friend Class strings_en_US
     '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die Online Support ähnelt.
     '''</summary>
-    Friend Shared ReadOnly Property Help_gb_online() As String
+    Friend Shared ReadOnly Property Help_gb_support() As String
         Get
-            Return ResourceManager.GetString("Help_gb_online", resourceCulture)
+            Return ResourceManager.GetString("Help_gb_support", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Wiki ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Help_gb_wiki() As String
+        Get
+            Return ResourceManager.GetString("Help_gb_wiki", resourceCulture)
         End Get
     End Property
     
@@ -244,65 +253,40 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die If you found a bug in the software, please submit a ticket. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die The preferred way to get support for Raffy Timelapse is to create a ticket online on GitHub. We have different ticket systems for different requirements.
+    '''
+    '''Please create a ticket if you found a bug, have a feature request or have any other question concerning Raffy Timelapse! ähnelt.
     '''</summary>
-    Friend Shared ReadOnly Property Help_lbl_desc_bugs() As String
+    Friend Shared ReadOnly Property Help_lbl_support() As String
         Get
-            Return ResourceManager.GetString("Help_lbl_desc_bugs", resourceCulture)
+            Return ResourceManager.GetString("Help_lbl_support", resourceCulture)
         End Get
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die If you have a feature request, please submit it right here. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Learn how to get started with Raffy Timelapse in our online Wiki. ähnelt.
     '''</summary>
-    Friend Shared ReadOnly Property Help_lbl_desc_feature() As String
+    Friend Shared ReadOnly Property Help_lbl_wiki() As String
         Get
-            Return ResourceManager.GetString("Help_lbl_desc_feature", resourceCulture)
+            Return ResourceManager.GetString("Help_lbl_wiki", resourceCulture)
         End Get
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die If you have a request that doesn&apos;t fit in the other categories, create a ticket in this area. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Create a ticket ähnelt.
     '''</summary>
-    Friend Shared ReadOnly Property Help_lbl_desc_general() As String
+    Friend Shared ReadOnly Property Help_llbl_support() As String
         Get
-            Return ResourceManager.GetString("Help_lbl_desc_general", resourceCulture)
+            Return ResourceManager.GetString("Help_llbl_support", resourceCulture)
         End Get
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Bugs ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Raffy Timelapse Wiki ähnelt.
     '''</summary>
-    Friend Shared ReadOnly Property Help_lbl_head_bugs() As String
+    Friend Shared ReadOnly Property Help_llbl_wiki() As String
         Get
-            Return ResourceManager.GetString("Help_lbl_head_bugs", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Feature Requests ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property Help_lbl_head_feature() As String
-        Get
-            Return ResourceManager.GetString("Help_lbl_head_feature", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die General Requests ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property Help_lbl_head_general() As String
-        Get
-            Return ResourceManager.GetString("Help_lbl_head_general", resourceCulture)
-        End Get
-    End Property
-    
-    '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die The preferred way to get support for &apos;Raffy Timelapse&apos; is to create a ticket online on &apos;sourceforge.net&apos;. We have different ticket systems for different requirements: ähnelt.
-    '''</summary>
-    Friend Shared ReadOnly Property Help_lbl_online() As String
-        Get
-            Return ResourceManager.GetString("Help_lbl_online", resourceCulture)
+            Return ResourceManager.GetString("Help_llbl_wiki", resourceCulture)
         End Get
     End Property
     
@@ -982,7 +966,7 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Newest version: ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Latest version: ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Update_lbl_NewestVersion() As String
         Get
