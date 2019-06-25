@@ -428,4 +428,13 @@ Bitte erstelle ein Ticket, wenn du einen Fehler gefunden hast, einen Funktionswu
   <data name="Help_llbl_wiki" xml:space="preserve">
     <value>Raffy Timelapse Wiki</value>
   </data>
+  <data name="Main_bw_Rendering_Progress_-1" xml:space="preserve">
+    <value>Error: Es ist ein Fehler aufgetreten, die Zeitraffer-Aufnahme konnte nicht erfolgreich exportiert werden.</value>
+  </data>
+  <data name="Main_bw_Rendering_Progress_-2" xml:space="preserve">
+    <value>Error: Memory allocation failure. Versuche eine niedrigere Auflösung.</value>
+  </data>
+  <data name="ProgressInfo_lbl_errorlog" xml:space="preserve">
+    <value>Log ansehen...</value>
+  </data>
 </root>

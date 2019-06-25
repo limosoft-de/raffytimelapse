@@ -381,6 +381,24 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Error: Es ist ein Fehler aufgetreten, die Zeitraffer-Aufnahme konnte nicht erfolgreich exportiert werden. ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Main_bw_Rendering_Progress__1() As String
+        Get
+            Return ResourceManager.GetString("Main_bw_Rendering_Progress_-1", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Error: Memory allocation failure. Versuche eine niedrigere Auflösung. ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Main_bw_Rendering_Progress__2() As String
+        Get
+            Return ResourceManager.GetString("Main_bw_Rendering_Progress_-2", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die Der Computer wird vorbereitet... ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_bw_Rendering_Progress_1() As String
@@ -710,6 +728,15 @@ Friend Class strings_de_DE
     Friend Shared ReadOnly Property ProgressInfo() As String
         Get
             Return ResourceManager.GetString("ProgressInfo", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Log ansehen... ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property ProgressInfo_lbl_errorlog() As String
+        Get
+            Return ResourceManager.GetString("ProgressInfo_lbl_errorlog", resourceCulture)
         End Get
     End Property
     

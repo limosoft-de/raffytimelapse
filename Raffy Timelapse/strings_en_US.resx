@@ -428,4 +428,13 @@ Please create a ticket if you found a bug, have a feature request or have any ot
   <data name="Help_llbl_wiki" xml:space="preserve">
     <value>Raffy Timelapse Wiki</value>
   </data>
+  <data name="Main_bw_Rendering_Progress_-1" xml:space="preserve">
+    <value>Error: The timelapse couldn't be exported successfully.</value>
+  </data>
+  <data name="Main_bw_Rendering_Progress_-2" xml:space="preserve">
+    <value>Error: Memory allocation failure. Try using a lower resolution.</value>
+  </data>
+  <data name="ProgressInfo_lbl_errorlog" xml:space="preserve">
+    <value>View log...</value>
+  </data>
 </root>

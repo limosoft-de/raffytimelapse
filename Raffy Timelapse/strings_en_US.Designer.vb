@@ -381,6 +381,24 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Error: The timelapse couldn&apos;t be exported successfully. ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Main_bw_Rendering_Progress__1() As String
+        Get
+            Return ResourceManager.GetString("Main_bw_Rendering_Progress_-1", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Error: Memory allocation failure. Try using a lower resolution. ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Main_bw_Rendering_Progress__2() As String
+        Get
+            Return ResourceManager.GetString("Main_bw_Rendering_Progress_-2", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die The computer is being prepared... ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_bw_Rendering_Progress_1() As String
@@ -710,6 +728,15 @@ Friend Class strings_en_US
     Friend Shared ReadOnly Property ProgressInfo() As String
         Get
             Return ResourceManager.GetString("ProgressInfo", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die View log... ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property ProgressInfo_lbl_errorlog() As String
+        Get
+            Return ResourceManager.GetString("ProgressInfo_lbl_errorlog", resourceCulture)
         End Get
     End Property
     
