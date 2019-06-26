@@ -8,6 +8,7 @@ Public Class form_main
     Public Finished As Boolean = False
     Public FFmpegExists As Boolean = False
     Public FFmpegPath As String = Application.StartupPath + "\ffmpeg.exe"
+    Public FFmpegBit As Integer = 32
     Public Status As String = TransString("_General_wait")
 
     'If you add something to the projects variables, also add it in ResetProject Sub!
@@ -151,8 +152,10 @@ Public Class form_main
     Private Sub Check64bit()
         If Environment.Is64BitOperatingSystem = True Then
             FFmpegPath = Application.StartupPath + "\ffmpeg64.exe"
+            FFmpegBit = 64
         Else
             FFmpegPath = Application.StartupPath + "\ffmpeg.exe"
+            FFmpegBit = 32
         End If
     End Sub
 
@@ -160,13 +163,19 @@ Public Class form_main
         If File.Exists(FFmpegPath) Then
             FFmpegExists = True
         Else
-            FFmpegExists = False
-            If MessageBox.Show(TransString("Main_msg_ffmpeg"), TransString("_General_error"), MessageBoxButtons.YesNo, MessageBoxIcon.Error) = DialogResult.Yes Then
-                Process.Start(My.Settings.url_FFmpeg)
-            Else
-                Close()
+            If FFmpegBit = 64 And File.Exists(Application.StartupPath + "\ffmpeg.exe") Then
+                FFmpegPath = Application.StartupPath + "\ffmpeg.exe"
+                FFmpegExists = True
+                FFmpegBit = 32
+                Exit Sub
             End If
-        End If
+            FFmpegExists = False
+                If MessageBox.Show(TransString("Main_msg_ffmpeg"), TransString("_General_error"), MessageBoxButtons.YesNo, MessageBoxIcon.Error) = DialogResult.Yes Then
+                    Process.Start(My.Settings.url_FFmpeg)
+                Else
+                    Close()
+                End If
+            End If
     End Sub
 
 #End Region

@@ -29,6 +29,8 @@ Partial Class form_about
         Me.lbl_VersionNr = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lbl_close = New System.Windows.Forms.Label()
+        Me.lbl_ffmpeg = New System.Windows.Forms.Label()
+        Me.lbl_FfmpegNr = New System.Windows.Forms.Label()
         CType(Me.pb_logo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -48,7 +50,7 @@ Partial Class form_about
         Me.lbl_AppName.AutoSize = True
         Me.lbl_AppName.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_AppName.ForeColor = System.Drawing.Color.White
-        Me.lbl_AppName.Location = New System.Drawing.Point(144, 51)
+        Me.lbl_AppName.Location = New System.Drawing.Point(146, 34)
         Me.lbl_AppName.Name = "lbl_AppName"
         Me.lbl_AppName.Size = New System.Drawing.Size(184, 32)
         Me.lbl_AppName.TabIndex = 1
@@ -60,7 +62,7 @@ Partial Class form_about
         Me.lbl_version.AutoSize = True
         Me.lbl_version.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_version.ForeColor = System.Drawing.Color.White
-        Me.lbl_version.Location = New System.Drawing.Point(149, 94)
+        Me.lbl_version.Location = New System.Drawing.Point(149, 78)
         Me.lbl_version.Name = "lbl_version"
         Me.lbl_version.Size = New System.Drawing.Size(48, 15)
         Me.lbl_version.TabIndex = 2
@@ -72,7 +74,7 @@ Partial Class form_about
         Me.lbl_VersionNr.AutoSize = True
         Me.lbl_VersionNr.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_VersionNr.ForeColor = System.Drawing.Color.White
-        Me.lbl_VersionNr.Location = New System.Drawing.Point(203, 94)
+        Me.lbl_VersionNr.Location = New System.Drawing.Point(203, 78)
         Me.lbl_VersionNr.Name = "lbl_VersionNr"
         Me.lbl_VersionNr.Size = New System.Drawing.Size(40, 15)
         Me.lbl_VersionNr.TabIndex = 4
@@ -103,6 +105,30 @@ Partial Class form_about
         Me.lbl_close.TabIndex = 6
         Me.lbl_close.Text = "X"
         '
+        'lbl_ffmpeg
+        '
+        Me.lbl_ffmpeg.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbl_ffmpeg.AutoSize = True
+        Me.lbl_ffmpeg.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_ffmpeg.ForeColor = System.Drawing.Color.White
+        Me.lbl_ffmpeg.Location = New System.Drawing.Point(150, 95)
+        Me.lbl_ffmpeg.Name = "lbl_ffmpeg"
+        Me.lbl_ffmpeg.Size = New System.Drawing.Size(53, 15)
+        Me.lbl_ffmpeg.TabIndex = 7
+        Me.lbl_ffmpeg.Text = "FFmpeg:"
+        '
+        'lbl_FfmpegNr
+        '
+        Me.lbl_FfmpegNr.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lbl_FfmpegNr.AutoSize = True
+        Me.lbl_FfmpegNr.Font = New System.Drawing.Font("Segoe UI", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_FfmpegNr.ForeColor = System.Drawing.Color.White
+        Me.lbl_FfmpegNr.Location = New System.Drawing.Point(204, 95)
+        Me.lbl_FfmpegNr.Name = "lbl_FfmpegNr"
+        Me.lbl_FfmpegNr.Size = New System.Drawing.Size(80, 15)
+        Me.lbl_FfmpegNr.TabIndex = 8
+        Me.lbl_FfmpegNr.Text = "0.0.0.0 (32 bit)"
+        '
         'form_about
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
@@ -110,6 +136,8 @@ Partial Class form_about
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(375, 176)
         Me.ControlBox = False
+        Me.Controls.Add(Me.lbl_FfmpegNr)
+        Me.Controls.Add(Me.lbl_ffmpeg)
         Me.Controls.Add(Me.lbl_close)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lbl_VersionNr)
@@ -137,4 +165,6 @@ Partial Class form_about
     Friend WithEvents lbl_VersionNr As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents lbl_close As Label
+    Friend WithEvents lbl_ffmpeg As Label
+    Friend WithEvents lbl_FfmpegNr As Label
 End Class
