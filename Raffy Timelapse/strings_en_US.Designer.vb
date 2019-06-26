@@ -145,6 +145,15 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Portuguese ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property _General_language_pt_PT() As String
+        Get
+            Return ResourceManager.GetString("_General_language_pt_PT", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die OK ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_ok() As String

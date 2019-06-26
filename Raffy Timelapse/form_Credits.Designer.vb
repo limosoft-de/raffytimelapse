@@ -29,6 +29,8 @@ Partial Class form_Credits
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lbl_ffmpeg_desc = New System.Windows.Forms.Label()
         Me.lbl_ffmpeg_head = New System.Windows.Forms.Label()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -71,7 +73,7 @@ Partial Class form_Credits
         Me.Panel1.BackColor = System.Drawing.Color.Gray
         Me.Panel1.Controls.Add(Me.btn_ok)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 238)
+        Me.Panel1.Location = New System.Drawing.Point(0, 342)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(313, 36)
         Me.Panel1.TabIndex = 4
@@ -99,12 +101,36 @@ Partial Class form_Credits
         Me.lbl_ffmpeg_head.TabIndex = 6
         Me.lbl_ffmpeg_head.Text = "FFmpeg"
         '
+        'Label1
+        '
+        Me.Label1.BackColor = System.Drawing.Color.Gray
+        Me.Label1.Cursor = System.Windows.Forms.Cursors.Default
+        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(10, 260)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(290, 60)
+        Me.Label1.TabIndex = 8
+        Me.Label1.Text = "Arménio Barão (Portuguese)"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
+        Me.Label2.Location = New System.Drawing.Point(9, 230)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(86, 21)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "Translators"
+        '
         'form_Credits
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(313, 274)
+        Me.ClientSize = New System.Drawing.Size(313, 378)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.lbl_ffmpeg_head)
         Me.Controls.Add(Me.lbl_ffmpeg_desc)
         Me.Controls.Add(Me.Panel1)
@@ -129,4 +155,6 @@ Partial Class form_Credits
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lbl_ffmpeg_desc As Label
     Friend WithEvents lbl_ffmpeg_head As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
 End Class

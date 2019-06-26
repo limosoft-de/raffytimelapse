@@ -437,4 +437,7 @@ Bitte erstelle ein Ticket, wenn du einen Fehler gefunden hast, einen Funktionswu
   <data name="ProgressInfo_lbl_errorlog" xml:space="preserve">
     <value>Log ansehen...</value>
   </data>
+  <data name="_General_language_pt_PT" xml:space="preserve">
+    <value>Portugiesisch</value>
+  </data>
 </root>
