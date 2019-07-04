@@ -440,4 +440,7 @@ Bitte erstelle ein Ticket, wenn du einen Fehler gefunden hast, einen Funktionswu
   <data name="_General_language_pt_PT" xml:space="preserve">
     <value>Portugiesisch</value>
   </data>
+  <data name="Update_msg_close" xml:space="preserve">
+    <value>Raffy Timelapse wird automatisch geschlossen um das Update zu installieren. Alle nicht gespeicherten Änderungen gehen dadurch verloren. Möchtest du wirklich fortfahren?</value>
+  </data>
 </root>

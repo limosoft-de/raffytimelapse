@@ -993,6 +993,15 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Raffy Timelapse will be closed automatically to install the update. All unsaved changes will be lost. Do you want to continue? ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Update_msg_close() As String
+        Get
+            Return ResourceManager.GetString("Update_msg_close", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die No connection to the update servers. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property UpdateSearch_lbl_progress_1() As String

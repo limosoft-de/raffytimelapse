@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Raffy Timelapse", "Raffy Timelapse\Raffy Timelapse.vbproj", "{3972A74C-6986-4709-B2DD-633BD9480044}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Raffy Timelapse Installer", "Raffy Timelapse Installer\Raffy Timelapse Installer.vdproj", "{795BE54F-007D-4F08-9DDA-E6065184B7BD}"
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Raffy Timelapse Updater", "Raffy Timelapse Updater\Raffy Timelapse Updater.vbproj", "{5A99D763-5BCA-4076-898E-8A296D077918}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,10 @@ Global
 		{3972A74C-6986-4709-B2DD-633BD9480044}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3972A74C-6986-4709-B2DD-633BD9480044}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3972A74C-6986-4709-B2DD-633BD9480044}.Release|Any CPU.Build.0 = Release|Any CPU
-		{795BE54F-007D-4F08-9DDA-E6065184B7BD}.Debug|Any CPU.ActiveCfg = Debug
-		{795BE54F-007D-4F08-9DDA-E6065184B7BD}.Release|Any CPU.ActiveCfg = Release
+		{5A99D763-5BCA-4076-898E-8A296D077918}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A99D763-5BCA-4076-898E-8A296D077918}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A99D763-5BCA-4076-898E-8A296D077918}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A99D763-5BCA-4076-898E-8A296D077918}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
