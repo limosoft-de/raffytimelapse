@@ -9,6 +9,8 @@ Public Class form_main
     Dim UpdaterPath As String = Application.UserAppDataPath & "\RaffyInstaller.msi"
     Dim UpdaterStarted As Boolean = False
 
+#Region "Form Events"
+
     Private Sub Form_main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Lbl_UpdaterVersion.Text = "v " & Application.ProductVersion
 
@@ -30,6 +32,7 @@ Public Class form_main
         If TestConnection() = False Then
             MessageBox.Show("Can't establish connection to the update servers, please try again later. Raffy Timelapse Updater will close now.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
             Close()
+            Exit Sub
         End If
 
         Lbl_Status.Text = "Locating update server..."
@@ -39,6 +42,8 @@ Public Class form_main
         DownloadStart()
 
     End Sub
+
+#End Region
 
 #Region "TestConnection"
     Function TestConnection() As Boolean
