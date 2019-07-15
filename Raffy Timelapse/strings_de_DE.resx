@@ -446,4 +446,7 @@ Bitte erstelle ein Ticket, wenn du einen Fehler gefunden hast, einen Funktionswu
   <data name="Credits_lbl_translators_head" xml:space="preserve">
     <value>Übersetzer</value>
   </data>
+  <data name="Update_msg_UpdaterNotFound" xml:space="preserve">
+    <value>Der Raffy Timelapse Updater konnte auf deinem Computer nicht gefunden werden. Bitte lade die neuste Version manuell aus dem Internet herunter.</value>
+  </data>
 </root>

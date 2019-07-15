@@ -1011,6 +1011,15 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die The Raffy Timelapse Updater couldn&apos;t be found on your computer. Please download the latest version manually online. ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Update_msg_UpdaterNotFound() As String
+        Get
+            Return ResourceManager.GetString("Update_msg_UpdaterNotFound", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die No connection to the update servers. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property UpdateSearch_lbl_progress_1() As String

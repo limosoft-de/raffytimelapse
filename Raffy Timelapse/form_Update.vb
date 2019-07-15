@@ -46,6 +46,17 @@
             End If
         End If
 
+        If Not System.IO.File.Exists(Application.StartupPath & "\RaffyUpdater.exe") Then
+            If MessageBox.Show(TransString("Update_msg_UpdaterNotFound"), TransString("_General_error"), MessageBoxButtons.OKCancel, MessageBoxIcon.Error) = DialogResult.OK Then
+                Process.Start(My.Settings.url_raffy)
+                Close()
+                Exit Sub
+            Else
+                Close()
+                Exit Sub
+            End If
+        End If
+
         Dim Updater As New Process
         Updater.StartInfo.FileName = Application.StartupPath & "\RaffyUpdater.exe"
         Updater.StartInfo.Arguments = NewestVersion

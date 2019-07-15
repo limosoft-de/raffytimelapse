@@ -161,6 +161,18 @@ Namespace My
                 Me("url_wiki") = value
             End Set
         End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("https://simpletimelapse.sourceforge.io/")>  _
+        Public Property url_raffy() As String
+            Get
+                Return CType(Me("url_raffy"),String)
+            End Get
+            Set
+                Me("url_raffy") = value
+            End Set
+        End Property
     End Class
 End Namespace
 

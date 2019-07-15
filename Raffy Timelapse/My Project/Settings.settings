@@ -29,5 +29,8 @@
     <Setting Name="url_wiki" Type="System.String" Scope="User">
       <Value Profile="(Default)">https://github.com/limosoft-de/raffytimelapse/wiki</Value>
     </Setting>
+    <Setting Name="url_raffy" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://simpletimelapse.sourceforge.io/</Value>
+    </Setting>
   </Settings>
 </SettingsFile>
