@@ -66,11 +66,11 @@
         End If
 
         If Not form_main.MovPreset = "" Then
-            If form_main.MovPreset = "-preset veryslow -qp 0" Then
+            If form_main.MovPreset = "-crf 1 -preset veryslow -tune film" Then
                 cb_quality.Text = TransString("ProjectSettings_cb_quality_hq")
-            ElseIf form_main.MovPreset = "-preset medium -crf 23" Then
+            ElseIf form_main.MovPreset = "-crf 23 -preset medium" Then
                 cb_quality.Text = TransString("ProjectSettings_cb_quality_mq")
-            ElseIf form_main.MovPreset = "-preset veryfast -crf 30" Then
+            ElseIf form_main.MovPreset = "-crf 30 -preset veryfast" Then
                 cb_quality.Text = TransString("ProjectSettings_cb_quality_lq")
             End If
         End If

@@ -2,6 +2,9 @@
 
 Public Class form_UpdateSearch
 
+    Dim VersionURL As String = "https://simpletimelapse.sourceforge.io/update/version.txt"
+    Dim ChangelogURL As String = "https://simpletimelapse.sourceforge.io/update/changelog.txt"
+
     Private Sub Form_UpdateSearch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         TranslateForm()
@@ -49,7 +52,7 @@ Public Class form_UpdateSearch
 
                    'GET NEWEST VERSION NUMBER
                    Dim VersionBrowser As New WebBrowser
-                   VersionBrowser.Navigate("http://simpletimelapse.sourceforge.net/update/version.txt" & "?Refresh=" & Guid.NewGuid().ToString()) 'USING GUID PARAMETER TO AVOID IE STUPID CACHING
+                   VersionBrowser.Navigate(VersionURL & "?Refresh=" & Guid.NewGuid().ToString()) 'USING GUID PARAMETER TO AVOID IE CACHING
                    Do Until VersionBrowser.ReadyState = WebBrowserReadyState.Complete
                        Application.DoEvents()
                    Loop
@@ -70,7 +73,7 @@ Public Class form_UpdateSearch
 
                    'GET CHANGELOG
                    Dim ChangelogBrowser As New WebBrowser
-                   ChangelogBrowser.Navigate("http://simpletimelapse.sourceforge.net/update/changelog.txt" & "?Refresh=" & Guid.NewGuid().ToString())
+                   ChangelogBrowser.Navigate(ChangelogURL & "?Refresh=" & Guid.NewGuid().ToString())
                    Do Until ChangelogBrowser.ReadyState = WebBrowserReadyState.Complete
                        Application.DoEvents()
                    Loop

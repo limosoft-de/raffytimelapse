@@ -29,6 +29,7 @@ Partial Class form_ProgressInfo
         Me.btn_cancel = New System.Windows.Forms.Button()
         Me.tm_CheckState = New System.Windows.Forms.Timer(Me.components)
         Me.pb = New System.Windows.Forms.PictureBox()
+        Me.lbl_errorlog = New System.Windows.Forms.LinkLabel()
         CType(Me.pb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -79,11 +80,24 @@ Partial Class form_ProgressInfo
         Me.pb.TabIndex = 0
         Me.pb.TabStop = False
         '
+        'lbl_errorlog
+        '
+        Me.lbl_errorlog.AutoSize = True
+        Me.lbl_errorlog.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_errorlog.Location = New System.Drawing.Point(100, 53)
+        Me.lbl_errorlog.Name = "lbl_errorlog"
+        Me.lbl_errorlog.Size = New System.Drawing.Size(63, 13)
+        Me.lbl_errorlog.TabIndex = 4
+        Me.lbl_errorlog.TabStop = True
+        Me.lbl_errorlog.Text = "View Log..."
+        Me.lbl_errorlog.Visible = False
+        '
         'form_ProgressInfo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(330, 104)
+        Me.Controls.Add(Me.lbl_errorlog)
         Me.Controls.Add(Me.btn_cancel)
         Me.Controls.Add(Me.btn_ok)
         Me.Controls.Add(Me.lbl_status)
@@ -97,6 +111,7 @@ Partial Class form_ProgressInfo
         Me.Text = "Verarbeitung"
         CType(Me.pb, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -105,4 +120,5 @@ Partial Class form_ProgressInfo
     Friend WithEvents btn_ok As Button
     Friend WithEvents btn_cancel As Button
     Friend WithEvents tm_CheckState As Timer
+    Friend WithEvents lbl_errorlog As LinkLabel
 End Class

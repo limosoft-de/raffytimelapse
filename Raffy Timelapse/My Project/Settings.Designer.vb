@@ -15,7 +15,7 @@ Option Explicit On
 Namespace My
     
     <Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute(),  _
-     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.0.0.0"),  _
+     Global.System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.1.0.0"),  _
      Global.System.ComponentModel.EditorBrowsableAttribute(Global.System.ComponentModel.EditorBrowsableState.Advanced)>  _
     Partial Friend NotInheritable Class MySettings
         Inherits Global.System.Configuration.ApplicationSettingsBase
@@ -92,18 +92,6 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("http://simpletimelapse.sourceforge.net/update/")>  _
-        Public Property url_update() As String
-            Get
-                Return CType(Me("url_update"),String)
-            End Get
-            Set
-                Me("url_update") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("limosoft@gmx.de")>  _
         Public Property url_mail() As String
             Get
@@ -128,7 +116,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("http://simpletimelapse.sourceforge.net/translate.html")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("https://simpletimelapse.sourceforge.io/translate.html")>  _
         Public Property url_translation() As String
             Get
                 Return CType(Me("url_translation"),String)
@@ -140,7 +128,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("http://simpletimelapse.sourceforge.net/ffmpeg-new.html")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("https://simpletimelapse.sourceforge.io/ffmpeg-new.html")>  _
         Public Property url_FFmpeg() As String
             Get
                 Return CType(Me("url_FFmpeg"),String)
@@ -171,6 +159,18 @@ Namespace My
             End Get
             Set
                 Me("url_wiki") = value
+            End Set
+        End Property
+        
+        <Global.System.Configuration.UserScopedSettingAttribute(),  _
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
+         Global.System.Configuration.DefaultSettingValueAttribute("https://simpletimelapse.sourceforge.io/")>  _
+        Public Property url_raffy() As String
+            Get
+                Return CType(Me("url_raffy"),String)
+            End Get
+            Set
+                Me("url_raffy") = value
             End Set
         End Property
     End Class

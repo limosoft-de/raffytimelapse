@@ -145,6 +145,15 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Portuguese ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property _General_language_pt_PT() As String
+        Get
+            Return ResourceManager.GetString("_General_language_pt_PT", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die OK ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_ok() As String
@@ -195,6 +204,15 @@ Friend Class strings_en_US
     Friend Shared ReadOnly Property Credits() As String
         Get
             Return ResourceManager.GetString("Credits", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Translators ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Credits_lbl_translators_head() As String
+        Get
+            Return ResourceManager.GetString("Credits_lbl_translators_head", resourceCulture)
         End Get
     End Property
     
@@ -377,6 +395,24 @@ Friend Class strings_en_US
     Friend Shared ReadOnly Property Main_btn_start() As String
         Get
             Return ResourceManager.GetString("Main_btn_start", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Error: The timelapse couldn&apos;t be exported successfully. ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Main_bw_Rendering_Progress__1() As String
+        Get
+            Return ResourceManager.GetString("Main_bw_Rendering_Progress_-1", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Error: Memory allocation failure. Try using a lower resolution. ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Main_bw_Rendering_Progress__2() As String
+        Get
+            Return ResourceManager.GetString("Main_bw_Rendering_Progress_-2", resourceCulture)
         End Get
     End Property
     
@@ -714,6 +750,15 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die View log... ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property ProgressInfo_lbl_errorlog() As String
+        Get
+            Return ResourceManager.GetString("ProgressInfo_lbl_errorlog", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die Project Settings ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings() As String
@@ -953,6 +998,24 @@ Friend Class strings_en_US
     Friend Shared ReadOnly Property Update_lbl_NewestVersion() As String
         Get
             Return ResourceManager.GetString("Update_lbl_NewestVersion", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Raffy Timelapse will be closed automatically to install the update. All unsaved changes will be lost. Do you want to continue? ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Update_msg_close() As String
+        Get
+            Return ResourceManager.GetString("Update_msg_close", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die The Raffy Timelapse Updater couldn&apos;t be found on your computer. Please download the latest version manually online. ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Update_msg_UpdaterNotFound() As String
+        Get
+            Return ResourceManager.GetString("Update_msg_UpdaterNotFound", resourceCulture)
         End Get
     End Property
     

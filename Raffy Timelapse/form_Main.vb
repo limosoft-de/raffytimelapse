@@ -7,12 +7,13 @@ Public Class form_main
     Public MultiSelect As Boolean = False
     Public Finished As Boolean = False
     Public FFmpegExists As Boolean = False
+    Public FFmpegPath As String = Application.StartupPath + "\ffmpeg.exe"
+    Public FFmpegBit As Integer = 32
     Public Status As String = TransString("_General_wait")
 
     'If you add something to the projects variables, also add it in ResetProject Sub!
 
     '/||Projekt-Variablen
-    'Dim PicPath As String = ""
     Public ImportFileList As String()
 
     Dim PicFileType As String = ""
@@ -40,10 +41,14 @@ Public Class form_main
     End Sub
 
     Private Sub form_main_Shown(sender As Object, e As EventArgs) Handles Me.Shown
+
+        Check64bit()
         CheckForFFmpeg()
+
         If My.Settings.set_AutoUpdate = True Then
             bw_AutoUpdate.RunWorkerAsync()
         End If
+
     End Sub
 
     Private Sub form_main_Resize(sender As Object, e As EventArgs) Handles Me.Resize
@@ -142,26 +147,42 @@ Public Class form_main
 
 #End Region
 
-#Region "FFmpeg Check"
+#Region "FFmpeg/64bit Check"
+
+    Private Sub Check64bit()
+        If Environment.Is64BitOperatingSystem = True Then
+            FFmpegPath = Application.StartupPath + "\ffmpeg64.exe"
+            FFmpegBit = 64
+        Else
+            FFmpegPath = Application.StartupPath + "\ffmpeg.exe"
+            FFmpegBit = 32
+        End If
+    End Sub
 
     Private Sub CheckForFFmpeg()
-        If File.Exists(Application.StartupPath & "\ffmpeg.exe") Then
+        If File.Exists(FFmpegPath) Then
             FFmpegExists = True
         Else
-            FFmpegExists = False
-            If MessageBox.Show(TransString("Main_msg_ffmpeg"), TransString("_General_error"), MessageBoxButtons.YesNo, MessageBoxIcon.Error) = DialogResult.Yes Then
-                Process.Start(My.Settings.url_FFmpeg)
-            Else
-                Close()
+            If FFmpegBit = 64 And File.Exists(Application.StartupPath + "\ffmpeg.exe") Then
+                FFmpegPath = Application.StartupPath + "\ffmpeg.exe"
+                FFmpegExists = True
+                FFmpegBit = 32
+                Exit Sub
             End If
-        End If
+            FFmpegExists = False
+                If MessageBox.Show(TransString("Main_msg_ffmpeg"), TransString("_General_error"), MessageBoxButtons.YesNo, MessageBoxIcon.Error) = DialogResult.Yes Then
+                    Process.Start(My.Settings.url_FFmpeg)
+                Else
+                    Close()
+                End If
+            End If
     End Sub
 
 #End Region
 
 #Region "UI"
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btn_start.Click
+    Private Sub btn_start_Click(sender As Object, e As EventArgs) Handles btn_start.Click
 
         If FFmpegExists = False Then
             CheckForFFmpeg()
@@ -457,7 +478,7 @@ Public Class form_main
 
 #End Region
 
-#Region "Durchsuchen"
+#Region "Browse"
     Private Sub btn_drop_Click(sender As Object, e As EventArgs) Handles btn_drop.Click
         BrowseImages()
     End Sub
@@ -564,58 +585,106 @@ Public Class form_main
 
 #End Region
 
+#Region "Log File"
+
+    Public Sub LogNew()
+        If File.Exists(Application.UserAppDataPath & "\log.txt") Then
+            File.Delete(Application.UserAppDataPath & "\log.txt")
+        End If
+    End Sub
+
+    Public Sub LogWrite(ByVal Line As String)
+        Dim LogFile As StreamWriter
+        LogFile = My.Computer.FileSystem.OpenTextFileWriter(Application.UserAppDataPath & "\log.txt", True)
+        LogFile.WriteLine(Line)
+        LogFile.Close()
+    End Sub
+
+    Public Sub LogOpen()
+        Process.Start(Application.UserAppDataPath & "\log.txt")
+    End Sub
+
+#End Region
+
 #Region "Backgroundworker: Render/Konvertierung"
 
     Private Sub bw_DoWork(sender As Object, e As DoWorkEventArgs) Handles bw_Rendering.DoWork
 
+        PicTempPath = (Application.UserAppDataPath & "\temp\")
         bw_Rendering.ReportProgress(1)
 
-        'Temp Ordner erstellen/leeren
-        If My.Computer.FileSystem.DirectoryExists(Application.UserAppDataPath & "\temp") Then
-            Directory.Delete(Application.UserAppDataPath.ToString & "\temp", True)
-        End If
 
-        Directory.CreateDirectory(Application.UserAppDataPath & "\temp")
+        'Empty and create new Temp folder
+        If My.Computer.FileSystem.DirectoryExists(PicTempPath) Then
+            Directory.Delete(PicTempPath, True)
+        End If
+        Directory.CreateDirectory(PicTempPath)
 
         bw_Rendering.ReportProgress(10)
 
-        'Bilder kopieren/umbenennen
+        'Rename/copy images
         For i = 0 To lb_pictures.Items.Count - 1
 
             If bw_Rendering.CancellationPending = True Then
                 e.Cancel = True
-                Exit For
+                Exit Sub
             Else
                 Dim FileType As String() = lb_pictures.Items.Item(i).ToString.Split(".")
-                FileSystem.FileCopy(lb_pictures.Items.Item(i), Application.UserAppDataPath & "\temp\" & i.ToString & "." & FileType(FileType.Length - 1))
+                FileSystem.FileCopy(lb_pictures.Items.Item(i), PicTempPath & i.ToString & "." & FileType(FileType.Length - 1))
             End If
         Next
 
         bw_Rendering.ReportProgress(40)
 
         'Rendern starten
-        PicTempPath = (Application.UserAppDataPath & "\temp\")
-
-        If StartRendering() = 0 Then Exit Sub
+        Dim RenderResult As Integer = StartRendering()
+        Select Case RenderResult
+            Case 0 'cancel by user
+                Exit Sub
+            Case -1 'general error
+                bw_Rendering.ReportProgress(-1)
+                Exit Sub
+            Case -2 'malloc error
+                bw_Rendering.ReportProgress(-2)
+                Exit Sub
+        End Select
 
         bw_Rendering.ReportProgress(75)
 
         'Konvertierung starten
-        If StartConversion() = 0 Then Exit Sub
+        Dim ConvertResult As Integer = StartConversion()
+        Select Case ConvertResult
+            Case 0 'cancel by user
+                Exit Sub
+            Case -1 'general error
+                bw_Rendering.ReportProgress(-1)
+                Exit Sub
+            Case -2 'malloc error
+                bw_Rendering.ReportProgress(-2)
+                Exit Sub
+        End Select
 
+        LogWrite("Completed: " & Date.Now.ToString)
         bw_Rendering.ReportProgress(100)
 
     End Sub
 
     Private Function StartRendering() As Integer
         Control.CheckForIllegalCrossThreadCalls = False
-        Dim exepath As String = Application.StartupPath + "\ffmpeg.exe"
         Dim startinfo As New System.Diagnostics.ProcessStartInfo
         Dim sr As StreamReader
-        Dim cmd As String = "-y -f image2 -framerate " & MovFPS & " -i " & Chr(34) & PicTempPath & "\%d." & PicFileType & Chr(34) & " " & MovPreset & " " & Chr(34) & PicTempPath & "video.flv" & Chr(34) '//HARDCODED
+        Dim cmd As String = "-y -f image2 -framerate " & MovFPS & " -i " & Chr(34) & PicTempPath & "\%d." & PicFileType & Chr(34) & " " & Chr(34) & PicTempPath & "video.flv" & Chr(34) '//HARDCODED
         Dim ffmpegOutput As String
 
-        startinfo.FileName = exepath
+        'CREATE LOG FILE
+        LogNew()
+        LogWrite("Rendering started: " & Date.Now.ToString)
+        LogWrite("Command passed: " & cmd)
+        LogWrite("")
+        LogWrite("--- FFMPEG RENDER OUTPUT ---")
+        LogWrite("")
+
+        startinfo.FileName = FFmpegPath
         startinfo.Arguments = cmd
         startinfo.UseShellExecute = False
         startinfo.WindowStyle = ProcessWindowStyle.Hidden
@@ -627,6 +696,8 @@ Public Class form_main
         Proc.Start()
         sr = Proc.StandardError
 
+
+
         Do
             If bw_Rendering.CancellationPending Then
                 Return 0
@@ -634,6 +705,19 @@ Public Class form_main
             End If
 
             ffmpegOutput = sr.ReadLine
+            LogWrite(ffmpegOutput)
+            If Not ffmpegOutput = Nothing Then
+                If ffmpegOutput.Contains("[error]") And ffmpegOutput.Contains("malloc") Then
+                    Proc.Kill()
+                    Return -2
+                    Exit Function
+                ElseIf ffmpegOutput.Contains("[error]") Then
+                    Proc.Kill()
+                    Return -1
+                    Exit Function
+                End If
+            End If
+
         Loop Until Proc.HasExited And ffmpegOutput = Nothing Or ffmpegOutput = ""
 
         Return 1
@@ -642,14 +726,21 @@ Public Class form_main
 
     Private Function StartConversion() As Integer
         Control.CheckForIllegalCrossThreadCalls = False
-        Dim exepath As String = Application.StartupPath + "\ffmpeg.exe"
         Dim startinfo As New System.Diagnostics.ProcessStartInfo
         Dim sr As StreamReader
-
         Dim cmd As String = " -y -i " & Chr(34) & PicTempPath & "video.flv" & Chr(34) & " -an -vcodec libx264 " & MovPreset & " -s " & MovWidth & "x" & MovHeight & " " & Chr(34) & MovPath & Chr(34)
         Dim ffmpegOutput As String
 
-        startinfo.FileName = exepath
+        'UPDATING LOG FILE
+        LogWrite("")
+        LogWrite("Conversion started: " & Date.Now.ToString)
+        LogWrite("64 bit: " & Environment.Is64BitOperatingSystem.ToString)
+        LogWrite("Command passed: " & cmd)
+        LogWrite("")
+        LogWrite("--- FFMPEG CONVERT OUTPUT ---")
+        LogWrite("")
+
+        startinfo.FileName = FFmpegPath
         startinfo.Arguments = cmd
         startinfo.UseShellExecute = False
         startinfo.WindowStyle = ProcessWindowStyle.Hidden
@@ -668,8 +759,18 @@ Public Class form_main
             End If
 
             ffmpegOutput = sr.ReadLine
-
-            'MsgBox(ffmpegOutput) 'Debug Option
+            LogWrite(ffmpegOutput)
+            If Not ffmpegOutput = Nothing Then
+                If ffmpegOutput.Contains("[error]") And ffmpegOutput.Contains("malloc") Then
+                    Conv.Kill()
+                    Return -2
+                    Exit Function
+                ElseIf ffmpegOutput.Contains("[error]") Then
+                    Conv.Kill()
+                    Return -1
+                    Exit Function
+                End If
+            End If
 
         Loop Until Conv.HasExited And ffmpegOutput = Nothing Or ffmpegOutput = ""
 
@@ -679,7 +780,7 @@ Public Class form_main
 
     Private Sub bw_ProgressChanged(sender As Object, e As ProgressChangedEventArgs) Handles bw_Rendering.ProgressChanged
 
-        Select Case e.ProgressPercentage 'Translation
+        Select Case e.ProgressPercentage
             Case 1
                 Status = TransString("Main_bw_Rendering_Progress_1")
             Case 10
@@ -690,6 +791,16 @@ Public Class form_main
                 Status = TransString("Main_bw_Rendering_Progress_75")
             Case 100
                 Status = TransString("Main_bw_Rendering_Progress_100")
+                Finished = True
+                DeleteTemp()
+
+            'ERRORS
+            Case -1
+                Status = TransString("Main_bw_Rendering_Progress_-1")
+                Finished = True
+                DeleteTemp()
+            Case -2
+                Status = TransString("Main_bw_Rendering_Progress_-2")
                 Finished = True
                 DeleteTemp()
         End Select
@@ -742,7 +853,7 @@ Public Class form_main
                        Exit Sub
                    End Try
 
-                   'GET NEWEST VERSION NUMBER
+                   'GET LATEST VERSION NUMBER
                    Dim VersionBrowser As New WebBrowser
                    VersionBrowser.Navigate("http://simpletimelapse.sourceforge.net/update/version.txt" & "?Refresh=" & Guid.NewGuid().ToString()) 'USING GUID PARAMETER TO AVOID IE STUPID CACHING
                    Do Until VersionBrowser.ReadyState = WebBrowserReadyState.Complete

@@ -29,6 +29,8 @@ Partial Class form_Credits
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lbl_ffmpeg_desc = New System.Windows.Forms.Label()
         Me.lbl_ffmpeg_head = New System.Windows.Forms.Label()
+        Me.lbl_translators_desc = New System.Windows.Forms.Label()
+        Me.lbl_translators_head = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -71,7 +73,7 @@ Partial Class form_Credits
         Me.Panel1.BackColor = System.Drawing.Color.Gray
         Me.Panel1.Controls.Add(Me.btn_ok)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.Panel1.Location = New System.Drawing.Point(0, 238)
+        Me.Panel1.Location = New System.Drawing.Point(0, 342)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(313, 36)
         Me.Panel1.TabIndex = 4
@@ -99,12 +101,36 @@ Partial Class form_Credits
         Me.lbl_ffmpeg_head.TabIndex = 6
         Me.lbl_ffmpeg_head.Text = "FFmpeg"
         '
+        'lbl_translators_desc
+        '
+        Me.lbl_translators_desc.BackColor = System.Drawing.Color.Gray
+        Me.lbl_translators_desc.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lbl_translators_desc.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_translators_desc.Location = New System.Drawing.Point(10, 260)
+        Me.lbl_translators_desc.Name = "lbl_translators_desc"
+        Me.lbl_translators_desc.Size = New System.Drawing.Size(290, 60)
+        Me.lbl_translators_desc.TabIndex = 8
+        Me.lbl_translators_desc.Text = "Portuguese translations by: Arménio Barão"
+        '
+        'lbl_translators_head
+        '
+        Me.lbl_translators_head.AutoSize = True
+        Me.lbl_translators_head.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_translators_head.ForeColor = System.Drawing.Color.White
+        Me.lbl_translators_head.Location = New System.Drawing.Point(9, 230)
+        Me.lbl_translators_head.Name = "lbl_translators_head"
+        Me.lbl_translators_head.Size = New System.Drawing.Size(86, 21)
+        Me.lbl_translators_head.TabIndex = 7
+        Me.lbl_translators_head.Text = "Translators"
+        '
         'form_Credits
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(313, 274)
+        Me.ClientSize = New System.Drawing.Size(313, 378)
+        Me.Controls.Add(Me.lbl_translators_desc)
+        Me.Controls.Add(Me.lbl_translators_head)
         Me.Controls.Add(Me.lbl_ffmpeg_head)
         Me.Controls.Add(Me.lbl_ffmpeg_desc)
         Me.Controls.Add(Me.Panel1)
@@ -129,4 +155,6 @@ Partial Class form_Credits
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lbl_ffmpeg_desc As Label
     Friend WithEvents lbl_ffmpeg_head As Label
+    Friend WithEvents lbl_translators_desc As Label
+    Friend WithEvents lbl_translators_head As Label
 End Class

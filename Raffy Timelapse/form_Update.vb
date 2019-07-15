@@ -38,7 +38,32 @@
     End Sub
 
     Private Sub btn_update_Click(sender As Object, e As EventArgs) Handles btn_update.Click
-        Process.Start(My.Settings.url_update & "?Refresh=" & Guid.NewGuid().ToString())
+
+        If form_main.lb_pictures.Items.Count > 0 Then
+            If MessageBox.Show(TransString("Update_msg_close"), TransString("_General_warning"), MessageBoxButtons.YesNo, MessageBoxIcon.Warning) = DialogResult.No Then
+                Close()
+                Exit Sub
+            End If
+        End If
+
+        If Not System.IO.File.Exists(Application.StartupPath & "\RaffyUpdater.exe") Then
+            If MessageBox.Show(TransString("Update_msg_UpdaterNotFound"), TransString("_General_error"), MessageBoxButtons.OKCancel, MessageBoxIcon.Error) = DialogResult.OK Then
+                Process.Start(My.Settings.url_raffy)
+                Close()
+                Exit Sub
+            Else
+                Close()
+                Exit Sub
+            End If
+        End If
+
+        Dim Updater As New Process
+        Updater.StartInfo.FileName = Application.StartupPath & "\RaffyUpdater.exe"
+        Updater.StartInfo.Arguments = NewestVersion
+        Updater.Start()
+
+        Application.Exit()
+
     End Sub
 
 End Class
