@@ -261,7 +261,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="strings_de_DE.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>strings_de_DE.Designer.vb</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

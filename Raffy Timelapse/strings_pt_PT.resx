@@ -428,4 +428,7 @@ Por favor, crie um ticket se você encontrou um bug, tenha um pedido de recurso 
   <data name="Help_llbl_wiki" xml:space="preserve">
     <value>Raffy Timelapse Wiki</value>
   </data>
+  <data name="Credits_lbl_translators_head" xml:space="preserve">
+    <value>Tradutores</value>
+  </data>
 </root>

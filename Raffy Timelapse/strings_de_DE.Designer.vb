@@ -208,6 +208,15 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Übersetzer ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Credits_lbl_translators_head() As String
+        Get
+            Return ResourceManager.GetString("Credits_lbl_translators_head", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die Du wirst auf die Website des Urhebers weitergeleitet. Möchtest du forfahren? ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Credits_link() As String

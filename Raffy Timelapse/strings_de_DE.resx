@@ -443,4 +443,7 @@ Bitte erstelle ein Ticket, wenn du einen Fehler gefunden hast, einen Funktionswu
   <data name="Update_msg_close" xml:space="preserve">
     <value>Raffy Timelapse wird automatisch geschlossen um das Update zu installieren. Alle nicht gespeicherten Änderungen gehen dadurch verloren. Möchtest du wirklich fortfahren?</value>
   </data>
+  <data name="Credits_lbl_translators_head" xml:space="preserve">
+    <value>Übersetzer</value>
+  </data>
 </root>

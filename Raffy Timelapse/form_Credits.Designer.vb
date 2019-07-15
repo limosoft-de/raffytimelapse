@@ -29,8 +29,8 @@ Partial Class form_Credits
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.lbl_ffmpeg_desc = New System.Windows.Forms.Label()
         Me.lbl_ffmpeg_head = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lbl_translators_desc = New System.Windows.Forms.Label()
+        Me.lbl_translators_head = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -101,27 +101,27 @@ Partial Class form_Credits
         Me.lbl_ffmpeg_head.TabIndex = 6
         Me.lbl_ffmpeg_head.Text = "FFmpeg"
         '
-        'Label1
+        'lbl_translators_desc
         '
-        Me.Label1.BackColor = System.Drawing.Color.Gray
-        Me.Label1.Cursor = System.Windows.Forms.Cursors.Default
-        Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(10, 260)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(290, 60)
-        Me.Label1.TabIndex = 8
-        Me.Label1.Text = "Arménio Barão (Portuguese)"
+        Me.lbl_translators_desc.BackColor = System.Drawing.Color.Gray
+        Me.lbl_translators_desc.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.lbl_translators_desc.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_translators_desc.Location = New System.Drawing.Point(10, 260)
+        Me.lbl_translators_desc.Name = "lbl_translators_desc"
+        Me.lbl_translators_desc.Size = New System.Drawing.Size(290, 60)
+        Me.lbl_translators_desc.TabIndex = 8
+        Me.lbl_translators_desc.Text = "Portuguese translations by: Arménio Barão"
         '
-        'Label2
+        'lbl_translators_head
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(9, 230)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(86, 21)
-        Me.Label2.TabIndex = 7
-        Me.Label2.Text = "Translators"
+        Me.lbl_translators_head.AutoSize = True
+        Me.lbl_translators_head.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lbl_translators_head.ForeColor = System.Drawing.Color.White
+        Me.lbl_translators_head.Location = New System.Drawing.Point(9, 230)
+        Me.lbl_translators_head.Name = "lbl_translators_head"
+        Me.lbl_translators_head.Size = New System.Drawing.Size(86, 21)
+        Me.lbl_translators_head.TabIndex = 7
+        Me.lbl_translators_head.Text = "Translators"
         '
         'form_Credits
         '
@@ -129,8 +129,8 @@ Partial Class form_Credits
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(313, 378)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.lbl_translators_desc)
+        Me.Controls.Add(Me.lbl_translators_head)
         Me.Controls.Add(Me.lbl_ffmpeg_head)
         Me.Controls.Add(Me.lbl_ffmpeg_desc)
         Me.Controls.Add(Me.Panel1)
@@ -155,6 +155,6 @@ Partial Class form_Credits
     Friend WithEvents Panel1 As Panel
     Friend WithEvents lbl_ffmpeg_desc As Label
     Friend WithEvents lbl_ffmpeg_head As Label
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
+    Friend WithEvents lbl_translators_desc As Label
+    Friend WithEvents lbl_translators_head As Label
 End Class
