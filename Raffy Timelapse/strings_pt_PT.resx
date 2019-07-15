@@ -328,7 +328,7 @@
     <value>Projeto...</value>
   </data>
   <data name="Main_ms_file_new_window" xml:space="preserve">
-    <value>Janela</value>
+    <value>Janela...</value>
   </data>
   <data name="Main_ms_help" xml:space="preserve">
     <value>Ajuda</value>
@@ -358,7 +358,7 @@
     <value>Aguarde por favor...</value>
   </data>
   <data name="Main_msg_ffmpeg" xml:space="preserve">
-    <value>Raffy Timelapse não conseguiu encontrar o &apos;FFmpeg.exe&apos; no seu computador, o que é necessário para usar este programa. Gostaria de baixar o arquivo em falta?</value>
+    <value>Raffy Timelapse não conseguiu encontrar o 'FFmpeg.exe' no seu computador, o que é necessário para usar este programa. Gostaria de baixar o arquivo em falta?</value>
   </data>
   <data name="UpdateSearch_lbl_progress-1" xml:space="preserve">
     <value>Sem ligação aos servidores de atualização.</value>
