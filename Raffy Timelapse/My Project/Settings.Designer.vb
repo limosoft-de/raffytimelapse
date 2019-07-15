@@ -92,18 +92,6 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("http://simpletimelapse.sourceforge.net/update/")>  _
-        Public Property url_update() As String
-            Get
-                Return CType(Me("url_update"),String)
-            End Get
-            Set
-                Me("url_update") = value
-            End Set
-        End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
          Global.System.Configuration.DefaultSettingValueAttribute("limosoft@gmx.de")>  _
         Public Property url_mail() As String
             Get
@@ -128,7 +116,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("http://simpletimelapse.sourceforge.net/translate.html")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("https://simpletimelapse.sourceforge.io/translate.html")>  _
         Public Property url_translation() As String
             Get
                 Return CType(Me("url_translation"),String)
@@ -140,7 +128,7 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("http://simpletimelapse.sourceforge.net/ffmpeg-new.html")>  _
+         Global.System.Configuration.DefaultSettingValueAttribute("https://simpletimelapse.sourceforge.io/ffmpeg-new.html")>  _
         Public Property url_FFmpeg() As String
             Get
                 Return CType(Me("url_FFmpeg"),String)
