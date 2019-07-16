@@ -8,3 +8,6 @@ This program is completly free of charge, without any advertisement and open-sou
 
 ## Translations
 If you speak a language that I don't speak, please feel free to help translate Raffy Timelapse. Translations can be easily submitted via POEditor: https://poeditor.com/join/project/NvVnFAiGax
+
+## Bugs and feature requests
+For all kinds of bug reports and feature requests, please feel free to use the  [Issues](https://github.com/limosoft-de/raffytimelapse/issues) tab in this repository.
