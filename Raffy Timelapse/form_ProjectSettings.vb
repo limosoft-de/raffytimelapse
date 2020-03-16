@@ -80,9 +80,10 @@
     Private Sub btn_browse_Click(sender As Object, e As EventArgs) Handles btn_browse.Click
 
         Dim FileTrans As String = TransString("_General_file")
+        Dim ThisFileName As String = Date.Now.ToString("yyyy-MM-dd_hh-mm-ss")
 
         dl_SaveMovie.Filter = "MP4 " & FileTrans & "|*.mp4|MOV " & FileTrans & "|*.mov|AVI " & FileTrans & "|*.avi|FLV " & FileTrans & "|*.flv"
-        dl_SaveMovie.FileName = Date.Now.ToString.Replace(":", "-") & ".mp4"
+        dl_SaveMovie.FileName = ThisFileName
         If dl_SaveMovie.ShowDialog = System.Windows.Forms.DialogResult.OK Then
             tb_destination.Text = dl_SaveMovie.FileName
         End If

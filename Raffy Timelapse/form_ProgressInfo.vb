@@ -21,13 +21,18 @@ Public Class form_ProgressInfo
     Private Sub tm_CheckState_Tick(sender As Object, e As EventArgs) Handles tm_CheckState.Tick
         lbl_status.Text = form_main.Status
 
+        progressbar.Value = Math.Round((form_main.RenderProgress + form_main.ConvertProgress) / 2)
+
+
         If form_main.Finished = True Then
             'RENDERING COMPLETED
             If form_main.Status = TransString("Main_bw_Rendering_Progress_100") Then
                 pb.Image = My.Resources.done
+                progressbar.Value = 100
                 btn_ok.Enabled = True
                 AcceptButton = btn_ok
                 btn_ok.Select()
+                tm_CheckState.Stop()
 
                 'ERROR
             ElseIf form_main.Status = TransString("Main_bw_Rendering_Progress_-1") Or

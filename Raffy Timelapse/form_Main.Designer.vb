@@ -104,7 +104,7 @@ Partial Class form_main
         Me.gb_PictureEdit.ForeColor = System.Drawing.Color.White
         Me.gb_PictureEdit.Location = New System.Drawing.Point(180, 504)
         Me.gb_PictureEdit.Name = "gb_PictureEdit"
-        Me.gb_PictureEdit.Size = New System.Drawing.Size(668, 60)
+        Me.gb_PictureEdit.Size = New System.Drawing.Size(650, 60)
         Me.gb_PictureEdit.TabIndex = 7
         Me.gb_PictureEdit.TabStop = False
         Me.gb_PictureEdit.Text = "Edit Picture"
@@ -174,10 +174,12 @@ Partial Class form_main
         '
         'ms
         '
+        Me.ms.ImageScalingSize = New System.Drawing.Size(15, 15)
         Me.ms.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_file, Me.ms_about, Me.ms_help})
         Me.ms.Location = New System.Drawing.Point(0, 0)
         Me.ms.Name = "ms"
-        Me.ms.Size = New System.Drawing.Size(984, 24)
+        Me.ms.Padding = New System.Windows.Forms.Padding(4, 1, 0, 1)
+        Me.ms.Size = New System.Drawing.Size(963, 24)
         Me.ms.TabIndex = 8
         Me.ms.Text = "MenuStrip1"
         '
@@ -185,7 +187,7 @@ Partial Class form_main
         '
         Me.ms_file.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_file_new, Me.ms_file_import, Me.ToolStripSeparator2, Me.ms_file_exit})
         Me.ms_file.Name = "ms_file"
-        Me.ms_file.Size = New System.Drawing.Size(37, 20)
+        Me.ms_file.Size = New System.Drawing.Size(37, 22)
         Me.ms_file.Text = "File"
         '
         'ms_file_new
@@ -237,7 +239,7 @@ Partial Class form_main
         '
         Me.ms_about.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_about_about, Me.ms_about_credits, Me.ms_about_update, Me.ToolStripSeparator1, Me.ms_about_settings})
         Me.ms_about.Name = "ms_about"
-        Me.ms_about.Size = New System.Drawing.Size(52, 20)
+        Me.ms_about.Size = New System.Drawing.Size(52, 22)
         Me.ms_about.Text = "About"
         '
         'ms_about_about
@@ -277,7 +279,7 @@ Partial Class form_main
         '
         Me.ms_help.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ms_help_help, Me.ms_help_SupportUs})
         Me.ms_help.Name = "ms_help"
-        Me.ms_help.Size = New System.Drawing.Size(44, 20)
+        Me.ms_help.Size = New System.Drawing.Size(44, 22)
         Me.ms_help.Text = "Help"
         '
         'ms_help_help
@@ -316,9 +318,9 @@ Partial Class form_main
         Me.btn_start.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_start.ForeColor = System.Drawing.Color.White
         Me.btn_start.Image = CType(resources.GetObject("btn_start.Image"), System.Drawing.Image)
-        Me.btn_start.Location = New System.Drawing.Point(854, 511)
+        Me.btn_start.Location = New System.Drawing.Point(842, 510)
         Me.btn_start.Name = "btn_start"
-        Me.btn_start.Size = New System.Drawing.Size(121, 52)
+        Me.btn_start.Size = New System.Drawing.Size(109, 53)
         Me.btn_start.TabIndex = 0
         Me.btn_start.Text = "Start"
         Me.btn_start.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
@@ -399,7 +401,7 @@ Partial Class form_main
         Me.pb_preview.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.pb_preview.Location = New System.Drawing.Point(180, 51)
         Me.pb_preview.Name = "pb_preview"
-        Me.pb_preview.Size = New System.Drawing.Size(795, 447)
+        Me.pb_preview.Size = New System.Drawing.Size(771, 447)
         Me.pb_preview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.pb_preview.TabIndex = 2
         Me.pb_preview.TabStop = False
@@ -415,7 +417,7 @@ Partial Class form_main
         Me.AutoScaleDimensions = New System.Drawing.SizeF(96.0!, 96.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(984, 576)
+        Me.ClientSize = New System.Drawing.Size(963, 576)
         Me.Controls.Add(Me.gb_PictureEdit)
         Me.Controls.Add(Me.btn_start)
         Me.Controls.Add(Me.lbl_PreviewFile)
@@ -426,7 +428,7 @@ Partial Class form_main
         Me.Controls.Add(Me.ms)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.ms
-        Me.MinimumSize = New System.Drawing.Size(1000, 615)
+        Me.MinimumSize = New System.Drawing.Size(964, 585)
         Me.Name = "form_main"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Raffy Timelapse"
