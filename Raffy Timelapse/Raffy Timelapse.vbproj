@@ -212,6 +212,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="strings_pt_PT.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>strings_pt_PT.resx</DependentUpon>
+    </Compile>
     <Compile Include="Translation.vb" />
   </ItemGroup>
   <ItemGroup>
@@ -254,7 +259,10 @@
     <EmbeddedResource Include="form_UpdateSearch.resx">
       <DependentUpon>form_UpdateSearch.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="strings_pt_PT.resx" />
+    <EmbeddedResource Include="strings_pt_PT.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>strings_pt_PT.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="strings_en_US.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>strings_en_US.Designer.vb</LastGenOutput>

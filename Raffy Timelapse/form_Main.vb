@@ -1,5 +1,6 @@
 ﻿Imports System.IO
 Imports System.ComponentModel
+Imports System.Text.RegularExpressions
 
 Public Class form_main
 
@@ -10,6 +11,11 @@ Public Class form_main
     Public FFmpegPath As String = Application.StartupPath + "\ffmpeg.exe"
     Public FFmpegBit As Integer = 32
     Public Status As String = TransString("_General_wait")
+
+    'PROGRESS
+    Public TotalFrames As Integer = 0
+    Public RenderProgress As Integer = 0
+    Public ConvertProgress As Integer = 0
 
     'If you add something to the projects variables, also add it in ResetProject Sub!
 
@@ -281,7 +287,7 @@ Public Class form_main
     End Sub
 
     Private Sub SingleDelete()
-        Select Case MessageBox.Show(TransString("Main_msg_SingleDelete").Replace("[%1]", "'" & lb_pictures.SelectedItem.ToString & "'"), TransString("_General_warning"), MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
+        Select Case MessageBox.Show(TransString("Main_msg_SingleDelete").Replace("[%1]", "'" & getFilename(lb_pictures.SelectedItem.ToString, False) & "'"), TransString("_General_warning"), MessageBoxButtons.YesNo, MessageBoxIcon.Warning)
             Case DialogResult.Yes
                 Dim i As Integer = lb_pictures.SelectedIndex
                 lb_pictures.Items.Remove(lb_pictures.SelectedItem)
@@ -352,8 +358,7 @@ Public Class form_main
             'Something is selected
             If Not MultiSelect = True Then
                 gb_PictureEdit.Enabled = True
-                Dim PreviewFile As String() = lb_pictures.SelectedItem.ToString.Split("\")
-                lbl_PreviewFile.Text = PreviewFile(PreviewFile.Length - 1)
+                lbl_PreviewFile.Text = getFilename(lb_pictures.SelectedItem.ToString, False)
             End If
         Else
             'Nothing is selected
@@ -509,6 +514,8 @@ Public Class form_main
 
         '//Auf Bilddateien überprüfen
         Dim FileType As String() = path.Split(".")
+        Dim FileNameSplit As String() = path.Split("\")
+        Dim FileName As String = FileNameSplit(FileNameSplit.Length - 1)
 
         '///Unterstützte Dateitypen
         Select Case FileType(1).ToLower
@@ -542,7 +549,7 @@ Public Class form_main
         Img.Dispose()
 
         '//Bild in Liste aufnehmen
-        lb_pictures.Items.Add(path)
+        lb_pictures.Items.Add(FileName + " - """ + path + """")
 
         Pnl_TimelineOverlay.Visible = False
 
@@ -573,7 +580,7 @@ Public Class form_main
         End Try
 
         Try
-            pb_preview.BackgroundImage = Image.FromFile(lb_pictures.SelectedItem.ToString)
+            pb_preview.BackgroundImage = Image.FromFile(getFilename(lb_pictures.SelectedItem.ToString, True))
 
         Catch ex As Exception
             pb_preview.BackgroundImage = Nothing
@@ -608,7 +615,14 @@ Public Class form_main
 
 #Region "Backgroundworker: Render/Konvertierung"
 
+    Dim totalDuration As Double
+
     Private Sub bw_DoWork(sender As Object, e As DoWorkEventArgs) Handles bw_Rendering.DoWork
+
+        'RESET PROGRESS
+        RenderProgress = 0
+        ConvertProgress = 0
+        TotalFrames = lb_pictures.Items.Count
 
         PicTempPath = (Application.UserAppDataPath & "\temp\")
         bw_Rendering.ReportProgress(1)
@@ -629,14 +643,14 @@ Public Class form_main
                 e.Cancel = True
                 Exit Sub
             Else
-                Dim FileType As String() = lb_pictures.Items.Item(i).ToString.Split(".")
-                FileSystem.FileCopy(lb_pictures.Items.Item(i), PicTempPath & i.ToString & "." & FileType(FileType.Length - 1))
+                Dim FileType As String() = getFilename(lb_pictures.Items.Item(i).ToString, False).Split(".")
+                FileSystem.FileCopy(getFilename(lb_pictures.Items.Item(i).ToString, True), PicTempPath & i.ToString & "." & FileType(FileType.Length - 1))
             End If
         Next
 
         bw_Rendering.ReportProgress(40)
 
-        'Rendern starten
+        'Start Rendering
         Dim RenderResult As Integer = StartRendering()
         Select Case RenderResult
             Case 0 'cancel by user
@@ -651,7 +665,7 @@ Public Class form_main
 
         bw_Rendering.ReportProgress(75)
 
-        'Konvertierung starten
+        'Start Conversion
         Dim ConvertResult As Integer = StartConversion()
         Select Case ConvertResult
             Case 0 'cancel by user
@@ -697,7 +711,6 @@ Public Class form_main
         sr = Proc.StandardError
 
 
-
         Do
             If bw_Rendering.CancellationPending Then
                 Return 0
@@ -706,6 +719,17 @@ Public Class form_main
 
             ffmpegOutput = sr.ReadLine
             LogWrite(ffmpegOutput)
+
+            'PROGRESS REPORTING
+            If Not ffmpegOutput Is Nothing Then
+                If ffmpegOutput.Contains("frame=") Then
+                    Dim progressMatch As Match = Regex.Match(ffmpegOutput, "frame=\s+([0-9]{1,10})")
+                    Dim progressFrames As Integer = CInt(progressMatch.Groups(1).Value)
+                    RenderProgress = Math.Round(progressFrames / TotalFrames * 100)
+                End If
+            End If
+
+            'ERROR REPORTING
             If Not ffmpegOutput = Nothing Then
                 If ffmpegOutput.Contains("[error]") And ffmpegOutput.Contains("malloc") Then
                     Proc.Kill()
@@ -760,6 +784,18 @@ Public Class form_main
 
             ffmpegOutput = sr.ReadLine
             LogWrite(ffmpegOutput)
+
+            'PROGRESS REPORTING
+            If Not ffmpegOutput Is Nothing Then
+                If ffmpegOutput.Contains("frame=") Then
+                    Dim progressMatch As Match = Regex.Match(ffmpegOutput, "frame=\s+([0-9]{1,10})")
+                    Dim progressFrames As Integer = CInt(progressMatch.Groups(1).Value)
+                    ConvertProgress = Math.Round(progressFrames / TotalFrames * 100)
+                End If
+            End If
+
+
+            'ERROR REPORTING
             If Not ffmpegOutput = Nothing Then
                 If ffmpegOutput.Contains("[error]") And ffmpegOutput.Contains("malloc") Then
                     Conv.Kill()
@@ -874,6 +910,22 @@ Public Class form_main
 
                End Sub)
     End Sub
+
+#End Region
+
+#Region "General Functions"
+
+    Public Function getFilename(ByVal filename As String, ByVal includePath As Boolean)
+
+        If includePath = False Then
+            Dim regexMatch As Match = Regex.Match(filename, "(.*) - """)
+            Return regexMatch.Groups(1).Value
+        Else
+            Dim regexMatch As Match = Regex.Match(filename, """(.*)""")
+            Return regexMatch.Groups(1).Value
+        End If
+
+    End Function
 
 #End Region
 
