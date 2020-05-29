@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("The simple way to create timelapse footage")>
 <Assembly: AssemblyCompany("Limosoft")>
 <Assembly: AssemblyProduct("Raffy Timelapse")>
-<Assembly: AssemblyCopyright("Copyright ©  2019")>
+<Assembly: AssemblyCopyright("Copyright ©  2020")>
 <Assembly: AssemblyTrademark("")>
 
 <Assembly: ComVisible(False)>
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' übernehmen, indem Sie "*" eingeben:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("2.2.1.0")>
-<Assembly: AssemblyFileVersion("2.2.1.0")>
+<Assembly: AssemblyVersion("2.2.2.0")>
+<Assembly: AssemblyFileVersion("2.2.2.0")>
