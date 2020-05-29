@@ -513,12 +513,13 @@ Public Class form_main
     Public Function ImportFiles(ByVal path As String) As Boolean
 
         '//Auf Bilddateien überprüfen
-        Dim FileType As String() = path.Split(".")
+        Dim FileTypeSplit As String() = path.Split(".")
+        Dim FileType As String = FileTypeSplit(FileTypeSplit.Length - 1)
         Dim FileNameSplit As String() = path.Split("\")
         Dim FileName As String = FileNameSplit(FileNameSplit.Length - 1)
 
         '///Unterstützte Dateitypen
-        Select Case FileType(1).ToLower
+        Select Case FileType.ToLower
             Case "jpg"
             Case "jpeg"
             Case "png"
@@ -529,7 +530,7 @@ Public Class form_main
                 Exit Function
         End Select
 
-        PicFileType = FileType(1).ToLower
+        PicFileType = FileType.ToLower
 
         '//Größe der Bilder speichern/vergeleichen
         Dim Img As Image = Image.FromFile(path)
