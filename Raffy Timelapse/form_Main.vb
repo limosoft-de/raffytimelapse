@@ -865,9 +865,13 @@ Public Class form_main
     End Sub
 
     Public Sub DeleteTemp()
-        If My.Computer.FileSystem.DirectoryExists(Application.UserAppDataPath & "\temp\") Then
-            My.Computer.FileSystem.DeleteDirectory(Application.UserAppDataPath & "\temp\", FileIO.DeleteDirectoryOption.DeleteAllContents)
+
+        Dim tempPath = Application.UserAppDataPath & "\temp\"
+
+        If Directory.Exists(tempPath) Then
+            Directory.Delete(tempPath, True)
         End If
+
     End Sub
 
 #End Region
