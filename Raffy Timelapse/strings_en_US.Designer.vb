@@ -480,7 +480,7 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die All images must use the same resolution as the first imported image ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die All images must have the same resolution as the first imported image ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ImportFiles_msg_DifferentResolution() As String
         Get

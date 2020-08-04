@@ -525,7 +525,9 @@ Public Class form_main
             Case "png"
             Case "bmp"
             Case Else
-                MessageBox.Show(TransString("Main_ImportFiles_msg_UnsupportedFiletype") & " (" & path & ")", TransString("_General_error"), MessageBoxButtons.OK, MessageBoxIcon.Error)
+                If MessageBox.Show(TransString("Main_ImportFiles_msg_UnsupportedFiletype") & " (." & FileType & ")", TransString("_General_error"), MessageBoxButtons.OKCancel, MessageBoxIcon.Error) = DialogResult.Cancel Then
+                    form_ImportProgressInfo.bw_Importing.CancelAsync()
+                End If
                 Return False
                 Exit Function
         End Select
@@ -540,10 +542,12 @@ Public Class form_main
             PicHeight = Img.Height
         Else
             If Img.Width <> PicWidth Or Img.Height <> PicHeight Then
-                If MessageBox.Show(TransString("Main_ImportFiles_msg_DifferentResolution") & " (" & PicWidth & "x" & PicHeight & ")", TransString("_General_error"), MessageBoxButtons.OK, MessageBoxIcon.Error) = DialogResult.OK Then
-                    Return False
-                    Exit Function
+                If MessageBox.Show(TransString("Main_ImportFiles_msg_DifferentResolution") & " (" & PicWidth & "x" & PicHeight & ")", TransString("_General_error"), MessageBoxButtons.OKCancel, MessageBoxIcon.Error) = DialogResult.Cancel Then
+                    form_ImportProgressInfo.bw_Importing.CancelAsync()
                 End If
+
+                Return False
+                Exit Function
             End If
         End If
 

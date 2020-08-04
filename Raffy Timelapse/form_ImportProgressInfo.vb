@@ -24,12 +24,13 @@ Public Class form_ImportProgressInfo
         Invoke(Sub()
 
                    For Each path As String In form_main.ImportFileList
+
                        If form_main.ImportFiles(path) = False Then
-                           bw_Importing.ReportProgress(-1)
-                           Exit For
+                           'Do error handling here!!!
                        End If
 
                        ImportProgress = ImportProgress + 1
+
                        Application.DoEvents()
                        bw_Importing.ReportProgress(ImportProgress)
 

@@ -166,7 +166,7 @@
     <value>Converting film, this may take a while...</value>
   </data>
   <data name="Main_ImportFiles_msg_DifferentResolution" xml:space="preserve">
-    <value>All images must use the same resolution as the first imported image</value>
+    <value>All images must have the same resolution as the first imported image</value>
   </data>
   <data name="Main_ImportFiles_msg_NoPictures" xml:space="preserve">
     <value>No images imported</value>
