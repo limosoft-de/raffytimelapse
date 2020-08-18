@@ -25,9 +25,7 @@ Public Class form_ImportProgressInfo
 
                    For Each path As String In form_main.ImportFileList
 
-                       If form_main.ImportFiles(path) = False Then
-                           'Do error handling here!!!
-                       End If
+                       form_main.ImportFile(path)
 
                        ImportProgress = ImportProgress + 1
 
@@ -38,6 +36,7 @@ Public Class form_ImportProgressInfo
                            bw_Importing.ReportProgress(form_main.ImportFileList.Length)
                            Exit For
                        End If
+
                    Next
 
                End Sub)
@@ -64,4 +63,5 @@ Public Class form_ImportProgressInfo
     Private Sub btn_cancel_Click(sender As Object, e As EventArgs) Handles btn_cancel.Click
         bw_Importing.CancelAsync()
     End Sub
+
 End Class

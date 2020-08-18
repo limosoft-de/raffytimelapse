@@ -489,6 +489,15 @@ Friend Class strings_en_US
     End Property
     
     '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Error for {0}:  ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property Main_ImportFiles_msg_error() As String
+        Get
+            Return ResourceManager.GetString("Main_ImportFiles_msg_error", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die No images imported ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ImportFiles_msg_NoPictures() As String

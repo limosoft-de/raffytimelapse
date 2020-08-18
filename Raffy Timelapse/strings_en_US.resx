@@ -449,4 +449,7 @@ Please create a ticket if you found a bug, have a feature request or have any ot
   <data name="Update_msg_UpdaterNotFound" xml:space="preserve">
     <value>The Raffy Timelapse Updater couldn't be found on your computer. Please download the latest version manually online.</value>
   </data>
+  <data name="Main_ImportFiles_msg_error" xml:space="preserve">
+    <value>Error for {0}: </value>
+  </data>
 </root>

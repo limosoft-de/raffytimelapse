@@ -450,15 +450,7 @@ Public Class form_main
     End Sub
 
     Private Sub lb_pictures_DragDrop(sender As Object, e As DragEventArgs) Handles lb_pictures.DragDrop
-
-        Focus()
-        Activate()
-        ImportFileList = e.Data.GetData(DataFormats.FileDrop)
-        form_ImportProgressInfo.ShowDialog()
-
-        ImportDone()
-        lb_pictures.Select()
-
+        DragAndDropImport(e)
     End Sub
 
     Private Sub lbl_drop_DragEnter(sender As Object, e As DragEventArgs) Handles lbl_drop.DragEnter
@@ -467,13 +459,32 @@ Public Class form_main
         End If
     End Sub
 
-
-
     Private Sub lbl_drop_DragDrop(sender As Object, e As DragEventArgs) Handles lbl_drop.DragDrop
+        DragAndDropImport(e)
+    End Sub
+
+    Private Sub DragAndDropImport(ByRef e As DragEventArgs)
 
         Focus()
         Activate()
-        ImportFileList = e.Data.GetData(DataFormats.FileDrop)
+
+        Dim inputImportFileList As String() = e.Data.GetData(DataFormats.FileDrop)
+        Dim outputImportFileList As List(Of String) = New List(Of String)
+
+        For Each path In inputImportFileList
+            If Directory.Exists(path) Then 'THIS PATH IS A DIRECTORY -> ADD FILES RECURSIVELY
+
+                Dim subdirectoryFiles = Directory.GetFiles(path, "*", SearchOption.AllDirectories)
+                For Each file In subdirectoryFiles
+                    outputImportFileList.Add(file)
+                Next
+
+            Else 'THIS IS JUST A REGULAR FILE -> ADD IT TO THE LIST
+                outputImportFileList.Add(path)
+            End If
+        Next
+
+        ImportFileList = outputImportFileList.ToArray
         form_ImportProgressInfo.ShowDialog()
 
         ImportDone()
@@ -510,22 +521,21 @@ Public Class form_main
 
 #Region "Import"
 
-    Public Function ImportFiles(ByVal path As String) As Boolean
+    Public Function ImportFile(ByVal path As String) As Boolean
 
-        '//Auf Bilddateien überprüfen
         Dim FileTypeSplit As String() = path.Split(".")
         Dim FileType As String = FileTypeSplit(FileTypeSplit.Length - 1)
         Dim FileNameSplit As String() = path.Split("\")
         Dim FileName As String = FileNameSplit(FileNameSplit.Length - 1)
 
-        '///Unterstützte Dateitypen
+        '//Supported file types
         Select Case FileType.ToLower
             Case "jpg"
             Case "jpeg"
             Case "png"
             Case "bmp"
             Case Else
-                If MessageBox.Show(TransString("Main_ImportFiles_msg_UnsupportedFiletype") & " (." & FileType & ")", TransString("_General_error"), MessageBoxButtons.OKCancel, MessageBoxIcon.Error) = DialogResult.Cancel Then
+                If MessageBox.Show(String.Format(TransString("Main_ImportFiles_msg_error"), """" & FileName & """") & TransString("Main_ImportFiles_msg_UnsupportedFiletype") & " (." & FileType & ")", TransString("_General_error"), MessageBoxButtons.OKCancel, MessageBoxIcon.Error) = DialogResult.Cancel Then
                     form_ImportProgressInfo.bw_Importing.CancelAsync()
                 End If
                 Return False
@@ -534,7 +544,7 @@ Public Class form_main
 
         PicFileType = FileType.ToLower
 
-        '//Größe der Bilder speichern/vergeleichen
+        '//Same resolution as other images
         Dim Img As Image = Image.FromFile(path)
 
         If lb_pictures.Items.Count = 0 Then
@@ -542,7 +552,7 @@ Public Class form_main
             PicHeight = Img.Height
         Else
             If Img.Width <> PicWidth Or Img.Height <> PicHeight Then
-                If MessageBox.Show(TransString("Main_ImportFiles_msg_DifferentResolution") & " (" & PicWidth & "x" & PicHeight & ")", TransString("_General_error"), MessageBoxButtons.OKCancel, MessageBoxIcon.Error) = DialogResult.Cancel Then
+                If MessageBox.Show(String.Format(TransString("Main_ImportFiles_msg_error"), """" & FileName & """") & TransString("Main_ImportFiles_msg_DifferentResolution") & " (" & PicWidth & "x" & PicHeight & ")", TransString("_General_error"), MessageBoxButtons.OKCancel, MessageBoxIcon.Error) = DialogResult.Cancel Then
                     form_ImportProgressInfo.bw_Importing.CancelAsync()
                 End If
 
@@ -553,7 +563,7 @@ Public Class form_main
 
         Img.Dispose()
 
-        '//Bild in Liste aufnehmen
+        '//Add to listbox
         lb_pictures.Items.Add(FileName + " - """ + path + """")
 
         Pnl_TimelineOverlay.Visible = False
