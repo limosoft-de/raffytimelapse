@@ -358,13 +358,10 @@
     <value>Aguarde por favor...</value>
   </data>
   <data name="Main_msg_ffmpeg" xml:space="preserve">
-    <value>Raffy Timelapse não conseguiu encontrar o 'FFmpeg.exe' no seu computador, o que é necessário para usar este programa. Gostaria de baixar o arquivo em falta?</value>
+    <value>Raffy Timelapse não conseguiu encontrar o &apos;FFmpeg.exe&apos; no seu computador, o que é necessário para usar este programa. Gostaria de baixar o arquivo em falta?</value>
   </data>
   <data name="UpdateSearch_lbl_progress-1" xml:space="preserve">
     <value>Sem ligação aos servidores de atualização.</value>
-  </data>
-  <data name="Main_ImportFiles_msg_DifferentPath" xml:space="preserve">
-    <value>Todas as imagens devem estar no mesmo diretório que o primeiro importado. Por favor, certifique-se de que todas as imagens importadas estão na mesma pasta.</value>
   </data>
   <data name="Main_msg_MultiDelete" xml:space="preserve">
     <value>Tem a certeza de que quer apagar todas as imagens selecionadas?</value>
@@ -428,7 +425,28 @@ Por favor, crie um ticket se você encontrou um bug, tenha um pedido de recurso 
   <data name="Help_llbl_wiki" xml:space="preserve">
     <value>Raffy Timelapse Wiki</value>
   </data>
+  <data name="Main_bw_Rendering_Progress_-1" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Main_bw_Rendering_Progress_-2" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="ProgressInfo_lbl_errorlog" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="_General_language_pt_PT" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Update_msg_close" xml:space="preserve">
+    <value></value>
+  </data>
   <data name="Credits_lbl_translators_head" xml:space="preserve">
-    <value>Tradutores</value>
+    <value></value>
+  </data>
+  <data name="Update_msg_UpdaterNotFound" xml:space="preserve">
+    <value></value>
+  </data>
+  <data name="Main_ImportFiles_msg_error" xml:space="preserve">
+    <value></value>
   </data>
 </root>

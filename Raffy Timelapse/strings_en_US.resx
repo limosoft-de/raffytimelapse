@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -166,7 +166,7 @@
     <value>Converting film, this may take a while...</value>
   </data>
   <data name="Main_ImportFiles_msg_DifferentResolution" xml:space="preserve">
-    <value>All images must use the same resolution as the first imported image</value>
+    <value>All images must have the same resolution as the first imported image</value>
   </data>
   <data name="Main_ImportFiles_msg_NoPictures" xml:space="preserve">
     <value>No images imported</value>
@@ -220,7 +220,7 @@
     <value>Save to...</value>
   </data>
   <data name="ProjectSettings_msg_InvalidPath" xml:space="preserve">
-    <value>The specified path doesn't exist. Please verify that your export path is correct.</value>
+    <value>The specified path doesn&apos;t exist. Please verify that your export path is correct.</value>
   </data>
   <data name="ProjectSettings_msg_NoFps" xml:space="preserve">
     <value>Please select the Frames per Second (FPS).</value>
@@ -258,12 +258,6 @@
   <data name="Settings" xml:space="preserve">
     <value>Settings</value>
   </data>
-  <data name="Settings_gb_general" xml:space="preserve">
-    <value>General</value>
-  </data>
-  <data name="Settings_general_lbl_language" xml:space="preserve">
-    <value>Language</value>
-  </data>
   <data name="_General_language_de_DE" xml:space="preserve">
     <value>German</value>
   </data>
@@ -286,13 +280,10 @@
     <value>Changelog</value>
   </data>
   <data name="Update_lbl_LocalVersion" xml:space="preserve">
-    <value>Your version:</value>
+    <value>This version:</value>
   </data>
   <data name="Update_lbl_NewestVersion" xml:space="preserve">
     <value>Latest version:</value>
-  </data>
-  <data name="UpdateSearch_lbl_progress-1" xml:space="preserve">
-    <value>No connection to the update servers.</value>
   </data>
   <data name="_General_info" xml:space="preserve">
     <value>Information</value>
@@ -309,19 +300,8 @@
   <data name="Help_gb_contact" xml:space="preserve">
     <value>Direct Contact</value>
   </data>
-  <data name="Help_gb_support" xml:space="preserve">
-    <value>Online Support</value>
-  </data>
   <data name="Help_lbl_contact" xml:space="preserve">
-    <value>Please only contact us via e-mail if the ticket system doesn't meet your request requirements.</value>
-  </data>
-  <data name="Help_llbl_support" xml:space="preserve">
-    <value>Create a ticket</value>
-  </data>
-  <data name="Help_lbl_support" xml:space="preserve">
-    <value>The preferred way to get support for Raffy Timelapse is to create a ticket online on GitHub. We have different ticket systems for different requirements.
-
-Please create a ticket if you found a bug, have a feature request or have any other question concerning Raffy Timelapse!</value>
+    <value>Please only contact us via e-mail if the ticket system doesn&apos;t meet your request requirements.</value>
   </data>
   <data name="Main_msg_closing" xml:space="preserve">
     <value>Would you really like to close this window? All unsaved changes will be lost.</value>
@@ -363,16 +343,13 @@ Please create a ticket if you found a bug, have a feature request or have any ot
     <value>Help us translating</value>
   </data>
   <data name="Participation_lbl_desc" xml:space="preserve">
-    <value>Raffy Timelapse is a free program and will always stay this way. We don't want to ask you for money either. But if you want to support us, and speak a language that we don't speak, then please help us to translate this programm into other languages. It's free and very simple!</value>
+    <value>Raffy Timelapse is a free program and will always stay this way. We don&apos;t want to ask you for money either. But if you want to support us, and speak a language that we don&apos;t speak, then please help us to translate this programm into other languages. It&apos;s free and very simple!</value>
   </data>
   <data name="Participation_lbl_head" xml:space="preserve">
     <value>Translate the App</value>
   </data>
   <data name="Participation_lbl_link" xml:space="preserve">
     <value>Translate Now!</value>
-  </data>
-  <data name="Settings_general_cb_AutoUpdate" xml:space="preserve">
-    <value>Check for Updates on start-up</value>
   </data>
   <data name="_General_close" xml:space="preserve">
     <value>Close</value>
@@ -381,25 +358,16 @@ Please create a ticket if you found a bug, have a feature request or have any ot
     <value>Please wait...</value>
   </data>
   <data name="Main_msg_ffmpeg" xml:space="preserve">
-    <value>Raffy Timelapse couldn't find the 'FFmpeg.exe' on your computer, which is needed to use this program. Would you like to download the missing file?</value>
+    <value>Raffy Timelapse couldn&apos;t find the &apos;FFmpeg.exe&apos; on your computer, which is needed to use this program. Would you like to download the missing file?</value>
   </data>
-  <data name="Main_ImportFiles_msg_DifferentPath" xml:space="preserve">
-    <value>All images must be in the same directory as the first imported one. Please make sure that all imported images are in the same folder.</value>
+  <data name="UpdateSearch_lbl_progress-1" xml:space="preserve">
+    <value>No connection to the update servers.</value>
   </data>
   <data name="Main_msg_MultiDelete" xml:space="preserve">
     <value>Are you sure you want to delete all selected images?</value>
   </data>
   <data name="Main_msg_SingleDelete" xml:space="preserve">
     <value>Are you sure you want to delete the image [%1]?</value>
-  </data>
-  <data name="Settings_gb_keys" xml:space="preserve">
-    <value>Key Assignment</value>
-  </data>
-  <data name="Settings_keys_cb_MoveImg" xml:space="preserve">
-    <value>2+8 (Numpad),W+S</value>
-  </data>
-  <data name="Settings_keys_lbl_MoveImg" xml:space="preserve">
-    <value>Move images up and down</value>
   </data>
   <data name="Import" xml:space="preserve">
     <value>Importing Images</value>
@@ -419,6 +387,35 @@ Please create a ticket if you found a bug, have a feature request or have any ot
   <data name="UpdateSearch_lbl_progress2" xml:space="preserve">
     <value>Loading details of new version...</value>
   </data>
+  <data name="Settings_gb_general" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Settings_general_lbl_language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="Help_gb_support" xml:space="preserve">
+    <value>Online Support</value>
+  </data>
+  <data name="Help_llbl_support" xml:space="preserve">
+    <value>Create a ticket</value>
+  </data>
+  <data name="Help_lbl_support" xml:space="preserve">
+    <value>The preferred way to get support for Raffy Timelapse is to create a ticket online on GitHub. We have different ticket systems for different requirements.
+
+Please create a ticket if you found a bug, have a feature request or have any other question concerning Raffy Timelapse!</value>
+  </data>
+  <data name="Settings_general_cb_AutoUpdate" xml:space="preserve">
+    <value>Check for Updates on start-up</value>
+  </data>
+  <data name="Settings_gb_keys" xml:space="preserve">
+    <value>Key Assignment</value>
+  </data>
+  <data name="Settings_keys_cb_MoveImg" xml:space="preserve">
+    <value>2+8 (Numpad),W+S</value>
+  </data>
+  <data name="Settings_keys_lbl_MoveImg" xml:space="preserve">
+    <value>Move images up and down</value>
+  </data>
   <data name="Help_gb_wiki" xml:space="preserve">
     <value>Wiki</value>
   </data>
@@ -429,7 +426,7 @@ Please create a ticket if you found a bug, have a feature request or have any ot
     <value>Raffy Timelapse Wiki</value>
   </data>
   <data name="Main_bw_Rendering_Progress_-1" xml:space="preserve">
-    <value>Error: The timelapse couldn't be exported successfully.</value>
+    <value>Error: The timelapse couldn&apos;t be exported successfully.</value>
   </data>
   <data name="Main_bw_Rendering_Progress_-2" xml:space="preserve">
     <value>Error: Memory allocation failure. Try using a lower resolution.</value>
@@ -447,6 +444,9 @@ Please create a ticket if you found a bug, have a feature request or have any ot
     <value>Translators</value>
   </data>
   <data name="Update_msg_UpdaterNotFound" xml:space="preserve">
-    <value>The Raffy Timelapse Updater couldn't be found on your computer. Please download the latest version manually online.</value>
+    <value>The Raffy Timelapse Updater couldn&apos;t be found on your computer. Please download the latest version manually online.</value>
+  </data>
+  <data name="Main_ImportFiles_msg_error" xml:space="preserve">
+    <value>Error for {0}: </value>
   </data>
 </root>
