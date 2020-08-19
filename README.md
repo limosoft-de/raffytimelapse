@@ -16,4 +16,4 @@ Simply drag all of your images into the timeline, review and correct the order, 
 This program is completly free of charge, open-source and without any advertisement. Please feel free to report any bugs or feature request as Issues.
 
 ## Translations
-If you speak a language that I don't speak, please feel free to help translate Raffy Timelapse. Translations can be easily submitted via POEditor: https://poeditor.com/join/project/NvVnFAiGax
+If you speak a language that I don't speak, please feel free to help translate Raffy Timelapse. Translations can be easily submitted inside the Raffy Timelapse <a href="https://poeditor.com/join/project/NvVnFAiGax" target="_blank">POEditor Project</a>.
