@@ -4,9 +4,10 @@ Public Class form_main
 
     Dim DownloadVersion As Version
     Dim NetcheckURL As String = "sourceforge.net"
-    Dim UpdaterURL As String = "https://simpletimelapse.sourceforge.io/update/updateURL.txt"
-    Dim DownloadURL As String = ""
-    Dim UpdaterPath As String = Application.UserAppDataPath & "\RaffyInstaller.msi"
+    Dim ConfigURL As String = "https://simpletimelapse.sourceforge.io/update/update.xml"
+    Dim DownloadURL As String = "" 'will be overridden by GetUpdateValues()
+    Dim UpdaterPath As String = Application.UserAppDataPath & "\RaffyInstaller"
+    Dim UpdaterExtension As String = ".msi" 'will be overridden by GetUpdateValues()
     Dim UpdaterStarted As Boolean = False
 
 #Region "Form Events"
@@ -36,7 +37,11 @@ Public Class form_main
         End If
 
         Lbl_Status.Text = "Locating update server..."
-        DownloadURL = GetUpdaterURL()
+        If GetUpdateValues() = False Then
+            MessageBox.Show("Can't establish connection to the configuration server, please try again later. Raffy Timelapse Updater will close now.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Close()
+            Exit Sub
+        End If
 
         Lbl_Status.Text = "Downloading update package..."
         DownloadStart()
@@ -57,16 +62,19 @@ Public Class form_main
     End Function
 #End Region
 
-#Region "UpdaterURL"
-    Public Function GetUpdaterURL() As String
+#Region "GetUpdateValues"
+    Public Function GetUpdateValues() As Boolean
 
-        Dim UpdaterBrowser As New WebBrowser
-        UpdaterBrowser.Navigate(UpdaterURL & "?Refresh=" & Guid.NewGuid().ToString()) 'USING GUID PARAMETER TO AVOID IE CACHING
-        Do Until UpdaterBrowser.ReadyState = WebBrowserReadyState.Complete
-            Application.DoEvents()
-        Loop
+        Try
+            Dim updateXml As XDocument = XDocument.Load(ConfigURL & "?Refresh=" & Guid.NewGuid().ToString()) 'USING GUID PARAMETER TO AVOID IE CACHING
+            DownloadURL = updateXml.Root.Element("url").Value
+            UpdaterExtension = updateXml.Root.Element("extension").Value
 
-        Return UpdaterBrowser.Document.Body.InnerText
+            Return True
+
+        Catch ex As Exception
+            Return False
+        End Try
 
     End Function
 #End Region
@@ -75,7 +83,7 @@ Public Class form_main
     Public WithEvents Downloader As WebClient
     Public Sub DownloadStart()
         Downloader = New WebClient
-        Downloader.DownloadFileAsync(New Uri(DownloadURL), UpdaterPath)
+        Downloader.DownloadFileAsync(New Uri(DownloadURL), UpdaterPath & UpdaterExtension)
     End Sub
 
     Private Sub downloader_DownloadProgressChanged(sender As Object, e As DownloadProgressChangedEventArgs) Handles downloader.DownloadProgressChanged
@@ -95,7 +103,7 @@ Public Class form_main
         If UpdaterStarted = False Then
 
             UpdaterStarted = True
-            Process.Start(UpdaterPath)
+            Process.Start(UpdaterPath & UpdaterExtension)
             Close()
 
         End If
