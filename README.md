@@ -7,6 +7,7 @@
 </h1>
 
 <p align="center">
+  <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/limosoft-de/raffytimelapse?label=version">
   <a href="https://sourceforge.net/projects/simpletimelapse/files/latest/download"><img alt="Download Raffy Timelapse" src="https://img.shields.io/sourceforge/dt/simpletimelapse.svg" ></a>
 </p>
 Raffy Timelapse - formerly known as 'Simple Time Lapse' - is a free timelapse software. It helps you create stunning timelapse footage with just a few clicks.
