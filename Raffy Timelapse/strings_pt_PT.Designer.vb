@@ -154,7 +154,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Português ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_language_pt_PT() As String
         Get
