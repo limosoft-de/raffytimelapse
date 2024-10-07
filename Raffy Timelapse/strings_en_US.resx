@@ -452,4 +452,7 @@ Please create a ticket if you found a bug, have a feature request or have any ot
   <data name="_General_language_fr_FR" xml:space="preserve">
     <value>French</value>
   </data>
+  <data name="_General_language_cs_CZ" xml:space="preserve">
+    <value>Czech</value>
+  </data>
 </root>

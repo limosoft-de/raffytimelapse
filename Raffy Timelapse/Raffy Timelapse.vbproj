@@ -260,6 +260,7 @@
     <EmbeddedResource Include="form_UpdateSearch.resx">
       <DependentUpon>form_UpdateSearch.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="strings_cs_CZ.resx" />
     <EmbeddedResource Include="strings_fr_FR.resx" />
     <EmbeddedResource Include="strings_pt_PT.resx">
       <Generator>ResXFileCodeGenerator</Generator>

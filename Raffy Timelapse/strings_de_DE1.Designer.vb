@@ -127,6 +127,15 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Tschechisch ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property _General_language_cs_CZ() As String
+        Get
+            Return ResourceManager.GetString("_General_language_cs_CZ", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die Deutsch ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_language_de_DE() As String

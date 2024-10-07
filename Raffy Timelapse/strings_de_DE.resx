@@ -457,4 +457,7 @@ Bitte erstelle ein Ticket, wenn du einen Fehler gefunden hast, ein neues Feature
   <data name="_General_language_fr_FR" xml:space="preserve">
     <value>Französisch</value>
   </data>
+  <data name="_General_language_cs_CZ" xml:space="preserve">
+    <value>Tschechisch</value>
+  </data>
 </root>
