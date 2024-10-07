@@ -110,7 +110,7 @@ Partial Class form_Credits
         Me.lbl_translators_desc.Name = "lbl_translators_desc"
         Me.lbl_translators_desc.Size = New System.Drawing.Size(290, 60)
         Me.lbl_translators_desc.TabIndex = 8
-        Me.lbl_translators_desc.Text = "Arménio Barão (PT), Tom Fulk (CZ), Sudo Heck (FR)"
+        Me.lbl_translators_desc.Text = "Arménio Barão (PT), caissist (DE), Tom Fulk (CZ), SudoHeck (FR)"
         '
         'lbl_translators_head
         '
