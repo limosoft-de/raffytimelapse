@@ -118,352 +118,348 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Main_btn_del" xml:space="preserve">
-    <value>Löschen</value>
+    <value>Suppr.</value>
   </data>
   <data name="Main_btn_MoveDwn" xml:space="preserve">
-    <value>Nach unten</value>
+    <value>Descendre</value>
   </data>
   <data name="Main_btn_MoveUp" xml:space="preserve">
-    <value>Nach oben</value>
+    <value>Monter</value>
   </data>
   <data name="Main_btn_start" xml:space="preserve">
-    <value>Start</value>
+    <value>Départ</value>
   </data>
   <data name="Main_gb_PictureEdit" xml:space="preserve">
-    <value>Bild bearbeiten</value>
+    <value>Modifier l'image</value>
   </data>
   <data name="Main_lbl_drop" xml:space="preserve">
-    <value>Bilder hierher ziehen oder den PC durchsuchen</value>
+    <value>Déposez votre image ici ou choisissez un fichier</value>
   </data>
   <data name="Main_lbl_preview" xml:space="preserve">
-    <value>Vorschau</value>
+    <value>Aperçu</value>
   </data>
   <data name="Main_lbl_timeline" xml:space="preserve">
     <value>Timeline</value>
   </data>
   <data name="ImportProgressInfo" xml:space="preserve">
-    <value>Importiere Bilder...</value>
+    <value>Importation des images...</value>
   </data>
   <data name="Main_btn_drop" xml:space="preserve">
-    <value>Durchsuchen</value>
+    <value>Choisir</value>
   </data>
   <data name="Main_btn_MultiSelect" xml:space="preserve">
-    <value>Multiselektion</value>
+    <value>Séléction Multiple</value>
   </data>
   <data name="Main_bw_Rendering_Progress_1" xml:space="preserve">
-    <value>Der Computer wird vorbereitet...</value>
-    <comment>unglücklich - allenfalls "sortiert sich" die Software?!</comment>
+    <value>L'ordinateur est en cours de préparation...</value>
   </data>
   <data name="Main_bw_Rendering_Progress_10" xml:space="preserve">
-    <value>Bilder werden kopiert...</value>
+    <value>Copie des fichiers...</value>
   </data>
   <data name="Main_bw_Rendering_Progress_100" xml:space="preserve">
-    <value>Fertig!</value>
+    <value>Terminé!</value>
   </data>
   <data name="Main_bw_Rendering_Progress_40" xml:space="preserve">
-    <value>Video wird erstellt, dies kann etwas Zeit in Anspruch nehmen...</value>
-    <comment>Der Terminus "Film" ist bereits besetzt mit aufwendigen Produktionen; hier geht es allein um einen Video-Clip.</comment>
+    <value>Création de la vidéo, cela peut prendre du temps...</value>
   </data>
   <data name="Main_bw_Rendering_Progress_75" xml:space="preserve">
-    <value>Das Video wird in das ausgewählte Dateiformat konvertiert...</value>
+    <value>Conversion de la vidéo, cela peut prendre du temps...</value>
   </data>
   <data name="Main_ImportFiles_msg_DifferentResolution" xml:space="preserve">
-    <value>Alle Bilder müssen die gleiche Auflösung haben, wie das zuerst importierte.</value>
+    <value>Toutes les images doivent avoir la même résolution que la première image importées</value>
   </data>
   <data name="Main_ImportFiles_msg_NoPictures" xml:space="preserve">
-    <value>Es wurden keine Bilder importiert</value>
+    <value>Aucune images importé</value>
   </data>
   <data name="Main_ImportFiles_msg_UnsupportedFiletype" xml:space="preserve">
-    <value>Dateityp wird nicht unterstützt</value>
+    <value>Type de fichiers non pris en charge</value>
   </data>
   <data name="Main_ms_about" xml:space="preserve">
-    <value>Über</value>
+    <value>Info.</value>
   </data>
   <data name="Main_ms_about_credits" xml:space="preserve">
-    <value>Credits</value>
+    <value>Crédits</value>
   </data>
   <data name="Main_ms_about_settings" xml:space="preserve">
-    <value>Einstellungen</value>
+    <value>Paramètres</value>
   </data>
   <data name="Main_ms_about_update" xml:space="preserve">
-    <value>Update</value>
+    <value>Mise à Jour</value>
   </data>
   <data name="ProgressInfo" xml:space="preserve">
-    <value>Verarbeitung</value>
+    <value>Traitement</value>
   </data>
   <data name="ProjectSettings" xml:space="preserve">
-    <value>Projekt-Einstellungen</value>
+    <value>Paramètres du projet</value>
   </data>
   <data name="ProjectSettings_btn_browse" xml:space="preserve">
-    <value>Durchsuchen</value>
+    <value>Choisir un fichier</value>
   </data>
   <data name="ProjectSettings_cb_quality_hq" xml:space="preserve">
-    <value>Hohe Qualität, lange Verarbeitungzeit</value>
+    <value>Haute qualité, vitesse de traitement lente</value>
   </data>
   <data name="ProjectSettings_cb_quality_lq" xml:space="preserve">
-    <value>Geringe Qualität, kurze Verarbeitungszeit</value>
+    <value>Basse qualité, haute vitesse de traitement</value>
   </data>
   <data name="ProjectSettings_cb_quality_mq" xml:space="preserve">
-    <value>Durchschnittliche Qualität und Verarbeitungszeit</value>
+    <value>Moyenne qualité et vitesse de traitement</value>
   </data>
   <data name="ProjectSettings_cb_resolution_OriginalResolution" xml:space="preserve">
-    <value>Originalgröße</value>
+    <value>Comme en entrée</value>
   </data>
   <data name="ProjectSettings_lbl_fps" xml:space="preserve">
-    <value>Bilder pro Sekunde (FPS)</value>
+    <value>Frame par secondes (FPS)</value>
   </data>
   <data name="ProjectSettings_lbl_quality" xml:space="preserve">
-    <value>Qualität/Geschwindigkeit</value>
+    <value>Qualité/Vitesse de traitement</value>
   </data>
   <data name="ProjectSettings_lbl_resolution" xml:space="preserve">
-    <value>Auflösung</value>
+    <value>Résolution</value>
   </data>
   <data name="ProjectSettings_lbl_SaveTo" xml:space="preserve">
-    <value>Speichern unter...</value>
+    <value>Enregistrer sous...</value>
   </data>
   <data name="ProjectSettings_msg_InvalidPath" xml:space="preserve">
-    <value>Der angegebene Pfad existiert nicht, bitte überprüfe deine Angaben.</value>
-    <comment>In einer Menüführung sollte es keine persönliche Ansprache geben, vgl. Microsofts Localizing Rules.</comment>
+    <value>Le dossier spécifié n'existe pas. Merci de verifier que votre dossier éxiste.</value>
   </data>
   <data name="ProjectSettings_msg_NoFps" xml:space="preserve">
-    <value>Bitte eine Bildwiederholrate (FPS) auswählen.</value>
-    <comment>auch: Bildfrequenz, Bildrate, Bildwechselrate</comment>
+    <value>Merci de séléctionner le nombre d'images pas secondes (FPS).</value>
   </data>
   <data name="ProjectSettings_msg_NoResolution" xml:space="preserve">
-    <value>Bitte eine Auflösung auswählen.</value>
+    <value>Merci de séléctionner une résolution.</value>
   </data>
   <data name="ProjectSettings_msg_quality" xml:space="preserve">
-    <value>Verhältnis zwischen Qualität und Verarbeitungszeit auswählen</value>
+    <value>Merci de séléctionner une proportion entre qualité et vitesse de traitement.</value>
   </data>
   <data name="ProjectSettings_msg_undersize" xml:space="preserve">
-    <value>Die ausgewählten Bilder sind zu klein für das ausgewählte Video-Format. Bitte eine kleinere Video-Auflösung wählen.</value>
+    <value>L'image importé a un résolution plus basse que la résolution d'export de la vidéo. Veuillez choisir une autre résolution.</value>
   </data>
   <data name="_General_AllPicturefiles" xml:space="preserve">
-    <value>Alle Bilddateien</value>
+    <value>Tous les fichiers images</value>
   </data>
   <data name="_General_cancel" xml:space="preserve">
-    <value>Abbrechen</value>
+    <value>Annuler</value>
   </data>
   <data name="_General_error" xml:space="preserve">
-    <value>Error</value>
+    <value>Erreur</value>
   </data>
   <data name="_General_file" xml:space="preserve">
-    <value>Datei</value>
+    <value>fichier</value>
   </data>
   <data name="_General_files" xml:space="preserve">
-    <value>Dateien</value>
+    <value>fichiers</value>
   </data>
   <data name="_General_ok" xml:space="preserve">
-    <value>OK</value>
+    <value>Ok</value>
   </data>
   <data name="_General_warning" xml:space="preserve">
-    <value>Warnung</value>
+    <value>Attention</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>Einstellungen</value>
+    <value>Paramètres</value>
   </data>
   <data name="_General_language_de_DE" xml:space="preserve">
-    <value>Deutsch</value>
+    <value>Allemand</value>
   </data>
   <data name="_General_language_en_US" xml:space="preserve">
-    <value>Englisch</value>
+    <value>Anglais</value>
   </data>
   <data name="Credits" xml:space="preserve">
-    <value>Credits</value>
+    <value>Crédits</value>
   </data>
   <data name="Credits_link" xml:space="preserve">
-    <value>Du wirst auf die Website des Urhebers weitergeleitet. Möchtest du forfahren?</value>
+    <value>Vous aller être redirigé faire le site du créateur. Voulez-vous continuer ?</value>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Update</value>
+    <value>Mettre à jour</value>
   </data>
   <data name="Update_btn_update" xml:space="preserve">
-    <value>Update</value>
+    <value>Mettre à jour</value>
   </data>
   <data name="Update_lbl_changelog" xml:space="preserve">
-    <value>Changelog</value>
+    <value>Journal des modifications</value>
   </data>
   <data name="Update_lbl_LocalVersion" xml:space="preserve">
-    <value>Diese Version:</value>
-    <comment>In einer Menüführung sollte es keine persönliche Ansprache geben, vgl. Microsofts Localizing Rules.</comment>
+    <value>Cette Version :</value>
   </data>
   <data name="Update_lbl_NewestVersion" xml:space="preserve">
-    <value>Aktuelle Version:</value>
+    <value>Dernière Version :</value>
   </data>
   <data name="_General_info" xml:space="preserve">
     <value>Information</value>
   </data>
   <data name="About" xml:space="preserve">
-    <value>Über</value>
+    <value>A propos</value>
   </data>
   <data name="About_version" xml:space="preserve">
-    <value>Version:</value>
+    <value>Version :</value>
   </data>
   <data name="Help" xml:space="preserve">
-    <value>Hilfe</value>
+    <value>Aide</value>
   </data>
   <data name="Help_gb_contact" xml:space="preserve">
-    <value>Direkter Kontakt</value>
+    <value>Contact direct</value>
   </data>
   <data name="Help_lbl_contact" xml:space="preserve">
-    <value>Bitte kontaktiere uns nur per E-Mail, wenn das Ticketsystem für deine Anfrage unpassend ist.</value>
+    <value>Merci de nous contacter uniquement par e-mail si le system de ticket ne correspond pas à votre demande.</value>
   </data>
   <data name="Main_msg_closing" xml:space="preserve">
-    <value>Möchtest du das Programm wirklich schließen? Alle nicht gespeicherten Änderungen gehen dadurch verloren.</value>
+    <value>Voulez-vous vraiment fermer la fenêtre ? Les changement non sauvegardés seront perdus.</value>
   </data>
   <data name="Main_msg_NewProject" xml:space="preserve">
-    <value>Möchtest du wirklich ein neues Projekt erstellen? Alle nicht gespeicherten Änderungen gehen dadurch verloren.</value>
+    <value>Voulez-vous vraiement créer un nouveau projet ? Les changement non sauvegardés seront perdus.</value>
   </data>
   <data name="Main_ms_about_about" xml:space="preserve">
-    <value>Über die Software</value>
+    <value>Information du logiciel</value>
   </data>
   <data name="Main_ms_file" xml:space="preserve">
-    <value>Datei</value>
+    <value>Fichier</value>
   </data>
   <data name="Main_ms_file_exit" xml:space="preserve">
-    <value>Schließen</value>
+    <value>Sortir</value>
   </data>
   <data name="Main_ms_file_import" xml:space="preserve">
-    <value>Bilder importieren</value>
+    <value>Importer les images</value>
   </data>
   <data name="Main_ms_file_new" xml:space="preserve">
-    <value>Neu</value>
+    <value>Nouveau</value>
   </data>
   <data name="Main_ms_file_new_project" xml:space="preserve">
-    <value>Projekt...</value>
+    <value>Projet...</value>
   </data>
   <data name="Main_ms_file_new_window" xml:space="preserve">
-    <value>Fenster...</value>
+    <value>Fenêtre...</value>
   </data>
   <data name="Main_ms_help" xml:space="preserve">
-    <value>Hilfe</value>
+    <value>Aide</value>
   </data>
   <data name="Main_ms_help_help" xml:space="preserve">
-    <value>Hilfe/Support</value>
+    <value>Aide</value>
   </data>
   <data name="Main_ms_help_SupportUs" xml:space="preserve">
-    <value>Unterstütze uns</value>
+    <value>Faire un don</value>
   </data>
   <data name="Participation" xml:space="preserve">
-    <value>Hilf uns beim Übersetzen</value>
+    <value>Participer à la traduction</value>
   </data>
   <data name="Participation_lbl_desc" xml:space="preserve">
-    <value>Raffy Timelapse ist ein kostenloses Programm und wird dies auch bleiben. Desweiteren möchten wir nicht nach Geld fragen. Stattdessen gibt es eine andere Möglichkeit, uns zu unterstützen: das Programm für weltweite Nutzer in andere Sprachen übersetzen. Es geht ganz einfach!</value>
+    <value>Raffy Timelapse est un logiciel gratuit qui le restera toujours. Nous ne voulons pas vous demander de dons non plus. Mais si vous souhaitez nous aider, ou que vous parlez une langue que nous ne parlons pas, alors merci d'avance de nous aider à traduire notre logiciel dans d'autres langues. C'est gratuit et simple !</value>
   </data>
   <data name="Participation_lbl_head" xml:space="preserve">
-    <value>Unterstütze uns</value>
+    <value>Traduire l'application</value>
   </data>
   <data name="Participation_lbl_link" xml:space="preserve">
-    <value>Jetzt übersetzen!</value>
+    <value>Traduire maintenant !</value>
   </data>
   <data name="_General_close" xml:space="preserve">
-    <value>Schließen</value>
+    <value>Fermer</value>
   </data>
   <data name="_General_wait" xml:space="preserve">
-    <value>Bitte warten...</value>
+    <value>Merci de patienter...</value>
   </data>
   <data name="Main_msg_ffmpeg" xml:space="preserve">
-    <value>Raffy Timelapse konnte die Datei 'FFmpeg.exe' nicht finden, welche für das Programm benötigt wird. Möchtest du diese Datei nun downloaden?</value>
+    <value>Raffy Timelapse n'a pas pu trouver 'FFmpeg.exe' sur votre ordinateur, qui est nécessaire pour utiliser ce programme. Souhaitez-vous télécharger le fichier manquant ?</value>
   </data>
   <data name="UpdateSearch_lbl_progress-1" xml:space="preserve">
-    <value>Keine Verbindung zu den Update-Servern möglich.</value>
+    <value>Impossible de se connecter au serveur de mise à jour.</value>
   </data>
   <data name="Main_msg_MultiDelete" xml:space="preserve">
-    <value>Alle ausgewählten Bilder wirklich entfernen?</value>
+    <value>Êtes-vous sûr de vouloir supprimer les images séléctionnées ?</value>
   </data>
   <data name="Main_msg_SingleDelete" xml:space="preserve">
-    <value>Bild [%1] wirklich entfernen?</value>
+    <value>Êtes-vous sûr de vouloir supprimer l'images [%1] ?</value>
   </data>
   <data name="Import" xml:space="preserve">
-    <value>Importiere Bilder</value>
+    <value>Importation des images</value>
   </data>
   <data name="Import_lbl_progress1" xml:space="preserve">
-    <value>Importiere Bild</value>
+    <value>Importation de l'image</value>
   </data>
   <data name="Import_lbl_progress2" xml:space="preserve">
-    <value>von</value>
+    <value>de</value>
   </data>
   <data name="UpdateSearch_lbl_progress0" xml:space="preserve">
-    <value>Suche nach Updates...</value>
+    <value>Recherche de mise à jour...</value>
   </data>
   <data name="UpdateSearch_lbl_progress1" xml:space="preserve">
-    <value>Du benutzt bereits die neueste Version!</value>
+    <value>Vous disposez déjà de la dernière Version !</value>
   </data>
   <data name="UpdateSearch_lbl_progress2" xml:space="preserve">
-    <value>Lade Details der neuen Version...</value>
+    <value>Chargement des détails de la nouvelle version...</value>
   </data>
   <data name="Settings_gb_general" xml:space="preserve">
-    <value>Allgemein</value>
+    <value>Général</value>
   </data>
   <data name="Settings_general_lbl_language" xml:space="preserve">
-    <value>Sprache</value>
+    <value>Langue</value>
   </data>
   <data name="Help_gb_support" xml:space="preserve">
-    <value>Online-Support</value>
+    <value>Support en ligne</value>
   </data>
   <data name="Help_llbl_support" xml:space="preserve">
-    <value>Ticket erstellen</value>
+    <value>Ouvrir un ticket</value>
   </data>
   <data name="Help_lbl_support" xml:space="preserve">
-    <value>Die bevorzugte Supportvariante für Raffy Timelapse bildet unser Ticketsystem auf GitHub.
+    <value>Le meilleur moyen d'obtenir de l'aide sur Raffy Timpelapse est d'ouvrir un ticket sur GitHub. Nous avons differents types de ticket en fonctions de ce que vous cherchez.
 
-Bitte erstelle ein Ticket, wenn du einen Fehler gefunden hast, ein neues Feature anfragen möchtest oder sonstige Fragen hast.</value>
+Merci de nous prévenir en cas de bug en faisant un ticket, si vous souahitez de nouvelle fonctionnalités, ou si vous avez d'autres questions sur Raffy Timelapse !</value>
   </data>
   <data name="Settings_general_cb_AutoUpdate" xml:space="preserve">
-    <value>Beim Programmstart nach Updates suchen</value>
+    <value>Verifier les mise à jour au démarrage</value>
   </data>
   <data name="Settings_gb_keys" xml:space="preserve">
-    <value>Tastenbelegung</value>
+    <value>Assignement de la touche</value>
   </data>
   <data name="Settings_keys_cb_MoveImg" xml:space="preserve">
-    <value>2+8 (Numpad),W+S,Z+S</value>
+    <value>2+8 (Clavier numérique), W+S,Z+S</value>
+    <comment>In french, the keyboards are generally AZERTY, so it would be Z+S, but it would be better with a variable here depending on the binding</comment>
   </data>
   <data name="Settings_keys_lbl_MoveImg" xml:space="preserve">
-    <value>Bilder mit Tasten verschieben</value>
+    <value>Déplacer l'image vers le haut/bas</value>
   </data>
   <data name="Help_gb_wiki" xml:space="preserve">
     <value>Wiki</value>
   </data>
   <data name="Help_lbl_wiki" xml:space="preserve">
-    <value>Umgang mit Raffy Timelapse anhand unseres Online Wikis erlernen</value>
+    <value>Apprendre à utiliser Raffy Timelapse sur notre Wiki en ligne.</value>
   </data>
   <data name="Help_llbl_wiki" xml:space="preserve">
     <value>Raffy Timelapse Wiki</value>
   </data>
   <data name="Main_bw_Rendering_Progress_-1" xml:space="preserve">
-    <value>Error: Es ist ein Fehler aufgetreten, die Zeitraffer-Aufnahmen konnte nicht erfolgreich exportiert werden.</value>
+    <value>Erreur : le timelapse n'as pas pût être exporté.</value>
   </data>
   <data name="Main_bw_Rendering_Progress_-2" xml:space="preserve">
-    <value>Error: Memory allocation failure. Versuche eine niedrigere Video-Auflösung.</value>
+    <value>Erreur : Impossible d'allouer la mémoire. Essayez d'utiliser un plus faible résolutions.</value>
   </data>
   <data name="ProgressInfo_lbl_errorlog" xml:space="preserve">
-    <value>Log ansehen...</value>
+    <value>Voir les journaux...</value>
   </data>
   <data name="_General_language_pt_PT" xml:space="preserve">
-    <value>Portugiesisch</value>
+    <value>Portugais</value>
   </data>
   <data name="Update_msg_close" xml:space="preserve">
-    <value>Raffy Timelapse wird automatisch geschlossen, um das Update zu installieren. Alle nicht gespeicherten Änderungen gehen dadurch verloren. Möchtest du wirklich fortfahren?</value>
+    <value>Raffy Timelapse vas se fermer automatiquement pour effectuer les mise à jour. Tous les changements non enregistré seront perdu. Voulez-vous continuer ?</value>
   </data>
   <data name="Credits_lbl_translators_head" xml:space="preserve">
-    <value>Übersetzer</value>
+    <value>Traducteurs</value>
   </data>
   <data name="Update_msg_UpdaterNotFound" xml:space="preserve">
-    <value>Der Raffy Timelapse Updater konnte auf deinem Computer nicht gefunden werden. Bitte lade die neueste Version manuell aus dem Internet herunter.</value>
+    <value>Le dispositif de mise à jour est introuvable. Merci de télécharger la dérnière version en ligne.</value>
   </data>
   <data name="Main_ImportFiles_msg_error" xml:space="preserve">
-    <value>Fehler für {0}: </value>
+    <value>Erreur pour {0} : </value>
   </data>
   <data name="_General_language_fr_FR" xml:space="preserve">
-    <value>Französisch</value>
+    <value>Français</value>
   </data>
   <data name="_General_language_cs_CZ" xml:space="preserve">
-    <value>Tschechisch</value>
+    <value>Tchèque</value>
   </data>
   <data name="ProjectSettings_lbl_advancedMode_advanced" xml:space="preserve">
-    <value>Experten-Modus...</value>
+    <value>Mode avancé...</value>
   </data>
   <data name="ProjectSettings_lbl_advancedMode_simple" xml:space="preserve">
-    <value>Vereinfachter Modus...</value>
+    <value>Mode simple...</value>
   </data>
 </root>

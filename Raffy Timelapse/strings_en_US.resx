@@ -220,7 +220,7 @@
     <value>Save to...</value>
   </data>
   <data name="ProjectSettings_msg_InvalidPath" xml:space="preserve">
-    <value>The specified path doesn&apos;t exist. Please verify that your export path is correct.</value>
+    <value>The specified path doesn't exist. Please verify that your export path is correct.</value>
   </data>
   <data name="ProjectSettings_msg_NoFps" xml:space="preserve">
     <value>Please select the Frames per Second (FPS).</value>
@@ -301,7 +301,7 @@
     <value>Direct Contact</value>
   </data>
   <data name="Help_lbl_contact" xml:space="preserve">
-    <value>Please only contact us via e-mail if the ticket system doesn&apos;t meet your request requirements.</value>
+    <value>Please only contact us via e-mail if the ticket system doesn't meet your request requirements.</value>
   </data>
   <data name="Main_msg_closing" xml:space="preserve">
     <value>Would you really like to close this window? All unsaved changes will be lost.</value>
@@ -343,7 +343,7 @@
     <value>Help us translating</value>
   </data>
   <data name="Participation_lbl_desc" xml:space="preserve">
-    <value>Raffy Timelapse is a free program and will always stay this way. We don&apos;t want to ask you for money either. But if you want to support us, and speak a language that we don&apos;t speak, then please help us to translate this programm into other languages. It&apos;s free and very simple!</value>
+    <value>Raffy Timelapse is a free program and will always stay this way. We don't want to ask you for money either. But if you want to support us, and speak a language that we don't speak, then please help us to translate this programm into other languages. It's free and very simple!</value>
   </data>
   <data name="Participation_lbl_head" xml:space="preserve">
     <value>Translate the App</value>
@@ -358,7 +358,7 @@
     <value>Please wait...</value>
   </data>
   <data name="Main_msg_ffmpeg" xml:space="preserve">
-    <value>Raffy Timelapse couldn&apos;t find the &apos;FFmpeg.exe&apos; on your computer, which is needed to use this program. Would you like to download the missing file?</value>
+    <value>Raffy Timelapse couldn't find the 'FFmpeg.exe' on your computer, which is needed to use this program. Would you like to download the missing file?</value>
   </data>
   <data name="UpdateSearch_lbl_progress-1" xml:space="preserve">
     <value>No connection to the update servers.</value>
@@ -411,7 +411,7 @@ Please create a ticket if you found a bug, have a feature request or have any ot
     <value>Key Assignment</value>
   </data>
   <data name="Settings_keys_cb_MoveImg" xml:space="preserve">
-    <value>2+8 (Numpad),W+S</value>
+    <value>2+8 (Numpad),W+S,Z+S</value>
   </data>
   <data name="Settings_keys_lbl_MoveImg" xml:space="preserve">
     <value>Move images up and down</value>
@@ -426,7 +426,7 @@ Please create a ticket if you found a bug, have a feature request or have any ot
     <value>Raffy Timelapse Wiki</value>
   </data>
   <data name="Main_bw_Rendering_Progress_-1" xml:space="preserve">
-    <value>Error: The timelapse couldn&apos;t be exported successfully.</value>
+    <value>Error: The timelapse couldn't be exported successfully.</value>
   </data>
   <data name="Main_bw_Rendering_Progress_-2" xml:space="preserve">
     <value>Error: Memory allocation failure. Try using a lower resolution.</value>
@@ -444,9 +444,21 @@ Please create a ticket if you found a bug, have a feature request or have any ot
     <value>Translators</value>
   </data>
   <data name="Update_msg_UpdaterNotFound" xml:space="preserve">
-    <value>The Raffy Timelapse Updater couldn&apos;t be found on your computer. Please download the latest version manually online.</value>
+    <value>The Raffy Timelapse Updater couldn't be found on your computer. Please download the latest version manually online.</value>
   </data>
   <data name="Main_ImportFiles_msg_error" xml:space="preserve">
     <value>Error for {0}: </value>
+  </data>
+  <data name="_General_language_fr_FR" xml:space="preserve">
+    <value>French</value>
+  </data>
+  <data name="_General_language_cs_CZ" xml:space="preserve">
+    <value>Czech</value>
+  </data>
+  <data name="ProjectSettings_lbl_advancedMode_advanced" xml:space="preserve">
+    <value>Advanced mode...</value>
+  </data>
+  <data name="ProjectSettings_lbl_advancedMode_simple" xml:space="preserve">
+    <value>Simple mode...</value>
   </data>
 </root>

@@ -358,7 +358,7 @@
     <value>Aguarde por favor...</value>
   </data>
   <data name="Main_msg_ffmpeg" xml:space="preserve">
-    <value>Raffy Timelapse não conseguiu encontrar o &apos;FFmpeg.exe&apos; no seu computador, o que é necessário para usar este programa. Gostaria de baixar o arquivo em falta?</value>
+    <value>Raffy Timelapse não conseguiu encontrar o 'FFmpeg.exe' no seu computador, o que é necessário para usar este programa. Gostaria de baixar o arquivo em falta?</value>
   </data>
   <data name="UpdateSearch_lbl_progress-1" xml:space="preserve">
     <value>Sem ligação aos servidores de atualização.</value>
@@ -411,7 +411,7 @@ Por favor, crie um ticket se você encontrou um bug, tenha um pedido de recurso 
     <value>Atribuição de chave</value>
   </data>
   <data name="Settings_keys_cb_MoveImg" xml:space="preserve">
-    <value>2+8 (Teclado Numerico),W+S</value>
+    <value>2+8 (Teclado Numerico),W+S,Z+S</value>
   </data>
   <data name="Settings_keys_lbl_MoveImg" xml:space="preserve">
     <value>Mover imagens para cima e para baixo</value>
@@ -426,27 +426,39 @@ Por favor, crie um ticket se você encontrou um bug, tenha um pedido de recurso 
     <value>Raffy Timelapse Wiki</value>
   </data>
   <data name="Main_bw_Rendering_Progress_-1" xml:space="preserve">
-    <value></value>
+    <value />
   </data>
   <data name="Main_bw_Rendering_Progress_-2" xml:space="preserve">
-    <value></value>
+    <value />
   </data>
   <data name="ProgressInfo_lbl_errorlog" xml:space="preserve">
-    <value></value>
+    <value />
   </data>
   <data name="_General_language_pt_PT" xml:space="preserve">
-    <value></value>
+    <value>Português</value>
   </data>
   <data name="Update_msg_close" xml:space="preserve">
-    <value></value>
+    <value />
   </data>
   <data name="Credits_lbl_translators_head" xml:space="preserve">
-    <value></value>
+    <value />
   </data>
   <data name="Update_msg_UpdaterNotFound" xml:space="preserve">
-    <value></value>
+    <value />
   </data>
   <data name="Main_ImportFiles_msg_error" xml:space="preserve">
-    <value></value>
+    <value />
+  </data>
+  <data name="_General_language_fr_FR" xml:space="preserve">
+    <value>Francês</value>
+  </data>
+  <data name="_General_language_cs_CZ" xml:space="preserve">
+    <value>Checo</value>
+  </data>
+  <data name="ProjectSettings_lbl_advancedMode_advanced" xml:space="preserve">
+    <value>Modo avançado...</value>
+  </data>
+  <data name="ProjectSettings_lbl_advancedMode_simple" xml:space="preserve">
+    <value>Modo simples...</value>
   </data>
 </root>

@@ -315,7 +315,7 @@ Partial Class form_main
         Me.btn_start.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.btn_start.Enabled = False
         Me.btn_start.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btn_start.Font = New System.Drawing.Font("Segoe UI", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_start.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btn_start.ForeColor = System.Drawing.Color.White
         Me.btn_start.Image = CType(resources.GetObject("btn_start.Image"), System.Drawing.Image)
         Me.btn_start.Location = New System.Drawing.Point(842, 510)

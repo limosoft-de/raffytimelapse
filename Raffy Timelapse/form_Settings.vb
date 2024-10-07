@@ -25,7 +25,9 @@
         With cb_language.Items
             .Add(TransString("_General_language_en_US"))
             .Add(TransString("_General_language_de_DE"))
+            .Add(TransString("_General_language_fr_FR"))
             .Add(TransString("_General_language_pt_PT"))
+            .Add(TransString("_General_language_cs_CZ"))
         End With
         cb_AutoUpdate.Text = TransString("Settings_general_cb_AutoUpdate")
 
@@ -78,6 +80,10 @@
             My.Settings.set_LanguageCode = "de_DE"
         ElseIf cb_language.Text = TransString("_General_language_pt_PT") Then
             My.Settings.set_LanguageCode = "pt_PT"
+        ElseIf cb_language.Text = TransString("_General_language_fr_FR") Then
+            My.Settings.set_LanguageCode = "fr_FR"
+        ElseIf cb_language.Text = TransString("_General_language_cs_CZ") Then
+            My.Settings.set_LanguageCode = "cs_CZ"
         End If
     End Sub
 

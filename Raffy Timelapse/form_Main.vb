@@ -239,6 +239,12 @@ Public Class form_main
                 ElseIf e.KeyCode = Keys.W Then
                     ImgMoveUp()
                 End If
+            Case 2
+                If e.KeyCode = Keys.S Then
+                    ImgMoveDown()
+                ElseIf e.KeyCode = Keys.Z Then
+                    ImgMoveUp()
+                End If
         End Select
 
     End Sub

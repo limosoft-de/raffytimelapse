@@ -118,352 +118,348 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Main_btn_del" xml:space="preserve">
-    <value>Löschen</value>
+    <value>Smazat</value>
   </data>
   <data name="Main_btn_MoveDwn" xml:space="preserve">
-    <value>Nach unten</value>
+    <value>Dolů</value>
   </data>
   <data name="Main_btn_MoveUp" xml:space="preserve">
-    <value>Nach oben</value>
+    <value>Nahoru</value>
   </data>
   <data name="Main_btn_start" xml:space="preserve">
     <value>Start</value>
   </data>
   <data name="Main_gb_PictureEdit" xml:space="preserve">
-    <value>Bild bearbeiten</value>
+    <value>Editovat snímky</value>
   </data>
   <data name="Main_lbl_drop" xml:space="preserve">
-    <value>Bilder hierher ziehen oder den PC durchsuchen</value>
+    <value>Přetáhni snímky sem nebo je vyber</value>
   </data>
   <data name="Main_lbl_preview" xml:space="preserve">
-    <value>Vorschau</value>
+    <value>Náhled</value>
   </data>
   <data name="Main_lbl_timeline" xml:space="preserve">
     <value>Timeline</value>
+    <comment>Časová linka</comment>
   </data>
   <data name="ImportProgressInfo" xml:space="preserve">
-    <value>Importiere Bilder...</value>
+    <value>Importování snímků...</value>
   </data>
   <data name="Main_btn_drop" xml:space="preserve">
-    <value>Durchsuchen</value>
+    <value>Prohledávat</value>
   </data>
   <data name="Main_btn_MultiSelect" xml:space="preserve">
-    <value>Multiselektion</value>
+    <value>Výběr</value>
   </data>
   <data name="Main_bw_Rendering_Progress_1" xml:space="preserve">
-    <value>Der Computer wird vorbereitet...</value>
-    <comment>unglücklich - allenfalls "sortiert sich" die Software?!</comment>
+    <value>Počítač se připravuje...</value>
   </data>
   <data name="Main_bw_Rendering_Progress_10" xml:space="preserve">
-    <value>Bilder werden kopiert...</value>
+    <value>Kopírování souborů...</value>
   </data>
   <data name="Main_bw_Rendering_Progress_100" xml:space="preserve">
-    <value>Fertig!</value>
+    <value>Hotovo!</value>
   </data>
   <data name="Main_bw_Rendering_Progress_40" xml:space="preserve">
-    <value>Video wird erstellt, dies kann etwas Zeit in Anspruch nehmen...</value>
-    <comment>Der Terminus "Film" ist bereits besetzt mit aufwendigen Produktionen; hier geht es allein um einen Video-Clip.</comment>
+    <value>Film se vytváří, může to chvíli trvat...</value>
   </data>
   <data name="Main_bw_Rendering_Progress_75" xml:space="preserve">
-    <value>Das Video wird in das ausgewählte Dateiformat konvertiert...</value>
+    <value>Film se konvertuje, může to chvíli trvat...</value>
   </data>
   <data name="Main_ImportFiles_msg_DifferentResolution" xml:space="preserve">
-    <value>Alle Bilder müssen die gleiche Auflösung haben, wie das zuerst importierte.</value>
+    <value>Všechny snímky musí mít stejné rozlišení jako první importovaný</value>
   </data>
   <data name="Main_ImportFiles_msg_NoPictures" xml:space="preserve">
-    <value>Es wurden keine Bilder importiert</value>
+    <value>Nic neimportováno</value>
   </data>
   <data name="Main_ImportFiles_msg_UnsupportedFiletype" xml:space="preserve">
-    <value>Dateityp wird nicht unterstützt</value>
+    <value>Tento typ není podporován</value>
   </data>
   <data name="Main_ms_about" xml:space="preserve">
-    <value>Über</value>
+    <value>Okolo</value>
   </data>
   <data name="Main_ms_about_credits" xml:space="preserve">
-    <value>Credits</value>
+    <value>Kredity</value>
   </data>
   <data name="Main_ms_about_settings" xml:space="preserve">
-    <value>Einstellungen</value>
+    <value>Nastavení</value>
   </data>
   <data name="Main_ms_about_update" xml:space="preserve">
     <value>Update</value>
   </data>
   <data name="ProgressInfo" xml:space="preserve">
-    <value>Verarbeitung</value>
+    <value>Proces</value>
   </data>
   <data name="ProjectSettings" xml:space="preserve">
-    <value>Projekt-Einstellungen</value>
+    <value>Nastavení projektu</value>
   </data>
   <data name="ProjectSettings_btn_browse" xml:space="preserve">
-    <value>Durchsuchen</value>
+    <value>Prohledávat</value>
   </data>
   <data name="ProjectSettings_cb_quality_hq" xml:space="preserve">
-    <value>Hohe Qualität, lange Verarbeitungzeit</value>
+    <value>Vysoká kvalita, pomalý proces</value>
   </data>
   <data name="ProjectSettings_cb_quality_lq" xml:space="preserve">
-    <value>Geringe Qualität, kurze Verarbeitungszeit</value>
+    <value>Nízká kvalita, rychlý proces</value>
   </data>
   <data name="ProjectSettings_cb_quality_mq" xml:space="preserve">
-    <value>Durchschnittliche Qualität und Verarbeitungszeit</value>
+    <value>Střední kvalita i rychlost</value>
   </data>
   <data name="ProjectSettings_cb_resolution_OriginalResolution" xml:space="preserve">
-    <value>Originalgröße</value>
+    <value>Jako vstup</value>
   </data>
   <data name="ProjectSettings_lbl_fps" xml:space="preserve">
-    <value>Bilder pro Sekunde (FPS)</value>
+    <value>Snímky za sekundu (FPS)</value>
   </data>
   <data name="ProjectSettings_lbl_quality" xml:space="preserve">
-    <value>Qualität/Geschwindigkeit</value>
+    <value>Kvalita/Rychlost procesu</value>
   </data>
   <data name="ProjectSettings_lbl_resolution" xml:space="preserve">
-    <value>Auflösung</value>
+    <value>Rozlišení</value>
   </data>
   <data name="ProjectSettings_lbl_SaveTo" xml:space="preserve">
-    <value>Speichern unter...</value>
+    <value>Ulož jako...</value>
   </data>
   <data name="ProjectSettings_msg_InvalidPath" xml:space="preserve">
-    <value>Der angegebene Pfad existiert nicht, bitte überprüfe deine Angaben.</value>
-    <comment>In einer Menüführung sollte es keine persönliche Ansprache geben, vgl. Microsofts Localizing Rules.</comment>
+    <value>Vypraná cesta neexistuje. Je cesta pro export správná?</value>
   </data>
   <data name="ProjectSettings_msg_NoFps" xml:space="preserve">
-    <value>Bitte eine Bildwiederholrate (FPS) auswählen.</value>
-    <comment>auch: Bildfrequenz, Bildrate, Bildwechselrate</comment>
+    <value>Prosím vyber Snímky za sekundu (FPS).</value>
   </data>
   <data name="ProjectSettings_msg_NoResolution" xml:space="preserve">
-    <value>Bitte eine Auflösung auswählen.</value>
+    <value>Prosím vyber rozlišení.</value>
   </data>
   <data name="ProjectSettings_msg_quality" xml:space="preserve">
-    <value>Verhältnis zwischen Qualität und Verarbeitungszeit auswählen</value>
+    <value>Prosím vyber nastavení Kvalita / Rychlost procesu.</value>
   </data>
   <data name="ProjectSettings_msg_undersize" xml:space="preserve">
-    <value>Die ausgewählten Bilder sind zu klein für das ausgewählte Video-Format. Bitte eine kleinere Video-Auflösung wählen.</value>
+    <value>Importovaní snímky mají menší rozlišení než nastavený export videa. Prosím vyber jiné rozlišení.</value>
   </data>
   <data name="_General_AllPicturefiles" xml:space="preserve">
-    <value>Alle Bilddateien</value>
+    <value>Všechny snímky</value>
   </data>
   <data name="_General_cancel" xml:space="preserve">
-    <value>Abbrechen</value>
+    <value>Zrušit</value>
   </data>
   <data name="_General_error" xml:space="preserve">
-    <value>Error</value>
+    <value>Chyba</value>
   </data>
   <data name="_General_file" xml:space="preserve">
-    <value>Datei</value>
+    <value>soubor</value>
   </data>
   <data name="_General_files" xml:space="preserve">
-    <value>Dateien</value>
+    <value>soubory</value>
   </data>
   <data name="_General_ok" xml:space="preserve">
     <value>OK</value>
   </data>
   <data name="_General_warning" xml:space="preserve">
-    <value>Warnung</value>
+    <value>Varování</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>Einstellungen</value>
+    <value>Nastavení</value>
   </data>
   <data name="_General_language_de_DE" xml:space="preserve">
-    <value>Deutsch</value>
+    <value>German</value>
   </data>
   <data name="_General_language_en_US" xml:space="preserve">
-    <value>Englisch</value>
+    <value>English</value>
   </data>
   <data name="Credits" xml:space="preserve">
-    <value>Credits</value>
+    <value>Kredity</value>
   </data>
   <data name="Credits_link" xml:space="preserve">
-    <value>Du wirst auf die Website des Urhebers weitergeleitet. Möchtest du forfahren?</value>
+    <value>Budete přesměrováni na stránky tvorby obsahu. Chcete pokračovat?</value>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Update</value>
+    <value>Aktualizovat</value>
   </data>
   <data name="Update_btn_update" xml:space="preserve">
-    <value>Update</value>
+    <value>Aktualizovat</value>
   </data>
   <data name="Update_lbl_changelog" xml:space="preserve">
-    <value>Changelog</value>
+    <value>Změnový záznam</value>
   </data>
   <data name="Update_lbl_LocalVersion" xml:space="preserve">
-    <value>Diese Version:</value>
-    <comment>In einer Menüführung sollte es keine persönliche Ansprache geben, vgl. Microsofts Localizing Rules.</comment>
+    <value>Tato verze:</value>
   </data>
   <data name="Update_lbl_NewestVersion" xml:space="preserve">
-    <value>Aktuelle Version:</value>
+    <value>Polsední verze:</value>
   </data>
   <data name="_General_info" xml:space="preserve">
-    <value>Information</value>
+    <value>Informace</value>
   </data>
   <data name="About" xml:space="preserve">
-    <value>Über</value>
+    <value>O</value>
   </data>
   <data name="About_version" xml:space="preserve">
-    <value>Version:</value>
+    <value>Verze:</value>
   </data>
   <data name="Help" xml:space="preserve">
-    <value>Hilfe</value>
+    <value>Help</value>
   </data>
   <data name="Help_gb_contact" xml:space="preserve">
-    <value>Direkter Kontakt</value>
+    <value>Přímý kontakt</value>
   </data>
   <data name="Help_lbl_contact" xml:space="preserve">
-    <value>Bitte kontaktiere uns nur per E-Mail, wenn das Ticketsystem für deine Anfrage unpassend ist.</value>
+    <value>Prosíme kontaktujte nás přes e-mail POUZE v případě, že náš systém nezná váš požadavek.</value>
   </data>
   <data name="Main_msg_closing" xml:space="preserve">
-    <value>Möchtest du das Programm wirklich schließen? Alle nicht gespeicherten Änderungen gehen dadurch verloren.</value>
+    <value>Chcete opravdu zavřít toto okno? Všechny neuložené změny budou ztraceny.</value>
   </data>
   <data name="Main_msg_NewProject" xml:space="preserve">
-    <value>Möchtest du wirklich ein neues Projekt erstellen? Alle nicht gespeicherten Änderungen gehen dadurch verloren.</value>
+    <value>Chcete opravdu vytvořit nový projekt? Všechny neuložené změny budou ztraceny.</value>
   </data>
   <data name="Main_ms_about_about" xml:space="preserve">
-    <value>Über die Software</value>
+    <value>O programu</value>
   </data>
   <data name="Main_ms_file" xml:space="preserve">
-    <value>Datei</value>
+    <value>Soubor</value>
   </data>
   <data name="Main_ms_file_exit" xml:space="preserve">
-    <value>Schließen</value>
+    <value>Exit</value>
   </data>
   <data name="Main_ms_file_import" xml:space="preserve">
-    <value>Bilder importieren</value>
+    <value>Import snímků</value>
   </data>
   <data name="Main_ms_file_new" xml:space="preserve">
-    <value>Neu</value>
+    <value>Nový</value>
   </data>
   <data name="Main_ms_file_new_project" xml:space="preserve">
     <value>Projekt...</value>
   </data>
   <data name="Main_ms_file_new_window" xml:space="preserve">
-    <value>Fenster...</value>
+    <value>Window...</value>
   </data>
   <data name="Main_ms_help" xml:space="preserve">
-    <value>Hilfe</value>
+    <value>Help</value>
   </data>
   <data name="Main_ms_help_help" xml:space="preserve">
-    <value>Hilfe/Support</value>
+    <value>Help</value>
   </data>
   <data name="Main_ms_help_SupportUs" xml:space="preserve">
-    <value>Unterstütze uns</value>
+    <value>Podpoř nás</value>
   </data>
   <data name="Participation" xml:space="preserve">
-    <value>Hilf uns beim Übersetzen</value>
+    <value>Pomož nám s překladem</value>
   </data>
   <data name="Participation_lbl_desc" xml:space="preserve">
-    <value>Raffy Timelapse ist ein kostenloses Programm und wird dies auch bleiben. Desweiteren möchten wir nicht nach Geld fragen. Stattdessen gibt es eine andere Möglichkeit, uns zu unterstützen: das Programm für weltweite Nutzer in andere Sprachen übersetzen. Es geht ganz einfach!</value>
+    <value>Raffy Timelapse je free program and půjde vždy touto cestou. Nechceme vás žádat o peníze. Ale jestli nás chcete podpořit, a mluvíte jazykem, kterým my nemluvíme, prosím pomožte nám přeložit tento program do jiných jazyků. Je to zdarma a velmi jednoduché!</value>
   </data>
   <data name="Participation_lbl_head" xml:space="preserve">
-    <value>Unterstütze uns</value>
+    <value>Přelož aplikaci</value>
   </data>
   <data name="Participation_lbl_link" xml:space="preserve">
-    <value>Jetzt übersetzen!</value>
+    <value>Překládej!</value>
   </data>
   <data name="_General_close" xml:space="preserve">
-    <value>Schließen</value>
+    <value>Uzavřít</value>
   </data>
   <data name="_General_wait" xml:space="preserve">
-    <value>Bitte warten...</value>
+    <value>Prosím čekej...</value>
   </data>
   <data name="Main_msg_ffmpeg" xml:space="preserve">
-    <value>Raffy Timelapse konnte die Datei 'FFmpeg.exe' nicht finden, welche für das Programm benötigt wird. Möchtest du diese Datei nun downloaden?</value>
+    <value>Raffy Timelapse nemůže na vašem počítači najít 'FFmpeg.exe', který je nutný pro běh tohoto programu. Chcete tento chybějící soubor stáhnout?</value>
   </data>
   <data name="UpdateSearch_lbl_progress-1" xml:space="preserve">
-    <value>Keine Verbindung zu den Update-Servern möglich.</value>
+    <value>Není spojení k aktualizačnímu serveru.</value>
   </data>
   <data name="Main_msg_MultiDelete" xml:space="preserve">
-    <value>Alle ausgewählten Bilder wirklich entfernen?</value>
+    <value>Jste si jistí, že chcete smazat všechny vybrané snímky?</value>
   </data>
   <data name="Main_msg_SingleDelete" xml:space="preserve">
-    <value>Bild [%1] wirklich entfernen?</value>
+    <value>Jste si jistí, že chcete smazat snímek [%1]?</value>
   </data>
   <data name="Import" xml:space="preserve">
-    <value>Importiere Bilder</value>
+    <value>Importování Snímků</value>
   </data>
   <data name="Import_lbl_progress1" xml:space="preserve">
-    <value>Importiere Bild</value>
+    <value>Importování snímku</value>
   </data>
   <data name="Import_lbl_progress2" xml:space="preserve">
-    <value>von</value>
+    <value>od</value>
   </data>
   <data name="UpdateSearch_lbl_progress0" xml:space="preserve">
-    <value>Suche nach Updates...</value>
+    <value>Hledání nové verze...</value>
   </data>
   <data name="UpdateSearch_lbl_progress1" xml:space="preserve">
-    <value>Du benutzt bereits die neueste Version!</value>
+    <value>Fakt používáte poslední verzi!</value>
   </data>
   <data name="UpdateSearch_lbl_progress2" xml:space="preserve">
-    <value>Lade Details der neuen Version...</value>
+    <value>Nahrávání detailů nové verze...</value>
   </data>
   <data name="Settings_gb_general" xml:space="preserve">
-    <value>Allgemein</value>
+    <value>General</value>
   </data>
   <data name="Settings_general_lbl_language" xml:space="preserve">
-    <value>Sprache</value>
+    <value>Jazyk</value>
   </data>
   <data name="Help_gb_support" xml:space="preserve">
-    <value>Online-Support</value>
+    <value>Online podpora</value>
   </data>
   <data name="Help_llbl_support" xml:space="preserve">
-    <value>Ticket erstellen</value>
+    <value>Vytvoření tiketu</value>
   </data>
   <data name="Help_lbl_support" xml:space="preserve">
-    <value>Die bevorzugte Supportvariante für Raffy Timelapse bildet unser Ticketsystem auf GitHub.
+    <value>Preferovaná cesta dostat podporu pro Raffy Timelapse je vytvoření tiketu online na GitHub. Máme různé systémy tiket pro různé požadavky.
 
-Bitte erstelle ein Ticket, wenn du einen Fehler gefunden hast, ein neues Feature anfragen möchtest oder sonstige Fragen hast.</value>
+Prosím vytvořte tiket jestliže najdete chybu, máte požadavek na novou funkci nebo máte jinou otázku týkající se Raffy Timelapse!</value>
   </data>
   <data name="Settings_general_cb_AutoUpdate" xml:space="preserve">
-    <value>Beim Programmstart nach Updates suchen</value>
+    <value>Kontrola aktualizací při startu</value>
   </data>
   <data name="Settings_gb_keys" xml:space="preserve">
-    <value>Tastenbelegung</value>
+    <value>Přiřazení kláves</value>
   </data>
   <data name="Settings_keys_cb_MoveImg" xml:space="preserve">
-    <value>2+8 (Numpad),W+S,Z+S</value>
+    <value>2+8 (Numpad), W+S,Z+S</value>
   </data>
   <data name="Settings_keys_lbl_MoveImg" xml:space="preserve">
-    <value>Bilder mit Tasten verschieben</value>
+    <value>Pohyb snímků nahoru a dolů</value>
   </data>
   <data name="Help_gb_wiki" xml:space="preserve">
     <value>Wiki</value>
   </data>
   <data name="Help_lbl_wiki" xml:space="preserve">
-    <value>Umgang mit Raffy Timelapse anhand unseres Online Wikis erlernen</value>
+    <value>Podívejte se, jak začít s Raffy Timelapse na Wiki online.</value>
   </data>
   <data name="Help_llbl_wiki" xml:space="preserve">
     <value>Raffy Timelapse Wiki</value>
   </data>
   <data name="Main_bw_Rendering_Progress_-1" xml:space="preserve">
-    <value>Error: Es ist ein Fehler aufgetreten, die Zeitraffer-Aufnahmen konnte nicht erfolgreich exportiert werden.</value>
+    <value>Chyba: Timelapse nemůže být úspěšně exportiváno.</value>
   </data>
   <data name="Main_bw_Rendering_Progress_-2" xml:space="preserve">
-    <value>Error: Memory allocation failure. Versuche eine niedrigere Video-Auflösung.</value>
+    <value>Chyba: Problém s pamětí. Zkuste použít menší rozlišení.</value>
   </data>
   <data name="ProgressInfo_lbl_errorlog" xml:space="preserve">
-    <value>Log ansehen...</value>
+    <value>Podívejte do logu...</value>
   </data>
   <data name="_General_language_pt_PT" xml:space="preserve">
-    <value>Portugiesisch</value>
+    <value>Portuguese</value>
   </data>
   <data name="Update_msg_close" xml:space="preserve">
-    <value>Raffy Timelapse wird automatisch geschlossen, um das Update zu installieren. Alle nicht gespeicherten Änderungen gehen dadurch verloren. Möchtest du wirklich fortfahren?</value>
+    <value>Raffy Timelapse bude z důvodu instalování update automaticky ukončeno. Všechny neuložené změny budou ztraceny. Chcete pokračovat?</value>
   </data>
   <data name="Credits_lbl_translators_head" xml:space="preserve">
-    <value>Übersetzer</value>
+    <value>Překlady</value>
   </data>
   <data name="Update_msg_UpdaterNotFound" xml:space="preserve">
-    <value>Der Raffy Timelapse Updater konnte auf deinem Computer nicht gefunden werden. Bitte lade die neueste Version manuell aus dem Internet herunter.</value>
+    <value>Program 'Raffy Timelapse Updater' nebyl na vašem pořítači nalezen. Prosím stáhněte si poslední verzi manuálně.</value>
   </data>
   <data name="Main_ImportFiles_msg_error" xml:space="preserve">
-    <value>Fehler für {0}: </value>
+    <value>Chyba pro {0}: </value>
   </data>
   <data name="_General_language_fr_FR" xml:space="preserve">
-    <value>Französisch</value>
+    <value>Francouzština</value>
   </data>
   <data name="_General_language_cs_CZ" xml:space="preserve">
-    <value>Tschechisch</value>
+    <value>Česky</value>
   </data>
   <data name="ProjectSettings_lbl_advancedMode_advanced" xml:space="preserve">
-    <value>Experten-Modus...</value>
+    <value>Pokročilý režim...</value>
   </data>
   <data name="ProjectSettings_lbl_advancedMode_simple" xml:space="preserve">
-    <value>Vereinfachter Modus...</value>
+    <value>Jednoduchý režim</value>
   </data>
 </root>
