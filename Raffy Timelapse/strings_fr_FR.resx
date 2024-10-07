@@ -118,338 +118,339 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Main_btn_del" xml:space="preserve">
-    <value>Delete</value>
+    <value>Suppr.</value>
   </data>
   <data name="Main_btn_MoveDwn" xml:space="preserve">
-    <value>Move Down</value>
+    <value>Descendre</value>
   </data>
   <data name="Main_btn_MoveUp" xml:space="preserve">
-    <value>Move Up</value>
+    <value>Monter</value>
   </data>
   <data name="Main_btn_start" xml:space="preserve">
-    <value>Start</value>
+    <value>Départ</value>
   </data>
   <data name="Main_gb_PictureEdit" xml:space="preserve">
-    <value>Edit Picture</value>
+    <value>Modifier l'image</value>
   </data>
   <data name="Main_lbl_drop" xml:space="preserve">
-    <value>Drop your Images here or browse for files</value>
+    <value>Déposez votre image ici ou choisissez un fichier</value>
   </data>
   <data name="Main_lbl_preview" xml:space="preserve">
-    <value>Preview</value>
+    <value>Aperçu</value>
   </data>
   <data name="Main_lbl_timeline" xml:space="preserve">
     <value>Timeline</value>
   </data>
   <data name="ImportProgressInfo" xml:space="preserve">
-    <value>Importing images...</value>
+    <value>Importation des images...</value>
   </data>
   <data name="Main_btn_drop" xml:space="preserve">
-    <value>Browse</value>
+    <value>Choisir</value>
   </data>
   <data name="Main_btn_MultiSelect" xml:space="preserve">
-    <value>Multiselect</value>
+    <value>Séléction Multiple</value>
   </data>
   <data name="Main_bw_Rendering_Progress_1" xml:space="preserve">
-    <value>The computer is being prepared...</value>
+    <value>L'ordinateur est en cours de préparation...</value>
   </data>
   <data name="Main_bw_Rendering_Progress_10" xml:space="preserve">
-    <value>Copying files...</value>
+    <value>Copie des fichiers...</value>
   </data>
   <data name="Main_bw_Rendering_Progress_100" xml:space="preserve">
-    <value>Finished!</value>
+    <value>Terminé!</value>
   </data>
   <data name="Main_bw_Rendering_Progress_40" xml:space="preserve">
-    <value>Film is beeing created, this may take a while...</value>
+    <value>Création de la vidéo, cela peut prendre du temps...</value>
   </data>
   <data name="Main_bw_Rendering_Progress_75" xml:space="preserve">
-    <value>Converting film, this may take a while...</value>
+    <value>Conversion de la vidéo, cela peut prendre du temps...</value>
   </data>
   <data name="Main_ImportFiles_msg_DifferentResolution" xml:space="preserve">
-    <value>All images must have the same resolution as the first imported image</value>
+    <value>Toutes les images doivent avoir la même résolution que la première image importées</value>
   </data>
   <data name="Main_ImportFiles_msg_NoPictures" xml:space="preserve">
-    <value>No images imported</value>
+    <value>Aucune images importé</value>
   </data>
   <data name="Main_ImportFiles_msg_UnsupportedFiletype" xml:space="preserve">
-    <value>Filetype is not supported</value>
+    <value>Type de fichiers non pris en charge</value>
   </data>
   <data name="Main_ms_about" xml:space="preserve">
-    <value>About</value>
+    <value>Info.</value>
   </data>
   <data name="Main_ms_about_credits" xml:space="preserve">
-    <value>Credits</value>
+    <value>Crédits</value>
   </data>
   <data name="Main_ms_about_settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>Paramètres</value>
   </data>
   <data name="Main_ms_about_update" xml:space="preserve">
-    <value>Update</value>
+    <value>Mise à Jour</value>
   </data>
   <data name="ProgressInfo" xml:space="preserve">
-    <value>Processing</value>
+    <value>Traitement</value>
   </data>
   <data name="ProjectSettings" xml:space="preserve">
-    <value>Project Settings</value>
+    <value>Paramètres du projet</value>
   </data>
   <data name="ProjectSettings_btn_browse" xml:space="preserve">
-    <value>Browse</value>
+    <value>Choisir un fichier</value>
   </data>
   <data name="ProjectSettings_cb_quality_hq" xml:space="preserve">
-    <value>High quality, low processing speed</value>
+    <value>Haute qualité, vitesse de traitement lente</value>
   </data>
   <data name="ProjectSettings_cb_quality_lq" xml:space="preserve">
-    <value>Low quality, high processing speed</value>
+    <value>Basse qualité, haute vitesse de traitement</value>
   </data>
   <data name="ProjectSettings_cb_quality_mq" xml:space="preserve">
-    <value>Medium quality and processing speed</value>
+    <value>Moyenne qualité et vitesse de traitement</value>
   </data>
   <data name="ProjectSettings_cb_resolution_OriginalResolution" xml:space="preserve">
-    <value>Same as Input</value>
+    <value>Comme en entrée</value>
   </data>
   <data name="ProjectSettings_lbl_fps" xml:space="preserve">
-    <value>Frames per Second (FPS)</value>
+    <value>Frame par secondes (FPS)</value>
   </data>
   <data name="ProjectSettings_lbl_quality" xml:space="preserve">
-    <value>Quality/Processing Speed</value>
+    <value>Qualité/Vitesse de traitement</value>
   </data>
   <data name="ProjectSettings_lbl_resolution" xml:space="preserve">
-    <value>Resolution</value>
+    <value>Résolution</value>
   </data>
   <data name="ProjectSettings_lbl_SaveTo" xml:space="preserve">
-    <value>Save to...</value>
+    <value>Enregistrer sous...</value>
   </data>
   <data name="ProjectSettings_msg_InvalidPath" xml:space="preserve">
-    <value>The specified path doesn't exist. Please verify that your export path is correct.</value>
+    <value>Le dossier spécifié n'existe pas. Merci de verifier que votre dossier éxiste.</value>
   </data>
   <data name="ProjectSettings_msg_NoFps" xml:space="preserve">
-    <value>Please select the Frames per Second (FPS).</value>
+    <value>Merci de séléctionner le nombre d'images pas secondes (FPS).</value>
   </data>
   <data name="ProjectSettings_msg_NoResolution" xml:space="preserve">
-    <value>Please select a resolution.</value>
+    <value>Merci de séléctionner une résolution.</value>
   </data>
   <data name="ProjectSettings_msg_quality" xml:space="preserve">
-    <value>Please select a proportion between Quality and processing speed.</value>
+    <value>Merci de séléctionner une proportion entre qualité et vitesse de traitement.</value>
   </data>
   <data name="ProjectSettings_msg_undersize" xml:space="preserve">
-    <value>The imported pictures have a lower resolution than the video export resolution. Please select another resolution.</value>
+    <value>L'image importé a un résolution plus basse que la résolution d'export de la vidéo. Veuillez choisir une autre résolution.</value>
   </data>
   <data name="_General_AllPicturefiles" xml:space="preserve">
-    <value>All picture files</value>
+    <value>Tous les fichiers images</value>
   </data>
   <data name="_General_cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Annuler</value>
   </data>
   <data name="_General_error" xml:space="preserve">
-    <value>Error</value>
+    <value>Erreur</value>
   </data>
   <data name="_General_file" xml:space="preserve">
-    <value>file</value>
+    <value>fichier</value>
   </data>
   <data name="_General_files" xml:space="preserve">
-    <value>files</value>
+    <value>fichiers</value>
   </data>
   <data name="_General_ok" xml:space="preserve">
-    <value>OK</value>
+    <value>Ok</value>
   </data>
   <data name="_General_warning" xml:space="preserve">
-    <value>Warning</value>
+    <value>Attention</value>
   </data>
   <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
+    <value>Paramètres</value>
   </data>
   <data name="_General_language_de_DE" xml:space="preserve">
-    <value>German</value>
+    <value>Allemand</value>
   </data>
   <data name="_General_language_en_US" xml:space="preserve">
-    <value>English</value>
+    <value>Anglais</value>
   </data>
   <data name="Credits" xml:space="preserve">
-    <value>Credits</value>
+    <value>Crédits</value>
   </data>
   <data name="Credits_link" xml:space="preserve">
-    <value>You are getting redirected to the website of the content creator. Would you like to continue?</value>
+    <value>Vous aller être redirigé faire le site du créateur. Voulez-vous continuer ?</value>
   </data>
   <data name="Update" xml:space="preserve">
-    <value>Update</value>
+    <value>Mettre à jour</value>
   </data>
   <data name="Update_btn_update" xml:space="preserve">
-    <value>Update</value>
+    <value>Mettre à jour</value>
   </data>
   <data name="Update_lbl_changelog" xml:space="preserve">
-    <value>Changelog</value>
+    <value>Journal des modifications</value>
   </data>
   <data name="Update_lbl_LocalVersion" xml:space="preserve">
-    <value>This version:</value>
+    <value>Cette Version :</value>
   </data>
   <data name="Update_lbl_NewestVersion" xml:space="preserve">
-    <value>Latest version:</value>
+    <value>Dernière Version :</value>
   </data>
   <data name="_General_info" xml:space="preserve">
     <value>Information</value>
   </data>
   <data name="About" xml:space="preserve">
-    <value>About</value>
+    <value>A propos</value>
   </data>
   <data name="About_version" xml:space="preserve">
-    <value>Version:</value>
+    <value>Version :</value>
   </data>
   <data name="Help" xml:space="preserve">
-    <value>Help</value>
+    <value>Aide</value>
   </data>
   <data name="Help_gb_contact" xml:space="preserve">
-    <value>Direct Contact</value>
+    <value>Contact direct</value>
   </data>
   <data name="Help_lbl_contact" xml:space="preserve">
-    <value>Please only contact us via e-mail if the ticket system doesn't meet your request requirements.</value>
+    <value>Merci de nous contacter uniquement par e-mail si le system de ticket ne correspond pas à votre demande.</value>
   </data>
   <data name="Main_msg_closing" xml:space="preserve">
-    <value>Would you really like to close this window? All unsaved changes will be lost.</value>
+    <value>Voulez-vous vraiment fermer la fenêtre ? Les changement non sauvegardés seront perdus.</value>
   </data>
   <data name="Main_msg_NewProject" xml:space="preserve">
-    <value>Would you really like to create a new project? All unsaved changes will be lost.</value>
+    <value>Voulez-vous vraiement créer un nouveau projet ? Les changement non sauvegardés seront perdus.</value>
   </data>
   <data name="Main_ms_about_about" xml:space="preserve">
-    <value>About the software</value>
+    <value>Information du logiciel</value>
   </data>
   <data name="Main_ms_file" xml:space="preserve">
-    <value>File</value>
+    <value>Fichier</value>
   </data>
   <data name="Main_ms_file_exit" xml:space="preserve">
-    <value>Exit</value>
+    <value>Sortir</value>
   </data>
   <data name="Main_ms_file_import" xml:space="preserve">
-    <value>Import Images</value>
+    <value>Importer les images</value>
   </data>
   <data name="Main_ms_file_new" xml:space="preserve">
-    <value>New</value>
+    <value>Nouveau</value>
   </data>
   <data name="Main_ms_file_new_project" xml:space="preserve">
-    <value>Project...</value>
+    <value>Projet...</value>
   </data>
   <data name="Main_ms_file_new_window" xml:space="preserve">
-    <value>Window...</value>
+    <value>Fenêtre...</value>
   </data>
   <data name="Main_ms_help" xml:space="preserve">
-    <value>Help</value>
+    <value>Aide</value>
   </data>
   <data name="Main_ms_help_help" xml:space="preserve">
-    <value>Help</value>
+    <value>Aide</value>
   </data>
   <data name="Main_ms_help_SupportUs" xml:space="preserve">
-    <value>Support Us</value>
+    <value>Faire un don</value>
   </data>
   <data name="Participation" xml:space="preserve">
-    <value>Help us translating</value>
+    <value>Participer à la traduction</value>
   </data>
   <data name="Participation_lbl_desc" xml:space="preserve">
-    <value>Raffy Timelapse is a free program and will always stay this way. We don't want to ask you for money either. But if you want to support us, and speak a language that we don't speak, then please help us to translate this programm into other languages. It's free and very simple!</value>
+    <value>Raffy Timelapse est un logiciel gratuit qui le restera toujours. Nous ne voulons pas vous demander de dons non plus. Mais si vous souhaitez nous aider, ou que vous parlez une langue que nous ne parlons pas, alors merci d'avance de nous aider à traduire notre logiciel dans d'autres langues. C'est gratuit et simple !</value>
   </data>
   <data name="Participation_lbl_head" xml:space="preserve">
-    <value>Translate the App</value>
+    <value>Traduire l'application</value>
   </data>
   <data name="Participation_lbl_link" xml:space="preserve">
-    <value>Translate Now!</value>
+    <value>Traduire maintenant !</value>
   </data>
   <data name="_General_close" xml:space="preserve">
-    <value>Close</value>
+    <value>Fermer</value>
   </data>
   <data name="_General_wait" xml:space="preserve">
-    <value>Please wait...</value>
+    <value>Merci de patienter...</value>
   </data>
   <data name="Main_msg_ffmpeg" xml:space="preserve">
-    <value>Raffy Timelapse couldn't find the 'FFmpeg.exe' on your computer, which is needed to use this program. Would you like to download the missing file?</value>
+    <value>Raffy Timelapse n'a pas pu trouver 'FFmpeg.exe' sur votre ordinateur, qui est nécessaire pour utiliser ce programme. Souhaitez-vous télécharger le fichier manquant ?</value>
   </data>
   <data name="UpdateSearch_lbl_progress-1" xml:space="preserve">
-    <value>No connection to the update servers.</value>
+    <value>Impossible de se connecter au serveur de mise à jour.</value>
   </data>
   <data name="Main_msg_MultiDelete" xml:space="preserve">
-    <value>Are you sure you want to delete all selected images?</value>
+    <value>Êtes-vous sûr de vouloir supprimer les images séléctionnées ?</value>
   </data>
   <data name="Main_msg_SingleDelete" xml:space="preserve">
-    <value>Are you sure you want to delete the image [%1]?</value>
+    <value>Êtes-vous sûr de vouloir supprimer l'images [%1] ?</value>
   </data>
   <data name="Import" xml:space="preserve">
-    <value>Importing Images</value>
+    <value>Importation des images</value>
   </data>
   <data name="Import_lbl_progress1" xml:space="preserve">
-    <value>Importing image</value>
+    <value>Importation de l'image</value>
   </data>
   <data name="Import_lbl_progress2" xml:space="preserve">
-    <value>of</value>
+    <value>de</value>
   </data>
   <data name="UpdateSearch_lbl_progress0" xml:space="preserve">
-    <value>Searching for updates...</value>
+    <value>Recherche de mise à jour...</value>
   </data>
   <data name="UpdateSearch_lbl_progress1" xml:space="preserve">
-    <value>You are already using the latest version!</value>
+    <value>Vous disposez déjà de la dernière Version !</value>
   </data>
   <data name="UpdateSearch_lbl_progress2" xml:space="preserve">
-    <value>Loading details of new version...</value>
+    <value>Chargement des détails de la nouvelle version...</value>
   </data>
   <data name="Settings_gb_general" xml:space="preserve">
-    <value>General</value>
+    <value>Général</value>
   </data>
   <data name="Settings_general_lbl_language" xml:space="preserve">
-    <value>Language</value>
+    <value>Langue</value>
   </data>
   <data name="Help_gb_support" xml:space="preserve">
-    <value>Online Support</value>
+    <value>Support en ligne</value>
   </data>
   <data name="Help_llbl_support" xml:space="preserve">
-    <value>Create a ticket</value>
+    <value>Ouvrir un ticket</value>
   </data>
   <data name="Help_lbl_support" xml:space="preserve">
-    <value>The preferred way to get support for Raffy Timelapse is to create a ticket online on GitHub. We have different ticket systems for different requirements.
+    <value>Le meilleur moyen d'obtenir de l'aide sur Raffy Timpelapse est d'ouvrir un ticket sur GitHub. Nous avons differents types de ticket en fonctions de ce que vous cherchez.
 
-Please create a ticket if you found a bug, have a feature request or have any other question concerning Raffy Timelapse!</value>
+Merci de nous prévenir en cas de bug en faisant un ticket, si vous souahitez de nouvelle fonctionnalités, ou si vous avez d'autres questions sur Raffy Timelapse !</value>
   </data>
   <data name="Settings_general_cb_AutoUpdate" xml:space="preserve">
-    <value>Check for Updates on start-up</value>
+    <value>Verifier les mise à jour au démarrage</value>
   </data>
   <data name="Settings_gb_keys" xml:space="preserve">
-    <value>Key Assignment</value>
+    <value>Assignement de la touche</value>
   </data>
   <data name="Settings_keys_cb_MoveImg" xml:space="preserve">
-    <value>2+8 (Numpad),W+S</value>
+    <value>2+8 (Clavier numérique), W+S</value>
+    <comment>In french, the keyboards are generally AZERTY, so it would be Z+S, but it would be better with a variable here depending on the binding</comment>
   </data>
   <data name="Settings_keys_lbl_MoveImg" xml:space="preserve">
-    <value>Move images up and down</value>
+    <value>Déplacer l'image vers le haut/bas</value>
   </data>
   <data name="Help_gb_wiki" xml:space="preserve">
     <value>Wiki</value>
   </data>
   <data name="Help_lbl_wiki" xml:space="preserve">
-    <value>Learn how to get started with Raffy Timelapse in our online Wiki.</value>
+    <value>Apprendre à utiliser Raffy Timelapse sur notre Wiki en ligne.</value>
   </data>
   <data name="Help_llbl_wiki" xml:space="preserve">
     <value>Raffy Timelapse Wiki</value>
   </data>
   <data name="Main_bw_Rendering_Progress_-1" xml:space="preserve">
-    <value>Error: The timelapse couldn't be exported successfully.</value>
+    <value>Erreur : le timelapse n'as pas pût être exporté.</value>
   </data>
   <data name="Main_bw_Rendering_Progress_-2" xml:space="preserve">
-    <value>Error: Memory allocation failure. Try using a lower resolution.</value>
+    <value>Erreur : Impossible d'allouer la mémoire. Essayez d'utiliser un plus faible résolutions.</value>
   </data>
   <data name="ProgressInfo_lbl_errorlog" xml:space="preserve">
-    <value>View log...</value>
+    <value>Voir les journaux...</value>
   </data>
   <data name="_General_language_pt_PT" xml:space="preserve">
-    <value>Portuguese</value>
+    <value>Portugais</value>
   </data>
   <data name="Update_msg_close" xml:space="preserve">
-    <value>Raffy Timelapse will be closed automatically to install the update. All unsaved changes will be lost. Do you want to continue?</value>
+    <value>Raffy Timelapse vas se fermer automatiquement pour effectuer les mise à jour. Tous les changements non enregistré seront perdu. Voulez-vous continuer ?</value>
   </data>
   <data name="Credits_lbl_translators_head" xml:space="preserve">
-    <value>Translators</value>
+    <value>Traducteurs</value>
   </data>
   <data name="Update_msg_UpdaterNotFound" xml:space="preserve">
-    <value>The Raffy Timelapse Updater couldn't be found on your computer. Please download the latest version manually online.</value>
+    <value>Le dispositif de mise à jour est introuvable. Merci de télécharger la dérnière version en ligne.</value>
   </data>
   <data name="Main_ImportFiles_msg_error" xml:space="preserve">
-    <value>Error for {0}: </value>
+    <value>Erreur pour {0} : </value>
   </data>
   <data name="_General_language_fr_FR" xml:space="preserve">
-    <value>French</value>
+    <value>Français</value>
   </data>
 </root>

@@ -454,4 +454,7 @@ Bitte erstelle ein Ticket, wenn du einen Fehler gefunden hast, ein neues Feature
   <data name="Main_ImportFiles_msg_error" xml:space="preserve">
     <value>Fehler für {0}: </value>
   </data>
+  <data name="_General_language_fr_FR" xml:space="preserve">
+    <value>Französisch</value>
+  </data>
 </root>
