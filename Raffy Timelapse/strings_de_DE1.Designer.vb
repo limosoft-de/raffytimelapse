@@ -957,7 +957,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die 2+8 (Numpad),W+S ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die 2+8 (Numpad),W+S,Z+S ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Settings_keys_cb_MoveImg() As String
         Get

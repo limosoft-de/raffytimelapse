@@ -957,7 +957,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die 2+8 (Teclado Numerico),W+S ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die 2+8 (Teclado Numerico),W+S,Z+S ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Settings_keys_cb_MoveImg() As String
         Get

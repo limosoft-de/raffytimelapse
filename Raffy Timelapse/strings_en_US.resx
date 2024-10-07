@@ -411,7 +411,7 @@ Please create a ticket if you found a bug, have a feature request or have any ot
     <value>Key Assignment</value>
   </data>
   <data name="Settings_keys_cb_MoveImg" xml:space="preserve">
-    <value>2+8 (Numpad),W+S</value>
+    <value>2+8 (Numpad),W+S,Z+S</value>
   </data>
   <data name="Settings_keys_lbl_MoveImg" xml:space="preserve">
     <value>Move images up and down</value>

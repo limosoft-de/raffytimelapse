@@ -411,7 +411,7 @@ Por favor, crie um ticket se você encontrou um bug, tenha um pedido de recurso 
     <value>Atribuição de chave</value>
   </data>
   <data name="Settings_keys_cb_MoveImg" xml:space="preserve">
-    <value>2+8 (Teclado Numerico),W+S</value>
+    <value>2+8 (Teclado Numerico),W+S,Z+S</value>
   </data>
   <data name="Settings_keys_lbl_MoveImg" xml:space="preserve">
     <value>Mover imagens para cima e para baixo</value>

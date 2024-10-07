@@ -412,7 +412,7 @@ Prosím vytvořte tiket jestliže najdete chybu, máte požadavek na novou funkc
     <value>Přiřazení kláves</value>
   </data>
   <data name="Settings_keys_cb_MoveImg" xml:space="preserve">
-    <value>2+8 (Numpad), W+S</value>
+    <value>2+8 (Numpad), W+S,Z+S</value>
   </data>
   <data name="Settings_keys_lbl_MoveImg" xml:space="preserve">
     <value>Pohyb snímků nahoru a dolů</value>

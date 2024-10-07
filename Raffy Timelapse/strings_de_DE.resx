@@ -416,7 +416,7 @@ Bitte erstelle ein Ticket, wenn du einen Fehler gefunden hast, ein neues Feature
     <value>Tastenbelegung</value>
   </data>
   <data name="Settings_keys_cb_MoveImg" xml:space="preserve">
-    <value>2+8 (Numpad),W+S</value>
+    <value>2+8 (Numpad),W+S,Z+S</value>
   </data>
   <data name="Settings_keys_lbl_MoveImg" xml:space="preserve">
     <value>Bilder mit Tasten verschieben</value>

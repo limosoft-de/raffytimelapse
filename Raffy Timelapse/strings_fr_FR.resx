@@ -411,7 +411,7 @@ Merci de nous prévenir en cas de bug en faisant un ticket, si vous souahitez de
     <value>Assignement de la touche</value>
   </data>
   <data name="Settings_keys_cb_MoveImg" xml:space="preserve">
-    <value>2+8 (Clavier numérique), W+S</value>
+    <value>2+8 (Clavier numérique), W+S,Z+S</value>
     <comment>In french, the keyboards are generally AZERTY, so it would be Z+S, but it would be better with a variable here depending on the binding</comment>
   </data>
   <data name="Settings_keys_lbl_MoveImg" xml:space="preserve">
