@@ -456,4 +456,10 @@ Prosím vytvořte tiket jestliže najdete chybu, máte požadavek na novou funkc
   <data name="_General_language_cs_CZ" xml:space="preserve">
     <value>Česky</value>
   </data>
+  <data name="ProjectSettings_lbl_advancedMode_advanced" xml:space="preserve">
+    <value>Pokročilý režim...</value>
+  </data>
+  <data name="ProjectSettings_lbl_advancedMode_simple" xml:space="preserve">
+    <value>Jednoduchý režim</value>
+  </data>
 </root>

@@ -24,7 +24,7 @@ Imports System
 <Global.System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0"),  _
  Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
  Global.System.Runtime.CompilerServices.CompilerGeneratedAttribute()>  _
-Friend Class strings_pt_PT
+Friend Class strings_cs_CZ
     
     Private Shared resourceMan As Global.System.Resources.ResourceManager
     
@@ -42,7 +42,7 @@ Friend Class strings_pt_PT
     Friend Shared ReadOnly Property ResourceManager() As Global.System.Resources.ResourceManager
         Get
             If Object.ReferenceEquals(resourceMan, Nothing) Then
-                Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Raffy_Timelapse.strings_pt_PT", GetType(strings_pt_PT).Assembly)
+                Dim temp As Global.System.Resources.ResourceManager = New Global.System.Resources.ResourceManager("Raffy_Timelapse.strings_cs_CZ", GetType(strings_cs_CZ).Assembly)
                 resourceMan = temp
             End If
             Return resourceMan
@@ -64,7 +64,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Todos os tipos de imagem ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Všechny snímky ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_AllPicturefiles() As String
         Get
@@ -73,7 +73,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Cancelar ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Zrušit ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_cancel() As String
         Get
@@ -82,7 +82,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Fechar ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Uzavřít ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_close() As String
         Get
@@ -91,7 +91,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Erro ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Chyba ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_error() As String
         Get
@@ -100,7 +100,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Ficheiro ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die soubor ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_file() As String
         Get
@@ -109,7 +109,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Ficheiros ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die soubory ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_files() As String
         Get
@@ -118,7 +118,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Informação ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Informace ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_info() As String
         Get
@@ -127,7 +127,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Checo ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Česky ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_language_cs_CZ() As String
         Get
@@ -136,7 +136,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Alemão ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die German ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_language_de_DE() As String
         Get
@@ -145,7 +145,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Inglês ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die English ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_language_en_US() As String
         Get
@@ -154,7 +154,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Francês ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Francouzština ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_language_fr_FR() As String
         Get
@@ -163,7 +163,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Português ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Portuguese ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_language_pt_PT() As String
         Get
@@ -181,7 +181,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Aguarde por favor... ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Prosím čekej... ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_wait() As String
         Get
@@ -190,7 +190,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Aviso ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Varování ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property _General_warning() As String
         Get
@@ -199,7 +199,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Sobre ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die O ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property About() As String
         Get
@@ -208,7 +208,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Versão: ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Verze: ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property About_version() As String
         Get
@@ -217,7 +217,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Créditos ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Kredity ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Credits() As String
         Get
@@ -226,7 +226,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Překlady ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Credits_lbl_translators_head() As String
         Get
@@ -235,7 +235,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Você está sendo redireccionado para o site do criador do conteúdo. Você gostaria de continuar? ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Budete přesměrováni na stránky tvorby obsahu. Chcete pokračovat? ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Credits_link() As String
         Get
@@ -244,7 +244,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Ajuda ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Help ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Help() As String
         Get
@@ -253,7 +253,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Contacto Direto ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Přímý kontakt ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Help_gb_contact() As String
         Get
@@ -262,7 +262,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Suporte Online ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Online podpora ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Help_gb_support() As String
         Get
@@ -280,7 +280,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Por favor, apenas entre em contacto connosco via e-mail se o sistema de ingressos não atender aos seus requisitos de solicitação. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Prosíme kontaktujte nás přes e-mail POUZE v případě, že náš systém nezná váš požadavek. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Help_lbl_contact() As String
         Get
@@ -289,9 +289,9 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die A maneira preferida de obter suporte para o Raffy Timelapse é criar um ticket on-line no GitHub. Temos diferentes sistemas de tickets para diferentes requisitos.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Preferovaná cesta dostat podporu pro Raffy Timelapse je vytvoření tiketu online na GitHub. Máme různé systémy tiket pro různé požadavky.
     '''
-    '''Por favor, crie um ticket se você encontrou um bug, tenha um pedido de recurso ou tenha alguma outra dúvida sobre Raffy Timelapse! ähnelt.
+    '''Prosím vytvořte tiket jestliže najdete chybu, máte požadavek na novou funkci nebo máte jinou otázku týkající se Raffy Timelapse! ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Help_lbl_support() As String
         Get
@@ -300,7 +300,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Saiba como começar com Raffy Timelapse no nosso Wiki on-line. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Podívejte se, jak začít s Raffy Timelapse na Wiki online. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Help_lbl_wiki() As String
         Get
@@ -309,7 +309,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Criar um pedido ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Vytvoření tiketu ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Help_llbl_support() As String
         Get
@@ -327,7 +327,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die A importar imagens ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Importování Snímků ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Import() As String
         Get
@@ -336,7 +336,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die A importar imagem ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Importování snímku ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Import_lbl_progress1() As String
         Get
@@ -345,7 +345,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die of ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die od ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Import_lbl_progress2() As String
         Get
@@ -354,7 +354,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Importando Imagens... ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Importování snímků... ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ImportProgressInfo() As String
         Get
@@ -363,7 +363,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Eliminar ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Smazat ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_btn_del() As String
         Get
@@ -372,7 +372,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Procurar ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Prohledávat ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_btn_drop() As String
         Get
@@ -381,7 +381,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Descer ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Dolů ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_btn_MoveDwn() As String
         Get
@@ -390,7 +390,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Subir ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Nahoru ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_btn_MoveUp() As String
         Get
@@ -399,7 +399,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Multi Seleção ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Výběr ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_btn_MultiSelect() As String
         Get
@@ -408,7 +408,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Iniciar ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Start ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_btn_start() As String
         Get
@@ -417,7 +417,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Chyba: Timelapse nemůže být úspěšně exportiváno. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_bw_Rendering_Progress__1() As String
         Get
@@ -426,7 +426,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Chyba: Problém s pamětí. Zkuste použít menší rozlišení. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_bw_Rendering_Progress__2() As String
         Get
@@ -435,7 +435,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die O Computador está a ser preparado... ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Počítač se připravuje... ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_bw_Rendering_Progress_1() As String
         Get
@@ -444,7 +444,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die A copiar ficheiros ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Kopírování souborů... ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_bw_Rendering_Progress_10() As String
         Get
@@ -453,7 +453,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Terminado! ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Hotovo! ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_bw_Rendering_Progress_100() As String
         Get
@@ -462,7 +462,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die O Video está a ser criado,isto pode demorar algum tempo... ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Film se vytváří, může to chvíli trvat... ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_bw_Rendering_Progress_40() As String
         Get
@@ -471,7 +471,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die O Vídeo está a ser convertido, isto pode demorar algum tempo... ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Film se konvertuje, může to chvíli trvat... ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_bw_Rendering_Progress_75() As String
         Get
@@ -480,7 +480,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Editar Imagem ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Editovat snímky ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_gb_PictureEdit() As String
         Get
@@ -489,7 +489,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Todas as imagens têm de ter a mesma resolução que a primeira imagem importada ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Všechny snímky musí mít stejné rozlišení jako první importovaný ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ImportFiles_msg_DifferentResolution() As String
         Get
@@ -498,7 +498,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Chyba pro {0}:  ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ImportFiles_msg_error() As String
         Get
@@ -507,7 +507,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Sem imagens importadas ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Nic neimportováno ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ImportFiles_msg_NoPictures() As String
         Get
@@ -516,7 +516,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Este tipo de ficheiro não é suportado ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Tento typ není podporován ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ImportFiles_msg_UnsupportedFiletype() As String
         Get
@@ -525,7 +525,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Largar aqui as imagens ou procurar por ficheiros ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Přetáhni snímky sem nebo je vyber ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_lbl_drop() As String
         Get
@@ -534,7 +534,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Pré-Visualizar ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Náhled ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_lbl_preview() As String
         Get
@@ -543,7 +543,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Linha de Tempo ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Timeline ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_lbl_timeline() As String
         Get
@@ -552,7 +552,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Sobre ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Okolo ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ms_about() As String
         Get
@@ -561,7 +561,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Sobre o Software ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die O programu ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ms_about_about() As String
         Get
@@ -570,7 +570,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Créditos ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Kredity ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ms_about_credits() As String
         Get
@@ -579,7 +579,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Definições ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Nastavení ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ms_about_settings() As String
         Get
@@ -588,7 +588,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Atualização ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Update ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ms_about_update() As String
         Get
@@ -597,7 +597,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Ficheiro ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Soubor ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ms_file() As String
         Get
@@ -606,7 +606,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Sair ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Exit ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ms_file_exit() As String
         Get
@@ -615,7 +615,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Importar imagens ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Import snímků ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ms_file_import() As String
         Get
@@ -624,7 +624,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Novo ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Nový ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ms_file_new() As String
         Get
@@ -633,7 +633,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Projeto... ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Projekt... ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ms_file_new_project() As String
         Get
@@ -642,7 +642,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Janela... ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Window... ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ms_file_new_window() As String
         Get
@@ -651,7 +651,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Ajuda ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Help ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ms_help() As String
         Get
@@ -660,7 +660,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Ajuda ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Help ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ms_help_help() As String
         Get
@@ -669,7 +669,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Dar Contribuição ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Podpoř nás ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_ms_help_SupportUs() As String
         Get
@@ -678,7 +678,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Você gostaria realmente de fechar esta janela? Todas as alterações não salvas serão perdidas. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Chcete opravdu zavřít toto okno? Všechny neuložené změny budou ztraceny. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_msg_closing() As String
         Get
@@ -687,7 +687,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Raffy Timelapse não conseguiu encontrar o &apos;FFmpeg.exe&apos; no seu computador, o que é necessário para usar este programa. Gostaria de baixar o arquivo em falta? ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Raffy Timelapse nemůže na vašem počítači najít &apos;FFmpeg.exe&apos;, který je nutný pro běh tohoto programu. Chcete tento chybějící soubor stáhnout? ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_msg_ffmpeg() As String
         Get
@@ -696,7 +696,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Tem a certeza de que quer apagar todas as imagens selecionadas? ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Jste si jistí, že chcete smazat všechny vybrané snímky? ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_msg_MultiDelete() As String
         Get
@@ -705,7 +705,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Você gostaria realmente de criar um novo projeto? Todas as alterações não salvas serão perdidas. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Chcete opravdu vytvořit nový projekt? Všechny neuložené změny budou ztraceny. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_msg_NewProject() As String
         Get
@@ -714,7 +714,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Tem certeza de que deseja excluir a imagem [% 1]? ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Jste si jistí, že chcete smazat snímek [%1]? ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Main_msg_SingleDelete() As String
         Get
@@ -723,7 +723,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Ajudar a Traduzir ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Pomož nám s překladem ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Participation() As String
         Get
@@ -732,7 +732,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Raffy Timelapse é um programa gratuito e será sempre assim. Nós não queremos pedir-lhe dinheiro também. Mas se você quiser nos apoiar e falar um idioma que não falamos, ajude-nos a traduzir esse programa para outros idiomas. É grátis e muito simples! ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Raffy Timelapse je free program and půjde vždy touto cestou. Nechceme vás žádat o peníze. Ale jestli nás chcete podpořit, a mluvíte jazykem, kterým my nemluvíme, prosím pomožte nám přeložit tento program do jiných jazyků. Je to zdarma a velmi jednoduché! ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Participation_lbl_desc() As String
         Get
@@ -741,7 +741,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Traduzir este Programa ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Přelož aplikaci ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Participation_lbl_head() As String
         Get
@@ -750,7 +750,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Traduzir agora! ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Překládej! ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Participation_lbl_link() As String
         Get
@@ -759,7 +759,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die A processar ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Proces ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProgressInfo() As String
         Get
@@ -768,7 +768,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Podívejte do logu... ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProgressInfo_lbl_errorlog() As String
         Get
@@ -777,7 +777,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Definições do Projeto ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Nastavení projektu ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings() As String
         Get
@@ -786,7 +786,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Procurar ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Prohledávat ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_btn_browse() As String
         Get
@@ -795,7 +795,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Alta qualidade, processamento lento ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Vysoká kvalita, pomalý proces ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_cb_quality_hq() As String
         Get
@@ -804,7 +804,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Baixa qualidade, processamento rápido ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Nízká kvalita, rychlý proces ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_cb_quality_lq() As String
         Get
@@ -813,7 +813,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Média qualidade e velocidade de processamento ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Střední kvalita i rychlost ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_cb_quality_mq() As String
         Get
@@ -822,7 +822,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Igual a Entrada ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Jako vstup ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_cb_resolution_OriginalResolution() As String
         Get
@@ -831,7 +831,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Modo avançado... ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Pokročilý režim... ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_lbl_advancedMode_advanced() As String
         Get
@@ -840,7 +840,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Modo simples... ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Jednoduchý režim ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_lbl_advancedMode_simple() As String
         Get
@@ -849,7 +849,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Frames por Segundo (FPS) ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Snímky za sekundu (FPS) ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_lbl_fps() As String
         Get
@@ -858,7 +858,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Qualidade/Velocidade de Processamento ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Kvalita/Rychlost procesu ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_lbl_quality() As String
         Get
@@ -867,7 +867,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Resolução ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Rozlišení ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_lbl_resolution() As String
         Get
@@ -876,7 +876,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Guardar em... ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Ulož jako... ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_lbl_SaveTo() As String
         Get
@@ -885,7 +885,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die O caminho especificado não existe. Por favor, verifique se o seu caminho de exportação está correto. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Vypraná cesta neexistuje. Je cesta pro export správná? ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_msg_InvalidPath() As String
         Get
@@ -894,7 +894,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Por favor, selecione os frames por segundo (FPS). ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Prosím vyber Snímky za sekundu (FPS). ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_msg_NoFps() As String
         Get
@@ -903,7 +903,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Por favor selecione uma resolução. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Prosím vyber rozlišení. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_msg_NoResolution() As String
         Get
@@ -912,7 +912,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Por favor, selecione uma proporção entre qualidade e velocidade de processamento. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Prosím vyber nastavení Kvalita / Rychlost procesu. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_msg_quality() As String
         Get
@@ -921,7 +921,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die As imagens importadas têm uma resolução menor que a resolução de exportação de vídeo. Por favor, selecione outra resolução. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Importovaní snímky mají menší rozlišení než nastavený export videa. Prosím vyber jiné rozlišení. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_msg_undersize() As String
         Get
@@ -930,7 +930,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Configurações ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Nastavení ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Settings() As String
         Get
@@ -939,7 +939,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Geral ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die General ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Settings_gb_general() As String
         Get
@@ -948,7 +948,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Atribuição de chave ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Přiřazení kláves ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Settings_gb_keys() As String
         Get
@@ -957,7 +957,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Procurar por actualizações na inicialização ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Kontrola aktualizací při startu ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Settings_general_cb_AutoUpdate() As String
         Get
@@ -966,7 +966,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Idioma ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Jazyk ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Settings_general_lbl_language() As String
         Get
@@ -975,7 +975,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die 2+8 (Teclado Numerico),W+S,Z+S ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die 2+8 (Numpad), W+S,Z+S ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Settings_keys_cb_MoveImg() As String
         Get
@@ -984,7 +984,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Mover imagens para cima e para baixo ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Pohyb snímků nahoru a dolů ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Settings_keys_lbl_MoveImg() As String
         Get
@@ -993,7 +993,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Atualização ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Aktualizovat ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Update() As String
         Get
@@ -1002,7 +1002,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Atualização ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Aktualizovat ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Update_btn_update() As String
         Get
@@ -1011,7 +1011,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Registo de Alterações ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Změnový záznam ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Update_lbl_changelog() As String
         Get
@@ -1020,7 +1020,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die A sua Versão: ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Tato verze: ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Update_lbl_LocalVersion() As String
         Get
@@ -1029,7 +1029,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Ultima Versão: ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Polsední verze: ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Update_lbl_NewestVersion() As String
         Get
@@ -1038,7 +1038,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Raffy Timelapse bude z důvodu instalování update automaticky ukončeno. Všechny neuložené změny budou ztraceny. Chcete pokračovat? ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Update_msg_close() As String
         Get
@@ -1047,7 +1047,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die  ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Program &apos;Raffy Timelapse Updater&apos; nebyl na vašem pořítači nalezen. Prosím stáhněte si poslední verzi manuálně. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property Update_msg_UpdaterNotFound() As String
         Get
@@ -1056,7 +1056,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Sem ligação aos servidores de atualização. ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Není spojení k aktualizačnímu serveru. ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property UpdateSearch_lbl_progress_1() As String
         Get
@@ -1065,7 +1065,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Procurando por atualizações... ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Hledání nové verze... ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property UpdateSearch_lbl_progress0() As String
         Get
@@ -1074,7 +1074,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Já está a usar a versão mais recente! ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Fakt používáte poslední verzi! ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property UpdateSearch_lbl_progress1() As String
         Get
@@ -1083,7 +1083,7 @@ Friend Class strings_pt_PT
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die A carregar detalhes da nova versão... ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Nahrávání detailů nové verze... ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property UpdateSearch_lbl_progress2() As String
         Get

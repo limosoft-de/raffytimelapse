@@ -455,4 +455,10 @@ Por favor, crie um ticket se você encontrou um bug, tenha um pedido de recurso 
   <data name="_General_language_cs_CZ" xml:space="preserve">
     <value>Checo</value>
   </data>
+  <data name="ProjectSettings_lbl_advancedMode_advanced" xml:space="preserve">
+    <value>Modo avançado...</value>
+  </data>
+  <data name="ProjectSettings_lbl_advancedMode_simple" xml:space="preserve">
+    <value>Modo simples...</value>
+  </data>
 </root>

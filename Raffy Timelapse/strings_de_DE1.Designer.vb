@@ -831,6 +831,24 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Experten-Modus... ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property ProjectSettings_lbl_advancedMode_advanced() As String
+        Get
+            Return ResourceManager.GetString("ProjectSettings_lbl_advancedMode_advanced", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
+    '''  Sucht eine lokalisierte Zeichenfolge, die Vereinfachter Modus... ähnelt.
+    '''</summary>
+    Friend Shared ReadOnly Property ProjectSettings_lbl_advancedMode_simple() As String
+        Get
+            Return ResourceManager.GetString("ProjectSettings_lbl_advancedMode_simple", resourceCulture)
+        End Get
+    End Property
+    
+    '''<summary>
     '''  Sucht eine lokalisierte Zeichenfolge, die Bilder pro Sekunde (FPS) ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_lbl_fps() As String
@@ -858,7 +876,7 @@ Friend Class strings_de_DE
     End Property
     
     '''<summary>
-    '''  Sucht eine lokalisierte Zeichenfolge, die Speichern nach... ähnelt.
+    '''  Sucht eine lokalisierte Zeichenfolge, die Speichern unter... ähnelt.
     '''</summary>
     Friend Shared ReadOnly Property ProjectSettings_lbl_SaveTo() As String
         Get

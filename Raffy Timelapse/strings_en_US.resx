@@ -455,4 +455,10 @@ Please create a ticket if you found a bug, have a feature request or have any ot
   <data name="_General_language_cs_CZ" xml:space="preserve">
     <value>Czech</value>
   </data>
+  <data name="ProjectSettings_lbl_advancedMode_advanced" xml:space="preserve">
+    <value>Advanced mode...</value>
+  </data>
+  <data name="ProjectSettings_lbl_advancedMode_simple" xml:space="preserve">
+    <value>Simple mode...</value>
+  </data>
 </root>

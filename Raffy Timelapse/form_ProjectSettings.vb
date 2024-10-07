@@ -1,7 +1,8 @@
 ﻿Public Class form_ProjectSettings
 
-    Private Sub form_ProjectSettings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Dim advancedMode = False
 
+    Private Sub form_ProjectSettings_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tb_destination.Clear()
         cb_quality.Items.Clear()
         cb_res.Items.Clear()
@@ -9,8 +10,6 @@
         TranslateForm()
 
         LoadValues()
-
-
     End Sub
 
     Private Sub TranslateForm()
@@ -20,6 +19,7 @@
         lbl_resolution.Text = TransString("ProjectSettings_lbl_resolution")
         lbl_fps.Text = TransString("ProjectSettings_lbl_fps")
         lbl_quality.Text = TransString("ProjectSettings_lbl_quality")
+        lbl_advancedMode.Text = TransString("ProjectSettings_lbl_advancedMode_advanced")
 
         btn_browse.Text = TransString("ProjectSettings_btn_browse")
         btn_cancel.Text = TransString("_General_cancel")
@@ -53,7 +53,6 @@
         'Previous used Values (overwrite)
 
         If Not form_main.MovRes = "" Then
-
             If form_main.MovRes = "{original}" Then
                 cb_res.Text = TransString("ProjectSettings_cb_resolution_OriginalResolution")
             Else
@@ -76,6 +75,22 @@
         End If
     End Sub
 
+    Private Sub switchMode()
+        advancedMode = Not advancedMode
+
+        lbl_advancedMode.Text = TransString(If(advancedMode, "ProjectSettings_lbl_advancedMode_simple", "ProjectSettings_lbl_advancedMode_advanced"))
+        cb_res.Visible = Not cb_res.Visible
+        cb_fps.Visible = Not cb_fps.Visible
+        num_res_height.Visible = Not num_res_height.Visible
+        num_res_width.Visible = Not num_res_width.Visible
+        num_fps.Visible = Not num_fps.Visible
+        lbl_resolutionX.Visible = Not lbl_resolutionX.Visible
+    End Sub
+
+
+    Private Sub lbl_advancedMode_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lbl_advancedMode.LinkClicked
+        switchMode()
+    End Sub
 
     Private Sub btn_browse_Click(sender As Object, e As EventArgs) Handles btn_browse.Click
 
@@ -96,7 +111,7 @@
 
     Private Sub btn_ok_Click(sender As Object, e As EventArgs) Handles btn_ok.Click
 
-        '//Speicherort
+        '//Storage location
         If tb_destination.Text = "" Or Not tb_destination.Text.Contains("\") Then
             MessageBox.Show(TransString("ProjectSettings_msg_InvalidPath"), TransString("_General_error"), MessageBoxButtons.OK, MessageBoxIcon.Error)
             Exit Sub
@@ -113,37 +128,43 @@
         form_main.MovPath = tb_destination.Text
 
         '//Resolution
-        If cb_res.Text = "" Then
-            MessageBox.Show(TransString("ProjectSettings_msg_NoResolution"), TransString("_General_error"), MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Exit Sub
-        End If
+        If advancedMode Then
+            'advanced mode
+            form_main.MovWidth = num_res_width.Value : form_main.MovHeight = num_res_height.Value
+        Else
+            'simple mode
+            If cb_res.Text = "" Then
+                MessageBox.Show(TransString("ProjectSettings_msg_NoResolution"), TransString("_General_error"), MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Exit Sub
+            End If
 
-        Select Case cb_res.Text
-            Case "3.840 x 2.160 (4K)"
-                form_main.MovWidth = 3840 : form_main.MovHeight = 2160
-                form_main.MovRes = cb_res.Text 'Not for rendering, only to save project settings
-            Case "2.560 x 1.440 (WQHD)"
-                form_main.MovWidth = 2560 : form_main.MovHeight = 1440
-                form_main.MovRes = cb_res.Text
-            Case "1920 x 1080 (Full-HD)"
-                form_main.MovWidth = 1920 : form_main.MovHeight = 1080
-                form_main.MovRes = cb_res.Text
-            Case "1280 x 720 (HD)"
-                form_main.MovWidth = 1280 : form_main.MovHeight = 720
-                form_main.MovRes = cb_res.Text
-            Case "854 x 480"
-                form_main.MovWidth = 854 : form_main.MovHeight = 480
-                form_main.MovRes = cb_res.Text
-            Case "640 x 360"
-                form_main.MovWidth = 640 : form_main.MovHeight = 360
-                form_main.MovRes = cb_res.Text
-            Case "426 x 240"
-                form_main.MovWidth = 426 : form_main.MovHeight = 240
-                form_main.MovRes = cb_res.Text
-            Case TransString("ProjectSettings_cb_resolution_OriginalResolution")
-                form_main.MovWidth = form_main.PicWidth : form_main.MovHeight = form_main.PicHeight
-                form_main.MovRes = "{original}"
-        End Select
+            Select Case cb_res.Text
+                Case "3.840 x 2.160 (4K)"
+                    form_main.MovWidth = 3840 : form_main.MovHeight = 2160
+                    form_main.MovRes = cb_res.Text 'Not for rendering, only to save project settings
+                Case "2.560 x 1.440 (WQHD)"
+                    form_main.MovWidth = 2560 : form_main.MovHeight = 1440
+                    form_main.MovRes = cb_res.Text
+                Case "1920 x 1080 (Full-HD)"
+                    form_main.MovWidth = 1920 : form_main.MovHeight = 1080
+                    form_main.MovRes = cb_res.Text
+                Case "1280 x 720 (HD)"
+                    form_main.MovWidth = 1280 : form_main.MovHeight = 720
+                    form_main.MovRes = cb_res.Text
+                Case "854 x 480"
+                    form_main.MovWidth = 854 : form_main.MovHeight = 480
+                    form_main.MovRes = cb_res.Text
+                Case "640 x 360"
+                    form_main.MovWidth = 640 : form_main.MovHeight = 360
+                    form_main.MovRes = cb_res.Text
+                Case "426 x 240"
+                    form_main.MovWidth = 426 : form_main.MovHeight = 240
+                    form_main.MovRes = cb_res.Text
+                Case TransString("ProjectSettings_cb_resolution_OriginalResolution")
+                    form_main.MovWidth = form_main.PicWidth : form_main.MovHeight = form_main.PicHeight
+                    form_main.MovRes = "{original}"
+            End Select
+        End If
 
         If form_main.MovWidth > form_main.PicWidth Then
             MessageBox.Show(TransString("ProjectSettings_msg_undersize"), TransString("_General_error"), MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -154,12 +175,18 @@
         End If
 
         '//FPS
-        If cb_fps.Text = "" Then
-            MessageBox.Show(TransString("ProjectSettings_msg_NoFps"), TransString("_General_error"), MessageBoxButtons.OK, MessageBoxIcon.Error)
-            Exit Sub
+        If advancedMode Then
+            'advanced mode
+            form_main.MovFPS = num_fps.Value
+        Else
+            'simple mode
+            If cb_fps.Text = "" Then
+                MessageBox.Show(TransString("ProjectSettings_msg_NoFps"), TransString("_General_error"), MessageBoxButtons.OK, MessageBoxIcon.Error)
+                Exit Sub
+            End If
+            form_main.MovFPS = CInt(cb_fps.Text)
         End If
 
-        form_main.MovFPS = cb_fps.Text
 
         '//Quality
         If cb_quality.Text = "" Then
@@ -179,5 +206,4 @@
         form_main.StartTask()
 
     End Sub
-
 End Class

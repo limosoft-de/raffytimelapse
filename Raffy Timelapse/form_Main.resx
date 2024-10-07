@@ -168,6 +168,16 @@
   <metadata name="ms.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>400, 17</value>
   </metadata>
+  <data name="ms_file_new.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAOxJREFUOE+lk7ENwjAQRS9FihQRg1AwRkSRijIDUCDEEExAQRExCUIRNWKAVEyB
+        qM3/0cUY25FCKJ7k/Pv50t3ZYoxJYohIDuZKHvOQIADmAjTgCVqFZ2pF4LcHkRTU4AEqkDm1TDXW6Elt
+        zTGdwAXMes2HNfXUVtPCEjD962d8r4mnMYTerp0+4Aoq16j6nkR0ttPouUt8AduzYxwK4Ew4WG5KFqB1
+        iltwVO7gBg7KxvFxO1xxEFCCnXJW+u8yFvBfCypMH6IKQ2tcEU8L16iF6RdJi7zKDGH671fZCp/HxMGO
+        f0w+MI94ziZ5Az2sw6ym/VSpAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="ms_file_new_project.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
@@ -185,16 +195,6 @@
         M/ACSe4fEYx4790XgpHCAKMRM8xKBiuURswwe06zdr03zPyswQKFETN3gx0mI2buBp8/YYPOiJmzQQIV
         1Ir+op0xk7y+BRQ0pJ0FUQMEcgi/a7huWOdRfbQh0oL2eKiN6p8bNt4dscaw8g1czCQAAAAASUVORK5C
         YII=
-</value>
-  </data>
-  <data name="ms_file_new.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wwAADsMBx2+oZAAAAOxJREFUOE+lk7ENwjAQRS9FihQRg1AwRkSRijIDUCDEEExAQRExCUIRNWKAVEyB
-        qM3/0cUY25FCKJ7k/Pv50t3ZYoxJYohIDuZKHvOQIADmAjTgCVqFZ2pF4LcHkRTU4AEqkDm1TDXW6Elt
-        zTGdwAXMes2HNfXUVtPCEjD962d8r4mnMYTerp0+4Aoq16j6nkR0ttPouUt8AduzYxwK4Ew4WG5KFqB1
-        iltwVO7gBg7KxvFxO1xxEFCCnXJW+u8yFvBfCypMH6IKQ2tcEU8L16iF6RdJi7zKDGH671fZCp/HxMGO
-        f0w+MI94ziZ5Az2sw6ym/VSpAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="ms_file_import.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

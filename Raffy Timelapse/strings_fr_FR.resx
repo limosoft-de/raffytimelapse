@@ -456,4 +456,10 @@ Merci de nous prévenir en cas de bug en faisant un ticket, si vous souahitez de
   <data name="_General_language_cs_CZ" xml:space="preserve">
     <value>Tchèque</value>
   </data>
+  <data name="ProjectSettings_lbl_advancedMode_advanced" xml:space="preserve">
+    <value>Mode avancé...</value>
+  </data>
+  <data name="ProjectSettings_lbl_advancedMode_simple" xml:space="preserve">
+    <value>Mode simple...</value>
+  </data>
 </root>

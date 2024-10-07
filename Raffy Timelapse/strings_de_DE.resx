@@ -219,7 +219,7 @@
     <value>Auflösung</value>
   </data>
   <data name="ProjectSettings_lbl_SaveTo" xml:space="preserve">
-    <value>Speichern nach...</value>
+    <value>Speichern unter...</value>
   </data>
   <data name="ProjectSettings_msg_InvalidPath" xml:space="preserve">
     <value>Der angegebene Pfad existiert nicht, bitte überprüfe deine Angaben.</value>
@@ -459,5 +459,11 @@ Bitte erstelle ein Ticket, wenn du einen Fehler gefunden hast, ein neues Feature
   </data>
   <data name="_General_language_cs_CZ" xml:space="preserve">
     <value>Tschechisch</value>
+  </data>
+  <data name="ProjectSettings_lbl_advancedMode_advanced" xml:space="preserve">
+    <value>Experten-Modus...</value>
+  </data>
+  <data name="ProjectSettings_lbl_advancedMode_simple" xml:space="preserve">
+    <value>Vereinfachter Modus...</value>
   </data>
 </root>
